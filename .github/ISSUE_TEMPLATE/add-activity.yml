@@ -1,0 +1,57 @@
+name: Suggest an activity
+description: Tell us about a class, club or online activity for kids.
+title: "Activity: "
+labels: ["new activity"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Activity name
+    validations:
+      required: true
+  - type: input
+    id: organizer
+    attributes:
+      label: Who runs it
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: ["In person", "Online"]
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address (leave empty for online)
+  - type: input
+    id: ages
+    attributes:
+      label: Ages
+      placeholder: "e.g. 6–10"
+    validations:
+      required: true
+  - type: input
+    id: schedule
+    attributes:
+      label: Days and times
+      placeholder: "e.g. Tue and Thu, 16:00–17:00"
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: Price
+      placeholder: "e.g. Free, or $25 per session"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Website or sign-up link
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description

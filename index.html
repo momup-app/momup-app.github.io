@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kids Nearby Berlin | Activities for kids in Berlin</title>
+  <meta name="description" content="Find classes, clubs and online activities for kids in Berlin, filtered by age, interest, day, price and distance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#results">Skip to results</a>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="dot" aria-hidden="true"></span>Kids Nearby</a>
+      <p class="tag">Activities for kids in Berlin, close to home or online.</p>
+    </div>
+  </header>
+
+  <section class="search wrap" aria-label="Search">
+    <form id="where" class="where">
+      <label class="sr-only" for="place">Your address or postcode in Berlin</label>
+      <input id="place" name="place" placeholder="Address or postcode, e.g. 10437" autocomplete="postal-code">
+      <button type="submit" class="btn">Search</button>
+      <button type="button" class="btn ghost" id="locate">Use my location</button>
+    </form>
+    <p class="status" id="status" role="status">Showing activities across Berlin. Enter your address or postcode to sort by distance.</p>
+
+    <form class="filters" id="filters" aria-label="Filters" onsubmit="return false">
+      <label>Child&rsquo;s age
+        <select name="age">
+          <option value="">Any age</option>
+        </select>
+      </label>
+      <label>Interest
+        <select name="category">
+          <option value="">All interests</option>
+          <option value="sports">Sports</option>
+          <option value="arts">Arts &amp; crafts</option>
+          <option value="music">Music</option>
+          <option value="dance">Dance</option>
+          <option value="stem">STEM &amp; coding</option>
+          <option value="language">Languages &amp; reading</option>
+          <option value="outdoors">Outdoors</option>
+        </select>
+      </label>
+      <label>Day
+        <select name="day">
+          <option value="">Any day</option>
+          <option>Mon</option><option>Tue</option><option>Wed</option><option>Thu</option><option>Fri</option><option>Sat</option><option>Sun</option>
+        </select>
+      </label>
+      <label>Format
+        <select name="format">
+          <option value="">In person &amp; online</option>
+          <option value="in-person">In person</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Distance
+        <select name="radius">
+          <option value="">Any distance</option>
+          <option value="1">Within 1 km</option>
+          <option value="2">Within 2 km</option>
+          <option value="5">Within 5 km</option>
+          <option value="10">Within 10 km</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" name="free"> Free only</label>
+      <label class="check"><input type="checkbox" name="saved"> Saved only</label>
+    </form>
+  </section>
+
+  <main class="layout wrap">
+    <section id="results" aria-label="Results">
+      <p class="count" id="count" aria-live="polite"></p>
+      <ol class="list" id="list"></ol>
+      <p class="empty" id="empty" hidden>No activities match these filters. Try another day or a wider distance.</p>
+    </section>
+    <div class="mapbox">
+      <div id="map" role="region" aria-label="Map of activities"></div>
+    </div>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Listings are <b>sample data</b> for this demo. Know a great activity? <a href="https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml" rel="noopener">Suggest it</a>.</p>
+    <p>This site stores nothing about you or your child: no cookies, no tracking. Saved activities stay in your own browser. Map tiles and address lookup come from OpenStreetMap.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
