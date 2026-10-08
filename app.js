@@ -100,6 +100,10 @@
     try { localStorage.setItem("kn-lang", lang); } catch (e) {}
     translatePage();
     render();
+    if (dialog.open) {
+      var current = state.events.filter(function (e) { return e.id === openEventId; })[0];
+      if (current) openEvent(current);
+    }
   }
 
   function setStatus(key, vars) {
@@ -313,12 +317,13 @@
     return badges;
   }
 
-  function selectable(li, id) {
+  function selectable(li, id, onOpen) {
+    var open = onOpen || function () { highlight(id, false); };
     li.id = "item-" + id;
     li.tabIndex = 0;
     if (id === state.activeId) li.classList.add("active");
-    li.addEventListener("click", function () { highlight(id, false); });
-    li.addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target === li) highlight(id, false); });
+    li.addEventListener("click", open);
+    li.addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target === li) open(); });
   }
 
   function card(a) {
@@ -365,7 +370,8 @@
   function eventCard(e, now) {
     var title = tr(e, "title");
     var li = el("li", "event");
-    selectable(li, e.id);
+    li.setAttribute("aria-haspopup", "dialog");
+    selectable(li, e.id, function () { openEvent(e); });
 
     var d = utcDate(e.date);
     var when = el("div", "when");
@@ -402,6 +408,99 @@
     }
     li.appendChild(acts);
     return li;
+  }
+
+  // ---------- event details window ----------
+  var dialog = document.getElementById("event-dialog");
+  var dialogBody = document.getElementById("ed-body");
+  var openEventId = null;
+
+  function openEvent(e) {
+    var now = berlinNow();
+    openEventId = e.id;
+    state.activeId = e.id;
+    dialogBody.replaceChildren();
+
+    var head = el("div", "when");
+    var d = utcDate(e.date);
+    var badge = el("div", "date");
+    badge.setAttribute("aria-hidden", "true");
+    badge.appendChild(el("b", null, String(d.getUTCDate())));
+    badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
+    head.appendChild(badge);
+    var day = el("p", "day");
+    day.appendChild(el("b", null, dayLabel(e, now)));
+    day.appendChild(document.createElement("br"));
+    day.appendChild(document.createTextNode(e.start + "–" + e.end));
+    head.appendChild(day);
+    dialogBody.appendChild(head);
+
+    var h = el("h2", null, tr(e, "title"));
+    h.id = "ed-title";
+    dialogBody.appendChild(h);
+    dialogBody.appendChild(el("p", "org", tr(e, "organizer")));
+    dialogBody.appendChild(badgesFor(e));
+    var desc = tr(e, "description");
+    if (desc) dialogBody.appendChild(el("p", "desc", desc));
+    var place = tr(e, "address");
+    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place));
+
+    var acts = el("div", "sheet-actions");
+    var cal = el("button", "btn", t("addToCalendar"));
+    cal.type = "button";
+    cal.addEventListener("click", function () { downloadIcs(e); });
+    acts.appendChild(cal);
+    if (e.format === "in-person") {
+      var dir = el("a", "btn ghost", t("directions") + " ↗");
+      dir.href = "https://www.google.com/maps/dir/?api=1&destination=" + e.lat + "," + e.lng;
+      dir.target = "_blank"; dir.rel = "noopener";
+      acts.appendChild(dir);
+      var onMap = el("button", "btn ghost", t("showOnMap"));
+      onMap.type = "button";
+      onMap.addEventListener("click", function () {
+        dialog.close();
+        document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(function () { highlight(e.id, false); }, 350);
+      });
+      acts.appendChild(onMap);
+    }
+    if (e.link) {
+      var post = el("a", "btn ghost", t("seePost") + " ↗");
+      post.href = e.link; post.target = "_blank"; post.rel = "noopener";
+      acts.appendChild(post);
+    }
+    var share = el("button", "btn ghost", t("share"));
+    share.type = "button";
+    share.addEventListener("click", function () {
+      var url = location.href;
+      if (navigator.share) { navigator.share({ title: tr(e, "title"), url: url }).catch(function () {}); return; }
+      navigator.clipboard.writeText(url).then(function () { share.textContent = t("linkCopied"); });
+    });
+    acts.appendChild(share);
+    dialogBody.appendChild(acts);
+
+    history.replaceState(null, "", location.search + "#event=" + encodeURIComponent(e.id));
+    if (!dialog.open) dialog.showModal();
+    document.querySelectorAll(".event.active, .item.active").forEach(function (n) { n.classList.remove("active"); });
+    var card = document.getElementById("item-" + e.id);
+    if (card) card.classList.add("active");
+  }
+
+  dialog.addEventListener("close", function () {
+    var card = openEventId && document.getElementById("item-" + openEventId);
+    openEventId = null;
+    history.replaceState(null, "", location.search);
+    if (card) card.focus();
+  });
+  document.getElementById("ed-close").addEventListener("click", function () { dialog.close(); });
+  // Click on the dark area around the window closes it.
+  dialog.addEventListener("click", function (ev) { if (ev.target === dialog) dialog.close(); });
+
+  function eventFromHash() {
+    var m = location.hash.match(/^#event=(.+)$/);
+    if (!m) return null;
+    var id = decodeURIComponent(m[1]);
+    return state.events.filter(function (e) { return e.id === id; })[0] || null;
   }
 
   // A one-event .ics file that Google, Apple and Outlook calendars can import.
@@ -522,6 +621,8 @@
         return e;
       });
       if (near) { els.place.value = near; geocode(near); } else render();
+      var shared = eventFromHash();
+      if (shared) openEvent(shared);
     })
     .catch(function () { setStatus("statusLoadFailed"); });
 })();

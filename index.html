@@ -108,6 +108,11 @@
     <p class="empty small" id="events-empty" hidden data-i18n="eventsNone">No upcoming events match these filters.</p>
   </section>
 
+  <dialog class="sheet" id="event-dialog" aria-labelledby="ed-title">
+    <button type="button" class="sheet-close" id="ed-close" data-i18n-attr="aria-label:close" aria-label="Close">×</button>
+    <div id="ed-body"></div>
+  </dialog>
+
   <main class="layout wrap">
     <section id="results" aria-label="Results" data-i18n-attr="aria-label:results">
       <p class="count" id="count" aria-live="polite"></p>
