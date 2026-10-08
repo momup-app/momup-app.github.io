@@ -11,7 +11,7 @@ Live: [yuliiaux.github.io/kids-nearby](https://yuliiaux.github.io/kids-nearby)
 - List sorted by distance, with every in-person activity on a map
 - Save favorites (kept in your own browser only)
 - Share a search: filters are kept in the page link
-- German and English: opens in the browser's language, switch any time with DE | EN
+- German, English and Russian: opens in the browser's language, switch any time with DE | EN | RU
 - Upcoming events with "Add to calendar", synced every hour from [@momup_app](https://www.instagram.com/momup_app/) posts tagged `#momupevent` ([how it works](docs/instagram-sync.md))
 
 ## Run it locally
@@ -26,7 +26,7 @@ Then open http://localhost:8000. Opening `index.html` directly won't load the da
 
 ## Add an activity
 
-Edit [`data/activities.json`](data/activities.json) (English text, plus German in the `de` field) and open a pull request, or [suggest one in an issue](https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml). Current listings are sample data.
+Edit [`data/activities.json`](data/activities.json) (English text, plus translations in the `de` and `ru` fields) and open a pull request, or [suggest one in an issue](https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml). Current listings are sample data.
 
 ## How it's built
 

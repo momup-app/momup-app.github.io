@@ -17,11 +17,11 @@
   <header class="top">
     <div class="wrap">
       <a class="brand" href="./"><span class="dot" aria-hidden="true"></span>Kids Nearby</a>
-      <p class="tag" data-i18n="tag">Activities for kids in Berlin, close to home or online.</p>
       <div class="end">
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
         </div>
         <a class="insta" href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank" aria-label="Instagram @momup_app">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -31,15 +31,21 @@
     </div>
   </header>
 
-  <section class="search wrap" aria-label="Search" data-i18n-attr="aria-label:search">
-    <form id="where" class="where">
-      <label class="sr-only" for="place" data-i18n="placeLabel">Your address or postcode in Berlin</label>
-      <input id="place" name="place" placeholder="Address or postcode, e.g. 10437" data-i18n-attr="placeholder:placeholder" autocomplete="postal-code">
-      <button type="submit" class="btn" data-i18n="search">Search</button>
-      <button type="button" class="btn ghost" id="locate" data-i18n="locate">Use my location</button>
-    </form>
-    <p class="status" id="status" role="status">Showing activities across Berlin. Enter your address or postcode to sort by distance.</p>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <h1 data-i18n="heroTitle">Activities for kids in Berlin</h1>
+      <p class="hero-text" data-i18n="heroText">Classes, clubs, events and online options, close to home.</p>
+      <form id="where" class="where" role="search">
+        <label class="sr-only" for="place" data-i18n="placeLabel">Your address or postcode in Berlin</label>
+        <input id="place" name="place" placeholder="Address or postcode, e.g. 10437" data-i18n-attr="placeholder:placeholder" autocomplete="postal-code">
+        <button type="submit" class="btn" data-i18n="search">Search</button>
+        <button type="button" class="btn ghost" id="locate" data-i18n="locate">Use my location</button>
+      </form>
+      <p class="status" id="status" role="status">Showing activities across Berlin. Enter your address or postcode to sort by distance.</p>
+    </div>
+  </section>
 
+  <section class="filter-bar wrap">
     <form class="filters" id="filters" aria-label="Filters" data-i18n-attr="aria-label:filters" onsubmit="return false">
       <label><span data-i18n="age">Child&rsquo;s age</span>
         <select name="age">
@@ -124,6 +130,26 @@
         <span data-i18n="contactButton">Message @momup_app</span>
       </a>
       <a class="btn ghost" href="https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml" rel="noopener" target="_blank" data-i18n="suggest">Suggest an activity</a>
+    </div>
+    <div class="team">
+      <h3 data-i18n="teamTitle">Our team</h3>
+      <ul>
+        <li class="person lead">
+          <span class="photo" data-initials="YR"><!-- photo: images/team/yuliia.jpg --></span>
+          <b>Yuliia Ritz</b>
+          <span data-i18n="role_yuliia">Creative Director</span>
+        </li>
+        <li class="person">
+          <span class="photo" data-initials="S" aria-hidden="true"></span>
+          <b>Sonia</b>
+          <span data-i18n="role_sonia">Baby Boss · Yuliia’s daughter</span>
+        </li>
+        <li class="person">
+          <span class="photo" data-initials="I" aria-hidden="true"></span>
+          <b>Ivan</b>
+          <span data-i18n="role_ivan">IT support manager</span>
+        </li>
+      </ul>
     </div>
   </section>
   </div>

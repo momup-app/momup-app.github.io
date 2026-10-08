@@ -4,7 +4,8 @@
   var DEFAULT_ORIGIN = { lat: 52.5200, lng: 13.4050, label: "Berlin", exact: false };
   // Berlin bounding box (west, north, east, south) so lookups stay inside the city.
   var BERLIN_VIEWBOX = "13.08,52.68,13.77,52.33";
-  var LANGS = ["de", "en"];
+  var LANGS = ["de", "en", "ru"];
+  var LOCALES = { de: "de-DE", en: "en-GB", ru: "ru-RU" };
   var WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   var EVENTS_PREVIEW = 4;
 
@@ -36,8 +37,8 @@
       var stored = localStorage.getItem("kn-lang");
       if (LANGS.indexOf(stored) !== -1) return stored;
     } catch (e) {}
-    var browser = (navigator.languages && navigator.languages[0]) || navigator.language || "";
-    return browser.toLowerCase().indexOf("de") === 0 ? "de" : "en";
+    var browser = ((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase().slice(0, 2);
+    return LANGS.indexOf(browser) !== -1 ? browser : "en";
   }
 
   function t(key, vars) {
@@ -47,12 +48,20 @@
     return s.replace(/\{(\w+)\}/g, function (_, k) { return vars && vars[k] != null ? vars[k] : ""; });
   }
 
+  // Plural-aware text: picks key_one / key_few / key_many / key_other for the current language.
+  function tn(key, n, vars) {
+    var form = new Intl.PluralRules(locale()).select(n);
+    var dict = window.I18N[state.lang];
+    var k = dict[key + "_" + form] != null ? key + "_" + form : key + "_other";
+    return t(k, Object.assign({ n: n }, vars));
+  }
+
   // Listing text in the current language, falling back to English.
   function tr(a, field) {
     return (state.lang !== "en" && a[state.lang] && a[state.lang][field]) || a[field];
   }
 
-  function locale() { return state.lang === "de" ? "de-DE" : "en-GB"; }
+  function locale() { return LOCALES[state.lang]; }
 
   function number(n) {
     return n.toLocaleString(locale(), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -75,7 +84,7 @@
       });
     });
     Array.prototype.forEach.call(els.filters.age.options, function (o) {
-      if (o.value) o.textContent = t(o.value === "1" ? "year" : "years", { n: o.value });
+      if (o.value) o.textContent = tn("years", Number(o.value));
     });
     document.querySelectorAll(".lang button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));
@@ -251,7 +260,7 @@
     markers = {};
 
     results.forEach(function (a) { els.list.appendChild(card(a)); });
-    els.count.textContent = results.length === 1 ? t("count1") : t("countN", { n: results.length });
+    els.count.textContent = tn("count", results.length);
     els.empty.hidden = results.length > 0;
 
     renderEvents(upcoming, now);
@@ -297,7 +306,7 @@
     badges.appendChild(el("li", null, t("cat_" + a.category)));
     badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
     if (a.format === "online") badges.appendChild(el("li", "online", t("online")));
-    else badges.appendChild(el("li", null, number(a.distance) + " km"));
+    else badges.appendChild(el("li", null, t("km", { n: number(a.distance) })));
     return badges;
   }
 
@@ -335,7 +344,8 @@
   function dayLabel(e, now) {
     if (e.date === now.date) return t("today");
     if (e.date === addDays(now.date, 1)) return t("tomorrow");
-    return utcDate(e.date).toLocaleDateString(locale(), { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+    var s = utcDate(e.date).toLocaleDateString(locale(), { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+    return s.charAt(0).toUpperCase() + s.slice(1); // Russian weekdays come lowercase
   }
 
   function renderEvents(upcoming, now) {

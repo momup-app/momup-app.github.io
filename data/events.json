@@ -8,15 +8,26 @@
     "organizer": "MomUp (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [3, 8],
-    "price": { "type": "free" },
+    "ages": [
+      3,
+      8
+    ],
+    "price": {
+      "type": "free"
+    },
     "address": "Volkspark Friedrichshain, 10249 Berlin",
-    "lat": 52.5280, "lng": 13.4370,
+    "lat": 52.528,
+    "lng": 13.437,
     "description": "Past event, kept to check that finished events are hidden.",
     "de": {
       "title": "Basteln mit Herbstblättern",
       "organizer": "MomUp (Beispiel)",
       "description": "Vergangene Veranstaltung, prüft, dass beendete Events ausgeblendet werden."
+    },
+    "ru": {
+      "title": "Поделки из осенних листьев",
+      "organizer": "MomUp (пример)",
+      "description": "Прошедшее событие: проверка, что завершённые события скрываются."
     }
   },
   {
@@ -28,16 +39,30 @@
     "organizer": "Neighborhood puppet stage (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [3, 7],
-    "price": { "type": "paid", "amount": 6, "per": "ticket" },
+    "ages": [
+      3,
+      7
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 6,
+      "per": "ticket"
+    },
     "address": "Near Helmholtzplatz, 10437 Berlin",
-    "lat": 52.5450, "lng": 13.4200,
+    "lat": 52.545,
+    "lng": 13.42,
     "description": "A 45-minute show in German with lots of songs. Small audience, so arrive early.",
     "de": {
       "title": "Puppentheater: Der kleine Fuchs",
       "organizer": "Puppenbühne im Kiez (Beispiel)",
       "description": "Eine 45-minütige Vorstellung auf Deutsch mit vielen Liedern. Wenig Plätze, also früh da sein.",
       "address": "Nähe Helmholtzplatz, 10437 Berlin"
+    },
+    "ru": {
+      "title": "Кукольный театр: Маленький лисёнок",
+      "organizer": "Кукольная сцена района (пример)",
+      "description": "Спектакль на 45 минут на немецком, с множеством песен. Мест мало, приходите заранее.",
+      "address": "Рядом с Helmholtzplatz, 10437 Berlin"
     }
   },
   {
@@ -49,16 +74,28 @@
     "organizer": "Parents of Schöneberg (sample)",
     "category": "outdoors",
     "format": "in-person",
-    "ages": [0, 14],
-    "price": { "type": "free" },
+    "ages": [
+      0,
+      14
+    ],
+    "price": {
+      "type": "free"
+    },
     "address": "Near Winterfeldtplatz, 10781 Berlin",
-    "lat": 52.4970, "lng": 13.3540,
+    "lat": 52.497,
+    "lng": 13.354,
     "description": "Kids sell their own toys and books. Bring a blanket if you want a spot, no booking needed.",
     "de": {
       "title": "Kinderflohmarkt",
       "organizer": "Eltern aus Schöneberg (Beispiel)",
       "description": "Kinder verkaufen ihre eigenen Spielsachen und Bücher. Wer einen Platz will, bringt eine Decke mit, ohne Anmeldung.",
       "address": "Nähe Winterfeldtplatz, 10781 Berlin"
+    },
+    "ru": {
+      "title": "Детская барахолка",
+      "organizer": "Родители Шёнеберга (пример)",
+      "description": "Дети продают свои игрушки и книги. Хотите место — возьмите плед, запись не нужна.",
+      "address": "Рядом с Winterfeldtplatz, 10781 Berlin"
     }
   },
   {
@@ -70,14 +107,24 @@
     "organizer": "MomUp (sample)",
     "category": "language",
     "format": "online",
-    "ages": [3, 7],
-    "price": { "type": "free" },
+    "ages": [
+      3,
+      7
+    ],
+    "price": {
+      "type": "free"
+    },
     "address": "",
     "description": "Pajamas on, lights low: two short stories read live in German and English.",
     "de": {
       "title": "Gute-Nacht-Geschichten live",
       "organizer": "MomUp (Beispiel)",
       "description": "Schlafanzug an, Licht gedimmt: zwei kurze Geschichten, live vorgelesen auf Deutsch und Englisch."
+    },
+    "ru": {
+      "title": "Сказки на ночь в прямом эфире",
+      "organizer": "MomUp (пример)",
+      "description": "Пижамы надеты, свет приглушён: две короткие сказки вслух на немецком и английском."
     }
   },
   {
@@ -89,16 +136,30 @@
     "organizer": "Kreuzberg community garden (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [5, 12],
-    "price": { "type": "paid", "amount": 8, "per": "pumpkin" },
+    "ages": [
+      5,
+      12
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 8,
+      "per": "pumpkin"
+    },
     "address": "Near Moritzplatz, 10969 Berlin",
-    "lat": 52.5035, "lng": 13.4105,
+    "lat": 52.5035,
+    "lng": 13.4105,
     "description": "Pumpkins, tools and hot apple juice provided. Children under 8 carve with a grown-up.",
     "de": {
       "title": "Kürbisschnitzen am Nachmittag",
       "organizer": "Gemeinschaftsgarten Kreuzberg (Beispiel)",
       "description": "Kürbisse, Werkzeug und heißer Apfelsaft sind da. Kinder unter 8 schnitzen mit einem Erwachsenen.",
       "address": "Nähe Moritzplatz, 10969 Berlin"
+    },
+    "ru": {
+      "title": "Вырезаем тыквы",
+      "organizer": "Общественный сад Кройцберг (пример)",
+      "description": "Тыквы, инструменты и горячий яблочный сок — от нас. Дети до 8 лет вырезают вместе со взрослым.",
+      "address": "Рядом с Moritzplatz, 10969 Berlin"
     }
   },
   {
@@ -110,16 +171,30 @@
     "organizer": "Neukölln family café (sample)",
     "category": "dance",
     "format": "in-person",
-    "ages": [4, 10],
-    "price": { "type": "paid", "amount": 5, "per": "child" },
+    "ages": [
+      4,
+      10
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 5,
+      "per": "child"
+    },
     "address": "Near Richardplatz, 12055 Berlin",
-    "lat": 52.4750, "lng": 13.4480,
+    "lat": 52.475,
+    "lng": 13.448,
     "description": "Costumes welcome, not required. Dance games, a mini costume parade and pumpkin muffins.",
     "de": {
       "title": "Halloween-Kinderdisco",
       "organizer": "Familiencafé Neukölln (Beispiel)",
       "description": "Kostüme willkommen, aber kein Muss. Tanzspiele, eine kleine Kostümparade und Kürbis-Muffins.",
       "address": "Nähe Richardplatz, 12055 Berlin"
+    },
+    "ru": {
+      "title": "Детская дискотека на Хеллоуин",
+      "organizer": "Семейное кафе Нойкёльн (пример)",
+      "description": "Костюмы приветствуются, но не обязательны. Танцевальные игры, мини-парад костюмов и тыквенные маффины.",
+      "address": "Рядом с Richardplatz, 12055 Berlin"
     }
   },
   {
@@ -131,15 +206,26 @@
     "organizer": "Prenzlauer Berg parents (sample)",
     "category": "outdoors",
     "format": "in-person",
-    "ages": [2, 10],
-    "price": { "type": "free" },
+    "ages": [
+      2,
+      10
+    ],
+    "price": {
+      "type": "free"
+    },
     "address": "Volkspark am Weinberg, 10119 Berlin",
-    "lat": 52.5345, "lng": 13.4010,
+    "lat": 52.5345,
+    "lng": 13.401,
     "description": "Bring a lantern, or make one at the start. We walk and sing the lantern songs, then share hot tea.",
     "de": {
       "title": "Laternenumzug zu Sankt Martin",
       "organizer": "Eltern aus Prenzlauer Berg (Beispiel)",
       "description": "Laterne mitbringen oder zu Beginn eine basteln. Wir laufen, singen die Laternenlieder und trinken danach heißen Tee."
+    },
+    "ru": {
+      "title": "Шествие с фонариками на День святого Мартина",
+      "organizer": "Родители Пренцлауэр-Берга (пример)",
+      "description": "Возьмите фонарик или смастерите его на месте. Идём, поём песни про фонарики, а потом пьём горячий чай."
     }
   },
   {
@@ -151,16 +237,30 @@
     "organizer": "Charlottenburg family center (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [3, 9],
-    "price": { "type": "paid", "amount": 7, "per": "child" },
+    "ages": [
+      3,
+      9
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 7,
+      "per": "child"
+    },
     "address": "Near Klausenerplatz, 14059 Berlin",
-    "lat": 52.5205, "lng": 13.2930,
+    "lat": 52.5205,
+    "lng": 13.293,
     "description": "Decorate cookies, make a star garland and leave a boot out for Nikolaus.",
     "de": {
       "title": "Nikolaus-Basteln & Plätzchen",
       "organizer": "Familienzentrum Charlottenburg (Beispiel)",
       "description": "Plätzchen verzieren, eine Sternengirlande basteln und einen Stiefel für den Nikolaus rausstellen.",
       "address": "Nähe Klausenerplatz, 14059 Berlin"
+    },
+    "ru": {
+      "title": "Поделки и печенье ко Дню святого Николая",
+      "organizer": "Семейный центр Шарлоттенбург (пример)",
+      "description": "Украшаем печенье, делаем гирлянду из звёзд и выставляем сапожок для Николая.",
+      "address": "Рядом с Klausenerplatz, 14059 Berlin"
     }
   }
 ]

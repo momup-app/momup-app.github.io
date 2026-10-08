@@ -26,6 +26,11 @@
       "title": "Fußball für Einsteiger",
       "organizer": "Jugendverein Prenzlauer Berg (Beispiel)",
       "description": "Ballgefühl und kleine Spiele für Anfänger. Training auf Deutsch und Englisch."
+    },
+    "ru": {
+      "title": "Футбол для начинающих",
+      "organizer": "Молодёжный клуб Пренцлауэр-Берг (пример)",
+      "description": "Работа с мячом и мини-игры для новичков. Тренировки на немецком и английском."
     }
   },
   {
@@ -55,6 +60,12 @@
       "organizer": "Stadtteilbibliothek (Beispiel)",
       "description": "Bilderbücher, Lieder und Reime auf Deutsch und Englisch. Ohne Anmeldung.",
       "address": "Nähe Kollwitzplatz, 10405 Berlin"
+    },
+    "ru": {
+      "title": "Двуязычные чтения (DE/EN)",
+      "organizer": "Районная библиотека (пример)",
+      "description": "Книжки с картинками, песенки и стишки на немецком и английском. Без записи.",
+      "address": "Рядом с Kollwitzplatz, 10405 Berlin"
     }
   },
   {
@@ -83,6 +94,12 @@
       "organizer": "Familienzentrum Wedding (Beispiel)",
       "description": "Spiele, Lieder und Basteln auf Deutsch für Kinder, die die Sprache gerade erst lernen.",
       "address": "Nähe Leopoldplatz, 13353 Berlin"
+    },
+    "ru": {
+      "title": "Немецкий в игре",
+      "organizer": "Семейный центр Веддинг (пример)",
+      "description": "Игры, песни и поделки на немецком для детей, которые только начинают учить язык.",
+      "address": "Рядом с Leopoldplatz, 13353 Berlin"
     }
   },
   {
@@ -112,6 +129,11 @@
       "title": "Töpfern für Kinder",
       "organizer": "Töpferstudio Kreuzberg (Beispiel)",
       "description": "Aufbautechnik und erste Schritte an der Drehscheibe. Die Stücke werden glasiert, gebrannt und mit nach Hause genommen."
+    },
+    "ru": {
+      "title": "Керамика для детей",
+      "organizer": "Гончарная студия Кройцберг (пример)",
+      "description": "Лепка руками и первые шаги за гончарным кругом. Изделия покрывают глазурью, обжигают и забирают домой."
     }
   },
   {
@@ -142,6 +164,11 @@
       "title": "LEGO-Robotik-Club",
       "organizer": "MINT-Labor Mitte (Beispiel)",
       "description": "Im Team Roboter bauen und programmieren, am Monatsende gibt es ein Rennen."
+    },
+    "ru": {
+      "title": "Клуб LEGO-робототехники",
+      "organizer": "STEM-лаборатория Митте (пример)",
+      "description": "Собираем и программируем роботов в командах, а в конце месяца устраиваем гонки."
     }
   },
   {
@@ -169,6 +196,11 @@
       "title": "Kleine Naturforscher",
       "organizer": "Ehrenamtliche im Park (Beispiel)",
       "description": "Vögel beobachten, Blätter abpausen und Käfer suchen, mit Begleitung. Wasser und feste Schuhe mitbringen."
+    },
+    "ru": {
+      "title": "Юные натуралисты",
+      "organizer": "Волонтёры парка (пример)",
+      "description": "Наблюдаем за птицами, делаем оттиски листьев и ищем жуков вместе с гидом. Возьмите воду и удобную обувь."
     }
   },
   {
@@ -197,6 +229,12 @@
       "organizer": "Radler vom Tempelhofer Feld (Beispiel)",
       "description": "Laufrad und Helm mitbringen. Hütchen, Rampen und die ganze Landebahn zum Fahren.",
       "address": "Tempelhofer Feld, Eingang Columbiadamm, 12101 Berlin"
+    },
+    "ru": {
+      "title": "Утро на беговелах",
+      "organizer": "Велосипедисты Темпельхофер-Фельд (пример)",
+      "description": "Берите беговел и шлем. Конусы, горки и целая взлётная полоса для катания.",
+      "address": "Tempelhofer Feld, вход с Columbiadamm, 12101 Berlin"
     }
   },
   {
@@ -227,6 +265,11 @@
       "title": "Hip-Hop-Tanz für Kids",
       "organizer": "Tanzkollektiv Neukölln (Beispiel)",
       "description": "Grooves, Freestyle und jeden Monat eine kleine Choreo. Aufführung zum Saisonende."
+    },
+    "ru": {
+      "title": "Хип-хоп для детей",
+      "organizer": "Танцевальный коллектив Нойкёльн (пример)",
+      "description": "Грувы, фристайл и новая связка каждый месяц. В конце сезона выступление."
     }
   },
   {
@@ -258,6 +301,12 @@
       "organizer": "Schwimmschule Charlottenburg (Beispiel)",
       "description": "Kleine Gruppen auf dem Weg zum Seepferdchen. Erst Wassergewöhnung, dann Schwimmzüge.",
       "address": "Nähe Wilmersdorfer Straße, 10627 Berlin"
+    },
+    "ru": {
+      "title": "Учимся плавать (Seepferdchen)",
+      "organizer": "Школа плавания Шарлоттенбург (пример)",
+      "description": "Небольшие группы, цель — значок Seepferdchen. Сначала привыкаем к воде, потом учим движения.",
+      "address": "Рядом с Wilmersdorfer Straße, 10627 Berlin"
     }
   },
   {
@@ -288,6 +337,11 @@
       "title": "Klavier in der Gruppe für Anfänger",
       "organizer": "Musikschule Schöneberg (Beispiel)",
       "description": "Ein Keyboard für jedes Kind, Noten lesen ab der ersten Woche, ein kleines Konzert im Juni."
+    },
+    "ru": {
+      "title": "Фортепиано в группе для начинающих",
+      "organizer": "Музыкальная школа Шёнеберг (пример)",
+      "description": "У каждого ребёнка свой синтезатор, ноты с первой недели, в июне небольшой концерт."
     }
   },
   {
@@ -319,6 +373,12 @@
       "organizer": "Kinderatelier Friedrichshain (Beispiel)",
       "description": "Farbe, Kleber, Schleim und Sinnesspiele. Kleidung anziehen, die schmutzig werden darf.",
       "address": "Nähe Boxhagener Platz, 10245 Berlin"
+    },
+    "ru": {
+      "title": "Мастерская «Можно пачкаться»",
+      "organizer": "Детская студия Фридрихсхайн (пример)",
+      "description": "Краски, клей, слаймы и сенсорные игры. Наденьте одежду, которую не жалко испачкать.",
+      "address": "Рядом с Boxhagener Platz, 10245 Berlin"
     }
   },
   {
@@ -349,6 +409,12 @@
       "organizer": "Schachecke Treptow (Beispiel)",
       "description": "Unterricht nach Niveau, danach freie Partien. Turniervorbereitung für alle, die wollen.",
       "address": "Nähe Treptower Park, 12435 Berlin"
+    },
+    "ru": {
+      "title": "Шахматный клуб",
+      "organizer": "Шахматный уголок Трептов (пример)",
+      "description": "Занятия по уровням, потом свободные партии. Подготовка к турнирам для желающих.",
+      "address": "Рядом с Treptower Park, 12435 Berlin"
     }
   },
   {
@@ -378,6 +444,11 @@
       "title": "Ukrainische Samstagsschule",
       "organizer": "Kulturzentrum (Beispiel)",
       "description": "Lesen, Schreiben, Lieder und Traditionen, in kleinen Gruppen nach Alter."
+    },
+    "ru": {
+      "title": "Украинская субботняя школа",
+      "organizer": "Культурный центр (пример)",
+      "description": "Чтение, письмо, песни и традиции в небольших группах по возрасту."
     }
   },
   {
@@ -406,6 +477,11 @@
       "title": "Spiele programmieren mit Scratch",
       "organizer": "Online-Coding-Club (Beispiel)",
       "description": "Live-Videokurs mit bis zu acht Kindern, auf Deutsch oder Englisch. Jede Woche endet mit einem Spiel zum Teilen."
+    },
+    "ru": {
+      "title": "Создаём игры в Scratch",
+      "organizer": "Онлайн-клуб программирования (пример)",
+      "description": "Живой видеоурок для группы до восьми детей, на немецком или английском. Каждую неделю — новая игра, которой можно поделиться."
     }
   },
   {
@@ -433,6 +509,11 @@
       "title": "Chinesisch mit Liedern",
       "organizer": "Online-Sprachkreis (Beispiel)",
       "description": "Kurze Einheiten mit Liedern, ein Elternteil ist dabei. Die Liedtexte kommen jede Woche per Mail."
+    },
+    "ru": {
+      "title": "Китайский через песни",
+      "organizer": "Онлайн-кружок языков (пример)",
+      "description": "Короткие занятия с песнями, рядом кто-то из родителей. Тексты песен присылаем каждую неделю."
     }
   },
   {
@@ -458,6 +539,11 @@
       "title": "Live mitzeichnen",
       "organizer": "Online-Kunstraum (Beispiel)",
       "description": "Eine Illustratorin zeichnet Schritt für Schritt vor, die Kinder zeichnen mit Papier und Stiften mit."
+    },
+    "ru": {
+      "title": "Рисуем вместе в прямом эфире",
+      "organizer": "Онлайн-арт-студия (пример)",
+      "description": "Иллюстратор рисует шаг за шагом, а дети повторяют на бумаге фломастерами."
     }
   },
   {
@@ -485,6 +571,11 @@
       "title": "Erste Gitarrengriffe",
       "organizer": "Online-Musikschule (Beispiel)",
       "description": "Vier Akkorde, dann echte Songs. Eine Gitarre ist nötig, eine Ukulele-Variante gibt es auch."
+    },
+    "ru": {
+      "title": "Первые аккорды на гитаре",
+      "organizer": "Онлайн-школа музыки (пример)",
+      "description": "Четыре аккорда, а потом настоящие песни. Нужна гитара, есть вариант для укулеле."
     }
   }
 ]
