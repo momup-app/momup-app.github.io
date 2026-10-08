@@ -35,6 +35,7 @@ window.I18N = {
     cat_stem: "STEM & coding",
     cat_language: "Languages & reading",
     cat_outdoors: "Outdoors",
+    cat_other: "Family & more",
     day: "Day",
     anyDay: "Any day",
     day_Mon: "Mon", day_Tue: "Tue", day_Wed: "Wed", day_Thu: "Thu", day_Fri: "Fri", day_Sat: "Sat", day_Sun: "Sun",
@@ -110,6 +111,7 @@ window.I18N = {
     cat_stem: "MINT & Programmieren",
     cat_language: "Sprachen & Lesen",
     cat_outdoors: "Draußen & Natur",
+    cat_other: "Familie & mehr",
     day: "Tag",
     anyDay: "Jeder Tag",
     day_Mon: "Mo", day_Tue: "Di", day_Wed: "Mi", day_Thu: "Do", day_Fri: "Fr", day_Sat: "Sa", day_Sun: "So",
@@ -156,7 +158,9 @@ window.I18N = {
       "10-lesson course": "10er-Kurs",
       "ticket": "Ticket",
       "child": "Kind",
-      "pumpkin": "Kürbis"
+      "pumpkin": "Kürbis",
+      "family": "Familie",
+      "person": "Person"
     }
   }
 };

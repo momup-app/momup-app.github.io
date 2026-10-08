@@ -12,6 +12,7 @@ Live: [yuliiaux.github.io/kids-nearby](https://yuliiaux.github.io/kids-nearby)
 - Save favorites (kept in your own browser only)
 - Share a search: filters are kept in the page link
 - German and English: opens in the browser's language, switch any time with DE | EN
+- Upcoming events with "Add to calendar", synced every hour from [@momup_app](https://www.instagram.com/momup_app/) posts tagged `#momupevent` ([how it works](docs/instagram-sync.md))
 
 ## Run it locally
 

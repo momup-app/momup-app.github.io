@@ -373,7 +373,8 @@
     li.appendChild(badgesFor(e));
     var place = tr(e, "address");
     li.appendChild(el("p", "place", (place ? place + " · " : "") + tr(e, "organizer")));
-    li.appendChild(el("p", "desc", tr(e, "description")));
+    var desc = tr(e, "description");
+    if (desc) li.appendChild(el("p", "desc", desc));
 
     var acts = el("div", "acts");
     var cal = el("button", null, t("addToCalendar"));
