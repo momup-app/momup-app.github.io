@@ -44,29 +44,22 @@
 
     <section class="suggest" id="suggest" aria-labelledby="suggest-h">
       <h2 id="suggest-h" data-i18n="suggest">Suggest an activity</h2>
-      <p data-i18n="suggestIntro">Know a great class, club or event for kids in Berlin? Fill this in and send it to us on Instagram.</p>
-      <form id="suggest-form">
-        <label class="wide"><span><span data-i18n="suggestName">Activity name</span> *</span><input name="name" required></label>
-        <label><span data-i18n="suggestWho">Who runs it</span><input name="who"></label>
-        <label><span><span data-i18n="suggestWhere">Address, or “online”</span> *</span><input name="where" required></label>
-        <label><span data-i18n="suggestAges">Ages</span><input name="ages" data-i18n-attr="placeholder:suggestAgesHint" placeholder="e.g. 4–8"></label>
-        <label><span data-i18n="suggestWhen">Days and times</span><input name="when" data-i18n-attr="placeholder:suggestWhenHint" placeholder="e.g. Tue 16:00–17:00"></label>
-        <label><span data-i18n="suggestPrice">Price</span><input name="price" data-i18n-attr="placeholder:suggestPriceHint" placeholder="e.g. free, €10 per session"></label>
-        <label><span data-i18n="suggestLink">Website or Instagram</span><input name="link" inputmode="url"></label>
-        <label class="wide"><span data-i18n="suggestNote">Anything else?</span><textarea name="note" rows="3"></textarea></label>
+      <p data-i18n="suggestIntro">Tell us about a class, club or event for kids in Berlin. Yuliia reads every message and replies as soon as she can.</p>
+      <form id="suggest-form" novalidate>
+        <label class="wide"><span><span data-i18n="suggestMessage">Your suggestion</span> *</span>
+          <textarea name="message" rows="8" required data-i18n-attr="placeholder:suggestMessageHint" placeholder="Name of the activity, where it is, ages, days and times, price, website…"></textarea>
+        </label>
+        <label class="wide"><span data-i18n="suggestYourName">Your name</span><input name="name" autocomplete="name"></label>
+        <label><span data-i18n="suggestEmail">Email</span><input name="email" type="email" autocomplete="email" inputmode="email"></label>
+        <label><span data-i18n="suggestPhone">Phone or Instagram</span><input name="phone" autocomplete="tel" data-i18n-attr="placeholder:suggestPhoneHint" placeholder="+49 … or @yourname"></label>
+        <p class="wide hint" id="suggest-contact-hint" data-i18n="suggestContactNote">Leave an email, or a phone number or Instagram, so we can reply.</p>
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="wide send">
-          <button type="submit" class="btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            <span data-i18n="suggestSend">Copy and open Instagram</span>
-          </button>
-          <small data-i18n="suggestHow">We copy your message; paste it into the chat with @momup_app.</small>
+          <button type="submit" class="btn" id="suggest-submit" data-i18n="suggestSubmit">Send</button>
+          <small data-i18n="suggestPrivacy">We only use your details to reply to you.</small>
         </div>
+        <p class="wide form-msg" id="suggest-msg" role="status" hidden></p>
       </form>
-      <div class="suggest-done" id="suggest-done" role="status" hidden>
-        <p id="suggest-done-text"></p>
-        <textarea id="suggest-message" rows="8" readonly></textarea>
-        <a class="btn" href="https://ig.me/m/momup_app" target="_blank" rel="noopener" data-i18n="suggestOpenAgain">Open Instagram chat</a>
-      </div>
     </section>
 
     <section class="team-page" aria-labelledby="team-h">
@@ -133,35 +126,46 @@
       apply = function (lang) { current = lang; applyLang(lang); };
       apply(current);
 
-      // Suggest form: build a message, copy it, open the Instagram chat. Nothing is sent to us directly.
+      // Suggest form: sends the message to Yuliia's email through FormSubmit (formsubmit.co).
+      // Set SUGGEST_TO to her email address (or the alias FormSubmit gives after activation).
+      var SUGGEST_TO = "yuliia.designer.ux@gmail.com";
       var form = document.getElementById("suggest-form");
+      var msgBox = document.getElementById("suggest-msg");
+      var submit = document.getElementById("suggest-submit");
+      function tt(k) { var d = window.I18N[current]; return d[k] != null ? d[k] : window.I18N.en[k]; }
+      function say(key, kind) {
+        msgBox.textContent = tt(key);
+        msgBox.className = "wide form-msg " + (kind || "");
+        msgBox.hidden = false;
+      }
       form.addEventListener("submit", function (ev) {
         ev.preventDefault();
-        var dict = window.I18N[current];
-        var t = function (k) { return dict[k] != null ? dict[k] : window.I18N.en[k]; };
-        var rows = [["suggestName", "name"], ["suggestWho", "who"], ["suggestWhere", "where"], ["suggestAges", "ages"],
-          ["suggestWhen", "when"], ["suggestPrice", "price"], ["suggestLink", "link"], ["suggestNote", "note"]];
-        var lines = [t("suggestMessageHead")];
-        rows.forEach(function (r) {
-          var v = form.elements[r[1]].value.trim();
-          if (v) lines.push(t(r[0]) + ": " + v);
-        });
-        var text = lines.join("\n");
-        var chat = window.open("https://ig.me/m/momup_app", "_blank");
-        if (chat) chat.opener = null;
-        var done = document.getElementById("suggest-done");
-        var msg = document.getElementById("suggest-message");
-        msg.value = text;
-        function show(key) {
-          document.getElementById("suggest-done-text").textContent = t(key);
-          done.hidden = false;
-          done.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
-        if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(text).then(function () { show("suggestCopied"); }, function () { show("suggestCopyFailed"); msg.select(); });
-        } else {
-          show("suggestCopyFailed"); msg.select();
-        }
+        var f = form.elements;
+        if (!f.message.value.trim()) { say("suggestNeedMessage", "error"); f.message.focus(); return; }
+        if (!f.email.value.trim() && !f.phone.value.trim()) { say("suggestNeedContact", "error"); f.email.focus(); return; }
+        if (f.email.value.trim() && !f.email.checkValidity()) { say("suggestBadEmail", "error"); f.email.focus(); return; }
+        if (f._honey.value) return; // spam bot
+        if (!SUGGEST_TO) { say("suggestError", "error"); return; }
+        submit.disabled = true;
+        submit.textContent = tt("suggestSending");
+        fetch("https://formsubmit.co/ajax/" + encodeURIComponent(SUGGEST_TO), {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({
+            _subject: "Kids Nearby: new activity suggestion",
+            _template: "table",
+            _replyto: f.email.value.trim() || undefined,
+            Message: f.message.value.trim(),
+            Name: f.name.value.trim() || "-",
+            Email: f.email.value.trim() || "-",
+            "Phone or Instagram": f.phone.value.trim() || "-",
+            Language: current
+          })
+        })
+          .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== "true") throw new Error(j.message); }); })
+          .then(function () { form.reset(); say("suggestThanks", "ok"); })
+          .catch(function () { say("suggestError", "error"); })
+          .then(function () { submit.disabled = false; submit.textContent = tt("suggestSubmit"); });
       });
     })();
   </script>

@@ -240,14 +240,18 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 #suggest-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px; }
 #suggest-form label { display: grid; gap: 6px; font-size: 14px; font-weight: 700; color: var(--muted); }
 #suggest-form .wide { grid-column: 1 / -1; }
-#suggest-form input, #suggest-form textarea, #suggest-message { font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; width: 100%; }
+#suggest-form input, #suggest-form textarea { font: inherit; font-size: 16px; font-weight: 400; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; width: 100%; }
 #suggest-form textarea { resize: vertical; }
 .send { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
 .send .btn { display: inline-flex; align-items: center; gap: 8px; }
 .send .btn svg { width: 18px; height: 18px; }
 .send small { color: var(--muted); }
-.suggest-done { margin-top: 16px; padding: 18px 22px; border-radius: 16px; background: var(--soft); }
-.suggest-done p { margin: 0 0 10px; font-weight: 700; }
-#suggest-message { resize: vertical; margin-bottom: 12px; }
-.suggest-done .btn { display: inline-block; text-decoration: none; }
 @media (max-width: 560px) { #suggest-form { grid-template-columns: 1fr; padding: 18px; } }
+#suggest-form .hint { margin: -4px 0 0; font-size: 13px; color: var(--muted); }
+#suggest-form textarea[name="message"] { min-height: 180px; }
+.honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form-msg { margin: 0; padding: 12px 16px; border-radius: 12px; font-weight: 700; }
+.form-msg.ok { background: #e6f6ea; color: #1e6b31; }
+.form-msg.error { background: #fdecea; color: #a12a1b; }
+@media (prefers-color-scheme: dark) { .form-msg.ok { background: #1d3524; color: #8fe0a2; } .form-msg.error { background: #3b1f1b; color: #f5a397; } }
+#suggest-submit[disabled] { opacity: .6; cursor: wait; }
