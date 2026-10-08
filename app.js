@@ -5,10 +5,12 @@
   // Berlin bounding box (west, north, east, south) so lookups stay inside the city.
   var BERLIN_VIEWBOX = "13.08,52.68,13.77,52.33";
   var LANGS = ["de", "en"];
+  var WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var EVENTS_PREVIEW = 4;
 
   var state = {
-    origin: DEFAULT_ORIGIN, activities: [], saved: loadSaved(), activeId: null,
-    lang: pickLang(), status: { key: "statusDefault", vars: {} }
+    origin: DEFAULT_ORIGIN, activities: [], events: [], saved: loadSaved(), activeId: null,
+    lang: pickLang(), status: { key: "statusDefault", vars: {} }, showAllEvents: false
   };
   var els = {
     form: document.getElementById("where"),
@@ -18,7 +20,11 @@
     filters: document.getElementById("filters"),
     list: document.getElementById("list"),
     count: document.getElementById("count"),
-    empty: document.getElementById("empty")
+    empty: document.getElementById("empty"),
+    eventList: document.getElementById("event-list"),
+    eventsCount: document.getElementById("events-count"),
+    eventsMore: document.getElementById("events-more"),
+    eventsEmpty: document.getElementById("events-empty")
   };
 
   // ---------- language ----------
@@ -46,8 +52,10 @@
     return (state.lang !== "en" && a[state.lang] && a[state.lang][field]) || a[field];
   }
 
+  function locale() { return state.lang === "de" ? "de-DE" : "en-GB"; }
+
   function number(n) {
-    return n.toLocaleString(state.lang === "de" ? "de-DE" : "en-GB", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    return n.toLocaleString(locale(), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   }
 
   function translatePage() {
@@ -92,7 +100,33 @@
     els.status.textContent = t(state.status.key, vars);
   }
 
-  // ---------- storage (saved activities stay in this browser only) ----------
+  // ---------- dates (always Berlin time, whatever the visitor's device says) ----------
+  function berlinNow() {
+    var parts = {};
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+    }).formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+    return { date: parts.year + "-" + parts.month + "-" + parts.day, time: parts.hour + ":" + parts.minute };
+  }
+
+  function utcDate(iso) {
+    var p = iso.split("-").map(Number);
+    return new Date(Date.UTC(p[0], p[1] - 1, p[2]));
+  }
+
+  function addDays(iso, n) {
+    var d = utcDate(iso);
+    d.setUTCDate(d.getUTCDate() + n);
+    return d.toISOString().slice(0, 10);
+  }
+
+  function isUpcoming(e, now) {
+    if (e.date > now.date) return true;
+    return e.date === now.date && (e.end || "23:59") > now.time;
+  }
+
+  // ---------- storage (saved items stay in this browser only) ----------
   function loadSaved() {
     try { return new Set(JSON.parse(localStorage.getItem("kn-saved") || "[]")); } catch (e) { return new Set(); }
   }
@@ -110,8 +144,9 @@
   var markers = {};
   var meMarker = null;
 
-  function pinIcon(active) {
-    return L.divIcon({ className: "", html: '<div class="pin' + (active ? " active" : "") + '"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
+  function pinIcon(active, isEvent) {
+    var cls = "pin" + (isEvent ? " event-pin" : "") + (active ? " active" : "");
+    return L.divIcon({ className: "", html: '<div class="' + cls + '"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
   }
 
   // ---------- helpers ----------
@@ -140,6 +175,12 @@
     return n;
   }
 
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
   // ---------- filters <-> URL, so parents can share a search ----------
   function readFilters() {
     var f = els.filters;
@@ -158,7 +199,7 @@
     });
     if (state.origin.exact && state.origin.query) params.set("near", state.origin.query);
     params.set("lang", state.lang);
-    history.replaceState(null, "", "?" + params.toString());
+    history.replaceState(null, "", "?" + params.toString() + location.hash);
   }
 
   function applyUrl() {
@@ -170,7 +211,7 @@
     return params.get("near");
   }
 
-  // ---------- filtering ----------
+  // ---------- filtering (same rules for activities and events) ----------
   function matches(a, f) {
     if (f.age) {
       var age = Number(f.age);
@@ -189,7 +230,7 @@
     var f = readFilters();
     writeUrl(f);
 
-    state.activities.forEach(function (a) {
+    state.activities.concat(state.events).forEach(function (a) {
       a.distance = a.format === "in-person" ? kmBetween(state.origin, a) : null;
     });
 
@@ -201,6 +242,10 @@
       return a.distance - b.distance;
     });
 
+    var now = berlinNow();
+    var upcoming = state.events.filter(function (e) { return isUpcoming(e, now) && matches(e, f); })
+      .sort(function (a, b) { return (a.date + a.start).localeCompare(b.date + b.start); });
+
     els.list.replaceChildren();
     markerLayer.clearLayers();
     markers = {};
@@ -209,40 +254,29 @@
     els.count.textContent = results.length === 1 ? t("count1") : t("countN", { n: results.length });
     els.empty.hidden = results.length > 0;
 
+    renderEvents(upcoming, now);
+
     var bounds = [];
-    results.forEach(function (a) {
+    function pin(a, isEvent) {
       if (a.format !== "in-person") return;
       var title = tr(a, "title");
-      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId), title: title })
-        .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(timeText(a)) + " &middot; " + escapeHtml(priceText(a.price)))
+      var when = isEvent ? dayLabel(a, now) + ", " + a.start + "–" + a.end : timeText(a);
+      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId, isEvent), title: title })
+        .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(when) + " &middot; " + escapeHtml(priceText(a.price)))
         .on("click", function () { highlight(a.id, true); });
+      m.isEvent = isEvent;
       m.addTo(markerLayer);
       markers[a.id] = m;
       bounds.push([a.lat, a.lng]);
-    });
+    }
+    results.forEach(function (a) { pin(a, false); });
+    upcoming.forEach(function (e) { pin(e, true); });
     if (state.origin.exact) bounds.push([state.origin.lat, state.origin.lng]);
     if (bounds.length) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
   }
 
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
-  }
-
-  function card(a) {
-    var title = tr(a, "title");
-    var li = el("li", "item");
-    li.id = "a-" + a.id;
-    li.tabIndex = 0;
-    if (a.id === state.activeId) li.classList.add("active");
-
-    var row = el("div", "row");
-    var head = el("div");
-    head.appendChild(el("h2", null, title));
-    head.appendChild(el("p", "org", tr(a, "organizer")));
-    row.appendChild(head);
-
+  // ---------- activity cards ----------
+  function saveButton(a, title) {
     var isSaved = state.saved.has(a.id);
     var save = el("button", "save", isSaved ? "♥" : "♡");
     save.type = "button";
@@ -254,37 +288,148 @@
       storeSaved();
       render();
     });
-    row.appendChild(save);
-    li.appendChild(row);
+    return save;
+  }
 
-    li.appendChild(el("p", "desc", tr(a, "description")));
-
+  function badgesFor(a) {
     var badges = el("ul", "badges");
     badges.appendChild(el("li", null, t("ages", { from: a.ages[0], to: a.ages[1] })));
     badges.appendChild(el("li", null, t("cat_" + a.category)));
     badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
     if (a.format === "online") badges.appendChild(el("li", "online", t("online")));
     else badges.appendChild(el("li", null, number(a.distance) + " km"));
-    li.appendChild(badges);
+    return badges;
+  }
+
+  function selectable(li, id) {
+    li.id = "item-" + id;
+    li.tabIndex = 0;
+    if (id === state.activeId) li.classList.add("active");
+    li.addEventListener("click", function () { highlight(id, false); });
+    li.addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target === li) highlight(id, false); });
+  }
+
+  function card(a) {
+    var title = tr(a, "title");
+    var li = el("li", "item");
+    selectable(li, a.id);
+
+    var row = el("div", "row");
+    var head = el("div");
+    head.appendChild(el("h2", null, title));
+    head.appendChild(el("p", "org", tr(a, "organizer")));
+    row.appendChild(head);
+    row.appendChild(saveButton(a, title));
+    li.appendChild(row);
+
+    li.appendChild(el("p", "desc", tr(a, "description")));
+    li.appendChild(badgesFor(a));
 
     var days = a.days.map(function (d) { return t("day_" + d); }).join(", ");
     var address = tr(a, "address");
     li.appendChild(el("p", "meta", days + " · " + timeText(a) + (address ? " · " + address : "")));
-
-    li.addEventListener("click", function () { highlight(a.id, false); });
-    li.addEventListener("keydown", function (e) { if (e.key === "Enter") highlight(a.id, false); });
     return li;
   }
 
+  // ---------- events ----------
+  function dayLabel(e, now) {
+    if (e.date === now.date) return t("today");
+    if (e.date === addDays(now.date, 1)) return t("tomorrow");
+    return utcDate(e.date).toLocaleDateString(locale(), { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  }
+
+  function renderEvents(upcoming, now) {
+    var shown = state.showAllEvents ? upcoming : upcoming.slice(0, EVENTS_PREVIEW);
+    els.eventList.replaceChildren();
+    shown.forEach(function (e) { els.eventList.appendChild(eventCard(e, now)); });
+    els.eventList.classList.toggle("collapsed", !state.showAllEvents);
+    els.eventsCount.textContent = upcoming.length ? "(" + upcoming.length + ")" : "";
+    els.eventsEmpty.hidden = upcoming.length > 0;
+    els.eventsMore.hidden = upcoming.length <= EVENTS_PREVIEW;
+    els.eventsMore.textContent = state.showAllEvents ? t("showLess") : t("showAll", { n: upcoming.length });
+  }
+
+  function eventCard(e, now) {
+    var title = tr(e, "title");
+    var li = el("li", "event");
+    selectable(li, e.id);
+
+    var d = utcDate(e.date);
+    var when = el("div", "when");
+    var badge = el("div", "date");
+    badge.setAttribute("aria-hidden", "true");
+    badge.appendChild(el("b", null, String(d.getUTCDate())));
+    badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
+    when.appendChild(badge);
+    var day = el("p", "day");
+    day.style.margin = "0";
+    day.appendChild(el("b", null, dayLabel(e, now)));
+    day.appendChild(document.createElement("br"));
+    day.appendChild(document.createTextNode(e.start + "–" + e.end));
+    when.appendChild(day);
+    li.appendChild(when);
+
+    li.appendChild(el("h3", null, title));
+    li.appendChild(badgesFor(e));
+    var place = tr(e, "address");
+    li.appendChild(el("p", "place", (place ? place + " · " : "") + tr(e, "organizer")));
+    li.appendChild(el("p", "desc", tr(e, "description")));
+
+    var acts = el("div", "acts");
+    var cal = el("button", null, t("addToCalendar"));
+    cal.type = "button";
+    cal.addEventListener("click", function (ev) { ev.stopPropagation(); downloadIcs(e); });
+    acts.appendChild(cal);
+    if (e.link) {
+      var post = el("a", null, t("seePost") + " ↗");
+      post.href = e.link; post.target = "_blank"; post.rel = "noopener";
+      post.addEventListener("click", function (ev) { ev.stopPropagation(); });
+      acts.appendChild(post);
+    }
+    li.appendChild(acts);
+    return li;
+  }
+
+  // A one-event .ics file that Google, Apple and Outlook calendars can import.
+  function downloadIcs(e) {
+    function esc(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/([,;])/g, "\\$1").replace(/\n/g, "\\n"); }
+    function stamp(date, time) { return date.replace(/-/g, "") + "T" + time.replace(":", "") + "00"; }
+    var lines = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Kids Nearby Berlin//EN", "CALSCALE:GREGORIAN",
+      "BEGIN:VEVENT",
+      "UID:" + e.id + "@kids-nearby",
+      "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
+      "DTSTART;TZID=Europe/Berlin:" + stamp(e.date, e.start),
+      "DTEND;TZID=Europe/Berlin:" + stamp(e.date, e.end),
+      "SUMMARY:" + esc(tr(e, "title")),
+      "DESCRIPTION:" + esc(tr(e, "description") + (e.link ? "\n" + e.link : "")),
+      "LOCATION:" + esc(e.format === "online" ? "Online" : tr(e, "address"))
+    ];
+    if (e.link) lines.push("URL:" + e.link);
+    lines.push("END:VEVENT", "END:VCALENDAR");
+    var blob = new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = e.id + ".ics";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+  }
+
+  els.eventsMore.addEventListener("click", function () {
+    state.showAllEvents = !state.showAllEvents;
+    render();
+  });
+
   function highlight(id, fromMap) {
     state.activeId = id;
-    document.querySelectorAll(".item.active").forEach(function (n) { n.classList.remove("active"); });
-    var node = document.getElementById("a-" + id);
+    document.querySelectorAll(".item.active, .event.active").forEach(function (n) { n.classList.remove("active"); });
+    var node = document.getElementById("item-" + id);
     if (node) {
       node.classList.add("active");
-      if (fromMap) node.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      if (fromMap) node.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
     }
-    Object.keys(markers).forEach(function (k) { markers[k].setIcon(pinIcon(k === id)); });
+    Object.keys(markers).forEach(function (k) { markers[k].setIcon(pinIcon(k === id, markers[k].isEvent)); });
     var m = markers[id];
     if (m && !fromMap) { map.panTo(m.getLatLng()); m.openPopup(); }
   }
@@ -345,10 +490,23 @@
   translatePage();
   els.filters.addEventListener("change", render);
 
-  fetch("data/activities.json")
-    .then(function (r) { return r.json(); })
-    .then(function (rows) {
-      state.activities = rows;
+  function getJson(path) {
+    return fetch(path, { cache: "no-cache" }).then(function (r) {
+      if (!r.ok) throw new Error(path + ": " + r.status);
+      return r.json();
+    });
+  }
+
+  Promise.all([
+    getJson("data/activities.json"),
+    getJson("data/events.json").catch(function () { return []; }) // events are optional
+  ])
+    .then(function (data) {
+      state.activities = data[0];
+      state.events = data[1].map(function (e) {
+        e.days = [WEEKDAYS[utcDate(e.date).getUTCDay()]]; // lets the day filter work on events
+        return e;
+      });
       if (near) { els.place.value = near; geocode(near); } else render();
     })
     .catch(function () { setStatus("statusLoadFailed"); });

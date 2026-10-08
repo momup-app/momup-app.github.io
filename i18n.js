@@ -58,6 +58,15 @@ window.I18N = {
     save: "Save {title}",
     unsave: "Remove {title}",
     berlinTime: "Berlin time",
+    eventsTitle: "Upcoming events",
+    eventsNone: "No upcoming events match these filters.",
+    showAll: "Show all {n}",
+    showLess: "Show fewer",
+    addToCalendar: "Add to calendar",
+    seePost: "See post",
+    today: "Today",
+    tomorrow: "Tomorrow",
+    event: "Event",
     contactTitle: "Contact us",
     contactText: "Questions, ideas, or want to list your class or club? Send us a message on Instagram, we read every one.",
     contactButton: "Message @momup_app",
@@ -124,6 +133,15 @@ window.I18N = {
     save: "{title} merken",
     unsave: "{title} entfernen",
     berlinTime: "Berliner Zeit",
+    eventsTitle: "Kommende Veranstaltungen",
+    eventsNone: "Keine kommenden Veranstaltungen passen zu diesen Filtern.",
+    showAll: "Alle {n} anzeigen",
+    showLess: "Weniger anzeigen",
+    addToCalendar: "Zum Kalender hinzufügen",
+    seePost: "Zum Beitrag",
+    today: "Heute",
+    tomorrow: "Morgen",
+    event: "Veranstaltung",
     contactTitle: "Kontakt",
     contactText: "Fragen, Ideen oder möchtest du deinen Kurs oder Verein eintragen? Schreib uns auf Instagram, wir lesen jede Nachricht.",
     contactButton: "@momup_app schreiben",
@@ -135,7 +153,10 @@ window.I18N = {
       "month": "Monat",
       "semester": "Semester",
       "8-week course": "8-Wochen-Kurs",
-      "10-lesson course": "10er-Kurs"
+      "10-lesson course": "10er-Kurs",
+      "ticket": "Ticket",
+      "child": "Kind",
+      "pumpkin": "Kürbis"
     }
   }
 };

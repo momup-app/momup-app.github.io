@@ -1,0 +1,166 @@
+[
+  {
+    "id": "2026-10-01-past-example",
+    "date": "2026-10-01",
+    "start": "15:00",
+    "end": "17:00",
+    "title": "Autumn Leaf Crafts",
+    "organizer": "MomUp (sample)",
+    "category": "arts",
+    "format": "in-person",
+    "ages": [3, 8],
+    "price": { "type": "free" },
+    "address": "Volkspark Friedrichshain, 10249 Berlin",
+    "lat": 52.5280, "lng": 13.4370,
+    "description": "Past event, kept to check that finished events are hidden.",
+    "de": {
+      "title": "Basteln mit Herbstblättern",
+      "organizer": "MomUp (Beispiel)",
+      "description": "Vergangene Veranstaltung, prüft, dass beendete Events ausgeblendet werden."
+    }
+  },
+  {
+    "id": "2026-10-15-puppet-theatre",
+    "date": "2026-10-15",
+    "start": "16:00",
+    "end": "16:45",
+    "title": "Puppet Theatre: The Little Fox",
+    "organizer": "Neighborhood puppet stage (sample)",
+    "category": "arts",
+    "format": "in-person",
+    "ages": [3, 7],
+    "price": { "type": "paid", "amount": 6, "per": "ticket" },
+    "address": "Near Helmholtzplatz, 10437 Berlin",
+    "lat": 52.5450, "lng": 13.4200,
+    "description": "A 45-minute show in German with lots of songs. Small audience, so arrive early.",
+    "de": {
+      "title": "Puppentheater: Der kleine Fuchs",
+      "organizer": "Puppenbühne im Kiez (Beispiel)",
+      "description": "Eine 45-minütige Vorstellung auf Deutsch mit vielen Liedern. Wenig Plätze, also früh da sein.",
+      "address": "Nähe Helmholtzplatz, 10437 Berlin"
+    }
+  },
+  {
+    "id": "2026-10-18-kids-flea-market",
+    "date": "2026-10-18",
+    "start": "11:00",
+    "end": "15:00",
+    "title": "Kids' Flea Market",
+    "organizer": "Parents of Schöneberg (sample)",
+    "category": "outdoors",
+    "format": "in-person",
+    "ages": [0, 14],
+    "price": { "type": "free" },
+    "address": "Near Winterfeldtplatz, 10781 Berlin",
+    "lat": 52.4970, "lng": 13.3540,
+    "description": "Kids sell their own toys and books. Bring a blanket if you want a spot, no booking needed.",
+    "de": {
+      "title": "Kinderflohmarkt",
+      "organizer": "Eltern aus Schöneberg (Beispiel)",
+      "description": "Kinder verkaufen ihre eigenen Spielsachen und Bücher. Wer einen Platz will, bringt eine Decke mit, ohne Anmeldung.",
+      "address": "Nähe Winterfeldtplatz, 10781 Berlin"
+    }
+  },
+  {
+    "id": "2026-10-22-online-bedtime-stories",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "end": "19:30",
+    "title": "Bedtime Stories Live",
+    "organizer": "MomUp (sample)",
+    "category": "language",
+    "format": "online",
+    "ages": [3, 7],
+    "price": { "type": "free" },
+    "address": "",
+    "description": "Pajamas on, lights low: two short stories read live in German and English.",
+    "de": {
+      "title": "Gute-Nacht-Geschichten live",
+      "organizer": "MomUp (Beispiel)",
+      "description": "Schlafanzug an, Licht gedimmt: zwei kurze Geschichten, live vorgelesen auf Deutsch und Englisch."
+    }
+  },
+  {
+    "id": "2026-10-25-pumpkin-carving",
+    "date": "2026-10-25",
+    "start": "14:00",
+    "end": "17:00",
+    "title": "Pumpkin Carving Afternoon",
+    "organizer": "Kreuzberg community garden (sample)",
+    "category": "arts",
+    "format": "in-person",
+    "ages": [5, 12],
+    "price": { "type": "paid", "amount": 8, "per": "pumpkin" },
+    "address": "Near Moritzplatz, 10969 Berlin",
+    "lat": 52.5035, "lng": 13.4105,
+    "description": "Pumpkins, tools and hot apple juice provided. Children under 8 carve with a grown-up.",
+    "de": {
+      "title": "Kürbisschnitzen am Nachmittag",
+      "organizer": "Gemeinschaftsgarten Kreuzberg (Beispiel)",
+      "description": "Kürbisse, Werkzeug und heißer Apfelsaft sind da. Kinder unter 8 schnitzen mit einem Erwachsenen.",
+      "address": "Nähe Moritzplatz, 10969 Berlin"
+    }
+  },
+  {
+    "id": "2026-10-31-halloween-disco",
+    "date": "2026-10-31",
+    "start": "16:00",
+    "end": "18:00",
+    "title": "Halloween Kids Disco",
+    "organizer": "Neukölln family café (sample)",
+    "category": "dance",
+    "format": "in-person",
+    "ages": [4, 10],
+    "price": { "type": "paid", "amount": 5, "per": "child" },
+    "address": "Near Richardplatz, 12055 Berlin",
+    "lat": 52.4750, "lng": 13.4480,
+    "description": "Costumes welcome, not required. Dance games, a mini costume parade and pumpkin muffins.",
+    "de": {
+      "title": "Halloween-Kinderdisco",
+      "organizer": "Familiencafé Neukölln (Beispiel)",
+      "description": "Kostüme willkommen, aber kein Muss. Tanzspiele, eine kleine Kostümparade und Kürbis-Muffins.",
+      "address": "Nähe Richardplatz, 12055 Berlin"
+    }
+  },
+  {
+    "id": "2026-11-11-lantern-walk",
+    "date": "2026-11-11",
+    "start": "17:00",
+    "end": "18:30",
+    "title": "St. Martin's Lantern Walk",
+    "organizer": "Prenzlauer Berg parents (sample)",
+    "category": "outdoors",
+    "format": "in-person",
+    "ages": [2, 10],
+    "price": { "type": "free" },
+    "address": "Volkspark am Weinberg, 10119 Berlin",
+    "lat": 52.5345, "lng": 13.4010,
+    "description": "Bring a lantern, or make one at the start. We walk and sing the lantern songs, then share hot tea.",
+    "de": {
+      "title": "Laternenumzug zu Sankt Martin",
+      "organizer": "Eltern aus Prenzlauer Berg (Beispiel)",
+      "description": "Laterne mitbringen oder zu Beginn eine basteln. Wir laufen, singen die Laternenlieder und trinken danach heißen Tee."
+    }
+  },
+  {
+    "id": "2026-12-06-nikolaus-crafts",
+    "date": "2026-12-06",
+    "start": "10:00",
+    "end": "12:00",
+    "title": "Nikolaus Crafts & Cookies",
+    "organizer": "Charlottenburg family center (sample)",
+    "category": "arts",
+    "format": "in-person",
+    "ages": [3, 9],
+    "price": { "type": "paid", "amount": 7, "per": "child" },
+    "address": "Near Klausenerplatz, 14059 Berlin",
+    "lat": 52.5205, "lng": 13.2930,
+    "description": "Decorate cookies, make a star garland and leave a boot out for Nikolaus.",
+    "de": {
+      "title": "Nikolaus-Basteln & Plätzchen",
+      "organizer": "Familienzentrum Charlottenburg (Beispiel)",
+      "description": "Plätzchen verzieren, eine Sternengirlande basteln und einen Stiefel für den Nikolaus rausstellen.",
+      "address": "Nähe Klausenerplatz, 14059 Berlin"
+    }
+  }
+]

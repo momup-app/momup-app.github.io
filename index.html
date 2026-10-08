@@ -91,6 +91,15 @@
     </form>
   </section>
 
+  <section class="events wrap" id="events" aria-labelledby="events-h">
+    <div class="events-head">
+      <h2 id="events-h"><span data-i18n="eventsTitle">Upcoming events</span> <span class="events-count" id="events-count"></span></h2>
+      <button type="button" class="link" id="events-more" hidden></button>
+    </div>
+    <ol class="event-list" id="event-list"></ol>
+    <p class="empty small" id="events-empty" hidden data-i18n="eventsNone">No upcoming events match these filters.</p>
+  </section>
+
   <main class="layout wrap">
     <section id="results" aria-label="Results" data-i18n-attr="aria-label:results">
       <p class="count" id="count" aria-live="polite"></p>
