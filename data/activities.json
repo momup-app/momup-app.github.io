@@ -5,13 +5,28 @@
     "organizer": "Prenzlauer Berg youth club (sample)",
     "category": "sports",
     "format": "in-person",
-    "ages": [4, 7],
-    "price": { "type": "paid", "amount": 12, "per": "session" },
-    "days": ["Sat"],
+    "ages": [
+      4,
+      7
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 12,
+      "per": "session"
+    },
+    "days": [
+      "Sat"
+    ],
     "time": "10:00–11:00",
     "address": "Mauerpark, Prenzlauer Berg, 10437 Berlin",
-    "lat": 52.5430, "lng": 13.4025,
-    "description": "Ball skills and small-sided games for beginners. Coaching in German and English."
+    "lat": 52.543,
+    "lng": 13.4025,
+    "description": "Ball skills and small-sided games for beginners. Coaching in German and English.",
+    "de": {
+      "title": "Fußball für Einsteiger",
+      "organizer": "Jugendverein Prenzlauer Berg (Beispiel)",
+      "description": "Ballgefühl und kleine Spiele für Anfänger. Training auf Deutsch und Englisch."
+    }
   },
   {
     "id": "kollwitz-storytime",
@@ -19,13 +34,28 @@
     "organizer": "Neighborhood library (sample)",
     "category": "language",
     "format": "in-person",
-    "ages": [2, 5],
-    "price": { "type": "free" },
-    "days": ["Tue", "Thu"],
+    "ages": [
+      2,
+      5
+    ],
+    "price": {
+      "type": "free"
+    },
+    "days": [
+      "Tue",
+      "Thu"
+    ],
     "time": "10:30–11:00",
     "address": "Near Kollwitzplatz, 10405 Berlin",
-    "lat": 52.5365, "lng": 13.4170,
-    "description": "Picture books, songs and rhymes in German and English. No sign-up needed."
+    "lat": 52.5365,
+    "lng": 13.417,
+    "description": "Picture books, songs and rhymes in German and English. No sign-up needed.",
+    "de": {
+      "title": "Zweisprachige Vorlesestunde (DE/EN)",
+      "organizer": "Stadtteilbibliothek (Beispiel)",
+      "description": "Bilderbücher, Lieder und Reime auf Deutsch und Englisch. Ohne Anmeldung.",
+      "address": "Nähe Kollwitzplatz, 10405 Berlin"
+    }
   },
   {
     "id": "wedding-deutsch-spielend",
@@ -33,13 +63,27 @@
     "organizer": "Wedding family center (sample)",
     "category": "language",
     "format": "in-person",
-    "ages": [4, 10],
-    "price": { "type": "free" },
-    "days": ["Wed"],
+    "ages": [
+      4,
+      10
+    ],
+    "price": {
+      "type": "free"
+    },
+    "days": [
+      "Wed"
+    ],
     "time": "15:30–16:30",
     "address": "Near Leopoldplatz, 13353 Berlin",
-    "lat": 52.5465, "lng": 13.3590,
-    "description": "Games, songs and crafts in German for children who are new to the language."
+    "lat": 52.5465,
+    "lng": 13.359,
+    "description": "Games, songs and crafts in German for children who are new to the language.",
+    "de": {
+      "title": "Deutsch spielend lernen",
+      "organizer": "Familienzentrum Wedding (Beispiel)",
+      "description": "Spiele, Lieder und Basteln auf Deutsch für Kinder, die die Sprache gerade erst lernen.",
+      "address": "Nähe Leopoldplatz, 13353 Berlin"
+    }
   },
   {
     "id": "bergmann-clay",
@@ -47,13 +91,28 @@
     "organizer": "Kreuzberg clay studio (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [6, 12],
-    "price": { "type": "paid", "amount": 160, "per": "8-week course" },
-    "days": ["Wed"],
+    "ages": [
+      6,
+      12
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 160,
+      "per": "8-week course"
+    },
+    "days": [
+      "Wed"
+    ],
     "time": "16:00–17:30",
     "address": "Bergmannstraße, 10961 Berlin",
-    "lat": 52.4890, "lng": 13.3920,
-    "description": "Hand-building and wheel basics. Pieces are glazed and fired to take home."
+    "lat": 52.489,
+    "lng": 13.392,
+    "description": "Hand-building and wheel basics. Pieces are glazed and fired to take home.",
+    "de": {
+      "title": "Töpfern für Kinder",
+      "organizer": "Töpferstudio Kreuzberg (Beispiel)",
+      "description": "Aufbautechnik und erste Schritte an der Drehscheibe. Die Stücke werden glasiert, gebrannt und mit nach Hause genommen."
+    }
   },
   {
     "id": "mitte-robotics",
@@ -61,13 +120,29 @@
     "organizer": "Mitte STEM lab (sample)",
     "category": "stem",
     "format": "in-person",
-    "ages": [8, 13],
-    "price": { "type": "paid", "amount": 25, "per": "session" },
-    "days": ["Mon", "Thu"],
+    "ages": [
+      8,
+      13
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 25,
+      "per": "session"
+    },
+    "days": [
+      "Mon",
+      "Thu"
+    ],
     "time": "16:30–18:00",
     "address": "Torstraße, 10119 Berlin",
-    "lat": 52.5290, "lng": 13.4010,
-    "description": "Build and program robots in teams, then race them at the end of each month."
+    "lat": 52.529,
+    "lng": 13.401,
+    "description": "Build and program robots in teams, then race them at the end of each month.",
+    "de": {
+      "title": "LEGO-Robotik-Club",
+      "organizer": "MINT-Labor Mitte (Beispiel)",
+      "description": "Im Team Roboter bauen und programmieren, am Monatsende gibt es ein Rennen."
+    }
   },
   {
     "id": "tiergarten-naturalists",
@@ -75,13 +150,26 @@
     "organizer": "Park volunteers (sample)",
     "category": "outdoors",
     "format": "in-person",
-    "ages": [5, 10],
-    "price": { "type": "free" },
-    "days": ["Sun"],
+    "ages": [
+      5,
+      10
+    ],
+    "price": {
+      "type": "free"
+    },
+    "days": [
+      "Sun"
+    ],
     "time": "09:30–11:00",
     "address": "Großer Tiergarten, 10557 Berlin",
-    "lat": 52.5145, "lng": 13.3500,
-    "description": "Bird spotting, leaf rubbing and bug hunts with a guide. Bring water and sturdy shoes."
+    "lat": 52.5145,
+    "lng": 13.35,
+    "description": "Bird spotting, leaf rubbing and bug hunts with a guide. Bring water and sturdy shoes.",
+    "de": {
+      "title": "Kleine Naturforscher",
+      "organizer": "Ehrenamtliche im Park (Beispiel)",
+      "description": "Vögel beobachten, Blätter abpausen und Käfer suchen, mit Begleitung. Wasser und feste Schuhe mitbringen."
+    }
   },
   {
     "id": "tempelhof-balance-bikes",
@@ -89,13 +177,27 @@
     "organizer": "Tempelhofer Feld cyclists (sample)",
     "category": "outdoors",
     "format": "in-person",
-    "ages": [2, 5],
-    "price": { "type": "free" },
-    "days": ["Sat"],
+    "ages": [
+      2,
+      5
+    ],
+    "price": {
+      "type": "free"
+    },
+    "days": [
+      "Sat"
+    ],
     "time": "09:00–10:00",
     "address": "Tempelhofer Feld, Columbiadamm entrance, 12101 Berlin",
-    "lat": 52.4800, "lng": 13.4000,
-    "description": "Bring a balance bike and helmet. Cones, ramps and the whole runway to ride on."
+    "lat": 52.48,
+    "lng": 13.4,
+    "description": "Bring a balance bike and helmet. Cones, ramps and the whole runway to ride on.",
+    "de": {
+      "title": "Laufrad-Vormittag",
+      "organizer": "Radler vom Tempelhofer Feld (Beispiel)",
+      "description": "Laufrad und Helm mitbringen. Hütchen, Rampen und die ganze Landebahn zum Fahren.",
+      "address": "Tempelhofer Feld, Eingang Columbiadamm, 12101 Berlin"
+    }
   },
   {
     "id": "neukoelln-hiphop",
@@ -103,13 +205,29 @@
     "organizer": "Neukölln dance collective (sample)",
     "category": "dance",
     "format": "in-person",
-    "ages": [7, 14],
-    "price": { "type": "paid", "amount": 45, "per": "month" },
-    "days": ["Tue", "Fri"],
+    "ages": [
+      7,
+      14
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 45,
+      "per": "month"
+    },
+    "days": [
+      "Tue",
+      "Fri"
+    ],
     "time": "17:00–18:00",
     "address": "Weserstraße, 12047 Berlin",
-    "lat": 52.4870, "lng": 13.4330,
-    "description": "Grooves, freestyle and a short routine every month. End-of-season showcase."
+    "lat": 52.487,
+    "lng": 13.433,
+    "description": "Grooves, freestyle and a short routine every month. End-of-season showcase.",
+    "de": {
+      "title": "Hip-Hop-Tanz für Kids",
+      "organizer": "Tanzkollektiv Neukölln (Beispiel)",
+      "description": "Grooves, Freestyle und jeden Monat eine kleine Choreo. Aufführung zum Saisonende."
+    }
   },
   {
     "id": "charlottenburg-swim",
@@ -117,13 +235,30 @@
     "organizer": "Charlottenburg swim school (sample)",
     "category": "sports",
     "format": "in-person",
-    "ages": [4, 8],
-    "price": { "type": "paid", "amount": 150, "per": "10-lesson course" },
-    "days": ["Sat", "Sun"],
+    "ages": [
+      4,
+      8
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 150,
+      "per": "10-lesson course"
+    },
+    "days": [
+      "Sat",
+      "Sun"
+    ],
     "time": "11:00–11:45",
     "address": "Near Wilmersdorfer Straße, 10627 Berlin",
-    "lat": 52.5080, "lng": 13.3060,
-    "description": "Small groups working toward the Seepferdchen badge. Water confidence first, strokes second."
+    "lat": 52.508,
+    "lng": 13.306,
+    "description": "Small groups working toward the Seepferdchen badge. Water confidence first, strokes second.",
+    "de": {
+      "title": "Schwimmen lernen (Seepferdchen)",
+      "organizer": "Schwimmschule Charlottenburg (Beispiel)",
+      "description": "Kleine Gruppen auf dem Weg zum Seepferdchen. Erst Wassergewöhnung, dann Schwimmzüge.",
+      "address": "Nähe Wilmersdorfer Straße, 10627 Berlin"
+    }
   },
   {
     "id": "schoeneberg-piano",
@@ -131,13 +266,29 @@
     "organizer": "Schöneberg music school (sample)",
     "category": "music",
     "format": "in-person",
-    "ages": [6, 11],
-    "price": { "type": "paid", "amount": 70, "per": "month" },
-    "days": ["Mon", "Wed"],
+    "ages": [
+      6,
+      11
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 70,
+      "per": "month"
+    },
+    "days": [
+      "Mon",
+      "Wed"
+    ],
     "time": "15:30–16:15",
     "address": "Akazienstraße, 10823 Berlin",
-    "lat": 52.4870, "lng": 13.3530,
-    "description": "A keyboard for every child, reading notes from week one, a small concert in June."
+    "lat": 52.487,
+    "lng": 13.353,
+    "description": "A keyboard for every child, reading notes from week one, a small concert in June.",
+    "de": {
+      "title": "Klavier in der Gruppe für Anfänger",
+      "organizer": "Musikschule Schöneberg (Beispiel)",
+      "description": "Ein Keyboard für jedes Kind, Noten lesen ab der ersten Woche, ein kleines Konzert im Juni."
+    }
   },
   {
     "id": "boxhagener-messy-art",
@@ -145,13 +296,30 @@
     "organizer": "Friedrichshain kids studio (sample)",
     "category": "arts",
     "format": "in-person",
-    "ages": [3, 6],
-    "price": { "type": "paid", "amount": 14, "per": "session" },
-    "days": ["Thu", "Sat"],
+    "ages": [
+      3,
+      6
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 14,
+      "per": "session"
+    },
+    "days": [
+      "Thu",
+      "Sat"
+    ],
     "time": "10:00–11:00",
     "address": "Near Boxhagener Platz, 10245 Berlin",
-    "lat": 52.5105, "lng": 13.4590,
-    "description": "Paint, glue, slime and sensory play. Wear clothes that can get dirty."
+    "lat": 52.5105,
+    "lng": 13.459,
+    "description": "Paint, glue, slime and sensory play. Wear clothes that can get dirty.",
+    "de": {
+      "title": "Matsch-Kunst-Labor",
+      "organizer": "Kinderatelier Friedrichshain (Beispiel)",
+      "description": "Farbe, Kleber, Schleim und Sinnesspiele. Kleidung anziehen, die schmutzig werden darf.",
+      "address": "Nähe Boxhagener Platz, 10245 Berlin"
+    }
   },
   {
     "id": "treptow-chess",
@@ -159,13 +327,29 @@
     "organizer": "Treptow chess corner (sample)",
     "category": "stem",
     "format": "in-person",
-    "ages": [7, 15],
-    "price": { "type": "paid", "amount": 8, "per": "session" },
-    "days": ["Fri"],
+    "ages": [
+      7,
+      15
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 8,
+      "per": "session"
+    },
+    "days": [
+      "Fri"
+    ],
     "time": "16:00–17:30",
     "address": "Near Treptower Park, 12435 Berlin",
-    "lat": 52.4925, "lng": 13.4600,
-    "description": "Lessons by level, then friendly games. Tournament prep for those who want it."
+    "lat": 52.4925,
+    "lng": 13.46,
+    "description": "Lessons by level, then friendly games. Tournament prep for those who want it.",
+    "de": {
+      "title": "Schach-AG",
+      "organizer": "Schachecke Treptow (Beispiel)",
+      "description": "Unterricht nach Niveau, danach freie Partien. Turniervorbereitung für alle, die wollen.",
+      "address": "Nähe Treptower Park, 12435 Berlin"
+    }
   },
   {
     "id": "moabit-ukrainian-school",
@@ -173,13 +357,28 @@
     "organizer": "Community cultural center (sample)",
     "category": "language",
     "format": "in-person",
-    "ages": [5, 12],
-    "price": { "type": "paid", "amount": 120, "per": "semester" },
-    "days": ["Sat"],
+    "ages": [
+      5,
+      12
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 120,
+      "per": "semester"
+    },
+    "days": [
+      "Sat"
+    ],
     "time": "10:00–13:00",
     "address": "Turmstraße, 10551 Berlin",
-    "lat": 52.5265, "lng": 13.3420,
-    "description": "Reading, writing, songs and traditions, taught in small groups by age."
+    "lat": 52.5265,
+    "lng": 13.342,
+    "description": "Reading, writing, songs and traditions, taught in small groups by age.",
+    "de": {
+      "title": "Ukrainische Samstagsschule",
+      "organizer": "Kulturzentrum (Beispiel)",
+      "description": "Lesen, Schreiben, Lieder und Traditionen, in kleinen Gruppen nach Alter."
+    }
   },
   {
     "id": "online-coding-scratch",
@@ -187,12 +386,27 @@
     "organizer": "Online coding club (sample)",
     "category": "stem",
     "format": "online",
-    "ages": [8, 12],
-    "price": { "type": "paid", "amount": 15, "per": "session" },
-    "days": ["Tue", "Thu"],
+    "ages": [
+      8,
+      12
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 15,
+      "per": "session"
+    },
+    "days": [
+      "Tue",
+      "Thu"
+    ],
     "time": "17:00–18:00 Berlin time",
     "address": "",
-    "description": "Live video class of up to eight kids, in English or German. Each week ends with a game they can share."
+    "description": "Live video class of up to eight kids, in English or German. Each week ends with a game they can share.",
+    "de": {
+      "title": "Spiele programmieren mit Scratch",
+      "organizer": "Online-Coding-Club (Beispiel)",
+      "description": "Live-Videokurs mit bis zu acht Kindern, auf Deutsch oder Englisch. Jede Woche endet mit einem Spiel zum Teilen."
+    }
   },
   {
     "id": "online-mandarin",
@@ -200,12 +414,26 @@
     "organizer": "Online language circle (sample)",
     "category": "language",
     "format": "online",
-    "ages": [3, 7],
-    "price": { "type": "paid", "amount": 10, "per": "session" },
-    "days": ["Sat"],
+    "ages": [
+      3,
+      7
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 10,
+      "per": "session"
+    },
+    "days": [
+      "Sat"
+    ],
     "time": "09:00–09:30 Berlin time",
     "address": "",
-    "description": "Short, song-based sessions with a parent nearby. Lyric sheets sent each week."
+    "description": "Short, song-based sessions with a parent nearby. Lyric sheets sent each week.",
+    "de": {
+      "title": "Chinesisch mit Liedern",
+      "organizer": "Online-Sprachkreis (Beispiel)",
+      "description": "Kurze Einheiten mit Liedern, ein Elternteil ist dabei. Die Liedtexte kommen jede Woche per Mail."
+    }
   },
   {
     "id": "online-drawing",
@@ -213,12 +441,24 @@
     "organizer": "Online art room (sample)",
     "category": "arts",
     "format": "online",
-    "ages": [5, 11],
-    "price": { "type": "free" },
-    "days": ["Wed"],
+    "ages": [
+      5,
+      11
+    ],
+    "price": {
+      "type": "free"
+    },
+    "days": [
+      "Wed"
+    ],
     "time": "16:00–16:45 Berlin time",
     "address": "",
-    "description": "An illustrator draws step by step and kids follow along with paper and markers."
+    "description": "An illustrator draws step by step and kids follow along with paper and markers.",
+    "de": {
+      "title": "Live mitzeichnen",
+      "organizer": "Online-Kunstraum (Beispiel)",
+      "description": "Eine Illustratorin zeichnet Schritt für Schritt vor, die Kinder zeichnen mit Papier und Stiften mit."
+    }
   },
   {
     "id": "online-guitar",
@@ -226,11 +466,25 @@
     "organizer": "Online music school (sample)",
     "category": "music",
     "format": "online",
-    "ages": [9, 15],
-    "price": { "type": "paid", "amount": 50, "per": "month" },
-    "days": ["Mon"],
+    "ages": [
+      9,
+      15
+    ],
+    "price": {
+      "type": "paid",
+      "amount": 50,
+      "per": "month"
+    },
+    "days": [
+      "Mon"
+    ],
     "time": "18:00–18:45 Berlin time",
     "address": "",
-    "description": "Four chords, then real songs. Needs a guitar; a ukulele track is available too."
+    "description": "Four chords, then real songs. Needs a guitar; a ukulele track is available too.",
+    "de": {
+      "title": "Erste Gitarrengriffe",
+      "organizer": "Online-Musikschule (Beispiel)",
+      "description": "Vier Akkorde, dann echte Songs. Eine Gitarre ist nötig, eine Ukulele-Variante gibt es auch."
+    }
   }
 ]

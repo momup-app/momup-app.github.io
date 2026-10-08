@@ -42,7 +42,11 @@ a { color: var(--accent); }
 .brand { font-weight: 800; font-size: 22px; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .brand .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--soft); }
 .tag { margin: 0; color: var(--muted); }
-.insta { margin-left: auto; align-self: center; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; text-decoration: none; }
+.end { margin-left: auto; align-self: center; display: flex; align-items: center; gap: 16px; }
+.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--card); }
+.lang button { font: 700 13px/1 var(--font); border: 0; background: none; color: var(--muted); padding: 7px 11px; border-radius: 999px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.insta { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; text-decoration: none; }
 .insta svg { width: 20px; height: 20px; }
 @media (max-width: 560px) { .insta span { display: none; } .insta svg { width: 24px; height: 24px; } }
 

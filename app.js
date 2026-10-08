@@ -4,12 +4,12 @@
   var DEFAULT_ORIGIN = { lat: 52.5200, lng: 13.4050, label: "Berlin", exact: false };
   // Berlin bounding box (west, north, east, south) so lookups stay inside the city.
   var BERLIN_VIEWBOX = "13.08,52.68,13.77,52.33";
-  var CATEGORY_NAMES = {
-    sports: "Sports", arts: "Arts & crafts", music: "Music", dance: "Dance",
-    stem: "STEM & coding", language: "Languages & reading", outdoors: "Outdoors"
-  };
+  var LANGS = ["de", "en"];
 
-  var state = { origin: DEFAULT_ORIGIN, activities: [], saved: loadSaved(), activeId: null };
+  var state = {
+    origin: DEFAULT_ORIGIN, activities: [], saved: loadSaved(), activeId: null,
+    lang: pickLang(), status: { key: "statusDefault", vars: {} }
+  };
   var els = {
     form: document.getElementById("where"),
     place: document.getElementById("place"),
@@ -20,6 +20,77 @@
     count: document.getElementById("count"),
     empty: document.getElementById("empty")
   };
+
+  // ---------- language ----------
+  // Order: ?lang= in the link, then the visitor's last choice, then the browser language.
+  function pickLang() {
+    var fromUrl = new URLSearchParams(location.search).get("lang");
+    if (LANGS.indexOf(fromUrl) !== -1) return fromUrl;
+    try {
+      var stored = localStorage.getItem("kn-lang");
+      if (LANGS.indexOf(stored) !== -1) return stored;
+    } catch (e) {}
+    var browser = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    return browser.toLowerCase().indexOf("de") === 0 ? "de" : "en";
+  }
+
+  function t(key, vars) {
+    var s = window.I18N[state.lang][key];
+    if (s == null) s = window.I18N.en[key];
+    if (s == null) return key;
+    return s.replace(/\{(\w+)\}/g, function (_, k) { return vars && vars[k] != null ? vars[k] : ""; });
+  }
+
+  // Listing text in the current language, falling back to English.
+  function tr(a, field) {
+    return (state.lang !== "en" && a[state.lang] && a[state.lang][field]) || a[field];
+  }
+
+  function number(n) {
+    return n.toLocaleString(state.lang === "de" ? "de-DE" : "en-GB", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  }
+
+  function translatePage() {
+    document.documentElement.lang = state.lang;
+    document.title = t("pageTitle");
+    document.querySelector('meta[name="description"]').setAttribute("content", t("metaDesc"));
+    document.querySelectorAll("[data-i18n]").forEach(function (n) {
+      n.textContent = t(n.dataset.i18n, { n: n.dataset.n });
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (n) {
+      n.innerHTML = t(n.dataset.i18nHtml); // trusted: our own strings from i18n.js
+    });
+    document.querySelectorAll("[data-i18n-attr]").forEach(function (n) {
+      n.dataset.i18nAttr.split(",").forEach(function (pair) {
+        var parts = pair.split(":");
+        n.setAttribute(parts[0], t(parts[1]));
+      });
+    });
+    Array.prototype.forEach.call(els.filters.age.options, function (o) {
+      if (o.value) o.textContent = t(o.value === "1" ? "year" : "years", { n: o.value });
+    });
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));
+    });
+    showStatus();
+  }
+
+  function setLang(lang) {
+    state.lang = lang;
+    try { localStorage.setItem("kn-lang", lang); } catch (e) {}
+    translatePage();
+    render();
+  }
+
+  function setStatus(key, vars) {
+    state.status = { key: key, vars: vars || {} };
+    showStatus();
+  }
+  function showStatus() {
+    var vars = Object.assign({}, state.status.vars);
+    if (vars.place === "@me") vars.place = t("yourLocation");
+    els.status.textContent = t(state.status.key, vars);
+  }
 
   // ---------- storage (saved activities stay in this browser only) ----------
   function loadSaved() {
@@ -53,8 +124,13 @@
   }
 
   function priceText(p) {
-    if (p.type === "free") return "Free";
-    return "€" + p.amount + " / " + p.per;
+    if (p.type === "free") return t("free");
+    var per = window.I18N[state.lang].per[p.per] || p.per;
+    return t("price", { amount: p.amount, per: per });
+  }
+
+  function timeText(a) {
+    return a.time.replace("Berlin time", t("berlinTime"));
   }
 
   function el(tag, cls, text) {
@@ -81,8 +157,8 @@
       else if (v) params.set(k, v);
     });
     if (state.origin.exact && state.origin.query) params.set("near", state.origin.query);
-    var qs = params.toString();
-    history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    params.set("lang", state.lang);
+    history.replaceState(null, "", "?" + params.toString());
   }
 
   function applyUrl() {
@@ -119,7 +195,7 @@
 
     var results = state.activities.filter(function (a) { return matches(a, f); }).sort(function (a, b) {
       // In-person by distance first, online after.
-      if (a.distance == null && b.distance == null) return a.title.localeCompare(b.title);
+      if (a.distance == null && b.distance == null) return tr(a, "title").localeCompare(tr(b, "title"), state.lang);
       if (a.distance == null) return 1;
       if (b.distance == null) return -1;
       return a.distance - b.distance;
@@ -130,14 +206,15 @@
     markers = {};
 
     results.forEach(function (a) { els.list.appendChild(card(a)); });
-    els.count.textContent = results.length + (results.length === 1 ? " activity" : " activities");
+    els.count.textContent = results.length === 1 ? t("count1") : t("countN", { n: results.length });
     els.empty.hidden = results.length > 0;
 
     var bounds = [];
     results.forEach(function (a) {
       if (a.format !== "in-person") return;
-      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId), title: a.title })
-        .bindPopup("<b>" + escapeHtml(a.title) + "</b><br>" + escapeHtml(a.time) + " &middot; " + escapeHtml(priceText(a.price)))
+      var title = tr(a, "title");
+      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId), title: title })
+        .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(timeText(a)) + " &middot; " + escapeHtml(priceText(a.price)))
         .on("click", function () { highlight(a.id, true); });
       m.addTo(markerLayer);
       markers[a.id] = m;
@@ -154,6 +231,7 @@
   }
 
   function card(a) {
+    var title = tr(a, "title");
     var li = el("li", "item");
     li.id = "a-" + a.id;
     li.tabIndex = 0;
@@ -161,14 +239,15 @@
 
     var row = el("div", "row");
     var head = el("div");
-    head.appendChild(el("h2", null, a.title));
-    head.appendChild(el("p", "org", a.organizer));
+    head.appendChild(el("h2", null, title));
+    head.appendChild(el("p", "org", tr(a, "organizer")));
     row.appendChild(head);
 
-    var save = el("button", "save", state.saved.has(a.id) ? "♥" : "♡");
+    var isSaved = state.saved.has(a.id);
+    var save = el("button", "save", isSaved ? "♥" : "♡");
     save.type = "button";
-    save.setAttribute("aria-pressed", String(state.saved.has(a.id)));
-    save.setAttribute("aria-label", (state.saved.has(a.id) ? "Remove " : "Save ") + a.title);
+    save.setAttribute("aria-pressed", String(isSaved));
+    save.setAttribute("aria-label", t(isSaved ? "unsave" : "save", { title: title }));
     save.addEventListener("click", function (e) {
       e.stopPropagation();
       if (state.saved.has(a.id)) state.saved.delete(a.id); else state.saved.add(a.id);
@@ -178,17 +257,19 @@
     row.appendChild(save);
     li.appendChild(row);
 
-    li.appendChild(el("p", "desc", a.description));
+    li.appendChild(el("p", "desc", tr(a, "description")));
 
     var badges = el("ul", "badges");
-    badges.appendChild(el("li", null, "Ages " + a.ages[0] + "–" + a.ages[1]));
-    badges.appendChild(el("li", null, CATEGORY_NAMES[a.category] || a.category));
+    badges.appendChild(el("li", null, t("ages", { from: a.ages[0], to: a.ages[1] })));
+    badges.appendChild(el("li", null, t("cat_" + a.category)));
     badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
-    if (a.format === "online") badges.appendChild(el("li", "online", "Online"));
-    else badges.appendChild(el("li", null, a.distance.toFixed(1) + " km"));
+    if (a.format === "online") badges.appendChild(el("li", "online", t("online")));
+    else badges.appendChild(el("li", null, number(a.distance) + " km"));
     li.appendChild(badges);
 
-    li.appendChild(el("p", "meta", a.days.join(", ") + " · " + a.time + (a.address ? " · " + a.address : "")));
+    var days = a.days.map(function (d) { return t("day_" + d); }).join(", ");
+    var address = tr(a, "address");
+    li.appendChild(el("p", "meta", days + " · " + timeText(a) + (address ? " · " + address : "")));
 
     li.addEventListener("click", function () { highlight(a.id, false); });
     li.addEventListener("keydown", function (e) { if (e.key === "Enter") highlight(a.id, false); });
@@ -214,24 +295,24 @@
     if (meMarker) meMarker.remove();
     meMarker = L.marker([lat, lng], {
       icon: L.divIcon({ className: "", html: '<div class="me"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }),
-      title: "You"
+      title: t("you")
     }).addTo(map);
-    els.status.textContent = "Sorted by distance from " + label + ".";
+    setStatus("statusSorted", { place: label });
     render();
   }
 
   function geocode(query) {
-    els.status.textContent = "Looking up " + query + "…";
+    setStatus("statusLooking", { q: query });
     // OpenStreetMap's free geocoder. Fine for light use; see docs/system-design.md for production.
     var url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=de&bounded=1&viewbox=" + BERLIN_VIEWBOX + "&q=" + encodeURIComponent(query);
-    return fetch(url, { headers: { "Accept-Language": "en" } })
+    return fetch(url, { headers: { "Accept-Language": state.lang } })
       .then(function (r) { return r.json(); })
       .then(function (rows) {
-        if (!rows.length) { els.status.textContent = "Couldn't find “" + query + "” in Berlin. Try a postcode, e.g. 10437."; return; }
+        if (!rows.length) { setStatus("statusNotFound", { q: query }); return; }
         var label = rows[0].display_name.split(",").slice(0, 2).join(",");
         setOrigin(Number(rows[0].lat), Number(rows[0].lon), label, query);
       })
-      .catch(function () { els.status.textContent = "Location lookup failed. Check your connection and try again."; });
+      .catch(function () { setStatus("statusLookupFailed"); });
   }
 
   els.form.addEventListener("submit", function (e) {
@@ -241,22 +322,27 @@
   });
 
   els.locate.addEventListener("click", function () {
-    if (!navigator.geolocation) { els.status.textContent = "Your browser can't share location. Enter a postcode instead."; return; }
-    els.status.textContent = "Finding you…";
+    if (!navigator.geolocation) { setStatus("statusNoGeo"); return; }
+    setStatus("statusFinding");
     navigator.geolocation.getCurrentPosition(
-      function (pos) { setOrigin(pos.coords.latitude, pos.coords.longitude, "your location"); },
-      function () { els.status.textContent = "Location permission was denied. Enter a postcode instead."; },
+      function (pos) { setOrigin(pos.coords.latitude, pos.coords.longitude, "@me"); },
+      function () { setStatus("statusDenied"); },
       { enableHighAccuracy: false, timeout: 10000 }
     );
+  });
+
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { if (b.dataset.lang !== state.lang) setLang(b.dataset.lang); });
   });
 
   // ---------- start ----------
   for (var age = 1; age <= 16; age++) {
     var o = document.createElement("option");
-    o.value = age; o.textContent = age + (age === 1 ? " year" : " years");
+    o.value = age;
     els.filters.age.appendChild(o);
   }
   var near = applyUrl();
+  translatePage();
   els.filters.addEventListener("change", render);
 
   fetch("data/activities.json")
@@ -265,7 +351,5 @@
       state.activities = rows;
       if (near) { els.place.value = near; geocode(near); } else render();
     })
-    .catch(function () {
-      els.status.textContent = "Couldn't load activities. If you opened the file directly, run a local server (see README).";
-    });
+    .catch(function () { setStatus("statusLoadFailed"); });
 })();
