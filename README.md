@@ -30,7 +30,7 @@ Edit [`data/activities.json`](data/activities.json) (English text, plus translat
 
 ## How it's built
 
-Interface text for both languages is in [`i18n.js`](i18n.js).
+Interface text for all languages is in [`i18n.js`](i18n.js).
 
 Plain HTML, CSS and JavaScript. Maps by [Leaflet](https://leafletjs.com) and OpenStreetMap; address lookup by OpenStreetMap Nominatim. Hosted on GitHub Pages.
 
