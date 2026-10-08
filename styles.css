@@ -42,6 +42,18 @@ a { color: var(--accent); }
 .brand { font-weight: 800; font-size: 22px; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .brand .dot { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--soft); }
 .tag { margin: 0; color: var(--muted); }
+.insta { margin-left: auto; align-self: center; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; text-decoration: none; }
+.insta svg { width: 20px; height: 20px; }
+@media (max-width: 560px) { .insta span { display: none; } .insta svg { width: 24px; height: 24px; } }
+
+/* contact */
+.contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; margin: 8px 0 32px; padding: 28px 32px; background: var(--soft); border-radius: 20px; }
+@media (max-width: 480px) { .contact { padding: 24px 20px; } }
+.contact h2 { margin: 0 0 4px; font-size: 22px; }
+.contact p { margin: 0; color: var(--muted); max-width: 52ch; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.contact .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.contact .btn svg { width: 18px; height: 18px; }
 
 /* search */
 .search { padding-top: 24px; }
