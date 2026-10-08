@@ -184,3 +184,28 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .pin { width: 18px; height: 18px; border-radius: 50%; background: var(--accent); border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35); }
 .pin.active { transform: scale(1.35); }
 .me { width: 16px; height: 16px; border-radius: 50%; background: #1c7ed6; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(28, 126, 214, .25); }
+
+/* header links */
+.nav { font-weight: 700; font-size: 15px; color: var(--ink); text-decoration: none; }
+.nav:hover { color: var(--accent); }
+@media (max-width: 560px) { .nav { font-size: 14px; } .end { gap: 10px; } }
+.team-link { flex-basis: 100%; font-weight: 700; text-decoration: none; }
+.team-link:hover { text-decoration: underline; }
+
+/* contact page */
+.contact-page { padding-top: clamp(32px, 6vw, 64px); padding-bottom: 48px; }
+.contact-intro { max-width: 640px; }
+.contact-intro h1 { margin: 0 0 10px; font-size: clamp(32px, 5vw, 46px); line-height: 1.1; }
+.contact-intro p { margin: 0 0 22px; font-size: 18px; color: var(--muted); }
+.contact-intro .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.contact-intro .btn svg { width: 18px; height: 18px; }
+.team-page { margin-top: clamp(40px, 7vw, 72px); }
+.team-page h2 { margin: 0 0 24px; font-size: 26px; }
+.team-page ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 760px) { .team-page ul { grid-template-columns: 1fr; } }
+.member { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 28px 20px; }
+.member img, .member .initials { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; border: 4px solid var(--soft); }
+.member .initials { display: grid; place-items: center; background: var(--soft); font-size: 48px; font-weight: 800; color: var(--accent); }
+.member.lead img { border-color: var(--accent); }
+.member b { font-size: 20px; }
+.member span:last-child { color: var(--muted); }

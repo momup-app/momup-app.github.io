@@ -89,6 +89,9 @@
     document.querySelectorAll(".lang button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));
     });
+    document.querySelectorAll("a[data-keep-lang]").forEach(function (a) {
+      a.href = a.dataset.keepLang + "?lang=" + state.lang;
+    });
     showStatus();
   }
 
