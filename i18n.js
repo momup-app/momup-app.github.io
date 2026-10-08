@@ -105,6 +105,7 @@ window.I18N = {
     role_yuliia: "Creative Director",
     role_sophia: "Baby Boss",
     role_ivan: "IT support manager",
+    role_iana: "Web developer & QA",
     footSample: 'Listings are <b>sample data</b> for this demo. Follow <a href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank">@momup_app</a> on Instagram for updates.',
     footPrivacy: "This site stores nothing about you or your child: no cookies, no tracking. Saved activities stay in your own browser. Map tiles and address lookup come from OpenStreetMap.",
     per: {}
@@ -212,6 +213,7 @@ window.I18N = {
     role_yuliia: "Kreativdirektorin",
     role_sophia: "Baby Boss",
     role_ivan: "IT-Support-Manager",
+    role_iana: "Webentwicklerin & QA",
     footSample: 'Die Einträge sind <b>Beispieldaten</b> für diese Demo. Folge <a href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank">@momup_app</a> auf Instagram für Neuigkeiten.',
     footPrivacy: "Diese Seite speichert nichts über dich oder dein Kind: keine Cookies, kein Tracking. Gemerkte Aktivitäten bleiben in deinem eigenen Browser. Kartenkacheln und Adresssuche kommen von OpenStreetMap.",
     per: {
@@ -334,6 +336,7 @@ window.I18N = {
     role_yuliia: "Креативный директор",
     role_sophia: "Беби-босс",
     role_ivan: "Менеджер IT-поддержки",
+    role_iana: "Веб-разработка и QA",
     footSample: 'Все записи здесь — <b>примеры</b> для демо. Подписывайтесь на <a href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank">@momup_app</a> в Instagram, чтобы не пропустить новости.',
     footPrivacy: "Сайт ничего не хранит о вас и вашем ребёнке: никаких cookie и трекинга. Избранное остаётся только в вашем браузере. Карта и поиск адресов работают на OpenStreetMap.",
     per: {
