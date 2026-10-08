@@ -90,7 +90,8 @@
       b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));
     });
     document.querySelectorAll("a[data-keep-lang]").forEach(function (a) {
-      a.href = a.dataset.keepLang + "?lang=" + state.lang;
+      var parts = a.dataset.keepLang.split("#");
+      a.href = parts[0] + "?lang=" + state.lang + (parts[1] ? "#" + parts[1] : "");
     });
     showStatus();
   }
@@ -101,7 +102,7 @@
     translatePage();
     render();
     if (dialog.open) {
-      var current = state.events.filter(function (e) { return e.id === openEventId; })[0];
+      var current = state.events.concat(state.activities).filter(function (e) { return e.id === openEventId; })[0];
       if (current) openEvent(current);
     }
   }
@@ -329,7 +330,8 @@
   function card(a) {
     var title = tr(a, "title");
     var li = el("li", "item");
-    selectable(li, a.id);
+    li.setAttribute("aria-haspopup", "dialog");
+    selectable(li, a.id, function () { openEvent(a); });
 
     var row = el("div", "row");
     var head = el("div");
@@ -421,17 +423,24 @@
     state.activeId = e.id;
     dialogBody.replaceChildren();
 
+    var isEvent = !!e.date; // activities repeat weekly and have no date
     var head = el("div", "when");
-    var d = utcDate(e.date);
-    var badge = el("div", "date");
-    badge.setAttribute("aria-hidden", "true");
-    badge.appendChild(el("b", null, String(d.getUTCDate())));
-    badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
-    head.appendChild(badge);
     var day = el("p", "day");
-    day.appendChild(el("b", null, dayLabel(e, now)));
-    day.appendChild(document.createElement("br"));
-    day.appendChild(document.createTextNode(e.start + "–" + e.end));
+    if (isEvent) {
+      var d = utcDate(e.date);
+      var badge = el("div", "date");
+      badge.setAttribute("aria-hidden", "true");
+      badge.appendChild(el("b", null, String(d.getUTCDate())));
+      badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
+      head.appendChild(badge);
+      day.appendChild(el("b", null, dayLabel(e, now)));
+      day.appendChild(document.createElement("br"));
+      day.appendChild(document.createTextNode(e.start + "–" + e.end));
+    } else {
+      day.appendChild(el("b", null, e.days.map(function (x) { return t("day_" + x); }).join(", ")));
+      day.appendChild(document.createElement("br"));
+      day.appendChild(document.createTextNode(timeText(e)));
+    }
     head.appendChild(day);
     dialogBody.appendChild(head);
 
@@ -446,10 +455,12 @@
     if (place) dialogBody.appendChild(el("p", "place", "📍 " + place));
 
     var acts = el("div", "sheet-actions");
-    var cal = el("button", "btn", t("addToCalendar"));
-    cal.type = "button";
-    cal.addEventListener("click", function () { downloadIcs(e); });
-    acts.appendChild(cal);
+    if (isEvent) {
+      var cal = el("button", "btn", t("addToCalendar"));
+      cal.type = "button";
+      cal.addEventListener("click", function () { downloadIcs(e); });
+      acts.appendChild(cal);
+    }
     if (e.format === "in-person") {
       var dir = el("a", "btn ghost", t("directions") + " ↗");
       dir.href = "https://www.google.com/maps/dir/?api=1&destination=" + e.lat + "," + e.lng;
@@ -479,7 +490,7 @@
     acts.appendChild(share);
     dialogBody.appendChild(acts);
 
-    history.replaceState(null, "", location.search + "#event=" + encodeURIComponent(e.id));
+    history.replaceState(null, "", location.search + "#item=" + encodeURIComponent(e.id));
     if (!dialog.open) dialog.showModal();
     document.querySelectorAll(".event.active, .item.active").forEach(function (n) { n.classList.remove("active"); });
     var card = document.getElementById("item-" + e.id);
@@ -497,10 +508,10 @@
   dialog.addEventListener("click", function (ev) { if (ev.target === dialog) dialog.close(); });
 
   function eventFromHash() {
-    var m = location.hash.match(/^#event=(.+)$/);
+    var m = location.hash.match(/^#(?:event|item)=(.+)$/);
     if (!m) return null;
     var id = decodeURIComponent(m[1]);
-    return state.events.filter(function (e) { return e.id === id; })[0] || null;
+    return state.events.concat(state.activities).filter(function (e) { return e.id === id; })[0] || null;
   }
 
   // A one-event .ics file that Google, Apple and Outlook calendars can import.

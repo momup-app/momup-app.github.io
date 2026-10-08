@@ -38,7 +38,34 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           <span data-i18n="contactButton">Message @momup_app</span>
         </a>
-        <a class="btn ghost" href="https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml" rel="noopener" target="_blank" data-i18n="suggest">Suggest an activity</a>
+        <a class="btn ghost" href="#suggest" data-i18n="suggest">Suggest an activity</a>
+      </div>
+    </section>
+
+    <section class="suggest" id="suggest" aria-labelledby="suggest-h">
+      <h2 id="suggest-h" data-i18n="suggest">Suggest an activity</h2>
+      <p data-i18n="suggestIntro">Know a great class, club or event for kids in Berlin? Fill this in and send it to us on Instagram.</p>
+      <form id="suggest-form">
+        <label class="wide"><span><span data-i18n="suggestName">Activity name</span> *</span><input name="name" required></label>
+        <label><span data-i18n="suggestWho">Who runs it</span><input name="who"></label>
+        <label><span><span data-i18n="suggestWhere">Address, or “online”</span> *</span><input name="where" required></label>
+        <label><span data-i18n="suggestAges">Ages</span><input name="ages" data-i18n-attr="placeholder:suggestAgesHint" placeholder="e.g. 4–8"></label>
+        <label><span data-i18n="suggestWhen">Days and times</span><input name="when" data-i18n-attr="placeholder:suggestWhenHint" placeholder="e.g. Tue 16:00–17:00"></label>
+        <label><span data-i18n="suggestPrice">Price</span><input name="price" data-i18n-attr="placeholder:suggestPriceHint" placeholder="e.g. free, €10 per session"></label>
+        <label><span data-i18n="suggestLink">Website or Instagram</span><input name="link" inputmode="url"></label>
+        <label class="wide"><span data-i18n="suggestNote">Anything else?</span><textarea name="note" rows="3"></textarea></label>
+        <div class="wide send">
+          <button type="submit" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <span data-i18n="suggestSend">Copy and open Instagram</span>
+          </button>
+          <small data-i18n="suggestHow">We copy your message; paste it into the chat with @momup_app.</small>
+        </div>
+      </form>
+      <div class="suggest-done" id="suggest-done" role="status" hidden>
+        <p id="suggest-done-text"></p>
+        <textarea id="suggest-message" rows="8" readonly></textarea>
+        <a class="btn" href="https://ig.me/m/momup_app" target="_blank" rel="noopener" data-i18n="suggestOpenAgain">Open Instagram chat</a>
       </div>
     </section>
 
@@ -92,7 +119,7 @@
         });
         document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
         document.querySelectorAll("a[data-keep-lang]").forEach(function (a) { a.href = a.dataset.keepLang + "?lang=" + lang; });
-        history.replaceState(null, "", "?lang=" + lang);
+        history.replaceState(null, "", "?lang=" + lang + location.hash);
       }
       document.querySelectorAll(".lang button").forEach(function (b) {
         b.addEventListener("click", function () {
@@ -100,7 +127,42 @@
           apply(b.dataset.lang);
         });
       });
-      apply(pick());
+      // (apply is wrapped below so the form knows the current language)
+      var current = pick();
+      var applyLang = apply;
+      apply = function (lang) { current = lang; applyLang(lang); };
+      apply(current);
+
+      // Suggest form: build a message, copy it, open the Instagram chat. Nothing is sent to us directly.
+      var form = document.getElementById("suggest-form");
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var dict = window.I18N[current];
+        var t = function (k) { return dict[k] != null ? dict[k] : window.I18N.en[k]; };
+        var rows = [["suggestName", "name"], ["suggestWho", "who"], ["suggestWhere", "where"], ["suggestAges", "ages"],
+          ["suggestWhen", "when"], ["suggestPrice", "price"], ["suggestLink", "link"], ["suggestNote", "note"]];
+        var lines = [t("suggestMessageHead")];
+        rows.forEach(function (r) {
+          var v = form.elements[r[1]].value.trim();
+          if (v) lines.push(t(r[0]) + ": " + v);
+        });
+        var text = lines.join("\n");
+        var chat = window.open("https://ig.me/m/momup_app", "_blank");
+        if (chat) chat.opener = null;
+        var done = document.getElementById("suggest-done");
+        var msg = document.getElementById("suggest-message");
+        msg.value = text;
+        function show(key) {
+          document.getElementById("suggest-done-text").textContent = t(key);
+          done.hidden = false;
+          done.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(function () { show("suggestCopied"); }, function () { show("suggestCopyFailed"); msg.select(); });
+        } else {
+          show("suggestCopyFailed"); msg.select();
+        }
+      });
     })();
   </script>
 </body>
