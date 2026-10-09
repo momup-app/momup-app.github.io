@@ -320,3 +320,17 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .pin.sale-pin { background: var(--sale); }
 .events.sales { padding-top: 32px; }
 .events[hidden] { display: none; }
+
+/* "add to home screen" hint */
+.install { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 1200; width: min(440px, calc(100vw - 24px));
+  display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; border-radius: 20px; background: var(--card); color: var(--ink);
+  border: 1px solid var(--line); box-shadow: 0 14px 40px rgba(31, 24, 70, .22); animation: install-in .3s ease-out; }
+.install img { flex: none; border-radius: 11px; }
+.install b { display: block; font-size: 16px; }
+.install p { margin: 2px 0 10px; font-size: 14px; color: var(--muted); line-height: 1.45; }
+.install-acts { display: flex; align-items: center; gap: 14px; }
+.install .btn { padding: 9px 16px; }
+@keyframes install-in { from { opacity: 0; transform: translate(-50%, 12px); } }
+@media (prefers-reduced-motion: reduce) { .install { animation: none; } }
+/* installed app: leave room for the phone's status bar and home bar */
+@media (display-mode: standalone) { body { padding-bottom: env(safe-area-inset-bottom); } }
