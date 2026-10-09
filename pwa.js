@@ -14,11 +14,24 @@
   var standalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
   var ua = navigator.userAgent;
   var isIOS = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /android/i.test(ua);
   var dismissed = false;
   try { dismissed = !!localStorage.getItem(KEY); } catch (e) {}
-  if (standalone || dismissed) return;
 
   var deferred = null, banner = null;
+
+  // For the install page and "Install the app" links.
+  window.KNInstall = {
+    standalone: standalone, isIOS: isIOS, isAndroid: isAndroid,
+    canPrompt: function () { return !!deferred; },
+    prompt: function () {
+      if (!deferred) return Promise.resolve("unavailable");
+      deferred.prompt();
+      return deferred.userChoice.then(function (c) { deferred = null; close(true); return c.outcome; });
+    }
+  };
+  // Hide "Install the app" links inside the installed app.
+  if (standalone) document.documentElement.classList.add("is-app");
 
   function t(key) {
     return window.KN ? window.KN.t(document.documentElement.lang || "en", key) : key;
@@ -55,10 +68,7 @@
     if (mode === "prompt") {
       var go = text("button", "btn", "installBtn");
       go.type = "button";
-      go.addEventListener("click", function () {
-        deferred.prompt();
-        deferred.userChoice.then(function (c) { close(c.outcome !== "accepted"); deferred = null; });
-      });
+      go.addEventListener("click", function () { window.KNInstall.prompt(); });
       acts.appendChild(go);
     }
     var later = text("button", "link", "installLater");
@@ -70,14 +80,21 @@
     document.body.appendChild(banner);
   }
 
+  // No hint banner on the install page itself, inside the app, or after "Not now".
+  var quiet = standalone || dismissed || /install\.html$/.test(location.pathname);
+
   // Android and desktop Chrome / Edge: the browser offers a real install prompt.
   window.addEventListener("beforeinstallprompt", function (e) {
     e.preventDefault();
     deferred = e;
-    setTimeout(function () { show("prompt"); }, 2500);
+    document.dispatchEvent(new Event("kn-installable"));
+    if (!quiet) setTimeout(function () { show("prompt"); }, 2500);
   });
-  window.addEventListener("appinstalled", function () { close(true); });
+  window.addEventListener("appinstalled", function () {
+    close(true);
+    document.dispatchEvent(new Event("kn-installed"));
+  });
 
   // iPhone / iPad: explain the two taps.
-  if (isIOS) setTimeout(function () { show("ios"); }, 2500);
+  if (isIOS && !quiet) setTimeout(function () { show("ios"); }, 2500);
 })();

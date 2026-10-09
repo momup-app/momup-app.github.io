@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get the app | Kids Nearby Berlin</title>
+  <meta name="description" content="Put Kids Nearby on your phone's home screen: it opens like an app and works offline.">
+  <meta property="og:title" content="Kids Nearby Berlin: the app">
+  <meta property="og:description" content="Activities, play events and kids' clothes sales in Berlin, on your home screen.">
+  <meta property="og:image" content="https://momup-app.github.io/images/icon-512.png">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#8670D6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Kids Nearby">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./" data-keep-lang="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
+      <div class="end">
+        <a class="nav" href="./" data-keep-lang="./"><span aria-hidden="true">← </span><span data-i18n="navBack">All activities</span></a>
+        <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
+          <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap install-page">
+    <section class="install-hero">
+      <img src="images/icon.svg" width="96" height="96" alt="">
+      <div>
+        <h1 data-i18n="getAppTitle">Kids Nearby on your phone</h1>
+        <p data-i18n="getAppText">Put it on your home screen: it opens full-screen like an app, works offline, and is free. No App Store needed.</p>
+        <button type="button" class="btn big" id="install-now" hidden data-i18n="installBtn">Install</button>
+        <p class="done" id="installed" hidden data-i18n="getAppInstalled">✓ Kids Nearby is installed on this device.</p>
+      </div>
+    </section>
+
+    <div class="install-steps">
+      <section class="acc-card" id="steps-ios" aria-labelledby="ios-h">
+        <h2 id="ios-h">iPhone &amp; iPad</h2>
+        <ol>
+          <li data-i18n="iosStep1">Open this page in Safari.</li>
+          <li data-i18n="iosStep2">Tap Share ⬆︎ at the bottom of the screen.</li>
+          <li data-i18n="iosStep3">Scroll down and tap “Add to Home Screen”.</li>
+          <li data-i18n="iosStep4">Tap “Add”. The MomUp icon appears on your home screen.</li>
+        </ol>
+      </section>
+
+      <section class="acc-card" id="steps-android" aria-labelledby="android-h">
+        <h2 id="android-h">Android</h2>
+        <ol>
+          <li data-i18n="androidStep1">Open this page in Chrome.</li>
+          <li data-i18n="androidStep2">Tap “Install” above, or the menu ⋮ at the top right.</li>
+          <li data-i18n="androidStep3">Choose “Install app” (or “Add to Home screen”).</li>
+          <li data-i18n="androidStep4">Confirm. The MomUp icon appears with your other apps.</li>
+        </ol>
+      </section>
+
+      <section class="acc-card qr" id="steps-desktop" aria-labelledby="qr-h">
+        <h2 id="qr-h" data-i18n="qrTitle">On a computer?</h2>
+        <p data-i18n="qrText">Scan this code with your phone camera to open the page there.</p>
+        <img src="images/qr-install.svg" width="180" height="180" alt="QR code: momup-app.github.io/install.html">
+        <p class="small muted">momup-app.github.io/install.html</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="pwa.js"></script>
+  <script>
+    (function () {
+      var lang = KN.pickLang();
+      function apply() {
+        KN.translate(lang);
+        document.title = KN.t(lang, "getAppPageTitle");
+      }
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          lang = b.dataset.lang;
+          try { localStorage.setItem("kn-lang", lang); } catch (e) {}
+          apply();
+        });
+      });
+      apply();
+
+      var I = window.KNInstall;
+      var btn = document.getElementById("install-now");
+      function installed() {
+        btn.hidden = true;
+        document.getElementById("installed").hidden = false;
+      }
+      if (I.standalone) installed();
+      // Show the steps for this phone first.
+      var first = I.isIOS ? "steps-ios" : I.isAndroid ? "steps-android" : "steps-desktop";
+      var box = document.getElementById(first);
+      box.classList.add("mine");
+      box.parentNode.insertBefore(box, box.parentNode.firstChild);
+
+      function offer() { if (!I.standalone) btn.hidden = !I.canPrompt(); }
+      offer();
+      document.addEventListener("kn-installable", offer);
+      document.addEventListener("kn-installed", installed);
+      btn.addEventListener("click", function () {
+        I.prompt().then(function (outcome) { if (outcome === "accepted") installed(); else offer(); });
+      });
+    })();
+  </script>
+</body>
+</html>
