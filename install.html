@@ -109,6 +109,14 @@
         document.getElementById("installed").hidden = false;
       }
       if (I.standalone) installed();
+      // Installed already, but opened in a normal browser tab (Chrome shows "Open in app" in the address bar).
+      I.isInstalled().then(function (yes) {
+        if (!yes || I.standalone) return;
+        installed();
+        document.getElementById("installed").textContent = KN.t(lang, "getAppInstalledTab");
+        document.getElementById("installed").dataset.i18n = "getAppInstalledTab";
+        hint.hidden = true;
+      });
       // Show the steps for this phone first.
       var first = I.isIOS ? "steps-ios" : I.isAndroid ? "steps-android" : "steps-desktop";
       var box = document.getElementById(first);

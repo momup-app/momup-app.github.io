@@ -26,6 +26,12 @@
   window.KNInstall = {
     standalone: standalone, isIOS: isIOS, isAndroid: isAndroid, inApp: inApp,
     canPrompt: function () { return !!deferred; },
+    // Resolves true when this app is already installed on the device (Chrome/Edge; elsewhere false).
+    isInstalled: function () {
+      if (standalone) return Promise.resolve(true);
+      if (!navigator.getInstalledRelatedApps) return Promise.resolve(false);
+      return navigator.getInstalledRelatedApps().then(function (apps) { return apps.length > 0; }, function () { return false; });
+    },
     prompt: function () {
       if (!deferred) return Promise.resolve("unavailable");
       deferred.prompt();
