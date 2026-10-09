@@ -12,6 +12,7 @@ Live: [momup-app.github.io](https://momup-app.github.io)
 - Save favorites (kept in your own browser only)
 - Share a search: filters are kept in the page link
 - German, English and Russian: opens in the browser's language, switch any time with DE | EN | RU
+- Free accounts (email login link, no password): saved activities on every device ([setup](docs/accounts-setup.md))
 - Upcoming events with "Add to calendar", synced every hour from [@momup_app](https://www.instagram.com/momup_app/) posts tagged `#momupevent` ([how it works](docs/instagram-sync.md))
 
 ## Run it locally

@@ -151,6 +151,34 @@
     try { localStorage.setItem("kn-saved", JSON.stringify(Array.from(state.saved))); } catch (e) {}
   }
 
+  // ---------- account: keep ♡ in sync when logged in (see account.js) ----------
+  function syncSaved(id, adding) {
+    var acc = state.account;
+    if (!acc) return;
+    var q = adding
+      ? acc.client.from("saved_items").insert({ item_id: id })
+      : acc.client.from("saved_items").delete().eq("item_id", id);
+    q.then(function () {});
+  }
+
+  function connectAccount() {
+    if (!window.KNAccount) return;
+    window.KNAccount.ready.then(function (acc) {
+      if (!acc || !acc.session) return;
+      state.account = acc;
+      acc.client.from("saved_items").select("item_id").then(function (r) {
+        if (r.error) return;
+        var remote = r.data.map(function (x) { return x.item_id; });
+        // Hearts saved on this device before logging in move into the account.
+        var missing = Array.from(state.saved).filter(function (id) { return remote.indexOf(id) === -1; });
+        if (missing.length) acc.client.from("saved_items").insert(missing.map(function (id) { return { item_id: id }; })).then(function () {});
+        state.saved = new Set(remote.concat(missing));
+        storeSaved();
+        render();
+      });
+    });
+  }
+
   // ---------- map ----------
   var map = L.map("map", { scrollWheelZoom: false }).setView([DEFAULT_ORIGIN.lat, DEFAULT_ORIGIN.lng], 12);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -301,8 +329,10 @@
     save.setAttribute("aria-label", t(isSaved ? "unsave" : "save", { title: title }));
     save.addEventListener("click", function (e) {
       e.stopPropagation();
-      if (state.saved.has(a.id)) state.saved.delete(a.id); else state.saved.add(a.id);
+      var adding = !state.saved.has(a.id);
+      if (adding) state.saved.add(a.id); else state.saved.delete(a.id);
       storeSaved();
+      syncSaved(a.id, adding);
       render();
     });
     return save;
@@ -634,6 +664,7 @@
       if (near) { els.place.value = near; geocode(near); } else render();
       var shared = eventFromHash();
       if (shared) openEvent(shared);
+      connectAccount();
     })
     .catch(function () { setStatus("statusLoadFailed"); });
 })();

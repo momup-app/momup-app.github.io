@@ -101,6 +101,40 @@ window.I18N = {
     suggestBadEmail: "This email address doesn’t look right. Please check it.",
     suggestThanks: "Thank you! Yuliia got your message and will reply soon.",
     suggestError: "Sorry, sending didn’t work. Please try again, or message us on Instagram @momup_app.",
+    login: "Log in",
+    myAccount: "My account",
+    accountPageTitle: "My account | Kids Nearby Berlin",
+    accountPageDesc: "Your free Kids Nearby account: saved activities on all your devices.",
+    accountTitle: "Your free Kids Nearby account",
+    accountWhy1: "Your saved activities on your phone and computer",
+    accountWhy2: "Your kids’ ages and area, so the right things come first",
+    accountWhy3: "Email alerts for new events (coming soon)",
+    emailLabel: "Your email",
+    sendLink: "Send me a login link",
+    noPassword: "No password needed: we email you a link. New here? The same link creates your account.",
+    sending: "Sending…",
+    linkSent: "Check your inbox: we sent a login link to {email}. It can take a minute, and may land in spam.",
+    linkFailed: "Couldn’t send the link. Check the address and try again in a minute.",
+    badEmail: "Please enter a valid email address.",
+    hello: "Hello, {name}!",
+    profileTitle: "Your details",
+    nameLabel: "Name (optional)",
+    kidsAgesLabel: "Your kids’ ages",
+    kidsAgesHint: "Tap every age that fits. We never ask for names or photos of children.",
+    postcodeLabel: "Postcode (optional)",
+    postcodeBad: "A Berlin postcode has 5 digits, e.g. 10437.",
+    alertsLabel: "Email me new events that fit (coming soon)",
+    saveProfile: "Save",
+    savedOk: "Saved ✓",
+    saveFailed: "Couldn’t save. Please try again.",
+    savedListTitle: "Your saved activities",
+    savedListEmpty: "Nothing saved yet. Tap ♡ on any activity or event.",
+    logout: "Log out",
+    deleteAccount: "Delete my account",
+    deleteConfirm: "Delete your account and everything saved in it? This can’t be undone.",
+    deleted: "Your account was deleted.",
+    accountPrivacy: "We store your email, the details above and your saved activities in the EU (Frankfurt). Nothing is shared. You can delete your account any time.",
+    accountsOff: "Accounts are coming soon. Until then, ♡ saves activities in this browser.",
     teamTitle: "Our team",
     role_yuliia: "Creative Director",
     role_sophia: "Baby Boss",
@@ -209,6 +243,40 @@ window.I18N = {
     suggestBadEmail: "Diese E-Mail-Adresse sieht nicht richtig aus. Bitte prüf sie.",
     suggestThanks: "Danke! Yuliia hat deine Nachricht bekommen und antwortet bald.",
     suggestError: "Das Senden hat leider nicht geklappt. Versuch es noch einmal oder schreib uns auf Instagram @momup_app.",
+    login: "Anmelden",
+    myAccount: "Mein Konto",
+    accountPageTitle: "Mein Konto | Kids Nearby Berlin",
+    accountPageDesc: "Dein kostenloses Kids-Nearby-Konto: gemerkte Aktivitäten auf allen Geräten.",
+    accountTitle: "Dein kostenloses Kids-Nearby-Konto",
+    accountWhy1: "Deine gemerkten Aktivitäten auf Handy und Computer",
+    accountWhy2: "Alter deiner Kinder und dein Kiez, damit Passendes zuerst kommt",
+    accountWhy3: "E-Mail-Hinweise zu neuen Events (bald)",
+    emailLabel: "Deine E-Mail",
+    sendLink: "Login-Link schicken",
+    noPassword: "Kein Passwort nötig: Wir schicken dir einen Link per E-Mail. Neu hier? Derselbe Link erstellt dein Konto.",
+    sending: "Wird gesendet …",
+    linkSent: "Schau in dein Postfach: Wir haben einen Login-Link an {email} geschickt. Das kann eine Minute dauern, schau auch im Spam nach.",
+    linkFailed: "Der Link konnte nicht gesendet werden. Prüf die Adresse und versuch es in einer Minute noch einmal.",
+    badEmail: "Bitte gib eine gültige E-Mail-Adresse ein.",
+    hello: "Hallo, {name}!",
+    profileTitle: "Deine Angaben",
+    nameLabel: "Name (optional)",
+    kidsAgesLabel: "Alter deiner Kinder",
+    kidsAgesHint: "Tippe alle passenden Alter an. Wir fragen nie nach Namen oder Fotos von Kindern.",
+    postcodeLabel: "PLZ (optional)",
+    postcodeBad: "Eine Berliner PLZ hat 5 Ziffern, z. B. 10437.",
+    alertsLabel: "Schick mir passende neue Events per E-Mail (bald)",
+    saveProfile: "Speichern",
+    savedOk: "Gespeichert ✓",
+    saveFailed: "Speichern hat nicht geklappt. Bitte versuch es noch einmal.",
+    savedListTitle: "Deine gemerkten Aktivitäten",
+    savedListEmpty: "Noch nichts gemerkt. Tippe bei einer Aktivität oder einem Event auf ♡.",
+    logout: "Abmelden",
+    deleteAccount: "Mein Konto löschen",
+    deleteConfirm: "Dein Konto und alles darin löschen? Das lässt sich nicht rückgängig machen.",
+    deleted: "Dein Konto wurde gelöscht.",
+    accountPrivacy: "Wir speichern deine E-Mail, die Angaben oben und deine gemerkten Aktivitäten in der EU (Frankfurt). Nichts wird weitergegeben. Du kannst dein Konto jederzeit löschen.",
+    accountsOff: "Konten kommen bald. Bis dahin merkt ♡ Aktivitäten in diesem Browser.",
     teamTitle: "Unser Team",
     role_yuliia: "Kreativdirektorin",
     role_sophia: "Baby Boss",
@@ -332,6 +400,40 @@ window.I18N = {
     suggestBadEmail: "Похоже, в email ошибка. Проверьте, пожалуйста.",
     suggestThanks: "Спасибо! Юлия получила ваше сообщение и скоро ответит.",
     suggestError: "Не получилось отправить. Попробуйте ещё раз или напишите нам в Instagram @momup_app.",
+    login: "Войти",
+    myAccount: "Мой аккаунт",
+    accountPageTitle: "Мой аккаунт | Kids Nearby Berlin",
+    accountPageDesc: "Бесплатный аккаунт Kids Nearby: избранное на всех устройствах.",
+    accountTitle: "Бесплатный аккаунт Kids Nearby",
+    accountWhy1: "Избранное — и на телефоне, и на компьютере",
+    accountWhy2: "Возраст детей и район — чтобы подходящее было первым",
+    accountWhy3: "Письма о новых событиях (скоро)",
+    emailLabel: "Ваш email",
+    sendLink: "Прислать ссылку для входа",
+    noPassword: "Пароль не нужен: мы пришлём ссылку на email. Впервые здесь? Та же ссылка создаст аккаунт.",
+    sending: "Отправляем…",
+    linkSent: "Проверьте почту: мы отправили ссылку для входа на {email}. Это может занять минуту, загляните и в спам.",
+    linkFailed: "Не удалось отправить ссылку. Проверьте адрес и попробуйте через минуту.",
+    badEmail: "Введите правильный email.",
+    hello: "Здравствуйте, {name}!",
+    profileTitle: "Ваши данные",
+    nameLabel: "Имя (необязательно)",
+    kidsAgesLabel: "Возраст ваших детей",
+    kidsAgesHint: "Отметьте все подходящие возрасты. Мы никогда не спрашиваем имена или фото детей.",
+    postcodeLabel: "Индекс (необязательно)",
+    postcodeBad: "Берлинский индекс — 5 цифр, например 10437.",
+    alertsLabel: "Присылать мне подходящие новые события (скоро)",
+    saveProfile: "Сохранить",
+    savedOk: "Сохранено ✓",
+    saveFailed: "Не удалось сохранить. Попробуйте ещё раз.",
+    savedListTitle: "Ваше избранное",
+    savedListEmpty: "Пока пусто. Нажмите ♡ у занятия или события.",
+    logout: "Выйти",
+    deleteAccount: "Удалить аккаунт",
+    deleteConfirm: "Удалить аккаунт и всё сохранённое? Это нельзя отменить.",
+    deleted: "Ваш аккаунт удалён.",
+    accountPrivacy: "Мы храним ваш email, данные выше и избранное в ЕС (Франкфурт). Мы ничего никому не передаём. Аккаунт можно удалить в любой момент.",
+    accountsOff: "Аккаунты скоро появятся. А пока ♡ сохраняет занятия в этом браузере.",
     teamTitle: "Наша команда",
     role_yuliia: "Креативный директор",
     role_sophia: "Беби-босс",
@@ -351,5 +453,40 @@ window.I18N = {
       "family": "семья",
       "person": "человек"
     }
+  }
+};
+
+// Small helpers for pages without app.js (contact, account).
+window.KN = {
+  LANGS: ["de", "en", "ru"],
+  // Order: ?lang= in the link, then the visitor's last choice, then the browser language.
+  pickLang: function () {
+    var L = window.KN.LANGS;
+    var fromUrl = new URLSearchParams(location.search).get("lang");
+    if (L.indexOf(fromUrl) !== -1) return fromUrl;
+    try { var s = localStorage.getItem("kn-lang"); if (L.indexOf(s) !== -1) return s; } catch (e) {}
+    var b = ((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase().slice(0, 2);
+    return L.indexOf(b) !== -1 ? b : "en";
+  },
+  t: function (lang, key, vars) {
+    var s = window.I18N[lang][key];
+    if (s == null) s = window.I18N.en[key];
+    if (s == null) return key;
+    return s.replace(/\{(\w+)\}/g, function (_, k) { return vars && vars[k] != null ? vars[k] : ""; });
+  },
+  // Fills every [data-i18n], [data-i18n-html] and [data-i18n-attr] on the page.
+  translate: function (lang) {
+    var t = function (k) { return window.KN.t(lang, k); };
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(function (n) { n.textContent = t(n.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (n) { n.innerHTML = t(n.dataset.i18nHtml); });
+    document.querySelectorAll("[data-i18n-attr]").forEach(function (n) {
+      n.dataset.i18nAttr.split(",").forEach(function (pair) { var p = pair.split(":"); n.setAttribute(p[0], t(p[1])); });
+    });
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
+    document.querySelectorAll("a[data-keep-lang]").forEach(function (a) {
+      var parts = a.dataset.keepLang.split("#");
+      a.href = parts[0] + "?lang=" + lang + (parts[1] ? "#" + parts[1] : "");
+    });
   }
 };

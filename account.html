@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My account | Kids Nearby Berlin</title>
+  <meta name="description" content="Your free Kids Nearby account: saved activities on all your devices.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./" data-keep-lang="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
+      <div class="end">
+        <a class="nav" href="./" data-keep-lang="./"><span aria-hidden="true">← </span><span data-i18n="navBack">All activities</span></a>
+        <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
+          <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap account-page">
+    <!-- Shown while the account state loads -->
+    <p class="account-loading" id="acc-loading">…</p>
+
+    <!-- Accounts not configured yet -->
+    <section id="acc-off" hidden>
+      <h1 data-i18n="accountTitle">Your free Kids Nearby account</h1>
+      <p class="lede" data-i18n="accountsOff">Accounts are coming soon.</p>
+    </section>
+
+    <!-- Logged out: sign up / log in with a link by email -->
+    <section id="acc-out" class="acc-card" hidden aria-labelledby="out-h">
+      <h1 id="out-h" data-i18n="accountTitle">Your free Kids Nearby account</h1>
+      <ul class="why">
+        <li data-i18n="accountWhy1">Your saved activities on your phone and computer</li>
+        <li data-i18n="accountWhy2">Your kids’ ages and area, so the right things come first</li>
+        <li data-i18n="accountWhy3">Email alerts for new events (coming soon)</li>
+      </ul>
+      <form id="login-form" novalidate>
+        <label for="login-email" data-i18n="emailLabel">Your email</label>
+        <div class="row">
+          <input id="login-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          <button type="submit" class="btn" id="login-btn" data-i18n="sendLink">Send me a login link</button>
+        </div>
+        <small data-i18n="noPassword">No password needed: we email you a link. New here? The same link creates your account.</small>
+        <p class="form-msg" id="login-msg" role="status" hidden></p>
+      </form>
+    </section>
+
+    <!-- Logged in -->
+    <section id="acc-in" hidden>
+      <div class="acc-head">
+        <h1 id="hello"></h1>
+        <p class="who" id="who"></p>
+      </div>
+
+      <form id="profile-form" class="acc-card" novalidate aria-labelledby="profile-h">
+        <h2 id="profile-h" data-i18n="profileTitle">Your details</h2>
+        <label><span data-i18n="nameLabel">Name (optional)</span><input name="display_name" maxlength="80" autocomplete="given-name"></label>
+        <fieldset>
+          <legend data-i18n="kidsAgesLabel">Your kids’ ages</legend>
+          <div class="ages" id="ages"></div>
+          <small data-i18n="kidsAgesHint">Tap every age that fits. We never ask for names or photos of children.</small>
+        </fieldset>
+        <label><span data-i18n="postcodeLabel">Postcode (optional)</span><input name="postcode" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" placeholder="10437"></label>
+        <label class="check"><input type="checkbox" name="email_alerts"> <span data-i18n="alertsLabel">Email me new events that fit (coming soon)</span></label>
+        <div class="row">
+          <button type="submit" class="btn" data-i18n="saveProfile">Save</button>
+          <p class="form-msg inline" id="profile-msg" role="status" hidden></p>
+        </div>
+      </form>
+
+      <section class="acc-card" aria-labelledby="saved-h">
+        <h2 id="saved-h" data-i18n="savedListTitle">Your saved activities</h2>
+        <ul class="saved-list" id="saved-list"></ul>
+        <p class="muted" id="saved-empty" hidden data-i18n="savedListEmpty">Nothing saved yet.</p>
+      </section>
+
+      <div class="acc-actions">
+        <button type="button" class="btn ghost" id="logout" data-i18n="logout">Log out</button>
+        <button type="button" class="link danger" id="delete" data-i18n="deleteAccount">Delete my account</button>
+      </div>
+      <p class="muted small" data-i18n="accountPrivacy">We store your email, the details above and your saved activities in the EU (Frankfurt).</p>
+    </section>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="account.js"></script>
+  <script>
+    (function () {
+      "use strict";
+      var lang = KN.pickLang();
+      var t = function (k, v) { return KN.t(lang, k, v); };
+      var acc = null, items = {}, profile = null;
+      var $ = function (id) { return document.getElementById(id); };
+
+      function applyLang(updateUrl) {
+        KN.translate(lang);
+        document.title = t("accountPageTitle");
+        document.querySelector('meta[name="description"]').setAttribute("content", t("accountPageDesc"));
+        if (updateUrl) {
+          // Change only ?lang=; the login link's own parts (#access_token / ?code=) must stay for Supabase.
+          var params = new URLSearchParams(location.search);
+          params.set("lang", lang);
+          history.replaceState(null, "", "?" + params.toString() + location.hash);
+        }
+        if (acc && acc.session) showIn();
+      }
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          lang = b.dataset.lang;
+          try { localStorage.setItem("kn-lang", lang); } catch (e) {}
+          applyLang(true);
+        });
+      });
+
+      function msg(el, key, kind, vars) {
+        el.textContent = t(key, vars);
+        el.className = "form-msg " + (el.classList.contains("inline") ? "inline " : "") + (kind || "");
+        el.hidden = false;
+      }
+
+      function show(which) {
+        ["acc-loading", "acc-off", "acc-out", "acc-in"].forEach(function (id) { $(id).hidden = id !== which; });
+      }
+
+      // ---------- logged out ----------
+      $("login-form").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var email = $("login-email");
+        if (!email.value.trim() || !email.checkValidity()) { msg($("login-msg"), "badEmail", "error"); email.focus(); return; }
+        var btn = $("login-btn");
+        btn.disabled = true; btn.textContent = t("sending");
+        acc.client.auth.signInWithOtp({
+          email: email.value.trim(),
+          options: { emailRedirectTo: location.origin + location.pathname + "?lang=" + lang }
+        }).then(function (r) {
+          if (r.error) throw r.error;
+          msg($("login-msg"), "linkSent", "ok", { email: email.value.trim() });
+        }).catch(function () {
+          msg($("login-msg"), "linkFailed", "error");
+        }).then(function () { btn.disabled = false; btn.textContent = t("sendLink"); });
+      });
+
+      // ---------- logged in ----------
+      function showIn() {
+        var user = acc.session.user;
+        var name = (profile && profile.display_name) || user.email.split("@")[0];
+        $("hello").textContent = t("hello", { name: name });
+        $("who").textContent = user.email;
+        renderAges();
+        renderSaved();
+      }
+
+      function renderAges() {
+        var box = $("ages"), chosen = (profile && profile.kids_ages) || [];
+        box.replaceChildren();
+        for (var a = 0; a <= 16; a++) {
+          var lab = document.createElement("label");
+          lab.className = "age-chip";
+          var cb = document.createElement("input");
+          cb.type = "checkbox"; cb.value = a; cb.checked = chosen.indexOf(a) !== -1;
+          lab.appendChild(cb);
+          lab.appendChild(document.createTextNode(String(a)));
+          box.appendChild(lab);
+        }
+      }
+
+      function tr(item, field) {
+        return (lang !== "en" && item[lang] && item[lang][field]) || item[field];
+      }
+
+      var savedIds = [];
+      function renderSaved() {
+        var list = $("saved-list");
+        list.replaceChildren();
+        savedIds.forEach(function (id) {
+          var item = items[id];
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = "./?lang=" + lang + "#item=" + encodeURIComponent(id);
+          a.textContent = item ? tr(item, "title") : id;
+          li.appendChild(a);
+          if (item && item.date) {
+            var d = document.createElement("small");
+            d.textContent = " · " + new Date(item.date + "T12:00:00Z").toLocaleDateString(
+              { de: "de-DE", en: "en-GB", ru: "ru-RU" }[lang], { day: "numeric", month: "long" });
+            li.appendChild(d);
+          }
+          list.appendChild(li);
+        });
+        $("saved-empty").hidden = savedIds.length > 0;
+      }
+
+      function loadSignedIn() {
+        var c = acc.client;
+        return Promise.all([
+          c.from("profiles").select("*").eq("id", acc.session.user.id).maybeSingle(),
+          c.from("saved_items").select("item_id, created_at").order("created_at", { ascending: false }),
+          fetch("data/activities.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
+          fetch("data/events.json").then(function (r) { return r.json(); }).catch(function () { return []; })
+        ]).then(function (r) {
+          profile = r[0].data || {};
+          // Saved before logging in on this device? Move it into the account.
+          var local = [];
+          try { local = JSON.parse(localStorage.getItem("kn-saved") || "[]"); } catch (e) {}
+          var remote = (r[1].data || []).map(function (x) { return x.item_id; });
+          var missing = local.filter(function (id) { return remote.indexOf(id) === -1; });
+          if (missing.length) c.from("saved_items").insert(missing.map(function (id) { return { item_id: id }; })).then(function () {});
+          savedIds = remote.concat(missing);
+          try { localStorage.setItem("kn-saved", JSON.stringify(savedIds)); } catch (e) {}
+          r[2].concat(r[3]).forEach(function (it) { items[it.id] = it; });
+          var f = $("profile-form").elements;
+          f.display_name.value = profile.display_name || "";
+          f.postcode.value = profile.postcode || "";
+          f.email_alerts.checked = !!profile.email_alerts;
+          var chosenLang = null;
+          try { chosenLang = localStorage.getItem("kn-lang"); } catch (e) {}
+          if (!chosenLang && profile.language) { lang = profile.language; applyLang(); }
+          show("acc-in");
+          showIn();
+        });
+      }
+
+      $("profile-form").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var f = ev.target.elements;
+        var postcode = f.postcode.value.trim();
+        if (postcode && !/^[0-9]{5}$/.test(postcode)) { msg($("profile-msg"), "postcodeBad", "error"); f.postcode.focus(); return; }
+        var ages = Array.prototype.filter.call($("ages").querySelectorAll("input"), function (cb) { return cb.checked; })
+          .map(function (cb) { return Number(cb.value); });
+        var update = {
+          display_name: f.display_name.value.trim() || null,
+          postcode: postcode || null,
+          kids_ages: ages,
+          email_alerts: f.email_alerts.checked,
+          language: lang
+        };
+        acc.client.from("profiles").update(update).eq("id", acc.session.user.id).then(function (r) {
+          if (r.error) { msg($("profile-msg"), "saveFailed", "error"); return; }
+          profile = Object.assign(profile || {}, update);
+          msg($("profile-msg"), "savedOk", "ok");
+          showIn();
+        });
+      });
+
+      $("logout").addEventListener("click", function () {
+        acc.client.auth.signOut().then(function () { location.href = "./?lang=" + lang; });
+      });
+
+      $("delete").addEventListener("click", function () {
+        if (!window.confirm(t("deleteConfirm"))) return;
+        acc.client.rpc("delete_my_account").then(function (r) {
+          if (r.error) { window.alert(t("saveFailed")); return; }
+          try { localStorage.removeItem("kn-saved"); } catch (e) {}
+          acc.client.auth.signOut().then(function () {
+            window.alert(t("deleted"));
+            location.href = "./?lang=" + lang;
+          });
+        });
+      });
+
+      // ---------- start ----------
+      applyLang();
+      KNAccount.ready.then(function (a) {
+        acc = a;
+        if (!acc) { show("acc-off"); return; }
+        if (acc.session) return loadSignedIn();
+        show("acc-out");
+        // Arriving from the email link: Supabase finishes the login a moment after the page loads.
+        acc.client.auth.onAuthStateChange(function (event, session) {
+          if (event === "SIGNED_IN" && session && !acc.session) { acc.session = session; loadSignedIn(); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
