@@ -37,12 +37,18 @@
   </header>
 
   <main class="wrap install-page">
+    <section class="inapp" id="inapp" hidden role="alert">
+      <b data-i18n="inAppTitle">Open this page in your browser first</b>
+      <p id="inapp-text"></p>
+      <button type="button" class="btn" id="copy-link" data-i18n="copyLink">Copy link</button>
+    </section>
     <section class="install-hero">
       <img src="images/icon.svg" width="96" height="96" alt="">
       <div>
         <h1 data-i18n="getAppTitle">Kids Nearby on your phone</h1>
         <p data-i18n="getAppText">Put it on your home screen: it opens full-screen like an app, works offline, and is free. No App Store needed.</p>
         <button type="button" class="btn big" id="install-now" hidden data-i18n="installBtn">Install</button>
+        <p class="menu-hint" id="menu-hint" hidden data-i18n="androidMenuHint">No Install button? Tap the Chrome menu ⋮ at the top right, then “Install app” or “Add to Home screen”.</p>
         <p class="done" id="installed" hidden data-i18n="getAppInstalled">✓ Kids Nearby is installed on this device.</p>
       </div>
     </section>
@@ -85,6 +91,7 @@
       function apply() {
         KN.translate(lang);
         document.title = KN.t(lang, "getAppPageTitle");
+        document.getElementById("inapp-text").textContent = KN.t(lang, KNInstall.isIOS ? "inAppIos" : "inAppAndroid");
       }
       document.querySelectorAll(".lang button").forEach(function (b) {
         b.addEventListener("click", function () {
@@ -108,8 +115,24 @@
       box.classList.add("mine");
       box.parentNode.insertBefore(box, box.parentNode.firstChild);
 
-      function offer() { if (!I.standalone) btn.hidden = !I.canPrompt(); }
+      var hint = document.getElementById("menu-hint");
+      function offer() {
+        if (I.standalone || I.inApp) return;
+        btn.hidden = !I.canPrompt();
+        // Android Chrome without the prompt (e.g. after "Not now"): point to the menu instead.
+        hint.hidden = !(I.isAndroid && !I.canPrompt());
+      }
+      if (I.inApp) {
+        document.getElementById("inapp").hidden = false;
+        document.getElementById("copy-link").addEventListener("click", function () {
+          var b = this, url = location.origin + location.pathname;
+          var done = function () { b.textContent = KN.t(lang, "linkCopied"); };
+          if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { window.prompt("", url); });
+          else window.prompt("", url);
+        });
+      }
       offer();
+      setTimeout(offer, 4000); // Chrome may offer the install prompt a moment after loading
       document.addEventListener("kn-installable", offer);
       document.addEventListener("kn-installed", installed);
       btn.addEventListener("click", function () {

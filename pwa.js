@@ -15,6 +15,8 @@
   var ua = navigator.userAgent;
   var isIOS = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var isAndroid = /android/i.test(ua);
+  // Browsers built into other apps can't install web apps.
+  var inApp = /Instagram|FBAN|FBAV|FB_IAB|FBIOS|Telegram|musical_ly|Bytedance|TikTok|Line\/|Snapchat|Pinterest|LinkedInApp|; wv\)/i.test(ua);
   var dismissed = false;
   try { dismissed = !!localStorage.getItem(KEY); } catch (e) {}
 
@@ -22,7 +24,7 @@
 
   // For the install page and "Install the app" links.
   window.KNInstall = {
-    standalone: standalone, isIOS: isIOS, isAndroid: isAndroid,
+    standalone: standalone, isIOS: isIOS, isAndroid: isAndroid, inApp: inApp,
     canPrompt: function () { return !!deferred; },
     prompt: function () {
       if (!deferred) return Promise.resolve("unavailable");
@@ -81,7 +83,7 @@
   }
 
   // No hint banner on the install page itself, inside the app, or after "Not now".
-  var quiet = standalone || dismissed || /install\.html$/.test(location.pathname);
+  var quiet = standalone || dismissed || inApp || /install\.html$/.test(location.pathname);
 
   // Android and desktop Chrome / Edge: the browser offers a real install prompt.
   window.addEventListener("beforeinstallprompt", function (e) {
