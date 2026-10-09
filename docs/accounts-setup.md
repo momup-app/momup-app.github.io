@@ -19,29 +19,42 @@ What's stored, all in the EU (Frankfurt): the email address, an optional name, t
 1. Left menu: **SQL Editor → New query**.
 2. Copy everything from [`supabase/schema.sql`](../supabase/schema.sql), paste it in, and click **Run**.
 3. It should say *Success. No rows returned*.
+4. Do the same with [`supabase/002_sales_alerts.sql`](../supabase/002_sales_alerts.sql). It adds the [daily sales email](sales-alerts.md).
 
 ## 3. Login settings
 
 **Authentication → URL Configuration**
 
-- Site URL: `https://momup-app.github.io`
+- Site URL: `https://momup-app.github.io`. A new project starts with `http://localhost:3000` here, so it must be changed. Otherwise the login link sends people to "localhost" and nothing loads.
 - Redirect URLs → **Add URL**: `https://momup-app.github.io/**`
 
 **Authentication → Sign In / Providers → Email**: leave **Email** turned on.
 
-## 4. Sending the login emails (important)
+## 4. Sending the login emails through Gmail (important)
 
-Supabase's built-in email sender is for testing only. It sends only to the project's team members, and just a few emails per hour. For real parents, connect a free email service:
+Supabase's built-in email sender is for testing only. It sends only to the project's team members, and just a few emails per hour. For real parents, the login emails go out through Yuliia's Gmail.
 
-1. Create a free account at [brevo.com](https://www.brevo.com). It's an EU company, with 300 emails a day free.
-2. In Brevo: **Senders, Domains & Dedicated IPs → Senders → Add a sender** with `yuliia.designer.ux@gmail.com`, and confirm the email Brevo sends.
-3. In Brevo: **SMTP & API → SMTP → Generate a new SMTP key** and copy it.
-4. In Supabase: **Authentication → Emails → SMTP Settings → Enable custom SMTP**:
-   - Sender email: `yuliia.designer.ux@gmail.com`, sender name: `MomUp`
-   - Host: `smtp-relay.brevo.com`, port: `587`
-   - Username: your Brevo login email
-   - Password: the SMTP key
-5. Optional: **Authentication → Emails → Templates → Magic Link**, to write the login email in German, for example *Subject: Dein Login-Link für Kids Nearby*.
+**Google account** (`yuliia.designer.ux@gmail.com`):
+
+1. **myaccount.google.com → Security → 2-Step Verification → Turn on.** Google first asks for a second step, such as a phone number or a passkey. Without 2-Step Verification, app passwords don't exist and Gmail refuses the login.
+2. **myaccount.google.com/apppasswords** → name it `Supabase` → **Create**. Copy the 16 letters **without spaces**.
+
+**Supabase: Authentication → Emails → SMTP Settings → Enable custom SMTP**
+
+- Sender email: `yuliia.designer.ux@gmail.com`, sender name: `MomUp`
+- Host: `smtp.gmail.com`
+- Port: `587` (`465` also works)
+- Username: `yuliia.designer.ux@gmail.com`
+- Password: the app password from step 2, not the normal Gmail password
+- Click **Save**
+
+Supabase then warns that Gmail is meant for personal email. That's only a warning: it's fine while the site is small, and Gmail allows about 500 emails a day.
+
+**If login emails don't arrive:** the site shows "Couldn't send the link" and Supabase logs say *Error sending confirmation email*. That means Gmail refused: check that 2-Step Verification is on, then create a new app password and paste it without spaces.
+
+**Optional:** **Authentication → Emails → Templates** ("Confirm signup" for new people, "Magic Link" for returning ones), to write the emails in German, for example *Subject: Dein Login-Link für Kids Nearby*.
+
+**Later, with a domain like momup.app:** switch to a sending service such as Brevo, Resend or Postmark, so the emails come from `info@momup.app`. Only these SMTP settings change; the website stays the same.
 
 ## 5. Connect the website
 
@@ -60,4 +73,8 @@ Supabase: **Organization settings → Team → Invite**, with Iana's email and r
 
 ## Before public launch
 
-Name **Supabase** (accounts, EU hosting) and **Brevo** (login emails) on the privacy page (Datenschutzerklärung). Both offer a data processing agreement (AVV/DPA) in their settings.
+Name these on the privacy page (Datenschutzerklärung):
+
+- **Supabase** (accounts, hosted in Frankfurt). It offers a data processing agreement (AVV/DPA) in its settings.
+- **Google / Gmail**, which sends the login emails and the daily sales email.
+- **FormSubmit**, which sends the "Suggest an activity" form to Yuliia's email.
