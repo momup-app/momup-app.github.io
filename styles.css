@@ -311,3 +311,4 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .link.danger { color: #c0392b; }
 #profile-form .notify { display: grid; gap: 8px; }
 #profile-form .notify small { margin-left: 28px; }
+#profile-form .notify[hidden] { display: none; }
