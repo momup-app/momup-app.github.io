@@ -115,3 +115,16 @@ test("small parsers", () => {
   assert.deepEqual(parsePrice("Eintritt frei"), { type: "free" });
   assert.deepEqual(parsePrice("0 €"), { type: "free" });
 });
+
+test("sale hashtags make a sales event", () => {
+  const r = parseCaption(
+    `Kinderbasar im Kiez 👕
+📅 17.10.2026, 10:00–13:00
+📍 Boxhagener Platz
+💶 Eintritt frei
+#momupevent #kinderbasar`,
+    { postedAt: POSTED }
+  );
+  assert.equal(r.ok, true, r.reason);
+  assert.equal(r.event.category, "sales");
+});

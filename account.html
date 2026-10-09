@@ -45,7 +45,7 @@
       <ul class="why">
         <li data-i18n="accountWhy1">Your saved activities on your phone and computer</li>
         <li data-i18n="accountWhy2">Your kids’ ages and area, so the right things come first</li>
-        <li data-i18n="accountWhy3">Email alerts for new events (coming soon)</li>
+        <li data-i18n="accountWhy3">A morning email when there’s a new kids’ clothes sale or flea market</li>
       </ul>
       <form id="login-form" novalidate>
         <label for="login-email" data-i18n="emailLabel">Your email</label>
@@ -74,7 +74,11 @@
           <small data-i18n="kidsAgesHint">Tap every age that fits. We never ask for names or photos of children.</small>
         </fieldset>
         <label><span data-i18n="postcodeLabel">Postcode (optional)</span><input name="postcode" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" placeholder="10437"></label>
-        <label class="check"><input type="checkbox" name="email_alerts"> <span data-i18n="alertsLabel">Email me new events that fit (coming soon)</span></label>
+        <fieldset class="notify">
+          <legend data-i18n="notifyTitle">Notifications</legend>
+          <label class="check"><input type="checkbox" name="alert_sales"> <span data-i18n="notifySales">Kids’ clothes sales &amp; flea markets</span></label>
+          <small data-i18n="notifySalesHint">One email in the morning, only on days with new sales near you. Turn it off any time.</small>
+        </fieldset>
         <div class="row">
           <button type="submit" class="btn" data-i18n="saveProfile">Save</button>
           <p class="form-msg inline" id="profile-msg" role="status" hidden></p>
@@ -225,10 +229,13 @@
           var f = $("profile-form").elements;
           f.display_name.value = profile.display_name || "";
           f.postcode.value = profile.postcode || "";
-          f.email_alerts.checked = !!profile.email_alerts;
+          f.alert_sales.checked = (profile.alert_topics || []).indexOf("sales") !== -1;
+          // Hidden until supabase/002_sales_alerts.sql has added alert_topics.
+          document.querySelector("#profile-form .notify").hidden = !("alert_topics" in profile);
           var chosenLang = null;
           try { chosenLang = localStorage.getItem("kn-lang"); } catch (e) {}
-          if (!chosenLang && profile.language) { lang = profile.language; applyLang(); }
+          var urlLang = new URLSearchParams(location.search).get("lang");
+          if (!chosenLang && !urlLang && profile.language) { lang = profile.language; applyLang(); }
           show("acc-in");
           showIn();
         });
@@ -245,9 +252,10 @@
           display_name: f.display_name.value.trim() || null,
           postcode: postcode || null,
           kids_ages: ages,
-          email_alerts: f.email_alerts.checked,
           language: lang
         };
+        // alert_topics exists once supabase/002_sales_alerts.sql has run.
+        if (profile && "alert_topics" in profile) update.alert_topics = f.alert_sales.checked ? ["sales"] : [];
         acc.client.from("profiles").update(update).eq("id", acc.session.user.id).then(function (r) {
           if (r.error) { msg($("profile-msg"), "saveFailed", "error"); return; }
           profile = Object.assign(profile || {}, update);

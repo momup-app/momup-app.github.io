@@ -309,3 +309,5 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .saved-list a { font-weight: 700; }
 .acc-actions { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin: 8px 0 14px; }
 .link.danger { color: #c0392b; }
+#profile-form .notify { display: grid; gap: 8px; }
+#profile-form .notify small { margin-left: 28px; }

@@ -17,13 +17,14 @@ const FIELDS = {
 };
 
 const CATEGORY_WORDS = {
+  sales: ["sale", "sales", "basar", "kinderbasar", "kleiderbasar", "flohmarkt", "kinderflohmarkt", "secondhand", "tauschbörse", "kleidertausch", "распродажа", "барахолка"],
   sports: ["sport", "sports", "fußball", "fussball", "football", "soccer", "schwimmen", "swim", "swimming", "turnen", "yoga"],
   arts: ["kunst", "art", "arts", "basteln", "crafts", "craft", "malen", "painting", "töpfern", "theater", "theatre", "puppentheater"],
   music: ["musik", "music", "singen", "singing", "konzert", "concert"],
   dance: ["tanz", "tanzen", "dance", "dancing", "disco", "kinderdisco"],
   stem: ["mint", "stem", "coding", "programmieren", "robotik", "robotics", "science", "wissenschaft", "experimente"],
   language: ["sprache", "sprachen", "language", "languages", "lesen", "vorlesen", "reading", "story", "stories", "geschichten"],
-  outdoors: ["draussen", "draußen", "outdoors", "outdoor", "natur", "nature", "park", "flohmarkt", "laternenumzug", "spaziergang"],
+  outdoors: ["draussen", "draußen", "outdoors", "outdoor", "natur", "nature", "park", "laternenumzug", "spaziergang"],
 };
 
 const RANGE = "\\s*(?:–|—|-|bis|to)\\s*";

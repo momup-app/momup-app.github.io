@@ -1,0 +1,39 @@
+name: Daily sales email
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC = 08:00 in Berlin in winter, 09:00 in summer
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: work out who would get what, send nothing"
+        type: boolean
+        default: true
+
+concurrency:
+  group: sales-alerts
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Tests
+        run: node --test scripts/
+
+      - name: Send the daily sales email
+        run: node scripts/send-sales-alerts.mjs ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+        env:
+          SUPABASE_URL: https://zljnvhrknhpajtggiehx.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

@@ -1,0 +1,11 @@
+{
+  "name": "kids-nearby",
+  "private": true,
+  "description": "Scripts for momup-app.github.io: Instagram sync and the daily sales email.",
+  "scripts": {
+    "test": "node --test scripts/"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

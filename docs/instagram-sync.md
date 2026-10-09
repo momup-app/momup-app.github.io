@@ -36,7 +36,7 @@ Pajamas on, lights low: two short stories, read live.
 | 📍 place | yes | an address or park name in Berlin · `Online` |
 | 💶 price | yes | `kostenlos` · `free` · `5 €` · `8 € pro Kind` · `€4,50 / Familie` |
 | 👶 ages | no | `3–6` · `ab 2` · `3+` (all ages if left out) |
-| #hashtag for the topic | no | `#basteln` `#sport` `#musik` `#tanz` `#mint` `#vorlesen` `#draussen` |
+| #hashtag for the topic | no | `#basteln` `#sport` `#musik` `#tanz` `#mint` `#vorlesen` `#draussen` · kids' clothes sales: `#sale` `#basar` `#flohmarkt` `#kleidertausch` (these trigger the [daily sales email](sales-alerts.md)) |
 
 Words work instead of emoji, with a colon: `Datum:`, `Ort:`, `Alter:`, `Preis:` or `When:`, `Where:`, `Ages:`, `Price:`.
 

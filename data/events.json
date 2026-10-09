@@ -66,13 +66,46 @@
     }
   },
   {
+    "id": "2026-10-17-kinderkleiderbasar",
+    "date": "2026-10-17",
+    "start": "10:00",
+    "end": "13:00",
+    "title": "Kids' Clothes Bazaar",
+    "organizer": "School parents' council (sample)",
+    "category": "sales",
+    "format": "in-person",
+    "ages": [
+      0,
+      12
+    ],
+    "price": {
+      "type": "free"
+    },
+    "address": "Near Boxhagener Platz, 10245 Berlin",
+    "lat": 52.5108,
+    "lng": 13.4602,
+    "description": "Autumn and winter clothes, shoes and toys sorted by size. Pregnant visitors get in 30 minutes early. Bring your own bag.",
+    "de": {
+      "title": "Kinderkleiderbasar",
+      "organizer": "Elternvertretung einer Grundschule (Beispiel)",
+      "description": "Herbst- und Winterkleidung, Schuhe und Spielzeug nach Größen sortiert. Schwangere dürfen 30 Minuten früher rein. Eigene Tasche mitbringen.",
+      "address": "Nähe Boxhagener Platz, 10245 Berlin"
+    },
+    "ru": {
+      "title": "Детская ярмарка одежды",
+      "organizer": "Родительский совет школы (пример)",
+      "description": "Осенняя и зимняя одежда, обувь и игрушки, разложенные по размерам. Беременных пускают на 30 минут раньше. Возьмите свою сумку.",
+      "address": "Рядом с Boxhagener Platz, 10245 Berlin"
+    }
+  },
+  {
     "id": "2026-10-18-kids-flea-market",
     "date": "2026-10-18",
     "start": "11:00",
     "end": "15:00",
     "title": "Kids' Flea Market",
     "organizer": "Parents of Schöneberg (sample)",
-    "category": "outdoors",
+    "category": "sales",
     "format": "in-person",
     "ages": [
       0,
@@ -195,6 +228,39 @@
       "organizer": "Семейное кафе Нойкёльн (пример)",
       "description": "Костюмы приветствуются, но не обязательны. Танцевальные игры, мини-парад костюмов и тыквенные маффины.",
       "address": "Рядом с Richardplatz, 12055 Berlin"
+    }
+  },
+  {
+    "id": "2026-11-07-winter-jacket-swap",
+    "date": "2026-11-07",
+    "start": "11:00",
+    "end": "14:00",
+    "title": "Winter Jacket & Boots Swap",
+    "organizer": "Neighborhood family center (sample)",
+    "category": "sales",
+    "format": "in-person",
+    "ages": [
+      1,
+      14
+    ],
+    "price": {
+      "type": "free"
+    },
+    "address": "Near Leopoldplatz, 13353 Berlin",
+    "lat": 52.5462,
+    "lng": 13.3595,
+    "description": "Bring outgrown winter jackets, snow pants and boots, and take what fits. Leftovers go to a local charity.",
+    "de": {
+      "title": "Tauschbörse Winterjacken & Stiefel",
+      "organizer": "Familienzentrum im Kiez (Beispiel)",
+      "description": "Zu klein gewordene Winterjacken, Schneehosen und Stiefel mitbringen und mitnehmen, was passt. Was übrig bleibt, geht an eine Kiez-Initiative.",
+      "address": "Nähe Leopoldplatz, 13353 Berlin"
+    },
+    "ru": {
+      "title": "Обмен зимними куртками и сапогами",
+      "organizer": "Семейный центр района (пример)",
+      "description": "Приносите зимние куртки, комбинезоны и сапоги, из которых дети выросли, и забирайте то, что подходит. Остальное передаём в местную благотворительную организацию.",
+      "address": "Рядом с Leopoldplatz, 13353 Berlin"
     }
   },
   {
