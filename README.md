@@ -2,7 +2,7 @@
 
 Helps parents in Berlin find activities for their kids nearby: classes, clubs, camps and online options, filtered by age, interest, day, price and distance.
 
-Live: [yuliiaux.github.io/kids-nearby](https://yuliiaux.github.io/kids-nearby)
+Live: [momup-app.github.io/kids-nearby](https://momup-app.github.io/kids-nearby)
 
 ## Features
 
@@ -26,7 +26,7 @@ Then open http://localhost:8000. Opening `index.html` directly won't load the da
 
 ## Add an activity
 
-Edit [`data/activities.json`](data/activities.json) (English text, plus translations in the `de` and `ru` fields) and open a pull request, or [suggest one in an issue](https://github.com/yuliiaux/kids-nearby/issues/new?template=add-activity.yml). Current listings are sample data.
+Edit [`data/activities.json`](data/activities.json) (English text, plus translations in the `de` and `ru` fields) and open a pull request, or [suggest one in an issue](https://github.com/momup-app/kids-nearby/issues/new?template=add-activity.yml). Current listings are sample data.
 
 ## How it's built
 

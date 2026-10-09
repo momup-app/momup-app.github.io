@@ -15,7 +15,7 @@ const CACHE_FILE = new URL("../data/geocode-cache.json", import.meta.url);
 const MAX_AGE_DAYS = 180; // older posts can't be upcoming events
 const MAX_PAGES = 5;
 const BERLIN_VIEWBOX = "13.08,52.68,13.77,52.33";
-const USER_AGENT = "kids-nearby-sync (https://github.com/yuliiaux/kids-nearby)";
+const USER_AGENT = "kids-nearby-sync (https://github.com/momup-app/kids-nearby)";
 
 const args = process.argv.slice(2);
 const fixture = args.includes("--fixture") ? args[args.indexOf("--fixture") + 1] : null;

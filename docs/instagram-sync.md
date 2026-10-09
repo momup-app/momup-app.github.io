@@ -43,7 +43,7 @@ Words work instead of emoji, with a colon: `Datum:`, `Ort:`, `Alter:`, `Preis:` 
 - **Change an event:** edit the caption. The site updates within an hour.
 - **Cancel an event:** delete the post, or remove `#momupevent` from the caption.
 - **Past events** disappear from the site by themselves.
-- **Post not showing?** Open the repository's [Actions tab](https://github.com/yuliiaux/kids-nearby/actions), click the latest "Sync events from Instagram" run, and the summary lists every tagged post it couldn't read, and why.
+- **Post not showing?** Open the repository's [Actions tab](https://github.com/momup-app/kids-nearby/actions), click the latest "Sync events from Instagram" run, and the summary lists every tagged post it couldn't read, and why.
 
 ## One-time setup
 
@@ -70,14 +70,14 @@ Treat the token like a password. Don't post it or send it in a chat.
 
 ### 4. Give the token to GitHub
 
-In [the repository](https://github.com/yuliiaux/kids-nearby): **Settings → Secrets and variables → Actions → New repository secret**
+In [the repository](https://github.com/momup-app/kids-nearby): **Settings → Secrets and variables → Actions → New repository secret**
 
 - Name: `IG_ACCESS_TOKEN`
 - Secret: the token from step 3
 
 ### 5. Let GitHub renew the token automatically
 
-1. On GitHub as **yuliiaux**: **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
+1. On GitHub as **yuliiaux**: **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**. Set **Resource owner** to **momup-app**. If momup-app isn't offered, allow fine-grained tokens first in the organization's **Settings → Personal access tokens**.
 2. Repository access: only `kids-nearby`. Permissions: **Secrets → Read and write**. Choose the longest expiry you're comfortable with.
 3. Save it in the repository as a second secret named `REPO_ADMIN_TOKEN`.
 
@@ -86,7 +86,7 @@ The "Refresh Instagram token" workflow then renews the Instagram token on the 1s
 ### 6. Try it
 
 1. Publish a test post with `#momupevent`. You can archive it afterwards.
-2. In the [Actions tab](https://github.com/yuliiaux/kids-nearby/actions), open **Sync events from Instagram → Run workflow**.
+2. In the [Actions tab](https://github.com/momup-app/kids-nearby/actions), open **Sync events from Instagram → Run workflow**.
 3. When it turns green, check the website (refresh the page).
 
 ## How it works
