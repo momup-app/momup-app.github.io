@@ -11,7 +11,7 @@
 
   var state = {
     origin: DEFAULT_ORIGIN, activities: [], events: [], saved: loadSaved(), activeId: null,
-    lang: pickLang(), status: { key: "statusDefault", vars: {} }, showAllEvents: false
+    lang: pickLang(), status: { key: "statusDefault", vars: {} }, showAll: { events: false, sales: false }
   };
   var els = {
     form: document.getElementById("where"),
@@ -22,10 +22,17 @@
     list: document.getElementById("list"),
     count: document.getElementById("count"),
     empty: document.getElementById("empty"),
-    eventList: document.getElementById("event-list"),
-    eventsCount: document.getElementById("events-count"),
-    eventsMore: document.getElementById("events-more"),
-    eventsEmpty: document.getElementById("events-empty")
+    // "Upcoming play events" and "Upcoming sales for kids" share the same layout.
+    groups: ["events", "sales"].reduce(function (g, key) {
+      g[key] = {
+        section: document.getElementById(key),
+        list: document.getElementById(key + "-list"),
+        count: document.getElementById(key + "-count"),
+        more: document.getElementById(key + "-more"),
+        empty: document.getElementById(key + "-empty")
+      };
+      return g;
+    }, {})
   };
 
   // ---------- language ----------
@@ -189,8 +196,9 @@
   var markers = {};
   var meMarker = null;
 
-  function pinIcon(active, isEvent) {
-    var cls = "pin" + (isEvent ? " event-pin" : "") + (active ? " active" : "");
+  // kind: "activity", "event" or "sale"
+  function pinIcon(active, kind) {
+    var cls = "pin" + (kind === "event" ? " event-pin" : kind === "sale" ? " event-pin sale-pin" : "") + (active ? " active" : "");
     return L.divIcon({ className: "", html: '<div class="' + cls + '"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
   }
 
@@ -299,17 +307,22 @@
     els.count.textContent = tn("count", results.length);
     els.empty.hidden = results.length > 0;
 
-    renderEvents(upcoming, now);
+    var sales = upcoming.filter(function (e) { return e.category === "sales"; });
+    var play = upcoming.filter(function (e) { return e.category !== "sales"; });
+    // Picking one interest hides the section that can't have anything for it.
+    renderEvents("events", play, now, f.category === "sales");
+    renderEvents("sales", sales, now, !!f.category && f.category !== "sales");
 
     var bounds = [];
     function pin(a, isEvent) {
       if (a.format !== "in-person") return;
       var title = tr(a, "title");
       var when = isEvent ? dayLabel(a, now) + ", " + a.start + "–" + a.end : timeText(a);
-      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId, isEvent), title: title })
+      var kind = !isEvent ? "activity" : a.category === "sales" ? "sale" : "event";
+      var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId, kind), title: title })
         .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(when) + " &middot; " + escapeHtml(priceText(a.price)))
         .on("click", function () { highlight(a.id, true); });
-      m.isEvent = isEvent;
+      m.kind = kind;
       m.addTo(markerLayer);
       markers[a.id] = m;
       bounds.push([a.lat, a.lng]);
@@ -388,20 +401,22 @@
     return s.charAt(0).toUpperCase() + s.slice(1); // Russian weekdays come lowercase
   }
 
-  function renderEvents(upcoming, now) {
-    var shown = state.showAllEvents ? upcoming : upcoming.slice(0, EVENTS_PREVIEW);
-    els.eventList.replaceChildren();
-    shown.forEach(function (e) { els.eventList.appendChild(eventCard(e, now)); });
-    els.eventList.classList.toggle("collapsed", !state.showAllEvents);
-    els.eventsCount.textContent = upcoming.length ? "(" + upcoming.length + ")" : "";
-    els.eventsEmpty.hidden = upcoming.length > 0;
-    els.eventsMore.hidden = upcoming.length <= EVENTS_PREVIEW;
-    els.eventsMore.textContent = state.showAllEvents ? t("showLess") : t("showAll", { n: upcoming.length });
+  function renderEvents(key, upcoming, now, hideSection) {
+    var g = els.groups[key], all = state.showAll[key];
+    var shown = all ? upcoming : upcoming.slice(0, EVENTS_PREVIEW);
+    g.section.hidden = hideSection;
+    g.list.replaceChildren();
+    shown.forEach(function (e) { g.list.appendChild(eventCard(e, now)); });
+    g.list.classList.toggle("collapsed", !all);
+    g.count.textContent = upcoming.length ? "(" + upcoming.length + ")" : "";
+    g.empty.hidden = upcoming.length > 0;
+    g.more.hidden = upcoming.length <= EVENTS_PREVIEW;
+    g.more.textContent = all ? t("showLess") : t("showAll", { n: upcoming.length });
   }
 
   function eventCard(e, now) {
     var title = tr(e, "title");
-    var li = el("li", "event");
+    var li = el("li", e.category === "sales" ? "event sale" : "event");
     li.setAttribute("aria-haspopup", "dialog");
     selectable(li, e.id, function () { openEvent(e); });
 
@@ -570,11 +585,12 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
   }
 
-  els.eventsMore.addEventListener("click", function () {
-    state.showAllEvents = !state.showAllEvents;
-    render();
+  Object.keys(els.groups).forEach(function (key) {
+    els.groups[key].more.addEventListener("click", function () {
+      state.showAll[key] = !state.showAll[key];
+      render();
+    });
   });
-
   function highlight(id, fromMap) {
     state.activeId = id;
     document.querySelectorAll(".item.active, .event.active").forEach(function (n) { n.classList.remove("active"); });
@@ -583,7 +599,7 @@
       node.classList.add("active");
       if (fromMap) node.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
     }
-    Object.keys(markers).forEach(function (k) { markers[k].setIcon(pinIcon(k === id, markers[k].isEvent)); });
+    Object.keys(markers).forEach(function (k) { markers[k].setIcon(pinIcon(k === id, markers[k].kind)); });
     var m = markers[id];
     if (m && !fromMap) { map.panTo(m.getLatLng()); m.openPopup(); }
   }

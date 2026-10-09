@@ -312,3 +312,11 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 #profile-form .notify { display: grid; gap: 8px; }
 #profile-form .notify small { margin-left: 28px; }
 #profile-form .notify[hidden] { display: none; }
+
+/* sales for kids: rose accent, so they stand apart from play events (yellow) and activities (purple) */
+:root { --sale: #EC6FA0; }
+.event.sale { border-left-color: var(--sale); }
+.event.sale:hover, .event.sale.active { border-left-color: var(--sale); }
+.pin.sale-pin { background: var(--sale); }
+.events.sales { padding-top: 32px; }
+.events[hidden] { display: none; }

@@ -106,11 +106,20 @@
 
   <section class="events wrap" id="events" aria-labelledby="events-h">
     <div class="events-head">
-      <h2 id="events-h"><span data-i18n="eventsTitle">Upcoming events</span> <span class="events-count" id="events-count"></span></h2>
+      <h2 id="events-h"><span data-i18n="eventsTitle">Upcoming play events</span> <span class="events-count" id="events-count"></span></h2>
       <button type="button" class="link" id="events-more" hidden></button>
     </div>
-    <ol class="event-list" id="event-list"></ol>
+    <ol class="event-list" id="events-list"></ol>
     <p class="empty small" id="events-empty" hidden data-i18n="eventsNone">No upcoming events match these filters.</p>
+  </section>
+
+  <section class="events sales wrap" id="sales" aria-labelledby="sales-h">
+    <div class="events-head">
+      <h2 id="sales-h"><span data-i18n="salesTitle">Upcoming sales for kids</span> <span class="events-count" id="sales-count"></span></h2>
+      <button type="button" class="link" id="sales-more" hidden></button>
+    </div>
+    <ol class="event-list" id="sales-list"></ol>
+    <p class="empty small" id="sales-empty" hidden data-i18n="salesNone">No upcoming sales match these filters.</p>
   </section>
 
   <dialog class="sheet" id="event-dialog" aria-labelledby="ed-title">
