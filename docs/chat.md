@@ -5,6 +5,7 @@ The **Chat** tab ([chat.html](../chat.html)) lets parents start a topic and repl
 - Only members can read and write. Visitors see a "Log in to join the chat" button.
 - On their first visit, people choose a chat name (first name or nickname). It's saved as the **Name** on *My account*, and changing it there renames their old posts too.
 - People can delete their own messages and topics. There's no editing.
+- **Search** finds words in topic titles and in every message, across the whole history. The list shows 30 topics at a time, and **Show older topics** loads more.
 - Anyone can tap **Report** on someone else's message.
 - Limits, enforced by the database: 10 messages a minute and 5 new topics an hour per person, and 2,000 characters per message.
 - Deleting an account deletes that person's messages. Their topics stay, so other people's replies aren't lost.

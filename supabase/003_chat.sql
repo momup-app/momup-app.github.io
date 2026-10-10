@@ -46,6 +46,11 @@ create table if not exists public.chat_messages (
 create index if not exists chat_messages_topic on public.chat_messages (topic_id, created_at);
 create index if not exists chat_messages_by_user on public.chat_messages (user_id, created_at);
 
+-- Fast search in titles and messages (the chat's search box), even with years of history.
+create extension if not exists pg_trgm with schema extensions;
+create index if not exists chat_topics_title_search on public.chat_topics using gin (title extensions.gin_trgm_ops);
+create index if not exists chat_messages_body_search on public.chat_messages using gin (body extensions.gin_trgm_ops);
+
 -- ---------- reports ----------
 -- Yuliia sees these in Supabase → Table Editor → chat_reports (and admins can read them in the API).
 create table if not exists public.chat_reports (

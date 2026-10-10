@@ -430,3 +430,9 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .compose .btn { flex: none; }
 @media (max-width: 720px) { .has-tabs .compose { bottom: calc(66px + env(safe-area-inset-bottom)); } }
 .chat-rules { margin-top: 24px !important; }
+.chat-search { margin: 0 0 14px; position: relative; }
+.chat-search input { padding-left: 42px; background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238670D6' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-4-4'/%3E%3C/svg%3E") no-repeat 14px center / 18px; }
+.search-status { margin: -4px 0 12px !important; font-weight: 600; }
+.topics .snippet { font-size: 14px; color: var(--ink); opacity: .85; overflow-wrap: anywhere; }
+.topics mark { background: var(--highlight); color: var(--highlight-ink); border-radius: 4px; padding: 0 2px; }
+.chat-page .more { text-align: center; margin: 16px 0 0; }

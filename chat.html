@@ -93,8 +93,15 @@
         <p class="form-msg" id="new-topic-msg" role="status" hidden></p>
       </form>
 
+      <form class="chat-search" id="chat-search" role="search" onsubmit="return false">
+        <label class="sr-only" for="chat-q" data-i18n="chatSearchLabel">Search all topics and messages</label>
+        <input id="chat-q" type="search" maxlength="80" autocomplete="off" enterkeyhint="search" data-i18n-attr="placeholder:chatSearchPlaceholder" placeholder="Search topics and messages, e.g. Kita">
+      </form>
+      <p class="muted search-status" id="search-status" role="status" hidden></p>
+
       <ul class="topics" id="topics"></ul>
       <p class="empty" id="topics-empty" hidden data-i18n="chatNoTopics">No topics yet. Start the first one!</p>
+      <p class="more"><button type="button" class="btn ghost" id="topics-more" hidden data-i18n="chatOlder">Show older topics</button></p>
     </section>
 
     <!-- Logged in: one topic -->
@@ -136,10 +143,10 @@
       var topics = [], current = null, messages = [];
 
       // Plural forms: key_one / key_few / key_many / key_other.
-      function tn(key, n) {
+      function tn(key, n, vars) {
         var form = new Intl.PluralRules(LOCALES[lang]).select(n);
         var k = I18N[lang][key + "_" + form] != null ? key + "_" + form : key + "_other";
-        return t(k, { n: n });
+        return t(k, Object.assign({ n: n }, vars));
       }
 
       function when(iso) {
@@ -191,41 +198,139 @@
       });
 
       // ---------- topic list ----------
+      // Newest first, 30 at a time ("Show older topics" loads the next 30).
+      var PAGE = 30, shown = PAGE, hasMore = false;
+      var known = {};   // every topic seen so far, by id
+      var query = "", found = null, snippets = {};
+
+      function remember(list) { list.forEach(function (tp) { known[tp.id] = tp; }); }
+
+      var TOPIC_COLS = "id, title, author_name, created_by, message_count, last_message_at";
       function loadTopics() {
         return acc.client.from("chat_topics")
-          .select("id, title, author_name, created_by, message_count, last_message_at")
+          .select(TOPIC_COLS)
           .order("last_message_at", { ascending: false })
-          .limit(100)
+          .range(0, shown) // one extra row tells us whether there is more
           .then(function (r) {
             if (r.error) throw r.error;
-            topics = r.data || [];
+            var rows = r.data || [];
+            hasMore = rows.length > shown;
+            topics = rows.slice(0, shown);
+            remember(topics);
           });
       }
 
+      // Search: topic titles and every message, across the whole history.
+      function like(q) { return "%" + q.replace(/[\\%_]/g, "\\$&") + "%"; }
+      function search(q) {
+        var c = acc.client, pattern = like(q);
+        return Promise.all([
+          c.from("chat_topics").select(TOPIC_COLS).ilike("title", pattern)
+            .order("last_message_at", { ascending: false }).limit(50),
+          c.from("chat_messages").select("topic_id, body").ilike("body", pattern)
+            .order("created_at", { ascending: false }).limit(200)
+        ]).then(function (r) {
+          if (r[0].error) throw r[0].error;
+          if (r[1].error) throw r[1].error;
+          var hits = {}, snips = {};
+          (r[0].data || []).forEach(function (tp) { hits[tp.id] = tp; });
+          (r[1].data || []).forEach(function (m) { if (!snips[m.topic_id]) snips[m.topic_id] = m.body; });
+          var missing = Object.keys(snips).filter(function (id) { return !hits[id]; });
+          var more = missing.length
+            ? c.from("chat_topics").select(TOPIC_COLS).in("id", missing.slice(0, 100))
+            : Promise.resolve({ data: [] });
+          return more.then(function (m) {
+            if (m.error) throw m.error;
+            (m.data || []).forEach(function (tp) { hits[tp.id] = tp; });
+            if (q !== query) return; // a newer search has started
+            found = Object.keys(hits).map(function (id) { return hits[id]; })
+              .sort(function (a, b) { return a.last_message_at < b.last_message_at ? 1 : -1; });
+            snippets = snips;
+            remember(found);
+          });
+        });
+      }
+
+      // Text with the search words marked, built from text nodes only.
+      function marked(text, q) {
+        var frag = document.createDocumentFragment();
+        if (!q) { frag.appendChild(document.createTextNode(text)); return frag; }
+        var lower = text.toLowerCase(), needle = q.toLowerCase(), at = 0, i;
+        while ((i = lower.indexOf(needle, at)) !== -1) {
+          frag.appendChild(document.createTextNode(text.slice(at, i)));
+          var mk = document.createElement("mark");
+          mk.textContent = text.slice(i, i + needle.length);
+          frag.appendChild(mk);
+          at = i + needle.length;
+        }
+        frag.appendChild(document.createTextNode(text.slice(at)));
+        return frag;
+      }
+
+      // A short piece of the matching message, around the first match.
+      function snippet(body, q) {
+        var flat = body.replace(/\s+/g, " "), i = flat.toLowerCase().indexOf(q.toLowerCase());
+        var start = Math.max(0, i - 40), end = Math.min(flat.length, i + q.length + 60);
+        return (start > 0 ? "…" : "") + flat.slice(start, end) + (end < flat.length ? "…" : "");
+      }
+
       function renderTopics() {
-        var list = $("topics");
+        var list = $("topics"), searching = found !== null, rows = searching ? found : topics;
         list.replaceChildren();
-        topics.forEach(function (tp) {
+        rows.forEach(function (tp) {
           var li = document.createElement("li");
           var a = document.createElement("a");
           a.href = "#topic=" + tp.id;
           var b = document.createElement("b");
-          b.textContent = tp.title;
+          b.appendChild(marked(tp.title, searching ? query : ""));
+          a.appendChild(b);
+          if (searching && snippets[tp.id]) {
+            var sn = document.createElement("span");
+            sn.className = "snippet";
+            sn.appendChild(marked(snippet(snippets[tp.id], query), query));
+            a.appendChild(sn);
+          }
           var small = document.createElement("small");
           small.textContent = tp.author_name + " · " + tn("chatMessages", tp.message_count) + " · " + when(tp.last_message_at);
-          a.appendChild(b);
           a.appendChild(small);
           li.appendChild(a);
           list.appendChild(li);
         });
-        $("topics-empty").hidden = topics.length > 0;
+        $("topics-empty").hidden = searching || topics.length > 0;
+        $("topics-more").hidden = searching || !hasMore;
+        var st = $("search-status");
+        st.hidden = !searching;
+        if (searching) st.textContent = found.length ? tn("chatFound", found.length, { q: query }) : t("chatNotFound", { q: query });
       }
+
+      var searchTimer = null;
+      $("chat-q").addEventListener("input", function () {
+        var q = this.value.trim();
+        clearTimeout(searchTimer);
+        if (q.length < 2) {
+          query = ""; found = null;
+          renderTopics();
+          return;
+        }
+        searchTimer = setTimeout(function () {
+          query = q;
+          search(q).then(renderTopics).catch(failed);
+        }, 300);
+      });
+
+      $("topics-more").addEventListener("click", function () {
+        var btn = this;
+        btn.disabled = true;
+        shown += PAGE;
+        loadTopics().then(renderTopics).catch(failed).then(function () { btn.disabled = false; });
+      });
 
       var refreshTimer = null;
       function refreshTopicsSoon() {
         clearTimeout(refreshTimer);
         refreshTimer = setTimeout(function () {
-          loadTopics().then(function () {
+          var again = found !== null ? Promise.all([loadTopics(), search(query)]) : loadTopics();
+          again.then(function () {
             if (!$("list-view").hidden) renderTopics();
             if (!$("topic-view").hidden) renderTopicHead();
           }, function () {});
@@ -270,9 +375,14 @@
       });
 
       // ---------- one topic ----------
-      function topicById(id) {
-        for (var i = 0; i < topics.length; i++) if (topics[i].id === id) return topics[i];
-        return null;
+      function topicById(id) { return known[id] || null; }
+
+      // A topic from search or an old link may not be on the first page.
+      function fetchTopic(id) {
+        return acc.client.from("chat_topics").select(TOPIC_COLS).eq("id", id).maybeSingle().then(function (r) {
+          if (r.error) throw r.error;
+          if (r.data) remember([r.data]); else delete known[id];
+        });
       }
 
       function renderTopicHead() {
@@ -354,7 +464,7 @@
         messages = [];
         show("topic-view");
         $("compose-msg").hidden = true;
-        var have = topicById(id) ? Promise.resolve() : loadTopics();
+        var have = fetchTopic(id);
         return have.then(function () {
           renderTopicHead();
           $("messages").replaceChildren();
@@ -420,6 +530,8 @@
         acc.client.from("chat_topics").delete().eq("id", current).then(function (r) {
           if (r.error) { window.alert(t("chatSendFailed")); return; }
           topics = topics.filter(function (tp) { return tp.id !== current; });
+          if (found) found = found.filter(function (tp) { return tp.id !== current; });
+          delete known[current];
           location.hash = "";
         });
       });
