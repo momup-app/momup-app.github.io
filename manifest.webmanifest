@@ -6,6 +6,7 @@
   "start_url": "./?source=app",
   "scope": "./",
   "display": "standalone",
+  "launch_handler": { "client_mode": ["navigate-existing", "auto"] },
   "orientation": "portrait",
   "background_color": "#F7F4FA",
   "theme_color": "#8670D6",

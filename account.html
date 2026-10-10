@@ -63,6 +63,16 @@
         <small data-i18n="noPassword">No password needed: we email you a link. New here? The same link creates your account.</small>
         <p class="form-msg" id="login-msg" role="status" hidden></p>
       </form>
+      <!-- After the email is sent: type the code instead of clicking the link (works inside the installed app) -->
+      <form id="code-form" novalidate hidden>
+        <label for="login-code" data-i18n="codeLabel">Code from the email</label>
+        <div class="row">
+          <input id="login-code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="10" placeholder="123456">
+          <button type="submit" class="btn" id="code-btn" data-i18n="codeBtn">Log in</button>
+        </div>
+        <small data-i18n="codeHint">Using the app? Type the code here: the link in the email opens in the browser instead.</small>
+        <p class="form-msg" id="code-msg" role="status" hidden></p>
+      </form>
     </section>
 
     <!-- Logged in -->
@@ -164,9 +174,27 @@
         }).then(function (r) {
           if (r.error) throw r.error;
           msg($("login-msg"), "linkSent", "ok", { email: email.value.trim() });
+          sentTo = email.value.trim();
+          $("code-form").hidden = false;
         }).catch(function () {
           msg($("login-msg"), "linkFailed", "error");
         }).then(function () { btn.disabled = false; btn.textContent = t("sendLink"); });
+      });
+
+      var sentTo = null;
+      $("code-form").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var code = $("login-code").value.replace(/\D/g, "");
+        if (code.length < 6) { msg($("code-msg"), "codeBad", "error"); $("login-code").focus(); return; }
+        var btn = $("code-btn");
+        btn.disabled = true;
+        acc.client.auth.verifyOtp({ email: sentTo, token: code, type: "email" }).then(function (r) {
+          if (r.error || !r.data.session) throw r.error;
+          acc.session = r.data.session;
+          return loadSignedIn();
+        }).catch(function () {
+          msg($("code-msg"), "codeBad", "error");
+        }).then(function () { btn.disabled = false; });
       });
 
       // ---------- logged in ----------
@@ -219,7 +247,12 @@
         $("saved-empty").hidden = savedIds.length > 0;
       }
 
+      // The code form and the login event can both arrive here: load only once.
+      var loading = null;
       function loadSignedIn() {
+        return loading || (loading = loadSignedInOnce());
+      }
+      function loadSignedInOnce() {
         var c = acc.client;
         return Promise.all([
           c.from("profiles").select("*").eq("id", acc.session.user.id).maybeSingle(),

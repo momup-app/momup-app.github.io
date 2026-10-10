@@ -282,14 +282,17 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .why { margin: 0 0 22px; padding: 0; list-style: none; display: grid; gap: 8px; }
 .why li { padding-left: 30px; position: relative; }
 .why li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--soft); color: var(--accent); font-weight: 800; font-size: 13px; display: grid; place-items: center; }
-#login-form label { display: block; font-weight: 700; margin-bottom: 6px; }
+#login-form label, #code-form label { display: block; font-weight: 700; margin-bottom: 6px; }
 .account-page .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .account-page .row input { flex: 1 1 240px; }
 .account-page input:not([type=checkbox]) { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; }
 .account-page small, .account-page .muted { color: var(--muted); }
 .account-page .small { font-size: 13px; }
-#login-form small { display: block; margin-top: 8px; }
-#login-form .form-msg { margin-top: 12px; }
+#login-form small, #code-form small { display: block; margin-top: 8px; }
+#code-form { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+#code-form input { letter-spacing: .25em; font-weight: 700; }
+#code-form[hidden] { display: none; }
+#login-form .form-msg, #code-form .form-msg { margin-top: 12px; }
 .acc-head { margin-bottom: 16px; }
 .acc-head h1 { margin-bottom: 2px; }
 .acc-head .who { margin: 0; color: var(--muted); }
