@@ -1,5 +1,5 @@
 -- Kids Nearby accounts. Paste this whole file into Supabase → SQL Editor → Run, once.
--- Then run 002_sales_alerts.sql the same way.
+-- Then run 002_sales_alerts.sql and 003_chat.sql the same way.
 -- Every table has row-level security: people can only read and change their own rows.
 
 -- ---------- profiles: one row per account ----------

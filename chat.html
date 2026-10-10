@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mom chat | Kids Nearby Berlin</title>
+  <meta name="description" content="Chat with other moms in Berlin: start a topic, ask, share tips.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#8670D6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Kids Nearby">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./" data-keep-lang="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
+      <div class="end">
+        <a class="nav" href="./" data-keep-lang="./"><span aria-hidden="true">← </span><span data-i18n="navBack">All activities</span></a>
+        <a class="nav" id="account-link" href="account.html" data-keep-lang="account.html" data-i18n="login" hidden>Log in</a>
+        <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
+          <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap chat-page">
+    <p class="account-loading" id="chat-loading">…</p>
+
+    <!-- No connection, or the chat tables aren't set up yet -->
+    <section id="chat-off" hidden>
+      <h1 data-i18n="chatTitle">Mom chat</h1>
+      <p class="lede" id="chat-off-text"></p>
+    </section>
+
+    <!-- Logged out -->
+    <section id="chat-out" class="acc-card" hidden aria-labelledby="chat-out-h">
+      <h1 id="chat-out-h" data-i18n="chatTitle">Mom chat</h1>
+      <p class="lede" data-i18n="chatLede">Ask, share tips and meet other parents in Berlin.</p>
+      <ul class="why">
+        <li data-i18n="chatWhy1">Start a topic: playgrounds, sleep, Kita, school, swaps…</li>
+        <li data-i18n="chatWhy2">Replies show up live, on your phone and computer</li>
+        <li data-i18n="chatWhy3">Members only: you need a free account to read and write</li>
+      </ul>
+      <a class="btn" id="chat-login" href="account.html?next=chat" data-i18n="chatLogin">Log in to join the chat</a>
+    </section>
+
+    <!-- Logged in, but no name yet -->
+    <form id="chat-name" class="acc-card" hidden novalidate aria-labelledby="chat-name-h">
+      <h1 id="chat-name-h" data-i18n="chatNameTitle">What should others call you?</h1>
+      <p class="lede" data-i18n="chatNameText">Your first name or a nickname. It shows next to everything you write.</p>
+      <div class="row">
+        <input name="display_name" maxlength="40" autocomplete="given-name" required data-i18n-attr="placeholder:chatNamePlaceholder" placeholder="e.g. Anna, mom of two">
+        <button type="submit" class="btn" data-i18n="chatNameSave">Join the chat</button>
+      </div>
+      <p class="form-msg" id="chat-name-msg" role="status" hidden></p>
+    </form>
+
+    <!-- Logged in: list of topics -->
+    <section id="list-view" hidden aria-labelledby="list-h">
+      <div class="chat-head">
+        <div>
+          <h1 id="list-h" data-i18n="chatTitle">Mom chat</h1>
+          <p class="muted" data-i18n="chatLede">Ask, share tips and meet other parents in Berlin.</p>
+        </div>
+        <button type="button" class="btn" id="new-topic-btn" aria-expanded="false" aria-controls="new-topic" data-i18n="chatNewTopic">+ New topic</button>
+      </div>
+
+      <form id="new-topic" class="acc-card" hidden novalidate aria-labelledby="new-topic-h">
+        <h2 id="new-topic-h" data-i18n="chatNewTopicTitle">Start a topic</h2>
+        <label><span data-i18n="chatTopicLabel">Topic</span>
+          <input name="title" maxlength="120" required data-i18n-attr="placeholder:chatTopicPlaceholder" placeholder="e.g. Best indoor playgrounds in Prenzlauer Berg?">
+        </label>
+        <label><span data-i18n="chatFirstLabel">Your first message</span>
+          <textarea name="body" rows="4" maxlength="2000" required data-i18n-attr="placeholder:chatFirstPlaceholder" placeholder="Tell others what you'd like to talk about."></textarea>
+        </label>
+        <div class="row">
+          <button type="submit" class="btn" data-i18n="chatStart">Start topic</button>
+          <button type="button" class="link" id="new-topic-cancel" data-i18n="cancel">Cancel</button>
+        </div>
+        <p class="form-msg" id="new-topic-msg" role="status" hidden></p>
+      </form>
+
+      <ul class="topics" id="topics"></ul>
+      <p class="empty" id="topics-empty" hidden data-i18n="chatNoTopics">No topics yet. Start the first one!</p>
+    </section>
+
+    <!-- Logged in: one topic -->
+    <section id="topic-view" hidden aria-labelledby="topic-h">
+      <a class="nav back" href="#" id="back-to-list"><span aria-hidden="true">← </span><span data-i18n="chatAllTopics">All topics</span></a>
+      <div class="chat-head">
+        <div>
+          <h1 id="topic-h"></h1>
+          <p class="muted" id="topic-meta"></p>
+        </div>
+        <button type="button" class="link danger" id="delete-topic" hidden data-i18n="chatDeleteTopic">Delete topic</button>
+      </div>
+      <p class="empty" id="topic-missing" hidden data-i18n="chatTopicGone">This topic was deleted.</p>
+      <ol class="messages" id="messages" aria-live="polite"></ol>
+      <form id="compose" class="compose" novalidate>
+        <label class="sr-only" for="compose-body" data-i18n="chatReplyLabel">Your reply</label>
+        <textarea id="compose-body" name="body" rows="1" maxlength="2000" required data-i18n-attr="placeholder:chatReplyPlaceholder" placeholder="Write a reply…"></textarea>
+        <button type="submit" class="btn" data-i18n="chatSend">Send</button>
+      </form>
+      <p class="form-msg" id="compose-msg" role="status" hidden></p>
+    </section>
+
+    <p class="chat-rules muted small" id="chat-rules" hidden data-i18n="chatRules">Be kind. No ads, no photos or full names of children, and no other people’s personal details. Tap “Report” on anything that isn’t OK: Yuliia reads every report.</p>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="pwa.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="account.js"></script>
+  <script src="tabs.js"></script>
+  <script>
+    (function () {
+      "use strict";
+      var lang = KN.pickLang();
+      var LOCALES = { de: "de-DE", en: "en-GB", ru: "ru-RU" };
+      var t = function (k, v) { return KN.t(lang, k, v); };
+      var $ = function (id) { return document.getElementById(id); };
+      var acc = null, me = null, admin = false;
+      var topics = [], current = null, messages = [];
+
+      // Plural forms: key_one / key_few / key_many / key_other.
+      function tn(key, n) {
+        var form = new Intl.PluralRules(LOCALES[lang]).select(n);
+        var k = I18N[lang][key + "_" + form] != null ? key + "_" + form : key + "_other";
+        return t(k, { n: n });
+      }
+
+      function when(iso) {
+        var d = new Date(iso), secs = (Date.now() - d.getTime()) / 1000;
+        if (secs < 60) return t("chatJustNow");
+        var rtf = new Intl.RelativeTimeFormat(LOCALES[lang], { numeric: "auto" });
+        if (secs < 3600) return rtf.format(-Math.round(secs / 60), "minute");
+        if (secs < 86400) return rtf.format(-Math.round(secs / 3600), "hour");
+        if (secs < 7 * 86400) return rtf.format(-Math.round(secs / 86400), "day");
+        return d.toLocaleDateString(LOCALES[lang], { day: "numeric", month: "short" });
+      }
+
+      function msg(el, key, kind) {
+        el.textContent = t(key);
+        el.className = "form-msg " + (kind || "");
+        el.hidden = false;
+      }
+
+      function errorKey(err) {
+        var text = (err && (err.message || err.details || "")) || "";
+        if (/chat_too_fast/.test(text)) return "chatTooFast";
+        if (/chat_name_required/.test(text)) return "chatNameMissing";
+        return "chatSendFailed";
+      }
+
+      function show(which) {
+        ["chat-loading", "chat-off", "chat-out", "chat-name", "list-view", "topic-view"].forEach(function (id) {
+          $(id).hidden = id !== which;
+        });
+        $("chat-rules").hidden = which !== "list-view" && which !== "topic-view";
+      }
+
+      function applyLang(updateUrl) {
+        KN.translate(lang);
+        document.title = t("chatPageTitle");
+        document.querySelector('meta[name="description"]').setAttribute("content", t("chatPageDesc"));
+        $("chat-login").href = "account.html?lang=" + lang + "&next=chat";
+        $("back-to-list").href = "chat.html?lang=" + lang;
+        if (updateUrl) history.replaceState(null, "", "?lang=" + lang + location.hash);
+        if (!$("list-view").hidden) renderTopics();
+        if (!$("topic-view").hidden) renderTopic();
+      }
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          lang = b.dataset.lang;
+          try { localStorage.setItem("kn-lang", lang); } catch (e) {}
+          applyLang(true);
+        });
+      });
+
+      // ---------- topic list ----------
+      function loadTopics() {
+        return acc.client.from("chat_topics")
+          .select("id, title, author_name, created_by, message_count, last_message_at")
+          .order("last_message_at", { ascending: false })
+          .limit(100)
+          .then(function (r) {
+            if (r.error) throw r.error;
+            topics = r.data || [];
+          });
+      }
+
+      function renderTopics() {
+        var list = $("topics");
+        list.replaceChildren();
+        topics.forEach(function (tp) {
+          var li = document.createElement("li");
+          var a = document.createElement("a");
+          a.href = "#topic=" + tp.id;
+          var b = document.createElement("b");
+          b.textContent = tp.title;
+          var small = document.createElement("small");
+          small.textContent = tp.author_name + " · " + tn("chatMessages", tp.message_count) + " · " + when(tp.last_message_at);
+          a.appendChild(b);
+          a.appendChild(small);
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+        $("topics-empty").hidden = topics.length > 0;
+      }
+
+      var refreshTimer = null;
+      function refreshTopicsSoon() {
+        clearTimeout(refreshTimer);
+        refreshTimer = setTimeout(function () {
+          loadTopics().then(function () {
+            if (!$("list-view").hidden) renderTopics();
+            if (!$("topic-view").hidden) renderTopicHead();
+          }, function () {});
+        }, 400);
+      }
+
+      $("new-topic-btn").addEventListener("click", function () {
+        var form = $("new-topic");
+        form.hidden = !form.hidden;
+        this.setAttribute("aria-expanded", String(!form.hidden));
+        if (!form.hidden) form.elements.title.focus();
+      });
+      $("new-topic-cancel").addEventListener("click", function () {
+        $("new-topic").hidden = true;
+        $("new-topic-btn").setAttribute("aria-expanded", "false");
+      });
+
+      $("new-topic").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var f = ev.target.elements, title = f.title.value.trim(), body = f.body.value.trim();
+        if (title.length < 3) { msg($("new-topic-msg"), "chatTopicShort", "error"); f.title.focus(); return; }
+        if (!body) { msg($("new-topic-msg"), "chatBodyEmpty", "error"); f.body.focus(); return; }
+        var btn = ev.target.querySelector("button[type=submit]");
+        btn.disabled = true;
+        var c = acc.client;
+        c.from("chat_topics").insert({ title: title }).select("id").single().then(function (r) {
+          if (r.error) throw r.error;
+          return c.from("chat_messages").insert({ topic_id: r.data.id, body: body }).then(function (m) {
+            if (m.error) throw m.error;
+            return r.data.id;
+          });
+        }).then(function (id) {
+          ev.target.reset();
+          ev.target.hidden = true;
+          $("new-topic-msg").hidden = true;
+          $("new-topic-btn").setAttribute("aria-expanded", "false");
+          location.hash = "topic=" + id;
+        }).catch(function (err) {
+          if (errorKey(err) === "chatNameMissing") { askName(); return; }
+          msg($("new-topic-msg"), errorKey(err), "error");
+        }).then(function () { btn.disabled = false; });
+      });
+
+      // ---------- one topic ----------
+      function topicById(id) {
+        for (var i = 0; i < topics.length; i++) if (topics[i].id === id) return topics[i];
+        return null;
+      }
+
+      function renderTopicHead() {
+        var tp = topicById(current);
+        $("topic-missing").hidden = !!tp;
+        $("compose").hidden = !tp;
+        $("topic-h").textContent = tp ? tp.title : "";
+        $("topic-meta").textContent = tp ? t("chatStartedBy", { name: tp.author_name }) + " · " + tn("chatMessages", tp.message_count) : "";
+        $("delete-topic").hidden = !tp || !(admin || tp.created_by === me.id);
+      }
+
+      function messageItem(m) {
+        var li = document.createElement("li");
+        li.className = "msg" + (m.user_id === me.id ? " mine" : "");
+        li.dataset.id = m.id;
+        var head = document.createElement("div");
+        head.className = "msg-head";
+        var who = document.createElement("b");
+        who.textContent = m.author_name;
+        var time = document.createElement("time");
+        time.dateTime = m.created_at;
+        time.title = new Date(m.created_at).toLocaleString(LOCALES[lang]);
+        time.textContent = when(m.created_at);
+        head.appendChild(who);
+        head.appendChild(time);
+        var body = document.createElement("p");
+        body.textContent = m.body;
+        var acts = document.createElement("div");
+        acts.className = "msg-acts";
+        if (m.user_id === me.id || admin) {
+          var del = document.createElement("button");
+          del.type = "button"; del.className = "link"; del.textContent = t("chatDelete");
+          del.addEventListener("click", function () { deleteMessage(m.id); });
+          acts.appendChild(del);
+        }
+        if (m.user_id !== me.id) {
+          var rep = document.createElement("button");
+          rep.type = "button"; rep.className = "link"; rep.textContent = t("chatReport");
+          rep.addEventListener("click", function () { report(m.id, rep); });
+          acts.appendChild(rep);
+        }
+        li.appendChild(head);
+        li.appendChild(body);
+        li.appendChild(acts);
+        return li;
+      }
+
+      function renderTopic() {
+        renderTopicHead();
+        var list = $("messages");
+        list.replaceChildren();
+        messages.forEach(function (m) { list.appendChild(messageItem(m)); });
+      }
+
+      function nearBottom() {
+        return window.innerHeight + window.scrollY >= document.body.scrollHeight - 160;
+      }
+      function scrollDown() {
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+
+      function addMessage(m) {
+        if (m.topic_id !== current) return;
+        for (var i = 0; i < messages.length; i++) if (messages[i].id === m.id) return; // already shown
+        var stick = nearBottom() || m.user_id === me.id;
+        messages.push(m);
+        $("messages").appendChild(messageItem(m));
+        if (stick) scrollDown();
+      }
+
+      function removeMessage(id) {
+        messages = messages.filter(function (m) { return m.id !== id; });
+        var li = $("messages").querySelector('[data-id="' + id + '"]');
+        if (li) li.remove();
+      }
+
+      function openTopic(id) {
+        current = id;
+        messages = [];
+        show("topic-view");
+        $("compose-msg").hidden = true;
+        var have = topicById(id) ? Promise.resolve() : loadTopics();
+        return have.then(function () {
+          renderTopicHead();
+          $("messages").replaceChildren();
+          if (!topicById(id)) return;
+          return acc.client.from("chat_messages")
+            .select("id, topic_id, user_id, author_name, body, created_at")
+            .eq("topic_id", id)
+            .order("created_at", { ascending: true })
+            .limit(500)
+            .then(function (r) {
+              if (r.error) throw r.error;
+              if (current !== id) return;
+              messages = r.data || [];
+              renderTopic();
+              scrollDown();
+            });
+        });
+      }
+
+      $("compose").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var box = $("compose-body"), body = box.value.trim();
+        if (!body) { box.focus(); return; }
+        var btn = ev.target.querySelector("button");
+        btn.disabled = true;
+        acc.client.from("chat_messages").insert({ topic_id: current, body: body })
+          .select("id, topic_id, user_id, author_name, body, created_at").single()
+          .then(function (r) {
+            if (r.error) throw r.error;
+            box.value = "";
+            grow();
+            $("compose-msg").hidden = true;
+            addMessage(r.data);
+          })
+          .catch(function (err) {
+            if (errorKey(err) === "chatNameMissing") { askName(); return; }
+            msg($("compose-msg"), errorKey(err), "error");
+          })
+          .then(function () { btn.disabled = false; });
+      });
+
+      // The reply box grows with the text; Ctrl/Cmd + Enter sends.
+      function grow() {
+        var box = $("compose-body");
+        box.style.height = "auto";
+        box.style.height = Math.min(box.scrollHeight + 2, 220) + "px";
+      }
+      $("compose-body").addEventListener("input", grow);
+      $("compose-body").addEventListener("keydown", function (ev) {
+        if (ev.key === "Enter" && (ev.ctrlKey || ev.metaKey)) $("compose").requestSubmit();
+      });
+
+      function deleteMessage(id) {
+        if (!window.confirm(t("chatDeleteConfirm"))) return;
+        acc.client.from("chat_messages").delete().eq("id", id).then(function (r) {
+          if (r.error) { window.alert(t("chatSendFailed")); return; }
+          removeMessage(id);
+        });
+      }
+
+      $("delete-topic").addEventListener("click", function () {
+        if (!window.confirm(t("chatDeleteTopicConfirm"))) return;
+        acc.client.from("chat_topics").delete().eq("id", current).then(function (r) {
+          if (r.error) { window.alert(t("chatSendFailed")); return; }
+          topics = topics.filter(function (tp) { return tp.id !== current; });
+          location.hash = "";
+        });
+      });
+
+      function report(id, btn) {
+        if (!window.confirm(t("chatReportConfirm"))) return;
+        btn.disabled = true;
+        acc.client.from("chat_reports").insert({ message_id: id }).then(function (r) {
+          // 23505: already reported by this person, which is fine.
+          if (r.error && r.error.code !== "23505") { btn.disabled = false; window.alert(t("chatSendFailed")); return; }
+          btn.textContent = t("chatReported");
+        });
+      }
+
+      // ---------- name ----------
+      function askName() {
+        show("chat-name");
+        $("chat-name").elements.display_name.focus();
+      }
+
+      $("chat-name").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var input = ev.target.elements.display_name, name = input.value.trim();
+        if (name.length < 2) { msg($("chat-name-msg"), "chatNameShort", "error"); input.focus(); return; }
+        acc.client.from("profiles").update({ display_name: name }).eq("id", me.id).then(function (r) {
+          if (r.error) { msg($("chat-name-msg"), "chatSendFailed", "error"); return; }
+          me.name = name;
+          listen();
+          route();
+        });
+      });
+
+      // ---------- navigation ----------
+      function route() {
+        var m = /^#topic=([0-9a-f-]{36})$/.exec(location.hash);
+        if (m) return openTopic(m[1]).catch(failed);
+        current = null;
+        show("list-view");
+        return loadTopics().then(renderTopics).catch(failed);
+      }
+      window.addEventListener("hashchange", function () { if (me && me.name) route(); });
+      $("back-to-list").addEventListener("click", function (ev) {
+        ev.preventDefault();
+        history.pushState(null, "", "chat.html?lang=" + lang);
+        route();
+      });
+      window.addEventListener("popstate", function () { if (me && me.name) route(); });
+
+      function failed(err) {
+        // The chat tables don't exist until supabase/003_chat.sql has run.
+        var missing = err && (err.code === "42P01" || err.code === "PGRST205" || /chat_topics/.test(err.message || ""));
+        $("chat-off-text").textContent = t(missing ? "chatSoon" : "chatOffline");
+        show("chat-off");
+      }
+
+      // Live updates: new replies appear, deleted ones disappear, the topic list stays fresh.
+      var listening = false;
+      function listen() {
+        if (listening) return;
+        listening = true;
+        acc.client.channel("chat")
+          .on("postgres_changes", { event: "INSERT", schema: "public", table: "chat_messages" }, function (p) {
+            addMessage(p.new);
+          })
+          .on("postgres_changes", { event: "DELETE", schema: "public", table: "chat_messages" }, function (p) {
+            if (p.old && p.old.id != null) removeMessage(p.old.id);
+          })
+          .on("postgres_changes", { event: "*", schema: "public", table: "chat_topics" }, refreshTopicsSoon)
+          .subscribe();
+      }
+      // Phones pause the live connection in the background: catch up when the app comes back.
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible" && me && me.name) route();
+      });
+
+      // ---------- start ----------
+      applyLang();
+      KNAccount.ready.then(function (a) {
+        acc = a;
+        if (!acc) { $("chat-off-text").textContent = t("chatOffline"); show("chat-off"); return; }
+        if (!acc.session) { show("chat-out"); return; }
+        var user = acc.session.user;
+        return Promise.all([
+          acc.client.from("profiles").select("display_name").eq("id", user.id).maybeSingle(),
+          acc.client.rpc("is_chat_admin")
+        ]).then(function (r) {
+          me = { id: user.id, name: r[0].data && (r[0].data.display_name || "").trim() };
+          admin = r[1].data === true;
+          if (!me.name) { askName(); return; }
+          listen();
+          return route();
+        });
+      }).catch(failed);
+    })();
+  </script>
+</body>
+</html>

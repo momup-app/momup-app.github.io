@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>My account | Kids Nearby Berlin</title>
   <meta name="description" content="Your free Kids Nearby account: saved activities on all your devices.">
   <meta name="robots" content="noindex">
@@ -26,6 +26,7 @@
       <a class="brand" href="./" data-keep-lang="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
       <div class="end">
         <a class="nav" href="./" data-keep-lang="./"><span aria-hidden="true">← </span><span data-i18n="navBack">All activities</span></a>
+        <a class="nav" href="chat.html" data-keep-lang="chat.html" data-i18n="navChat">Chat</a>
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
@@ -109,6 +110,7 @@
   <script src="pwa.js"></script>
   <script src="supabase-config.js"></script>
   <script src="account.js"></script>
+  <script src="tabs.js"></script>
   <script>
     (function () {
       "use strict";
@@ -116,6 +118,8 @@
       var t = function (k, v) { return KN.t(lang, k, v); };
       var acc = null, items = {}, profile = null;
       var $ = function (id) { return document.getElementById(id); };
+      // Came from the chat's "Log in" button: go back there once logged in.
+      var next = new URLSearchParams(location.search).get("next") === "chat" ? "chat" : null;
 
       function applyLang(updateUrl) {
         KN.translate(lang);
@@ -156,7 +160,7 @@
         btn.disabled = true; btn.textContent = t("sending");
         acc.client.auth.signInWithOtp({
           email: email.value.trim(),
-          options: { emailRedirectTo: location.origin + location.pathname + "?lang=" + lang }
+          options: { emailRedirectTo: location.origin + location.pathname + "?lang=" + lang + (next ? "&next=" + next : "") }
         }).then(function (r) {
           if (r.error) throw r.error;
           msg($("login-msg"), "linkSent", "ok", { email: email.value.trim() });
@@ -223,6 +227,7 @@
           fetch("data/activities.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
           fetch("data/events.json").then(function (r) { return r.json(); }).catch(function () { return []; })
         ]).then(function (r) {
+          if (next) { location.replace("chat.html?lang=" + lang); return; }
           profile = r[0].data || {};
           // Saved before logging in on this device? Move it into the account.
           var local = [];

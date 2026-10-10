@@ -2,10 +2,10 @@
 // Network first, so updates show up right away; the saved copy is only used when offline.
 // Only this site's own files are saved. Maps, fonts, Supabase and the form service go straight to the network.
 
-const CACHE = "kids-nearby-v2";
+const CACHE = "kids-nearby-v3";
 const CORE = [
-  "./", "./index.html", "./contact.html", "./account.html", "./install.html",
-  "./styles.css", "./app.js", "./i18n.js", "./account.js", "./pwa.js", "./supabase-config.js",
+  "./", "./index.html", "./contact.html", "./account.html", "./install.html", "./chat.html",
+  "./styles.css", "./app.js", "./i18n.js", "./account.js", "./pwa.js", "./tabs.js", "./supabase-config.js",
   "./data/activities.json", "./data/events.json",
   "./images/icon.svg", "./images/icon-192.png", "./images/hero.jpg",
   "./manifest.webmanifest"

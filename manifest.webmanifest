@@ -54,6 +54,17 @@
       ]
     },
     {
+      "name": "Mom chat",
+      "short_name": "Chat",
+      "url": "./chat.html?source=app",
+      "icons": [
+        {
+          "src": "images/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
       "name": "My account",
       "short_name": "Account",
       "url": "./account.html?source=app",
