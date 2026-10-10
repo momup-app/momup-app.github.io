@@ -124,6 +124,17 @@
       <p class="form-msg" id="compose-msg" role="status" hidden></p>
     </section>
 
+    <!-- What a member chose to share (tap a name) -->
+    <dialog class="member-card" id="member-card" aria-labelledby="card-name">
+      <div class="card-in">
+        <div class="avatar" id="card-initial" aria-hidden="true"></div>
+        <h2 id="card-name"></h2>
+        <dl id="card-info"></dl>
+        <p class="muted" id="card-nothing" hidden></p>
+        <form method="dialog"><button class="btn ghost" data-i18n="cardClose">Close</button></form>
+      </div>
+    </dialog>
+
     <p class="chat-rules muted small" id="chat-rules" hidden data-i18n="chatRules">Be kind. No ads, no photos or full names of children, and no other people’s personal details. Tap “Report” on anything that isn’t OK: Yuliia reads every report.</p>
   </main>
 
@@ -400,8 +411,12 @@
         li.dataset.id = m.id;
         var head = document.createElement("div");
         head.className = "msg-head";
-        var who = document.createElement("b");
+        var who = document.createElement("button");
+        who.type = "button";
+        who.className = "who";
         who.textContent = m.author_name;
+        who.setAttribute("aria-haspopup", "dialog");
+        who.addEventListener("click", function () { showMember(m.user_id, m.author_name); });
         var time = document.createElement("time");
         time.dateTime = m.created_at;
         time.title = new Date(m.created_at).toLocaleString(LOCALES[lang]);
@@ -545,6 +560,53 @@
           btn.textContent = t("chatReported");
         });
       }
+
+      // ---------- member card ----------
+      function ageText(months) {
+        if (months < 0) return t("ageSoon");
+        return months < 24 ? tn("ageMonths", months) : tn("ageYears", Math.floor(months / 12));
+      }
+
+      function showMember(id, fallbackName) {
+        var dlg = $("member-card"), info = $("card-info");
+        function fill(card) {
+          var name = (card && card.name) || fallbackName;
+          $("card-name").textContent = name;
+          $("card-initial").textContent = name.charAt(0).toUpperCase();
+          info.replaceChildren();
+          var kids = (card && card.kids) || [];
+          if (kids.length) {
+            info.appendChild(Object.assign(document.createElement("dt"), { textContent: t("cardKids") }));
+            var dd = document.createElement("dd"), ul = document.createElement("ul");
+            kids.forEach(function (k) {
+              var parts = [];
+              if (k.name) parts.push(k.name);
+              if (k.months != null) parts.push(ageText(k.months));
+              var li = document.createElement("li");
+              li.textContent = parts.join(", ") || t("cardChild");
+              ul.appendChild(li);
+            });
+            dd.appendChild(ul);
+            info.appendChild(dd);
+          }
+          if (card && card.area) {
+            info.appendChild(Object.assign(document.createElement("dt"), { textContent: t("cardArea") }));
+            info.appendChild(Object.assign(document.createElement("dd"), { textContent: card.area }));
+          }
+          var nothing = !info.children.length;
+          $("card-nothing").hidden = !nothing;
+          $("card-nothing").textContent = t("cardNothing", { name: name });
+        }
+        fill(null);
+        if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+        // member_card exists once supabase/004_family.sql has run; until then only the name shows.
+        acc.client.rpc("member_card", { member: id }).then(function (r) {
+          if (!r.error && r.data) fill(r.data);
+        });
+      }
+      $("member-card").addEventListener("click", function (ev) {
+        if (ev.target === this) this.close(); // tap outside the card
+      });
 
       // ---------- name ----------
       function askName() {

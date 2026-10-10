@@ -84,13 +84,31 @@
 
       <form id="profile-form" class="acc-card" novalidate aria-labelledby="profile-h">
         <h2 id="profile-h" data-i18n="profileTitle">Your details</h2>
-        <label><span data-i18n="nameLabel">Name (optional)</span><input name="display_name" maxlength="80" autocomplete="given-name"></label>
-        <fieldset>
+        <label><span data-i18n="momNameLabel">Your name</span><input name="display_name" maxlength="40" autocomplete="given-name" data-i18n-attr="placeholder:chatNamePlaceholder" placeholder="e.g. Anna, mom of two"><small data-i18n="momNameHint">Shown next to your messages in the chat.</small></label>
+
+        <!-- Kids with first name + birthday (needs supabase/004_family.sql) -->
+        <fieldset id="kids-box" hidden>
+          <legend data-i18n="kidsLabel">Your kids</legend>
+          <ul class="kids" id="kids"></ul>
+          <button type="button" class="link" id="add-kid" data-i18n="addKid">+ Add a child</button>
+          <small data-i18n="kidsHint">The birthday stays private. We use it to show activities and sales that fit your kids’ ages.</small>
+        </fieldset>
+
+        <!-- Before 004_family.sql: only ages -->
+        <fieldset id="ages-box">
           <legend data-i18n="kidsAgesLabel">Your kids’ ages</legend>
           <div class="ages" id="ages"></div>
           <small data-i18n="kidsAgesHint">Tap every age that fits. We never ask for names or photos of children.</small>
         </fieldset>
         <label><span data-i18n="postcodeLabel">Postcode (optional)</span><input name="postcode" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" placeholder="10437"></label>
+        <fieldset class="visible" id="visible-box" hidden>
+          <legend data-i18n="visibleTitle">What other moms can see in the app</legend>
+          <label class="check"><input type="checkbox" checked disabled> <span data-i18n="visName">Your name (always: it’s shown in the chat)</span></label>
+          <label class="check"><input type="checkbox" name="show_kid_names"> <span data-i18n="visKidNames">Your kids’ first names</span></label>
+          <label class="check"><input type="checkbox" name="show_kid_ages"> <span data-i18n="visKidAges">Your kids’ ages, like “3 years” (never the birthday)</span></label>
+          <label class="check"><input type="checkbox" name="show_area"> <span data-i18n="visArea">Your postcode</span></label>
+          <small data-i18n="visHint">Others see this when they tap your name in the chat. Your email and your kids’ birthdays are never shown.</small>
+        </fieldset>
         <fieldset class="notify">
           <legend data-i18n="notifyTitle">Notifications</legend>
           <label class="check"><input type="checkbox" name="alert_sales"> <span data-i18n="notifySales">Kids’ clothes sales &amp; flea markets</span></label>
@@ -204,6 +222,7 @@
         $("hello").textContent = t("hello", { name: name });
         $("who").textContent = user.email;
         renderAges();
+        if (kids) renderKids(readKids());
         renderSaved();
       }
 
@@ -257,6 +276,7 @@
         return Promise.all([
           c.from("profiles").select("*").eq("id", acc.session.user.id).maybeSingle(),
           c.from("saved_items").select("item_id, created_at").order("created_at", { ascending: false }),
+          c.from("kids").select("id, first_name, birth_date").order("birth_date", { ascending: true }),
           fetch("data/activities.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
           fetch("data/events.json").then(function (r) { return r.json(); }).catch(function () { return []; })
         ]).then(function (r) {
@@ -270,10 +290,17 @@
           if (missing.length) c.from("saved_items").insert(missing.map(function (id) { return { item_id: id }; })).then(function () {});
           savedIds = remote.concat(missing);
           try { localStorage.setItem("kn-saved", JSON.stringify(savedIds)); } catch (e) {}
-          r[2].concat(r[3]).forEach(function (it) { items[it.id] = it; });
+          r[3].concat(r[4]).forEach(function (it) { items[it.id] = it; });
+          // The kids table exists once supabase/004_family.sql has run; before that, only the age chips.
+          kids = r[2].error ? null : (r[2].data || []);
+          kidsSaved = kids ? kids.map(function (k) { return k.id; }) : [];
+          $("kids-box").hidden = $("visible-box").hidden = !kids;
+          $("ages-box").hidden = !!kids;
+          if (kids) renderKids();
           var f = $("profile-form").elements;
           f.display_name.value = profile.display_name || "";
           f.postcode.value = profile.postcode || "";
+          ["show_kid_names", "show_kid_ages", "show_area"].forEach(function (k) { f[k].checked = !!profile[k]; });
           f.alert_sales.checked = (profile.alert_topics || []).indexOf("sales") !== -1;
           // Hidden until supabase/002_sales_alerts.sql has added alert_topics.
           document.querySelector("#profile-form .notify").hidden = !("alert_topics" in profile);
@@ -286,6 +313,93 @@
         });
       }
 
+      // ---------- kids ----------
+      var kids = null, kidsSaved = [];
+      var today = new Date().toISOString().slice(0, 10);
+      var maxBirth = new Date(Date.now() + 300 * 864e5).toISOString().slice(0, 10);
+
+      function monthsOld(birth) {
+        var b = new Date(birth + "T12:00:00Z"), n = new Date();
+        var m = (n.getUTCFullYear() - b.getUTCFullYear()) * 12 + n.getUTCMonth() - b.getUTCMonth();
+        if (n.getUTCDate() < b.getUTCDate()) m--;
+        return b > n ? -1 : m;
+      }
+      function plural(key, n) {
+        var form = new Intl.PluralRules({ de: "de-DE", en: "en-GB", ru: "ru-RU" }[lang]).select(n);
+        return t(I18N[lang][key + "_" + form] != null ? key + "_" + form : key + "_other", { n: n });
+      }
+      function ageText(birth) {
+        var m = monthsOld(birth);
+        if (m < 0) return t("ageSoon");
+        return m < 24 ? plural("ageMonths", m) : plural("ageYears", Math.floor(m / 12));
+      }
+
+      function readKids() {
+        return Array.prototype.map.call($("kids").children, function (li) {
+          return { id: li.dataset.id || null, first_name: li.querySelector(".kid-name").value.trim() || null, birth_date: li.querySelector(".kid-birth").value };
+        });
+      }
+
+      function kidRow(k) {
+        var li = document.createElement("li");
+        if (k.id) li.dataset.id = k.id;
+        var name = document.createElement("input");
+        name.className = "kid-name"; name.maxLength = 40; name.value = k.first_name || "";
+        name.setAttribute("aria-label", t("kidNameLabel")); name.placeholder = t("kidNameLabel");
+        name.autocomplete = "off";
+        var birth = document.createElement("input");
+        birth.type = "date"; birth.className = "kid-birth"; birth.value = k.birth_date || "";
+        birth.min = "2005-01-01"; birth.max = maxBirth;
+        birth.setAttribute("aria-label", t("kidBirthLabel"));
+        var age = document.createElement("span");
+        age.className = "kid-age";
+        function upd() { age.textContent = birth.value ? ageText(birth.value) : t("kidBirthLabel"); }
+        birth.addEventListener("input", upd); upd();
+        var del = document.createElement("button");
+        del.type = "button"; del.className = "link danger"; del.textContent = "✕";
+        del.setAttribute("aria-label", t("removeKid"));
+        del.addEventListener("click", function () { li.remove(); $("add-kid").hidden = false; });
+        li.appendChild(name); li.appendChild(birth); li.appendChild(age); li.appendChild(del);
+        return li;
+      }
+
+      function renderKids(list) {
+        var box = $("kids");
+        box.replaceChildren();
+        (list || kids).forEach(function (k) { box.appendChild(kidRow(k)); });
+        if (!box.children.length) box.appendChild(kidRow({}));
+        $("add-kid").hidden = box.children.length >= 10;
+      }
+      $("add-kid").addEventListener("click", function () {
+        var box = $("kids");
+        box.appendChild(kidRow({}));
+        box.lastChild.querySelector(".kid-name").focus();
+        this.hidden = box.children.length >= 10;
+      });
+
+      // Saves the kids list: removes deleted rows, updates the others, adds new ones.
+      function saveKids(list) {
+        var c = acc.client;
+        var keep = list.filter(function (k) { return k.id; }).map(function (k) { return k.id; });
+        var gone = kidsSaved.filter(function (id) { return keep.indexOf(id) === -1; });
+        var steps = [];
+        if (gone.length) steps.push(c.from("kids").delete().in("id", gone));
+        list.filter(function (k) { return k.id; }).forEach(function (k) {
+          steps.push(c.from("kids").update({ first_name: k.first_name, birth_date: k.birth_date }).eq("id", k.id));
+        });
+        var added = list.filter(function (k) { return !k.id; }).map(function (k) { return { first_name: k.first_name, birth_date: k.birth_date }; });
+        if (added.length) steps.push(c.from("kids").insert(added));
+        return Promise.all(steps).then(function (rs) {
+          rs.forEach(function (r) { if (r.error) throw r.error; });
+          return c.from("kids").select("id, first_name, birth_date").order("birth_date", { ascending: true });
+        }).then(function (r) {
+          if (r.error) throw r.error;
+          kids = r.data || [];
+          kidsSaved = kids.map(function (k) { return k.id; });
+          renderKids();
+        });
+      }
+
       $("profile-form").addEventListener("submit", function (ev) {
         ev.preventDefault();
         var f = ev.target.elements;
@@ -293,6 +407,24 @@
         if (postcode && !/^[0-9]{5}$/.test(postcode)) { msg($("profile-msg"), "postcodeBad", "error"); f.postcode.focus(); return; }
         var ages = Array.prototype.filter.call($("ages").querySelectorAll("input"), function (cb) { return cb.checked; })
           .map(function (cb) { return Number(cb.value); });
+        var kidList = null;
+        if (kids) {
+          // Empty rows (no name, no birthday) are simply left out.
+          kidList = readKids().filter(function (k) { return k.first_name || k.birth_date; });
+          for (var i = 0; i < kidList.length; i++) {
+            var d = kidList[i].birth_date;
+            if (!d || d < "2005-01-01" || d > maxBirth) {
+              msg($("profile-msg"), "kidDateBad", "error");
+              $("kids").children[i] && $("kids").querySelectorAll(".kid-birth")[i].focus();
+              return;
+            }
+          }
+          // Ages for the sales emails, from the birthdays.
+          ages = kidList.map(function (k) { return monthsOld(k.birth_date); })
+            .filter(function (m) { return m >= 0; })
+            .map(function (m) { return Math.min(16, Math.floor(m / 12)); })
+            .filter(function (a, j, all) { return all.indexOf(a) === j; });
+        }
         var update = {
           display_name: f.display_name.value.trim() || null,
           postcode: postcode || null,
@@ -301,11 +433,16 @@
         };
         // alert_topics exists once supabase/002_sales_alerts.sql has run.
         if (profile && "alert_topics" in profile) update.alert_topics = f.alert_sales.checked ? ["sales"] : [];
+        if (kids) ["show_kid_names", "show_kid_ages", "show_area"].forEach(function (k) { update[k] = f[k].checked; });
         acc.client.from("profiles").update(update).eq("id", acc.session.user.id).then(function (r) {
-          if (r.error) { msg($("profile-msg"), "saveFailed", "error"); return; }
+          if (r.error) throw r.error;
           profile = Object.assign(profile || {}, update);
+          if (kidList) return saveKids(kidList);
+        }).then(function () {
           msg($("profile-msg"), "savedOk", "ok");
           showIn();
+        }).catch(function () {
+          msg($("profile-msg"), "saveFailed", "error");
         });
       });
 

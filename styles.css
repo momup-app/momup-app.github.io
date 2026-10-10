@@ -315,6 +315,17 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 #profile-form .notify { display: grid; gap: 8px; }
 #profile-form .notify small { margin-left: 28px; }
 #profile-form .notify[hidden] { display: none; }
+#profile-form [hidden] { display: none !important; }
+#profile-form label small { font-weight: 400; }
+.kids { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 8px; }
+.kids li { display: grid; grid-template-columns: minmax(0, 1fr) 170px auto auto; gap: 8px; align-items: center; }
+.kids .kid-age { font-size: 13px; font-weight: 700; color: var(--accent); min-width: 72px; }
+.kids .link.danger { font-size: 18px; padding: 6px 8px; }
+@media (max-width: 560px) { .kids li { grid-template-columns: minmax(0, 1fr) auto auto; padding: 10px; border: 1px solid var(--line); border-radius: 14px; } .kids .kid-name { grid-column: 1 / -1; } }
+#kids-box > small { display: block; margin-top: 8px; }
+#profile-form .visible { display: grid; gap: 8px; }
+#profile-form .visible input:disabled { opacity: .6; }
+#profile-form .visible small { margin-left: 28px; }
 
 /* sales for kids: red like a shop sale, so they stand apart from play events (yellow) and activities (purple) */
 :root { --sale: #D62828; --sale-ink: #FFFFFF; --sale-bg: #FFF0EE; --sale-line: #F7C9C4; }
@@ -436,3 +447,16 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .topics .snippet { font-size: 14px; color: var(--ink); opacity: .85; overflow-wrap: anywhere; }
 .topics mark { background: var(--highlight); color: var(--highlight-ink); border-radius: 4px; padding: 0 2px; }
 .chat-page .more { text-align: center; margin: 16px 0 0; }
+.msg-head .who { font: 700 13px/1.2 var(--font); color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; }
+.msg-head .who:hover { text-decoration: underline; }
+.member-card { border: 0; border-radius: 22px; padding: 0; width: min(360px, calc(100vw - 32px)); background: var(--card); color: var(--ink); box-shadow: 0 20px 50px rgba(31, 24, 70, .3); }
+.member-card::backdrop { background: rgba(31, 24, 70, .45); }
+.member-card .card-in { padding: 22px 22px 18px; display: grid; gap: 10px; }
+.member-card .avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--soft); color: var(--accent); display: grid; place-items: center; font-size: 24px; font-weight: 800; }
+.member-card h2 { margin: 0; font-size: 22px; overflow-wrap: anywhere; }
+.member-card dl { margin: 0; display: grid; gap: 6px; }
+.member-card dt { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.member-card dd { margin: 0; }
+.member-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.member-card .muted { color: var(--muted); margin: 0; }
+.member-card .btn { justify-self: end; }

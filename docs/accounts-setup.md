@@ -78,3 +78,7 @@ Name these on the privacy page (Datenschutzerklärung):
 - **Supabase** (accounts, hosted in Frankfurt). It offers a data processing agreement (AVV/DPA) in its settings.
 - **Google / Gmail**, which sends the login emails and the daily sales email.
 - **FormSubmit**, which sends the "Suggest an activity" form to Yuliia's email.
+
+## Family details
+
+Run [`supabase/004_family.sql`](../supabase/004_family.sql) in the SQL Editor (after 002 and 003). It adds **Your kids** (first name and date of birth) and **What other moms can see in the app** to *My account*. Everything is private by default: other members see only what a parent ticks, and never the exact birthday. Until the file has run, *My account* shows the simple age buttons.
