@@ -315,6 +315,12 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 #profile-form .notify { display: grid; gap: 8px; }
 #profile-form .notify small { margin-left: 28px; }
 #profile-form .notify[hidden] { display: none; }
+#profile-form .push { display: grid; gap: 8px; justify-items: start; margin-top: 6px; padding-top: 12px; border-top: 1px dashed var(--line); }
+#profile-form .push small { margin-left: 0; }
+.push-state { margin: 0; font-weight: 700; font-size: 14px; }
+.push-state.ok { color: var(--free); }
+.push-state.warn { color: var(--ink); font-weight: 500; background: var(--soft); padding: 10px 12px; border-radius: 12px; }
+.push-acts { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 #profile-form [hidden] { display: none !important; }
 #profile-form label small { font-weight: 400; }
 .kids { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 8px; }

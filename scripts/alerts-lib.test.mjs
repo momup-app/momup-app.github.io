@@ -57,3 +57,22 @@ test("imported sales without time, ages or price still make a clean email", asyn
   assert.match(mail.text, /Hof, Musterstr\. 1, 10437 Berlin\n/);
   assert.doesNotMatch(mail.text, /undefined|–\s*$| · \n/m);
 });
+
+test("push: the first sale, how many more, and where a tap goes", async () => {
+  const { buildPush } = await import("./alerts-lib.mjs");
+  const a = { id: "berlin-7", date: "2026-10-17", start: "10:00", end: "13:00", title: "Kinderflohmarkt", category: "sales", price: { type: "free" } };
+  const b = { ...a, id: "x2", date: "2026-10-18", title: "Basar" };
+  const one = buildPush("de", [a]);
+  assert.equal(one.title, "Neuer Kinderkleider-Basar in Berlin");
+  assert.equal(one.body, "Sa., 17. Okt. · Kinderflohmarkt");
+  assert.equal(one.url, "https://momup-app.github.io/?lang=de#item=berlin-7");
+  const two = buildPush("ru", [a, b]);
+  assert.match(two.body, /Kinderflohmarkt и ещё 1$/);
+  assert.equal(two.url, "https://momup-app.github.io/?lang=ru&category=sales#sales");
+  assert.equal(buildPush("xx", [a]).title, "New kids' clothes sale in Berlin");
+});
+
+test("sample sales are never sent", () => {
+  const sale = { id: "s", date: "2030-01-01", start: "10:00", end: "11:00", category: "sales" };
+  assert.equal(upcomingSales([sale, { ...sale, id: "demo", sample: true }], "2026-01-01").length, 1);
+});

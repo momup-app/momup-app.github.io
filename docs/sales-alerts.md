@@ -1,4 +1,4 @@
-# Daily sales email
+# Daily sales email and phone notifications
 
 Parents with an account can tick **Notifications → Kids' clothes sales & flea markets** on *My account*. Every morning a GitHub Action checks for upcoming sales they haven't been told about yet. If there are any, it sends **one email** in their language (DE / EN / RU) through Yuliia's Gmail.
 
@@ -7,6 +7,18 @@ Parents with an account can tick **Notifications → Kids' clothes sales & flea 
 - If a parent entered their kids' ages, they only get sales that fit those ages.
 - Days without new sales: no email.
 - Every email has a link to turn notifications off.
+
+## Phone notifications (web push)
+
+On *My account*, **🔔 Notify me on this phone** puts a notification on the lock screen when there's a new sale. It's the same daily job and the same sales choice as the email, just a different way to arrive. It works without the Gmail password.
+
+- **iPhone / iPad:** only in the app added to the Home Screen (iOS 16.4 or newer). In Safari itself, the button explains this.
+- **Android:** Chrome or the installed app. **Computers:** Chrome, Edge, Safari.
+- Each phone is turned on separately. Logging out turns it off on that phone; so does **Turn off on this phone**.
+- **Show a test notification** checks that the phone can display them. It's shown by the phone itself, not sent by the daily job.
+- **Keys:** the public key is in [`push-config.js`](../push-config.js). The private key is the GitHub secret `VAPID_PRIVATE_KEY` (with `VAPID_PUBLIC_KEY`). They belong together: if you ever make new ones, every phone has to turn notifications on again.
+- **Setup:** run [`supabase/005_push.sql`](../supabase/005_push.sql) once in the SQL Editor. Until then, the button doesn't appear.
+- Sample events (`"sample": true` in `data/events.json`) are never sent, by push or email.
 
 ## One-time setup
 
@@ -22,7 +34,7 @@ In the repository: **Settings → Secrets and variables → Actions → New repo
 |---|---|
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase → **Project Settings → API Keys → Secret keys**: create or copy a secret key (`sb_secret_…`). On the older screen it's the **service_role** key. |
 | `GMAIL_USER` | `yuliia.designer.ux@gmail.com` |
-| `GMAIL_APP_PASSWORD` | the 16-letter Google App password, without spaces (the same one used in Supabase SMTP works) |
+| `GMAIL_APP_PASSWORD` | the 16-letter Google App password, without spaces (the same one used in Supabase SMTP works). Without it, the email is skipped and only phone notifications go out. |
 
 The secret key can read all accounts. Put it **only** into this GitHub secret: never into the website, a chat or an email.
 

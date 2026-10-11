@@ -1,4 +1,4 @@
-name: Daily sales email
+name: Daily sales email and push
 
 on:
   schedule:
@@ -30,10 +30,12 @@ jobs:
       - name: Tests
         run: node --test scripts/
 
-      - name: Send the daily sales email
+      - name: Send the daily sales email and push
         run: node scripts/send-sales-alerts.mjs ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
         env:
           SUPABASE_URL: https://zljnvhrknhpajtggiehx.supabase.co
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}

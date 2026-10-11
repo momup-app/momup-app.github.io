@@ -113,6 +113,16 @@
           <legend data-i18n="notifyTitle">Notifications</legend>
           <label class="check"><input type="checkbox" name="alert_sales"> <span data-i18n="notifySales">Kids’ clothes sales &amp; flea markets</span></label>
           <small data-i18n="notifySalesHint">One email in the morning, only on days with new sales near you. Turn it off any time.</small>
+          <!-- Push to this phone's lock screen (needs supabase/005_push.sql) -->
+          <div class="push" id="push-box" hidden>
+            <button type="button" class="btn" id="push-on" data-i18n="pushOn">🔔 Notify me on this phone</button>
+            <p class="push-state" id="push-state" role="status" hidden></p>
+            <div class="push-acts" id="push-acts" hidden>
+              <button type="button" class="link" id="push-test" data-i18n="pushTest">Show a test notification</button>
+              <button type="button" class="link danger" id="push-off" data-i18n="pushOff">Turn off on this phone</button>
+            </div>
+            <small data-i18n="pushHint">A notification on your lock screen when there’s a new sale. It works on the phone where you turn it on, so do this on each phone you use.</small>
+          </div>
         </fieldset>
         <div class="row">
           <button type="submit" class="btn" data-i18n="saveProfile">Save</button>
@@ -137,6 +147,7 @@
   <script src="i18n.js"></script>
   <script src="pwa.js"></script>
   <script src="supabase-config.js"></script>
+  <script src="push-config.js"></script>
   <script src="account.js"></script>
   <script src="tabs.js"></script>
   <script>
@@ -311,6 +322,7 @@
           if (!chosenLang && !urlLang && profile.language) { lang = profile.language; applyLang(); }
           show("acc-in");
           showIn();
+          if (!$("profile-form").querySelector(".notify").hidden) pushSetup();
         });
       }
 
@@ -447,8 +459,103 @@
         });
       });
 
+      // ---------- push notifications on this phone ----------
+      var push = { sub: null };
+      function pushSupported() {
+        return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window && window.KN_PUSH;
+      }
+      function keyBytes(b64) {
+        var pad = "=".repeat((4 - b64.length % 4) % 4);
+        var raw = atob((b64 + pad).replace(/-/g, "+").replace(/_/g, "/"));
+        var out = new Uint8Array(raw.length);
+        for (var i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+        return out;
+      }
+      function deviceName() {
+        var ua = navigator.userAgent;
+        return /iPhone/.test(ua) ? "iPhone" : /iPad/.test(ua) ? "iPad" : /Android/.test(ua) ? "Android" : /Mac/.test(ua) ? "Mac" : /Windows/.test(ua) ? "Windows" : "Browser";
+      }
+      function pushShow(stateKey, on, kind) {
+        var st = $("push-state");
+        st.hidden = !stateKey;
+        if (stateKey) { st.textContent = t(stateKey); st.className = "push-state " + (kind || ""); }
+        $("push-on").hidden = !!on;
+        $("push-acts").hidden = !on;
+      }
+      // What this phone can do right now.
+      function pushRefresh() {
+        if (!pushSupported()) {
+          var ios = window.KNInstall && KNInstall.isIOS;
+          pushShow(ios && !KNInstall.standalone ? "pushIosInstall" : "pushUnsupported", false, "warn");
+          $("push-on").hidden = true;
+          return Promise.resolve();
+        }
+        if (Notification.permission === "denied") { pushShow("pushDenied", false, "warn"); $("push-on").hidden = true; return Promise.resolve(); }
+        return navigator.serviceWorker.ready.then(function (reg) { return reg.pushManager.getSubscription(); }).then(function (sub) {
+          push.sub = sub;
+          if (!sub) { pushShow(null, false); return; }
+          // On, if this phone is saved for the logged-in mom (someone else may have used it before).
+          return acc.client.from("push_subscriptions").select("endpoint").eq("endpoint", sub.endpoint).maybeSingle().then(function (r) {
+            pushShow(r.data ? "pushOnState" : null, !!r.data, "ok");
+          });
+        });
+      }
+      $("push-on").addEventListener("click", function () {
+        var btn = this;
+        btn.disabled = true;
+        // Ask first, straight from the tap: iPhone only allows the question then.
+        Notification.requestPermission().then(function (perm) {
+          if (perm !== "granted") { pushShow(perm === "denied" ? "pushDenied" : null, false, "warn"); return; }
+          return navigator.serviceWorker.ready.then(function (reg) {
+            return reg.pushManager.getSubscription().then(function (sub) {
+              return sub || reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(KN_PUSH.publicKey) });
+            });
+          }).then(function (sub) {
+            var j = sub.toJSON();
+            return acc.client.rpc("save_push_subscription", { p_endpoint: j.endpoint, p_p256dh: j.keys.p256dh, p_auth: j.keys.auth, p_device: deviceName() }).then(function (r) {
+              if (r.error) throw r.error;
+              push.sub = sub;
+              // Phone notifications follow the same choice as the email: sales on.
+              var topics = (profile && profile.alert_topics) || [];
+              if (topics.indexOf("sales") === -1) {
+                topics = topics.concat("sales");
+                $("profile-form").elements.alert_sales.checked = true;
+                return acc.client.from("profiles").update({ alert_topics: topics }).eq("id", acc.session.user.id).then(function () { profile.alert_topics = topics; });
+              }
+            }).then(function () { pushShow("pushOnState", true, "ok"); });
+          });
+        }).catch(function () {
+          pushShow("pushFailed", false, "warn");
+        }).then(function () { btn.disabled = false; });
+      });
+      $("push-off").addEventListener("click", function () {
+        var sub = push.sub;
+        if (!sub) { pushShow(null, false); return; }
+        acc.client.from("push_subscriptions").delete().eq("endpoint", sub.endpoint).then(function () {
+          return sub.unsubscribe();
+        }).then(function () { push.sub = null; pushShow("pushOffState", false); }, function () { pushShow("pushFailed", true, "warn"); });
+      });
+      $("push-test").addEventListener("click", function () {
+        navigator.serviceWorker.ready.then(function (reg) {
+          return reg.showNotification(t("pushTestTitle"), { body: t("pushTestBody"), icon: "images/icon-192.png", badge: "images/icon-192.png", tag: "momup-test" });
+        }).catch(function () { pushShow("pushFailed", true, "warn"); });
+      });
+      function pushSetup() {
+        // The push table exists once supabase/005_push.sql has run, and only matters with sales notifications.
+        return acc.client.from("push_subscriptions").select("endpoint").limit(1).then(function (r) {
+          if (r.error) return;
+          $("push-box").hidden = false;
+          return pushRefresh();
+        });
+      }
+
       $("logout").addEventListener("click", function () {
-        acc.client.auth.signOut().then(function () { location.href = "./?lang=" + lang; });
+        // This phone stops getting this account's notifications.
+        var stop = push.sub
+          ? acc.client.from("push_subscriptions").delete().eq("endpoint", push.sub.endpoint).then(function () { return push.sub.unsubscribe(); })
+          : Promise.resolve();
+        stop.catch(function () {}).then(function () { return acc.client.auth.signOut(); })
+          .then(function () { location.href = "./?lang=" + lang; });
       });
 
       $("delete").addEventListener("click", function () {

@@ -37,6 +37,12 @@ const TEXT = {
 };
 const LOCALE = { en: "en-GB", de: "de-DE", ru: "ru-RU" };
 
+const PUSH = {
+  en: { more: (n) => `and ${n} more` },
+  de: { more: (n) => `und ${n} weitere` },
+  ru: { more: (n) => `и ещё ${n}` },
+};
+
 /** Today's date in Berlin as YYYY-MM-DD. */
 export function berlinToday(now = new Date()) {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin" }).format(now);
@@ -45,7 +51,7 @@ export function berlinToday(now = new Date()) {
 /** Sales events from today on, soonest first. */
 export function upcomingSales(events, today) {
   return events
-    .filter((e) => e.category === "sales" && e.date >= today)
+    .filter((e) => e.category === "sales" && e.date >= today && !e.sample) // demo entries never go out
     .sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start));
 }
 
@@ -117,4 +123,16 @@ ${i.desc ? `<p style="margin:0 0 8px;font-size:14px">${esc(i.desc)}</p>` : ""}
 </div></body></html>`;
 
   return { subject: t.subject(items.length), text, html };
+}
+
+/** The lock-screen notification for one person: the first sale, and how many more. */
+export function buildPush(lang, events, siteUrl = SITE_URL) {
+  if (!TEXT[lang]) lang = "en";
+  const first = events[0];
+  const day = new Date(first.date + "T12:00:00Z").toLocaleDateString(LOCALE[lang], { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+  const body = `${day} · ${tr(first, lang, "title")}` + (events.length > 1 ? ` ${PUSH[lang].more(events.length - 1)}` : "");
+  const url = events.length === 1
+    ? `${siteUrl}/?lang=${lang}#item=${encodeURIComponent(first.id)}`
+    : `${siteUrl}/?lang=${lang}&category=sales#sales`;
+  return { title: TEXT[lang].subject(events.length), body, url, tag: "momup-sales" };
 }

@@ -2,10 +2,10 @@
 // Network first, so updates show up right away; the saved copy is only used when offline.
 // Only this site's own files are saved. Maps, fonts, Supabase and the form service go straight to the network.
 
-const CACHE = "kids-nearby-v3";
+const CACHE = "kids-nearby-v4";
 const CORE = [
   "./", "./index.html", "./contact.html", "./account.html", "./install.html", "./chat.html",
-  "./styles.css", "./app.js", "./i18n.js", "./account.js", "./pwa.js", "./tabs.js", "./supabase-config.js",
+  "./styles.css", "./app.js", "./i18n.js", "./account.js", "./pwa.js", "./tabs.js", "./supabase-config.js", "./push-config.js",
   "./data/activities.json", "./data/events.json",
   "./images/icon.svg", "./images/icon-192.png", "./images/hero.jpg",
   "./manifest.webmanifest"
@@ -42,5 +42,31 @@ self.addEventListener("fetch", (event) => {
           hit || (req.mode === "navigate" ? caches.match("./index.html") : Response.error())
         )
       )
+  );
+});
+
+// Push notifications (sent by .github/workflows/sales-alerts.yml). The message is JSON:
+// { title, body, url, tag }. Tapping it opens the app on that page, or the app's start page.
+self.addEventListener("push", (event) => {
+  let msg = {};
+  try { msg = event.data ? event.data.json() : {}; } catch { msg = { body: event.data && event.data.text() }; }
+  event.waitUntil(self.registration.showNotification(msg.title || "MomUp", {
+    body: msg.body || "",
+    icon: "images/icon-192.png",
+    badge: "images/icon-192.png",
+    tag: msg.tag || "momup",
+    data: { url: msg.url || "./" }
+  }));
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = new URL(event.notification.data && event.notification.data.url || "./", self.registration.scope).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((wins) => {
+      const open = wins.find((w) => w.url.startsWith(self.registration.scope));
+      if (open) return open.navigate(url).then((w) => (w || open).focus());
+      return self.clients.openWindow(url);
+    })
   );
 });
