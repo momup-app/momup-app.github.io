@@ -278,7 +278,8 @@
           c.from("saved_items").select("item_id, created_at").order("created_at", { ascending: false }),
           c.from("kids").select("id, first_name, birth_date").order("birth_date", { ascending: true }),
           fetch("data/activities.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
-          fetch("data/events.json").then(function (r) { return r.json(); }).catch(function () { return []; })
+          fetch("data/events.json").then(function (r) { return r.json(); }).catch(function () { return []; }),
+          fetch("data/berlin-events.json").then(function (r) { return r.json(); }).catch(function () { return []; })
         ]).then(function (r) {
           if (next) { location.replace("chat.html?lang=" + lang); return; }
           profile = r[0].data || {};
@@ -290,7 +291,7 @@
           if (missing.length) c.from("saved_items").insert(missing.map(function (id) { return { item_id: id }; })).then(function () {});
           savedIds = remote.concat(missing);
           try { localStorage.setItem("kn-saved", JSON.stringify(savedIds)); } catch (e) {}
-          r[3].concat(r[4]).forEach(function (it) { items[it.id] = it; });
+          r[3].concat(r[4], r[5]).forEach(function (it) { items[it.id] = it; });
           // The kids table exists once supabase/004_family.sql has run; before that, only the age chips.
           kids = r[2].error ? null : (r[2].data || []);
           kidsSaved = kids ? kids.map(function (k) { return k.id; }) : [];

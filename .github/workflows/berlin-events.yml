@@ -1,0 +1,49 @@
+name: Import events from berlin.de
+
+on:
+  schedule:
+    - cron: "30 4,16 * * *" # twice a day; the morning run is before the sales email at 07:00 UTC
+  workflow_dispatch: # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: berlin-events
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Test the berlin.de reader
+        run: node --test scripts/
+
+      - name: Read the next kids' events
+        run: node scripts/berlin-sync.mjs
+
+      - name: Publish changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/berlin-events.json data/berlin-places.json data/geocode-cache.json
+          git commit -m "Import events from berlin.de"
+          git pull --rebase
+          git push
+          # Pushes made by this workflow don't always start a Pages build, so ask for one.
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" > /dev/null \
+            || echo "::warning::Couldn't request a Pages build; the site updates on the next push."

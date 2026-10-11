@@ -54,7 +54,7 @@ export function salesFor(recipient, sales, sentIds) {
   const ages = recipient.kids_ages || [];
   return sales.filter((e) => {
     if (sentIds.has(e.id)) return false;
-    if (!ages.length) return true;
+    if (!ages.length || !e.ages) return true; // imported events may not say which ages
     return ages.some((a) => a >= e.ages[0] && a <= e.ages[1]);
   });
 }
@@ -71,12 +71,14 @@ function when(e, lang) {
   const d = new Date(e.date + "T12:00:00Z").toLocaleDateString(LOCALE[lang], {
     weekday: "long", day: "numeric", month: "long", timeZone: "UTC",
   });
-  return `${d.charAt(0).toUpperCase() + d.slice(1)}, ${e.start}–${e.end}`;
+  const time = e.start && e.end ? `${e.start}–${e.end}` : e.start || (e.end ? `– ${e.end}` : "");
+  return d.charAt(0).toUpperCase() + d.slice(1) + (time ? `, ${time}` : "");
 }
 
 function price(e, lang) {
   const t = TEXT[lang];
   if (e.price.type === "free") return t.free;
+  if (e.price.type === "unknown") return "";
   const per = t.per[e.price.per] || e.price.per;
   return lang === "en" ? `€${e.price.amount} / ${per}` : `${e.price.amount} € / ${per}`;
 }
@@ -97,7 +99,7 @@ export function buildEmail(lang, events, siteUrl = SITE_URL) {
 
   const text = [
     t.hello, "",
-    ...items.flatMap((i) => [`• ${i.title}`, `  ${i.when}`, `  ${i.where} · ${i.price}`, `  ${i.url}`, ""]),
+    ...items.flatMap((i) => [`• ${i.title}`, `  ${i.when}`, `  ${[i.where, i.price].filter(Boolean).join(" · ")}`, `  ${i.url}`, ""]),
     "—", t.footer, `${t.off}: ${offUrl}`,
   ].join("\n");
 
@@ -108,7 +110,7 @@ export function buildEmail(lang, events, siteUrl = SITE_URL) {
 ${items.map((i) => `<div style="border-left:4px solid #FFD260;background:#F7F4FA;border-radius:12px;padding:14px 16px;margin:0 0 12px">
 <p style="margin:0 0 4px;font-weight:700;font-size:17px">${esc(i.title)}</p>
 <p style="margin:0;font-size:14px">${esc(i.when)}</p>
-<p style="margin:0 0 6px;font-size:14px;color:#6E6984">${esc(i.where)} · ${esc(i.price)}</p>
+<p style="margin:0 0 6px;font-size:14px;color:#6E6984">${esc([i.where, i.price].filter(Boolean).join(" · "))}</p>
 ${i.desc ? `<p style="margin:0 0 8px;font-size:14px">${esc(i.desc)}</p>` : ""}
 <a href="${esc(i.url)}" style="color:#5B45B0;font-weight:700;font-size:14px">${esc(t.open)} →</a></div>`).join("\n")}
 <p style="margin:20px 0 0;font-size:12px;color:#6E6984">${esc(t.footer)}<br><a href="${esc(offUrl)}" style="color:#5B45B0">${esc(t.off)}</a></p>

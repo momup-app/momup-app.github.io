@@ -147,7 +147,22 @@
 
   function isUpcoming(e, now) {
     if (e.date > now.date) return true;
-    return e.date === now.date && (e.end || "23:59") > now.time;
+    // No end time: count on about three hours after the start, or the whole day.
+    var end = e.end || (e.start ? plusHours(e.start, 3) : "23:59");
+    return e.date === now.date && end > now.time;
+  }
+
+  function plusHours(time, n) {
+    var h = Math.min(23, Number(time.slice(0, 2)) + n);
+    return (h < 10 ? "0" : "") + h + time.slice(2);
+  }
+
+  // "10:00–17:00", "11:00", "until 16:30" or "all day": imported events don't always say.
+  function timeRange(e) {
+    if (e.start && e.end) return e.start + "–" + e.end;
+    if (e.start) return e.start;
+    if (e.end) return t("untilTime", { time: e.end });
+    return t("allDay");
   }
 
   // ---------- storage (saved items stay in this browser only) ----------
@@ -213,6 +228,7 @@
 
   function priceText(p) {
     if (p.type === "free") return t("free");
+    if (p.type === "unknown") return "";
     var per = window.I18N[state.lang].per[p.per] || p.per;
     return t("price", { amount: p.amount, per: per });
   }
@@ -268,7 +284,7 @@
   function matches(a, f) {
     if (f.age) {
       var age = Number(f.age);
-      if (age < a.ages[0] || age > a.ages[1]) return false;
+      if (a.ages && (age < a.ages[0] || age > a.ages[1])) return false; // unknown ages stay in
     }
     if (f.category && a.category !== f.category) return false;
     if (f.day && a.days.indexOf(f.day) === -1) return false;
@@ -310,17 +326,19 @@
     var sales = upcoming.filter(function (e) { return e.category === "sales"; });
     var play = upcoming.filter(function (e) { return e.category !== "sales"; });
     // Picking one interest hides the section that can't have anything for it.
-    renderEvents("events", play, now, f.category === "sales");
-    renderEvents("sales", sales, now, !!f.category && f.category !== "sales");
+    // The map shows the events that are on screen: with hundreds imported, all of them would bury the activities.
+    var onScreen = renderEvents("events", play, now, f.category === "sales")
+      .concat(renderEvents("sales", sales, now, !!f.category && f.category !== "sales"));
 
     var bounds = [];
     function pin(a, isEvent) {
       if (a.format !== "in-person") return;
       var title = tr(a, "title");
-      var when = isEvent ? dayLabel(a, now) + ", " + a.start + "–" + a.end : timeText(a);
+      var when = isEvent ? dayLabel(a, now) + ", " + timeRange(a) : timeText(a);
+      var price = priceText(a.price);
       var kind = !isEvent ? "activity" : a.category === "sales" ? "sale" : "event";
       var m = L.marker([a.lat, a.lng], { icon: pinIcon(a.id === state.activeId, kind), title: title })
-        .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(when) + " &middot; " + escapeHtml(priceText(a.price)))
+        .bindPopup("<b>" + escapeHtml(title) + "</b><br>" + escapeHtml(when) + (price ? " &middot; " + escapeHtml(price) : ""))
         .on("click", function () { highlight(a.id, true); });
       m.kind = kind;
       m.addTo(markerLayer);
@@ -328,7 +346,7 @@
       bounds.push([a.lat, a.lng]);
     }
     results.forEach(function (a) { pin(a, false); });
-    upcoming.forEach(function (e) { pin(e, true); });
+    onScreen.forEach(function (e) { pin(e, true); });
     if (state.origin.exact) bounds.push([state.origin.lat, state.origin.lng]);
     if (bounds.length) map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
   }
@@ -353,9 +371,9 @@
 
   function badgesFor(a) {
     var badges = el("ul", "badges");
-    badges.appendChild(el("li", null, t("ages", { from: a.ages[0], to: a.ages[1] })));
+    if (a.ages) badges.appendChild(el("li", null, t("ages", { from: a.ages[0], to: a.ages[1] })));
     badges.appendChild(el("li", null, t("cat_" + a.category)));
-    badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
+    if (a.price.type !== "unknown") badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
     if (a.format === "online") badges.appendChild(el("li", "online", t("online")));
     else badges.appendChild(el("li", null, t("km", { n: number(a.distance) })));
     return badges;
@@ -412,6 +430,7 @@
     g.empty.hidden = upcoming.length > 0;
     g.more.hidden = upcoming.length <= EVENTS_PREVIEW;
     g.more.textContent = all ? t("showLess") : t("showAll", { n: upcoming.length });
+    return hideSection ? [] : shown;
   }
 
   function eventCard(e, now) {
@@ -431,14 +450,14 @@
     day.style.margin = "0";
     day.appendChild(el("b", null, dayLabel(e, now)));
     day.appendChild(document.createElement("br"));
-    day.appendChild(document.createTextNode(e.start + "–" + e.end));
+    day.appendChild(document.createTextNode(timeRange(e)));
     when.appendChild(day);
     li.appendChild(when);
 
     li.appendChild(el("h3", null, title));
     li.appendChild(badgesFor(e));
     var place = tr(e, "address");
-    li.appendChild(el("p", "place", (place ? place + " · " : "") + tr(e, "organizer")));
+    li.appendChild(el("p", "place", [place, tr(e, "organizer")].filter(Boolean).join(" · ")));
     var desc = tr(e, "description");
     if (desc) li.appendChild(el("p", "desc", desc));
 
@@ -452,6 +471,12 @@
       post.href = e.link; post.target = "_blank"; post.rel = "noopener";
       post.addEventListener("click", function (ev) { ev.stopPropagation(); });
       acts.appendChild(post);
+    }
+    if (e.source) {
+      var via = el("a", "via", t("viaSource", { source: e.source.name }) + " ↗");
+      via.href = e.source.url; via.target = "_blank"; via.rel = "noopener";
+      via.addEventListener("click", function (ev) { ev.stopPropagation(); });
+      acts.appendChild(via);
     }
     li.appendChild(acts);
     return li;
@@ -480,7 +505,7 @@
       head.appendChild(badge);
       day.appendChild(el("b", null, dayLabel(e, now)));
       day.appendChild(document.createElement("br"));
-      day.appendChild(document.createTextNode(e.start + "–" + e.end));
+      day.appendChild(document.createTextNode(timeRange(e)));
     } else {
       day.appendChild(el("b", null, e.days.map(function (x) { return t("day_" + x); }).join(", ")));
       day.appendChild(document.createElement("br"));
@@ -497,7 +522,8 @@
     var desc = tr(e, "description");
     if (desc) dialogBody.appendChild(el("p", "desc", desc));
     var place = tr(e, "address");
-    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place));
+    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place + (e.district ? " · " + e.district : "")));
+    if (e.source) dialogBody.appendChild(el("p", "desc", t("fullOnSource", { source: e.source.name })));
 
     var acts = el("div", "sheet-actions");
     if (isEvent) {
@@ -524,6 +550,11 @@
       var post = el("a", "btn ghost", t("seePost") + " ↗");
       post.href = e.link; post.target = "_blank"; post.rel = "noopener";
       acts.appendChild(post);
+    }
+    if (e.source) {
+      var src = el("a", "btn", t("openOnSource", { source: e.source.name }) + " ↗");
+      src.href = e.source.url; src.target = "_blank"; src.rel = "noopener";
+      acts.insertBefore(src, acts.firstChild);
     }
     var share = el("button", "btn ghost", t("share"));
     share.type = "button";
@@ -568,13 +599,14 @@
       "BEGIN:VEVENT",
       "UID:" + e.id + "@kids-nearby",
       "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z",
-      "DTSTART;TZID=Europe/Berlin:" + stamp(e.date, e.start),
-      "DTEND;TZID=Europe/Berlin:" + stamp(e.date, e.end),
+      // No start time: an all-day entry. No end time: one hour.
+      e.start ? "DTSTART;TZID=Europe/Berlin:" + stamp(e.date, e.start) : "DTSTART;VALUE=DATE:" + e.date.replace(/-/g, ""),
+      e.start ? "DTEND;TZID=Europe/Berlin:" + stamp(e.date, e.end || plusHours(e.start, 1)) : "DTEND;VALUE=DATE:" + addDays(e.date, 1).replace(/-/g, ""),
       "SUMMARY:" + esc(tr(e, "title")),
-      "DESCRIPTION:" + esc(tr(e, "description") + (e.link ? "\n" + e.link : "")),
+      "DESCRIPTION:" + esc((tr(e, "description") || "") + (e.link ? "\n" + e.link : "") + (e.source ? "\n" + e.source.url : "")),
       "LOCATION:" + esc(e.format === "online" ? "Online" : tr(e, "address"))
     ];
-    if (e.link) lines.push("URL:" + e.link);
+    if (e.link || e.source) lines.push("URL:" + (e.link || e.source.url));
     lines.push("END:VEVENT", "END:VCALENDAR");
     var blob = new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar;charset=utf-8" });
     var a = document.createElement("a");
@@ -669,11 +701,12 @@
 
   Promise.all([
     getJson("data/activities.json"),
-    getJson("data/events.json").catch(function () { return []; }) // events are optional
+    getJson("data/events.json").catch(function () { return []; }), // events are optional
+    getJson("data/berlin-events.json").catch(function () { return []; }) // imported daily from berlin.de
   ])
     .then(function (data) {
       state.activities = data[0];
-      state.events = data[1].map(function (e) {
+      state.events = data[1].concat(data[2]).map(function (e) {
         e.days = [WEEKDAYS[utcDate(e.date).getUTCDay()]]; // lets the day filter work on events
         return e;
       });

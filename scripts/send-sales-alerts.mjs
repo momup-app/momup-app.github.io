@@ -42,7 +42,9 @@ async function main() {
     throw new Error("GMAIL_USER / GMAIL_APP_PASSWORD missing. See docs/sales-alerts.md.");
   }
 
-  const events = JSON.parse(await readFile(new URL("../data/events.json", import.meta.url), "utf8"));
+  const read = (name) => readFile(new URL("../data/" + name, import.meta.url), "utf8").then(JSON.parse, () => []);
+  // Our own events plus the flea markets and bazaars imported from berlin.de.
+  const events = (await read("events.json")).concat(await read("berlin-events.json"));
   const sales = upcomingSales(events, berlinToday());
   if (!sales.length) return summary(["### Sales alerts", "", "No upcoming sales: nothing to send."]);
 

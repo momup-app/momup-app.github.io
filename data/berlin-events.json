@@ -1,0 +1,1980 @@
+[
+ {
+  "id": "berlin-281089",
+  "date": "2026-10-11",
+  "start": "",
+  "end": "",
+  "title": "Wanderausstellung „Neu-Hohenschönhausen im Miniaturformat“",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Jugendamt Berlin-Lichtenberg, Große-Leege-Str. 103, 13053 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.54542,
+  "lng": 13.5002,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=281089"
+  }
+ },
+ {
+  "id": "berlin-294001",
+  "date": "2026-10-11",
+  "start": "",
+  "end": "16:30",
+  "title": "KinderKulturMonat: Schnitzeljagd im Museum mit den DigeDags",
+  "organizer": "Fachbereich Museum und Geschichte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Museum Lichtenberg im Stadthaus, Türrschmidtstr. 24, 10317 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.50289,
+  "lng": 13.48099,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294001"
+  }
+ },
+ {
+  "id": "berlin-278980",
+  "date": "2026-10-11",
+  "start": "10:00",
+  "end": "12:00",
+  "title": "Papa-Kind-Spiel & Spaß",
+  "organizer": "",
+  "category": "sports",
+  "format": "in-person",
+  "ages": [
+   0,
+   6
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Familienzentrum Zukunftshaus Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
+  "district": "Mitte",
+  "lat": 52.55799,
+  "lng": 13.34735,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=278980"
+  }
+ },
+ {
+  "id": "berlin-156876",
+  "date": "2026-10-11",
+  "start": "10:00",
+  "end": "17:00",
+  "title": "\"Zitadellen- & FamilienSonntag\" - kostenfrei",
+  "organizer": "Fachbereich Kultur",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Zitadelle Spandau, Am Juliusturm 64, 13599 Berlin",
+  "district": "Spandau",
+  "lat": 52.54103,
+  "lng": 13.21274,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=156876"
+  }
+ },
+ {
+  "id": "berlin-286882",
+  "date": "2026-10-11",
+  "start": "11:00",
+  "end": "",
+  "title": "Mauskonzert – Kinder spielen für Kinder",
+  "organizer": "Musikschule City West",
+  "category": "music",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Musikschule City West, Konzertsaal Platanenallee, Platanenallee 16, 14050 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51325,
+  "lng": 13.27097,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=286882"
+  }
+ },
+ {
+  "id": "berlin-292099",
+  "date": "2026-10-11",
+  "start": "11:00",
+  "end": "",
+  "title": "Marabel & Huayro – Ein Kartoffelmärchen",
+  "organizer": "Chicha Express",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "paid",
+   "amount": 7,
+   "per": "ticket"
+  },
+  "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45693,
+  "lng": 13.3194,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292099"
+  }
+ },
+ {
+  "id": "berlin-292996",
+  "date": "2026-10-11",
+  "start": "13:30",
+  "end": "16:30",
+  "title": "Gefühle in Tüten mit dem POEDU. Dichten mit Freude für Kinder",
+  "organizer": "Stadtbibliothek Pankow",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   8,
+   10
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+  "district": "Pankow",
+  "lat": 52.54182,
+  "lng": 13.44085,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292996"
+  }
+ },
+ {
+  "id": "berlin-290021",
+  "date": "2026-10-11",
+  "start": "14:00",
+  "end": "",
+  "title": "Kindertheater aus dem Koffer - Meister Ton und das Liederwettsingen",
+  "organizer": "Theater aus dem Koffer gUG",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   2,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.48721,
+  "lng": 13.32004,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290021"
+  }
+ },
+ {
+  "id": "berlin-268717",
+  "date": "2026-10-11",
+  "start": "15:30",
+  "end": "16:00",
+  "title": "Bilderbuchkino in der Bibliothek Tempelhof",
+  "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.46378,
+  "lng": 13.38774,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=268717"
+  }
+ },
+ {
+  "id": "berlin-285670",
+  "date": "2026-10-12",
+  "start": "10:00",
+  "end": "12:00",
+  "title": "Das »Digital-Zebra« - Die öffentliche Digital-Beratung",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+  "district": "Mitte",
+  "lat": 52.54645,
+  "lng": 13.35728,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=285670"
+  }
+ },
+ {
+  "id": "berlin-292102",
+  "date": "2026-10-12",
+  "start": "10:30",
+  "end": "",
+  "title": "Kasper Glücksmütze",
+  "organizer": "Flausenbühne",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "paid",
+   "amount": 6,
+   "per": "ticket"
+  },
+  "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45693,
+  "lng": 13.3194,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292102"
+  }
+ },
+ {
+  "id": "berlin-276361",
+  "date": "2026-10-12",
+  "start": "13:00",
+  "end": "18:00",
+  "title": "DigiQuest",
+  "organizer": "Amt für Weiterbildung und Kultur, Kurt-Tucholsky-Bibliothek",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Esmarchstraße 18, 10407 Berlin",
+  "district": "Pankow",
+  "lat": 52.53291,
+  "lng": 13.43223,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276361"
+  }
+ },
+ {
+  "id": "berlin-233446",
+  "date": "2026-10-12",
+  "start": "14:45",
+  "end": "15:45",
+  "title": "Leseclub",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=233446"
+  }
+ },
+ {
+  "id": "berlin-275797",
+  "date": "2026-10-12",
+  "start": "15:00",
+  "end": "17:00",
+  "title": "Makerspace in der Ehm-Welk-Bibliothek",
+  "organizer": "Mittelpunktbibliothek \"Ehm Welk\"",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Mittelpunktbibliothek Ehm Welk, Alte Hellersdorfer Straße 125, 12629 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.5462,
+  "lng": 13.59151,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=275797"
+  }
+ },
+ {
+  "id": "berlin-233200",
+  "date": "2026-10-12",
+  "start": "15:30",
+  "end": "17:00",
+  "title": "Spielenachmittag",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+  "district": "Mitte",
+  "lat": 52.53124,
+  "lng": 13.34751,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=233200"
+  }
+ },
+ {
+  "id": "berlin-290882",
+  "date": "2026-10-12",
+  "start": "15:30",
+  "end": "",
+  "title": "Tabletop in der Dietrich-Bonhoeffer-Bibliothek!",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.48721,
+  "lng": 13.32004,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290882"
+  }
+ },
+ {
+  "id": "berlin-273964",
+  "date": "2026-10-12",
+  "start": "15:30",
+  "end": "18:30",
+  "title": "MitSpielen: Gaming Lounge in der Bibliothek am Luisenbad",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   6,
+   16
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=273964"
+  }
+ },
+ {
+  "id": "berlin-294682",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Code und Read - Wir bauen einen magischen Lese-Begleiter",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294682"
+  }
+ },
+ {
+  "id": "berlin-284236",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Digitalnachmittag in der Bibliothek am Wasserturm",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284236"
+  }
+ },
+ {
+  "id": "berlin-252103",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesezeit mit Lesewelt e.V.",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee/ Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.51344,
+  "lng": 13.48137,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=252103"
+  }
+ },
+ {
+  "id": "berlin-240049",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesezeit mit Lesewelt e.V.",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=240049"
+  }
+ },
+ {
+  "id": "berlin-266308",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Drinnen oder draußen spielen",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "outdoors",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=266308"
+  }
+ },
+ {
+  "id": "berlin-276031",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Wir lesen vor",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.53063,
+  "lng": 13.47051,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276031"
+  }
+ },
+ {
+  "id": "berlin-267922",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Bastel-Montag",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=267922"
+  }
+ },
+ {
+  "id": "berlin-295072",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "",
+  "title": "Englische Vorlesestunde | English Story Time",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51438,
+  "lng": 13.31637,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295072"
+  }
+ },
+ {
+  "id": "berlin-270247",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Coding & Co.",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=270247"
+  }
+ },
+ {
+  "id": "berlin-289133",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 3.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+  "district": "Mitte",
+  "lat": 52.53124,
+  "lng": 13.34751,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289133"
+  }
+ },
+ {
+  "id": "berlin-289127",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 1.-10. Klasse („Lern mit mir!“)",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+  "district": "Mitte",
+  "lat": 52.54645,
+  "lng": 13.35728,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289127"
+  }
+ },
+ {
+  "id": "berlin-250429",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "",
+  "title": "Kamishibai in der Stadtteilbibliothek Lankwitz",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Lankwitz, Bruchwitzstrasse 37, 12247 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.43607,
+  "lng": 13.35061,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=250429"
+  }
+ },
+ {
+  "id": "berlin-266521",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "",
+  "title": "Lesemontag bei Weinerts",
+  "organizer": "Stadtteilbibliothek \"Erich Weinert\"",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Erich Weinert, Helene-Weigel-Platz 4, 12681 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.52816,
+  "lng": 13.53827,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=266521"
+  }
+ },
+ {
+  "id": "berlin-285673",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "17:00",
+  "title": "Bilderbuchgeschichten ab 3 Jahren",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=285673"
+  }
+ },
+ {
+  "id": "berlin-145957",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   8
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59767,
+  "lng": 13.35232,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=145957"
+  }
+ },
+ {
+  "id": "berlin-267751",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesestunde in der Bibliothek am Schäfersee",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.5611,
+  "lng": 13.36528,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=267751"
+  }
+ },
+ {
+  "id": "berlin-242011",
+  "date": "2026-10-12",
+  "start": "16:30",
+  "end": "",
+  "title": "Bilderbuchkino",
+  "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bettina-von-Arnim-Bibliothek, Schönhauser Allee 75, 10439 Berlin",
+  "district": "Pankow",
+  "lat": 52.54921,
+  "lng": 13.41414,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=242011"
+  }
+ },
+ {
+  "id": "berlin-287107",
+  "date": "2026-10-12",
+  "start": "17:00",
+  "end": "",
+  "title": "Vorlesen und Erzählen mit ehrenamtlichen Vorleser_innen in der Philipp-Schaeffer-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
+  "district": "Mitte",
+  "lat": 52.53171,
+  "lng": 13.39849,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287107"
+  }
+ },
+ {
+  "id": "berlin-271366",
+  "date": "2026-10-13",
+  "start": "",
+  "end": "",
+  "title": "Kidsführungen für Kitas und Grundschulen & Buchbare Angebote",
+  "organizer": "Fachbereich Kultur",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "paid",
+   "amount": 1,
+   "per": "ticket"
+  },
+  "address": "Zitadelle Spandau, Am Juliusturm 64, 13599 Berlin",
+  "district": "Spandau",
+  "lat": 52.54103,
+  "lng": 13.21274,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=271366"
+  }
+ },
+ {
+  "id": "berlin-288194",
+  "date": "2026-10-13",
+  "start": "09:45",
+  "end": "10:45",
+  "title": "Bücherbabys",
+  "organizer": "Amerika-Gedenkbibliothek",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   2
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Amerika-Gedenkbibliothek der ZLB, Blücherplatz 1, 10961 Berlin",
+  "district": "Friedrichshain-Kreuzberg",
+  "lat": 52.49657,
+  "lng": 13.39249,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288194"
+  }
+ },
+ {
+  "id": "berlin-236290",
+  "date": "2026-10-13",
+  "start": "10:00",
+  "end": "12:00",
+  "title": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   0,
+   1
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=236290"
+  }
+ },
+ {
+  "id": "berlin-288437",
+  "date": "2026-10-13",
+  "start": "14:00",
+  "end": "18:00",
+  "title": "Offene Strick– und Häkelgruppe",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.49763,
+  "lng": 13.52078,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288437"
+  }
+ },
+ {
+  "id": "berlin-270517",
+  "date": "2026-10-13",
+  "start": "15:00",
+  "end": "",
+  "title": "Geschichten-Kiste",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=270517"
+  }
+ },
+ {
+  "id": "berlin-276751",
+  "date": "2026-10-13",
+  "start": "15:00",
+  "end": "17:30",
+  "title": "Gemeinsam Häkeln",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
+  "district": "Mitte",
+  "lat": 52.50379,
+  "lng": 13.36323,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276751"
+  }
+ },
+ {
+  "id": "berlin-289145",
+  "date": "2026-10-13",
+  "start": "15:00",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 1.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289145"
+  }
+ },
+ {
+  "id": "berlin-266149",
+  "date": "2026-10-13",
+  "start": "15:30",
+  "end": "17:00",
+  "title": "Basteln um halb vier",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.53063,
+  "lng": 13.47051,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=266149"
+  }
+ },
+ {
+  "id": "berlin-279667",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "",
+  "title": "Theater auf dem Bügelbrett zeigt: Die Prinzessin und der Schweinehirt. In der Bibliothek Lichtenrade!",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   5,
+   16
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.38787,
+  "lng": 13.39715,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=279667"
+  }
+ },
+ {
+  "id": "berlin-241693",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "",
+  "title": "Bibliotheksnachmittag für die Kleinsten",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   3,
+   6
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+  "district": "Pankow",
+  "lat": 52.54182,
+  "lng": 13.44085,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=241693"
+  }
+ },
+ {
+  "id": "berlin-253657",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "",
+  "title": "Gaming mit der Switch 2",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=253657"
+  }
+ },
+ {
+  "id": "berlin-236278",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Papa und Kind Spielnachmittag",
+  "organizer": "",
+  "category": "music",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=236278"
+  }
+ },
+ {
+  "id": "berlin-275908",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "Elternsprechstunde: Handy, Social Media und Co - in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=275908"
+  }
+ },
+ {
+  "id": "berlin-287119",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesen für Kinder in der Hansabibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Hansabibliothek, Altonaer Straße 15, 10557 Berlin",
+  "district": "Mitte",
+  "lat": 52.51709,
+  "lng": 13.34275,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287119"
+  }
+ },
+ {
+  "id": "berlin-284641",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Adolf-Reichwein-Bibliothek",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.47757,
+  "lng": 13.28806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284641"
+  }
+ },
+ {
+  "id": "berlin-289115",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 1.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
+  "district": "Mitte",
+  "lat": 52.53171,
+  "lng": 13.39849,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289115"
+  }
+ },
+ {
+  "id": "berlin-289121",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 1.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289121"
+  }
+ },
+ {
+  "id": "berlin-287122",
+  "date": "2026-10-13",
+  "start": "16:15",
+  "end": "17:15",
+  "title": "Vorlesestunden mit Lesewelt Berlin e.V. in der Schiller-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+  "district": "Mitte",
+  "lat": 52.54645,
+  "lng": 13.35728,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287122"
+  }
+ },
+ {
+  "id": "berlin-293029",
+  "date": "2026-10-13",
+  "start": "16:30",
+  "end": "",
+  "title": "„Der kleine Angsthase“ - Schattenfigurentheater mit Scuraluna",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Junge-Bibliothek, Bat-Yam-Platz 1, 12353 Berlin",
+  "district": "Neukölln",
+  "lat": 52.42543,
+  "lng": 13.46186,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293029"
+  }
+ },
+ {
+  "id": "berlin-239014",
+  "date": "2026-10-13",
+  "start": "16:30",
+  "end": "",
+  "title": "Erzählzeit in der Gottfried-Benn-Bibliothek",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.43208,
+  "lng": 13.25544,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=239014"
+  }
+ },
+ {
+  "id": "berlin-159171",
+  "date": "2026-10-13",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesestunde von Lesewelt Berlin e.V. für Kinder in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=159171"
+  }
+ },
+ {
+  "id": "berlin-287125",
+  "date": "2026-10-13",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287125"
+  }
+ },
+ {
+  "id": "berlin-284647",
+  "date": "2026-10-13",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Eberhard-Alexander-Burgh-Bibliothek",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Eberhard-Alexander-Burgh-Bibliothek, Rüdesheimer Str. 14, 14197 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.47136,
+  "lng": 13.31344,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284647"
+  }
+ },
+ {
+  "id": "berlin-282376",
+  "date": "2026-10-13",
+  "start": "17:00",
+  "end": "18:00",
+  "title": "Leseclub für Kinder",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   8,
+   11
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51438,
+  "lng": 13.31637,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=282376"
+  }
+ },
+ {
+  "id": "berlin-281566",
+  "date": "2026-10-13",
+  "start": "17:15",
+  "end": "",
+  "title": "Kamishibai in der Gertrud-Haß-Bibliothek",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "district": "Neukölln",
+  "lat": 52.41894,
+  "lng": 13.49432,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=281566"
+  }
+ },
+ {
+  "id": "berlin-288794",
+  "date": "2026-10-14",
+  "start": "09:30",
+  "end": "11:30",
+  "title": "Krabbelgruppe",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   0,
+   1
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.61655,
+  "lng": 13.4917,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288794"
+  }
+ },
+ {
+  "id": "berlin-277420",
+  "date": "2026-10-14",
+  "start": "10:00",
+  "end": "10:50",
+  "title": "Cattu, der Traumfänger - Ich fange alle Blätter ein",
+  "organizer": "Kulturhaus Spandau",
+  "category": "music",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kulturhaus Spandau | Theatersaal, Mauerstr. 6, 13597 Berlin",
+  "district": "Spandau",
+  "lat": 52.53553,
+  "lng": 13.20228,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=277420"
+  }
+ },
+ {
+  "id": "berlin-292108",
+  "date": "2026-10-14",
+  "start": "10:30",
+  "end": "",
+  "title": "Leg los, Luisa!",
+  "organizer": "Susann Kloss",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   9,
+   12
+  ],
+  "price": {
+   "type": "paid",
+   "amount": 5,
+   "per": "ticket"
+  },
+  "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45693,
+  "lng": 13.3194,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292108"
+  }
+ },
+ {
+  "id": "berlin-242212",
+  "date": "2026-10-14",
+  "start": "13:00",
+  "end": "17:00",
+  "title": "Gamingnachmittag (Nintendo Switch)",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.63567,
+  "lng": 13.4943,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=242212"
+  }
+ },
+ {
+  "id": "berlin-288263",
+  "date": "2026-10-14",
+  "start": "14:30",
+  "end": "16:30",
+  "title": "Virtual Reality: Erlebe die Zukunft – mit Virtual Reality! (Alter: 10-14 J.)",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   10,
+   14
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Junge-Bibliothek, Bat-Yam-Platz 1, 12353 Berlin",
+  "district": "Neukölln",
+  "lat": 52.42543,
+  "lng": 13.46186,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288263"
+  }
+ },
+ {
+  "id": "berlin-269152",
+  "date": "2026-10-14",
+  "start": "15:00",
+  "end": "18:00",
+  "title": "After School Gaming",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   12,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "district": "Neukölln",
+  "lat": 52.41894,
+  "lng": 13.49432,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=269152"
+  }
+ },
+ {
+  "id": "berlin-289148",
+  "date": "2026-10-14",
+  "start": "15:30",
+  "end": "18:00",
+  "title": "Hausaufgabenhilfe für die 1.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
+  "district": "Mitte",
+  "lat": 52.50379,
+  "lng": 13.36323,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289148"
+  }
+ },
+ {
+  "id": "berlin-233290",
+  "date": "2026-10-14",
+  "start": "15:30",
+  "end": "17:30",
+  "title": "Mal Mal Mit(twoch)",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=233290"
+  }
+ },
+ {
+  "id": "berlin-283402",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "",
+  "title": "Kindertheater \"Malwina und der Erdbeerpilz\"",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   6,
+   10
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=283402"
+  }
+ },
+ {
+  "id": "berlin-288254",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "",
+  "title": "\"Steinsuppe\" - Kindertheater mit dem Nimú Theatre",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   3,
+   6
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "district": "Neukölln",
+  "lat": 52.41894,
+  "lng": 13.49432,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288254"
+  }
+ },
+ {
+  "id": "berlin-284194",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Workshop: Klangroboter // WackelWesen",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284194"
+  }
+ },
+ {
+  "id": "berlin-294700",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "„Als die Raben noch bunt waren“ eine Kamishibai-Geschichte mit Marlis im Kindercafé des Stadtteilzentrums Kaulsdorf",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294700"
+  }
+ },
+ {
+  "id": "berlin-271210",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:45",
+  "title": "MitMachMittwoch - VR-Brille",
+  "organizer": "Amt für Weiterbildung und Kultur, Fachbereich Kunst und Kultur",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Esmarchstraße 18 Esmarchstraße 18, 10407 Berlin",
+  "district": "Pankow",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=271210"
+  }
+ },
+ {
+  "id": "berlin-236287",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Basteln mit dem Deutsch-Polnischen Hilfswerk e.V.",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.5611,
+  "lng": 13.36528,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=236287"
+  }
+ },
+ {
+  "id": "berlin-274156",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "Afrikanische Märchen und Geschichten mit Marlis",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=274156"
+  }
+ },
+ {
+  "id": "berlin-223170",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Offene Go-Gruppe",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=223170"
+  }
+ },
+ {
+  "id": "berlin-289799",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Workshop: Sashiko und Boro",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   5,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+  "district": "Mitte",
+  "lat": 52.54645,
+  "lng": 13.35728,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289799"
+  }
+ },
+ {
+  "id": "berlin-276097",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Johanna-Moosdorf-Bibliothek",
+  "organizer": "Lesewelt Berlin e. V.",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend), Westendallee 45, 14052 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51066,
+  "lng": 13.25861,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276097"
+  }
+ },
+ {
+  "id": "berlin-276091",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Ingeborg-Bachmann-Bibliothek",
+  "organizer": "Lesewelt Berlin e. V.",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51455,
+  "lng": 13.294,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276091"
+  }
+ },
+ {
+  "id": "berlin-292315",
+  "date": "2026-10-14",
+  "start": "16:30",
+  "end": "",
+  "title": "Kindertheater: „Von den Bergen zu den Steppen in die Höhlen zu den Meeren“",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292315"
+  }
+ },
+ {
+  "id": "berlin-239017",
+  "date": "2026-10-14",
+  "start": "16:30",
+  "end": "",
+  "title": "Schachtreff in der Gottfried-Benn-Bibliothek für Kinder - ein Angebot des Schachklubs Zehlendorfs e.V.",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.43208,
+  "lng": 13.25544,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=239017"
+  }
+ },
+ {
+  "id": "berlin-287128",
+  "date": "2026-10-14",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesen für Kinder in der Bruno-Lösche-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+  "district": "Mitte",
+  "lat": 52.53124,
+  "lng": 13.34751,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287128"
+  }
+ },
+ {
+  "id": "berlin-276085",
+  "date": "2026-10-14",
+  "start": "16:30",
+  "end": "",
+  "title": "Basteln für Kinder in der Heinrich-Schulz-Bibliothek",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51438,
+  "lng": 13.31637,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276085"
+  }
+ }
+]

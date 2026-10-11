@@ -46,3 +46,14 @@ test("email in the person's language, with links and escaping", () => {
   assert.match(buildEmail("ru", sales).subject, /Новые детские распродажи в Берлине: 2/);
   assert.equal(buildEmail("fr", sales).subject, "2 new kids' clothes sales in Berlin"); // unknown language → English
 });
+
+test("imported sales without time, ages or price still make a clean email", async () => {
+  const { buildEmail, salesFor } = await import("./alerts-lib.mjs");
+  const e = { id: "berlin-1", date: "2026-10-17", start: "", end: "", title: "Kinderflohmarkt", format: "in-person",
+    ages: null, price: { type: "unknown" }, address: "Hof, Musterstr. 1, 10437 Berlin", category: "sales" };
+  assert.equal(salesFor({ kids_ages: [3] }, [e], new Set()).length, 1);
+  const mail = buildEmail("de", [e]);
+  assert.match(mail.text, /Samstag, 17\. Oktober\n/);
+  assert.match(mail.text, /Hof, Musterstr\. 1, 10437 Berlin\n/);
+  assert.doesNotMatch(mail.text, /undefined|–\s*$| · \n/m);
+});
