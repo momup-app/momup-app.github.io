@@ -85,9 +85,10 @@ function esc(s) {
 }
 
 function when(e, lang) {
-  const d = new Date(e.date + "T12:00:00Z").toLocaleDateString(LOCALE[lang], {
-    weekday: "long", day: "numeric", month: "long", timeZone: "UTC",
-  });
+  // Weekday on its own: formatted together, Ukrainian comes out as "суботу" ("on Saturday") instead of "субота".
+  const day = new Date(e.date + "T12:00:00Z");
+  const d = day.toLocaleDateString(LOCALE[lang], { weekday: "long", timeZone: "UTC" }) + ", " +
+    day.toLocaleDateString(LOCALE[lang], { day: "numeric", month: "long", timeZone: "UTC" });
   const time = e.start && e.end ? `${e.start}–${e.end}` : e.start || (e.end ? `– ${e.end}` : "");
   return d.charAt(0).toUpperCase() + d.slice(1) + (time ? `, ${time}` : "");
 }

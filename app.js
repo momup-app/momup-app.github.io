@@ -533,7 +533,10 @@
   function dayLabel(e, now) {
     if (e.date === now.date) return t("today");
     if (e.date === addDays(now.date, 1)) return t("tomorrow");
-    var s = utcDate(e.date).toLocaleDateString(locale(), { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+    // Weekday on its own: formatted together, browsers write Ukrainian "суботу" ("on Saturday") instead of "субота".
+    var d = utcDate(e.date);
+    var s = d.toLocaleDateString(locale(), { weekday: "long", timeZone: "UTC" }) + ", " +
+      d.toLocaleDateString(locale(), { day: "numeric", month: "long", timeZone: "UTC" });
     return s.charAt(0).toUpperCase() + s.slice(1); // Russian weekdays come lowercase
   }
 
