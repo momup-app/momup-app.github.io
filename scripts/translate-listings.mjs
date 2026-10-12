@@ -63,9 +63,20 @@ async function main() {
       } catch (e) {
         failed += batch.length; // asked again next run
         console.log(`::warning::Translation batch failed: ${e.message}`);
+        if (/credit balance is too low/i.test(e.message)) {
+          // Every other batch would fail the same way: say it once, clearly, and stop asking.
+          console.log("::error::Listings were not translated: the Claude account has no credit left. Add credit at platform.claude.com → Settings → Billing, then run this workflow again.");
+          failed = todo.length;
+          break;
+        }
       }
     }
-    console.log(`Translated ${todo.length - failed} texts${failed ? `, ${failed} left for next run` : ""}.`);
+    if (failed === todo.length) {
+      // The imported events are still published; only the translations wait for the next run.
+      console.log(`::error::No listings were translated this run (${failed} texts waiting). See the warnings above.`);
+    } else {
+      console.log(`Translated ${todo.length - failed} texts${failed ? `, ${failed} left for next run` : ""}.`);
+    }
   } else {
     console.log("Every listing is already translated.");
   }
