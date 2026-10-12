@@ -190,5 +190,9 @@
  "Nehringstr. 10, 14059 Berlin": {
   "lat": 52.51455,
   "lng": 13.294
+ },
+ "Cuvrystraße 13/14, 10997 Berlin": {
+  "lat": 52.49859,
+  "lng": 13.44376
  }
 }
