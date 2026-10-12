@@ -539,3 +539,16 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .btn.wa svg { flex: none; }
 .wa-link { margin: 4px 0 0; font-size: 14px; }
 .wa-link a { color: var(--wa); font-weight: 700; text-decoration: none; }
+
+/* first-visit language welcome */
+.welcome { text-align: center; padding: 30px 22px 24px; }
+.welcome-logo { border-radius: 14px; box-shadow: 0 6px 18px rgba(134, 112, 214, .3); }
+.welcome h2 { margin: 14px 0 6px; font-size: 19px; line-height: 1.35; }
+.welcome-sub { margin: 0 0 20px; font-size: 13px; color: var(--muted); }
+.welcome-choices { display: grid; gap: 10px; }
+.welcome-choice { display: grid; grid-template-columns: 40px 1fr; grid-template-rows: auto auto; align-items: center; column-gap: 12px; text-align: left; width: 100%; padding: 14px 16px; font: inherit; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 16px; cursor: pointer; transition: border-color .15s, background .15s, transform .15s; }
+.welcome-choice:hover, .welcome-choice:focus-visible { border-color: var(--accent); background: var(--soft); transform: translateY(-1px); }
+.welcome-choice.suggested { border-color: var(--accent); background: var(--soft); }
+.welcome-choice .mark { grid-row: span 2; font-size: 28px; line-height: 1; text-align: center; }
+.welcome-choice .text { font-size: 18px; font-weight: 700; }
+.welcome-choice small { font-size: 13px; color: var(--muted); }
