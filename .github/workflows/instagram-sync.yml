@@ -35,7 +35,10 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
 
+      # Paused until the Claude account has credit. To switch on: Settings → Secrets and variables → Actions →
+      # Variables → New repository variable, name TRANSLATE, value on (docs/translations.md).
       - name: Translate new listings (en, de, uk, ru)
+        if: vars.TRANSLATE == 'on'
         run: node scripts/translate-listings.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
