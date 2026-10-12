@@ -381,10 +381,28 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .events.sales h2 { color: var(--sale-title); display: flex; align-items: center; gap: 12px; }
 .events.sales h2::before { content: "%"; flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sale-pill); color: var(--sale); font-size: 20px; font-weight: 800; box-shadow: 0 4px 14px rgba(123, 63, 214, .25); }
 .events.sales .events-count { color: var(--sale); }
-.sales-lede { margin: -6px 0 14px 52px; font-size: 14px; color: var(--sale-title); opacity: .75; }
-@media (max-width: 480px) { .sales-lede { margin-left: 0; } }
-.events.sales .events-head .link { background: var(--sale-pill); color: var(--sale-title); padding: 9px 16px; border-radius: 999px; box-shadow: 0 3px 12px rgba(123, 63, 214, .18); }
-.events.sales .events-head .link::after { content: " →"; }
+/* sales banner: big title, count, next date and "Show all" on the left, a picture on the right */
+.sales-banner { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 210px; align-items: center; gap: 8px 20px; margin-bottom: 18px; }
+.sales-banner-text { display: grid; justify-items: start; gap: 8px; }
+.events.sales .sales-banner h2 { margin: 0; font-size: clamp(24px, 3.2vw, 32px); line-height: 1.15; }
+.events.sales .sales-banner h2 .events-count { font-size: .7em; font-weight: 700; }
+.events.sales .sales-banner h2 .events-count:not(:empty)::after { content: " ›"; }
+.sales-lede { margin: 0 0 0 52px; font-size: 15px; color: var(--sale-title); opacity: .8; max-width: 34ch; }
+.sales-next { margin: 0 0 0 52px; font-size: 14px; font-weight: 700; color: var(--sale); }
+.events.sales .sales-banner .link { margin: 6px 0 0 52px; }
+.sales-art { justify-self: end; width: 210px; }
+.sales-art-svg { display: block; width: 100%; height: auto; }
+.art-glow { fill: rgba(255, 255, 255, .55); }
+.art-heart { fill: none; stroke: #B48AF0; stroke-width: 3; stroke-linejoin: round; }
+@media (prefers-color-scheme: dark) { .art-glow { fill: rgba(255, 255, 255, .08); } .art-heart { stroke: #C29BFF; } }
+@media (max-width: 640px) {
+  .sales-banner { grid-template-columns: minmax(0, 1fr) 118px; gap: 6px 8px; }
+  .sales-art { width: 118px; align-self: start; }
+  .sales-lede, .sales-next, .events.sales .sales-banner .link { margin-left: 0; }
+  .events.sales .sales-banner h2 { font-size: 22px; }
+}
+#sales-more { background: var(--sale-pill); color: var(--sale-title); padding: 9px 16px; border-radius: 999px; box-shadow: 0 3px 12px rgba(123, 63, 214, .18); }
+#sales-more::after { content: " →"; }
 .event.sale { border-color: var(--sale-line); border-left: 1px solid var(--sale-line); border-radius: 18px; }
 .event.sale:hover, .event.sale.active { border-color: var(--sale); box-shadow: 0 6px 22px rgba(123, 63, 214, .22); }
 .event.sale .date { background: var(--sale-date); box-shadow: 0 4px 12px rgba(214, 72, 170, .3); }

@@ -442,6 +442,10 @@
     // The map shows the events that are on screen: with hundreds imported, all of them would bury the activities.
     var onScreen = renderEvents("events", play, now, f.category === "sales")
       .concat(renderEvents("sales", sales, now, !!f.category && f.category !== "sales"));
+    // Banner line: when the next sale is.
+    var next = document.getElementById("sales-next");
+    next.hidden = !sales.length;
+    next.textContent = sales.length ? t("salesNext", { when: dayLabel(sales[0], now) + (sales[0].start ? ", " + sales[0].start : "") }) : "";
     renderGoing(now);
 
     var bounds = [];
