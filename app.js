@@ -11,7 +11,8 @@
 
   var state = {
     origin: DEFAULT_ORIGIN, activities: [], events: [], saved: loadSaved(), activeId: null,
-    lang: pickLang(), status: { key: "statusDefault", vars: {} }, showAll: { events: false, sales: false }
+    lang: pickLang(), status: { key: "statusDefault", vars: {} }, showAll: { events: false, sales: false },
+    going: {}, account: null, accountsOn: false, goingError: false
   };
   var els = {
     form: document.getElementById("where"),
@@ -108,10 +109,7 @@
     try { localStorage.setItem("kn-lang", lang); } catch (e) {}
     translatePage();
     render();
-    if (dialog.open) {
-      var current = state.events.concat(state.activities).filter(function (e) { return e.id === openEventId; })[0];
-      if (current) openEvent(current);
-    }
+    refreshOpenEvent();
   }
 
   function setStatus(key, vars) {
@@ -186,8 +184,10 @@
   function connectAccount() {
     if (!window.KNAccount) return;
     window.KNAccount.ready.then(function (acc) {
-      if (!acc || !acc.session) return;
+      state.accountsOn = !!acc;
+      if (!acc || !acc.session) { render(); return; }
       state.account = acc;
+      loadGoing();
       acc.client.from("saved_items").select("item_id").then(function (r) {
         if (r.error) return;
         var remote = r.data.map(function (x) { return x.item_id; });
@@ -199,6 +199,117 @@
         render();
       });
     });
+  }
+
+  // ---------- "I'm going" (see supabase/006_going.sql) ----------
+  // state.going: { eventId: [{ name, me }] }, only filled in when logged in.
+  function loadGoing() {
+    var acc = state.account;
+    if (!acc) return Promise.resolve();
+    return acc.client.rpc("going_list").then(function (r) {
+      if (r.error) { state.goingError = true; render(); return; }
+      state.goingError = false;
+      state.going = r.data.reduce(function (all, row) {
+        all[row.event_id] = (all[row.event_id] || []).concat({ name: row.name, me: row.is_me });
+        return all;
+      }, {});
+      render();
+      refreshOpenEvent();
+    });
+  }
+
+  function amGoing(id) {
+    return (state.going[id] || []).some(function (g) { return g.me; });
+  }
+
+  function setGoing(e, going) {
+    var acc = state.account;
+    var q = going
+      ? acc.client.from("event_going").insert({ event_id: e.id, event_date: e.date })
+      : acc.client.from("event_going").delete().eq("event_id", e.id);
+    return q.then(function (r) {
+      if (r.error) {
+        alert(t(/too_many/.test(r.error.message) ? "goingTooMany" : "goingFailed"));
+        return;
+      }
+      return loadGoing();
+    });
+  }
+
+  // "You, Anna, a mom" — you first, then the others in the order they joined.
+  function goerNames(list) {
+    var mine = list.filter(function (g) { return g.me; });
+    var others = list.filter(function (g) { return !g.me; });
+    return mine.map(function () { return { text: t("goingYou"), me: true }; })
+      .concat(others.map(function (g) { return { text: g.name || t("goingSomeone"), me: false }; }));
+  }
+
+  function goersList(list) {
+    var ul = el("ul", "goers");
+    goerNames(list).forEach(function (g) { ul.appendChild(el("li", g.me ? "me" : null, g.text)); });
+    return ul;
+  }
+
+  function renderGoing(now) {
+    var section = document.getElementById("going");
+    var list = document.getElementById("going-list");
+    var empty = document.getElementById("going-empty");
+    var count = document.getElementById("going-count");
+    section.hidden = !state.accountsOn;
+    list.replaceChildren();
+    count.textContent = "";
+    if (!state.account) { empty.hidden = false; empty.replaceChildren(loginPrompt("goingLogin")); return; }
+    var events = state.events.filter(function (e) { return state.going[e.id] && isUpcoming(e, now); })
+      .sort(function (a, b) { return (a.date + a.start).localeCompare(b.date + b.start); });
+    events.forEach(function (e) { list.appendChild(goingCard(e, now)); });
+    count.textContent = events.length ? "(" + events.length + ")" : "";
+    empty.hidden = events.length > 0;
+    empty.textContent = t(state.goingError ? "goingSetup" : "goingEmpty");
+  }
+
+  function goingCard(e, now) {
+    var li = el("li", "going-item");
+    li.setAttribute("aria-haspopup", "dialog");
+    li.tabIndex = 0;
+    li.addEventListener("click", function () { openEvent(e); });
+    li.addEventListener("keydown", function (ev) { if (ev.key === "Enter") openEvent(e); });
+    li.appendChild(dateBadge(e));
+    li.appendChild(el("h3", null, tr(e, "title")));
+    li.appendChild(el("p", "day", dayLabel(e, now) + ", " + timeRange(e)));
+    li.appendChild(goersList(state.going[e.id]));
+    return li;
+  }
+
+  function loginPrompt(key) {
+    var a = el("a", null, t(key));
+    a.href = "account.html?lang=" + state.lang;
+    return a;
+  }
+
+  // The "Who is going" box inside the event window.
+  function goingBox(e) {
+    var box = el("div", "going-box");
+    if (!state.account) { box.appendChild(loginPrompt("goingLoginEvent")); return box; }
+    var list = state.going[e.id] || [];
+    box.appendChild(el("p", null, list.length ? tn("goingCount", list.length) : t("goingNobody")));
+    if (list.length) box.appendChild(goersList(list));
+    var mine = amGoing(e.id);
+    var btn = el("button", mine ? "btn ghost" : "btn", mine ? t("goingCancel") : t("goingConfirm"));
+    btn.type = "button";
+    btn.setAttribute("aria-pressed", String(mine));
+    btn.addEventListener("click", function () {
+      if (!mine && !confirm(t("goingAsk", { title: tr(e, "title") }))) return;
+      btn.disabled = true;
+      setGoing(e, !mine).then(function () { btn.disabled = false; });
+    });
+    box.appendChild(btn);
+    return box;
+  }
+
+  function refreshOpenEvent() {
+    if (!dialog.open) return;
+    var current = state.events.concat(state.activities).filter(function (e) { return e.id === openEventId; })[0];
+    if (current) openEvent(current);
   }
 
   // ---------- map ----------
@@ -329,6 +440,7 @@
     // The map shows the events that are on screen: with hundreds imported, all of them would bury the activities.
     var onScreen = renderEvents("events", play, now, f.category === "sales")
       .concat(renderEvents("sales", sales, now, !!f.category && f.category !== "sales"));
+    renderGoing(now);
 
     var bounds = [];
     function pin(a, isEvent) {
@@ -419,6 +531,16 @@
     return s.charAt(0).toUpperCase() + s.slice(1); // Russian weekdays come lowercase
   }
 
+  // The little calendar sheet: "12 / Oct".
+  function dateBadge(e) {
+    var d = utcDate(e.date);
+    var badge = el("div", "date");
+    badge.setAttribute("aria-hidden", "true");
+    badge.appendChild(el("b", null, String(d.getUTCDate())));
+    badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
+    return badge;
+  }
+
   function renderEvents(key, upcoming, now, hideSection) {
     var g = els.groups[key], all = state.showAll[key];
     var shown = all ? upcoming : upcoming.slice(0, EVENTS_PREVIEW);
@@ -439,13 +561,8 @@
     li.setAttribute("aria-haspopup", "dialog");
     selectable(li, e.id, function () { openEvent(e); });
 
-    var d = utcDate(e.date);
     var when = el("div", "when");
-    var badge = el("div", "date");
-    badge.setAttribute("aria-hidden", "true");
-    badge.appendChild(el("b", null, String(d.getUTCDate())));
-    badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
-    when.appendChild(badge);
+    when.appendChild(dateBadge(e));
     var day = el("p", "day");
     day.style.margin = "0";
     day.appendChild(el("b", null, dayLabel(e, now)));
@@ -497,12 +614,7 @@
     var head = el("div", "when");
     var day = el("p", "day");
     if (isEvent) {
-      var d = utcDate(e.date);
-      var badge = el("div", "date");
-      badge.setAttribute("aria-hidden", "true");
-      badge.appendChild(el("b", null, String(d.getUTCDate())));
-      badge.appendChild(el("small", null, d.toLocaleDateString(locale(), { month: "short", timeZone: "UTC" }).replace(".", "")));
-      head.appendChild(badge);
+      head.appendChild(dateBadge(e));
       day.appendChild(el("b", null, dayLabel(e, now)));
       day.appendChild(document.createElement("br"));
       day.appendChild(document.createTextNode(timeRange(e)));
@@ -524,6 +636,7 @@
     var place = tr(e, "address");
     if (place) dialogBody.appendChild(el("p", "place", "📍 " + place + (e.district ? " · " + e.district : "")));
     if (e.source) dialogBody.appendChild(el("p", "desc", t("fullOnSource", { source: e.source.name })));
+    if (isEvent && state.accountsOn) dialogBody.appendChild(goingBox(e));
 
     var acts = el("div", "sheet-actions");
     if (isEvent) {

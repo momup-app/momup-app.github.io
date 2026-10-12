@@ -60,12 +60,12 @@
 
   <section class="filter-bar wrap">
     <form class="filters" id="filters" aria-label="Filters" data-i18n-attr="aria-label:filters" onsubmit="return false">
-      <label><span data-i18n="age">Child&rsquo;s age</span>
+      <label><span class="sr-only" data-i18n="age">Child&rsquo;s age</span>
         <select name="age">
           <option value="" data-i18n="anyAge">Any age</option>
         </select>
       </label>
-      <label><span data-i18n="interest">Interest</span>
+      <label><span class="sr-only" data-i18n="interest">Interest</span>
         <select name="category">
           <option value="" data-i18n="allInterests">All interests</option>
           <option value="sports" data-i18n="cat_sports">Sports</option>
@@ -79,7 +79,7 @@
           <option value="other" data-i18n="cat_other">Family &amp; more</option>
         </select>
       </label>
-      <label><span data-i18n="day">Day</span>
+      <label><span class="sr-only" data-i18n="day">Day</span>
         <select name="day">
           <option value="" data-i18n="anyDay">Any day</option>
           <option value="Mon" data-i18n="day_Mon">Mon</option>
@@ -91,14 +91,14 @@
           <option value="Sun" data-i18n="day_Sun">Sun</option>
         </select>
       </label>
-      <label><span data-i18n="format">Format</span>
+      <label><span class="sr-only" data-i18n="format">Format</span>
         <select name="format">
           <option value="" data-i18n="bothFormats">In person &amp; online</option>
           <option value="in-person" data-i18n="inPerson">In person</option>
           <option value="online" data-i18n="online">Online</option>
         </select>
       </label>
-      <label><span data-i18n="distance">Distance</span>
+      <label><span class="sr-only" data-i18n="distance">Distance</span>
         <select name="radius">
           <option value="" data-i18n="anyDistance">Any distance</option>
           <option value="1" data-i18n="within" data-n="1">Within 1 km</option>
@@ -107,9 +107,17 @@
           <option value="10" data-i18n="within" data-n="10">Within 10 km</option>
         </select>
       </label>
-      <label class="check"><input type="checkbox" name="free"> <span data-i18n="freeOnly">Free only</span></label>
-      <label class="check"><input type="checkbox" name="saved"> <span data-i18n="savedOnly">Saved only</span></label>
+      <label class="check chip"><input type="checkbox" name="free"> <span data-i18n="freeOnly">Free only</span></label>
+      <label class="check chip"><input type="checkbox" name="saved"> <span data-i18n="savedOnly">Saved only</span></label>
     </form>
+  </section>
+
+  <section class="events going wrap" id="going" aria-labelledby="going-h" hidden>
+    <div class="events-head">
+      <h2 id="going-h"><span data-i18n="goingTitle">See who is going</span> <span class="events-count" id="going-count"></span></h2>
+    </div>
+    <ol class="going-list" id="going-list"></ol>
+    <p class="empty small" id="going-empty"></p>
   </section>
 
   <section class="events wrap" id="events" aria-labelledby="events-h">
@@ -158,6 +166,7 @@
         <span data-i18n="contactButton">Message @momup_app</span>
       </a>
       <a class="btn ghost" href="contact.html#suggest" data-keep-lang="contact.html#suggest" data-i18n="suggest">Suggest an activity</a>
+      <a class="btn ghost" href="contact.html#collab" data-keep-lang="contact.html#collab" data-i18n="collabTitle">Collaborate with us</a>
     </div>
     <div class="team">
       <h3 data-i18n="teamTitle">Our team</h3>
