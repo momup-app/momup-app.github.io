@@ -24,6 +24,16 @@ const TEXT = {
     footer: "Du bekommst diese E-Mail, weil du in deinem Kids-Nearby-Konto Benachrichtigungen zu Basaren eingeschaltet hast.",
     off: "Benachrichtigungen ausschalten",
   },
+  uk: {
+    subject: (n) => n === 1 ? "Новий дитячий розпродаж у Берліні" : `Нові дитячі розпродажі в Берліні: ${n}`,
+    hello: "Доброго ранку! Нові розпродажі дитячого одягу та барахолки:",
+    free: "Безкоштовно",
+    online: "Онлайн",
+    per: { ticket: "квиток", child: "дитина", family: "родина", person: "особа", session: "заняття" },
+    open: "Детальніше і карта",
+    footer: "Ви отримали цей лист, бо увімкнули сповіщення про розпродажі в акаунті Kids Nearby.",
+    off: "Вимкнути сповіщення",
+  },
   ru: {
     subject: (n) => n === 1 ? "Новая детская распродажа в Берлине" : `Новые детские распродажи в Берлине: ${n}`,
     hello: "Доброе утро! Новые распродажи детской одежды и барахолки:",
@@ -35,11 +45,12 @@ const TEXT = {
     off: "Отключить уведомления",
   },
 };
-const LOCALE = { en: "en-GB", de: "de-DE", ru: "ru-RU" };
+const LOCALE = { en: "en-GB", de: "de-DE", uk: "uk-UA", ru: "ru-RU" };
 
 const PUSH = {
   en: { more: (n) => `and ${n} more` },
   de: { more: (n) => `und ${n} weitere` },
+  uk: { more: (n) => `і ще ${n}` },
   ru: { more: (n) => `и ещё ${n}` },
 };
 
@@ -66,7 +77,7 @@ export function salesFor(recipient, sales, sentIds) {
 }
 
 function tr(e, lang, field) {
-  return (lang !== "en" && e[lang] && e[lang][field]) || e[field];
+  return (e[lang] && e[lang][field]) || e[field];
 }
 
 function esc(s) {

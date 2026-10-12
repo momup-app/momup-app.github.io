@@ -4,8 +4,8 @@
   var DEFAULT_ORIGIN = { lat: 52.5200, lng: 13.4050, label: "Berlin", exact: false };
   // Berlin bounding box (west, north, east, south) so lookups stay inside the city.
   var BERLIN_VIEWBOX = "13.08,52.68,13.77,52.33";
-  var LANGS = ["de", "en", "ru"];
-  var LOCALES = { de: "de-DE", en: "en-GB", ru: "ru-RU" };
+  var LANGS = ["de", "en", "uk", "ru"];
+  var LOCALES = { de: "de-DE", en: "en-GB", uk: "uk-UA", ru: "ru-RU" };
   var WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   var EVENTS_PREVIEW = 4;
 
@@ -64,9 +64,9 @@
     return t(k, Object.assign({ n: n }, vars));
   }
 
-  // Listing text in the current language, falling back to English.
+  // Listing text in the current language (filled in by scripts/translate-listings.mjs), falling back to the original.
   function tr(a, field) {
-    return (state.lang !== "en" && a[state.lang] && a[state.lang][field]) || a[field];
+    return (a[state.lang] && a[state.lang][field]) || a[field];
   }
 
   function locale() { return LOCALES[state.lang]; }
@@ -634,7 +634,7 @@
     var desc = tr(e, "description");
     if (desc) dialogBody.appendChild(el("p", "desc", desc));
     var place = tr(e, "address");
-    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place + (e.district ? " · " + e.district : "")));
+    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place + (e.district ? " · " + tr(e, "district") : "")));
     if (e.source) dialogBody.appendChild(el("p", "desc", t("fullOnSource", { source: e.source.name })));
     if (isEvent && state.accountsOn) dialogBody.appendChild(goingBox(e));
 

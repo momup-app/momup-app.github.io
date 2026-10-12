@@ -30,6 +30,7 @@
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="uk" aria-pressed="false" lang="uk">UA</button>
           <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
         </div>
       </div>
@@ -269,7 +270,7 @@
           if (item && item.date) {
             var d = document.createElement("small");
             d.textContent = " · " + new Date(item.date + "T12:00:00Z").toLocaleDateString(
-              { de: "de-DE", en: "en-GB", ru: "ru-RU" }[lang], { day: "numeric", month: "long" });
+              { de: "de-DE", en: "en-GB", uk: "uk-UA", ru: "ru-RU" }[lang], { day: "numeric", month: "long" });
             li.appendChild(d);
           }
           list.appendChild(li);
@@ -338,7 +339,7 @@
         return b > n ? -1 : m;
       }
       function plural(key, n) {
-        var form = new Intl.PluralRules({ de: "de-DE", en: "en-GB", ru: "ru-RU" }[lang]).select(n);
+        var form = new Intl.PluralRules({ de: "de-DE", en: "en-GB", uk: "uk-UA", ru: "ru-RU" }[lang]).select(n);
         return t(I18N[lang][key + "_" + form] != null ? key + "_" + form : key + "_other", { n: n });
       }
       function ageText(birth) {

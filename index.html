@@ -27,12 +27,14 @@
     <div class="wrap">
       <a class="brand" href="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
       <div class="end">
+        <a class="nav" href="#about" data-i18n="navAbout">About</a>
         <a class="nav" href="contact.html" data-keep-lang="contact.html" data-i18n="navContact">Contact</a>
         <a class="nav" href="chat.html" data-keep-lang="chat.html" data-i18n="navChat">Chat</a>
         <a class="nav" id="account-link" href="account.html" data-keep-lang="account.html" data-i18n="login" hidden>Log in</a>
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="uk" aria-pressed="false" lang="uk">UA</button>
           <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
         </div>
         <a class="insta" href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank" aria-label="Instagram @momup_app">
@@ -155,6 +157,18 @@
   </main>
 
   <div class="wrap">
+  <section class="about" id="about" aria-labelledby="about-h">
+    <figure class="about-photo">
+      <img src="images/team/yuliia.jpg" alt="" width="280" height="280" loading="lazy">
+      <figcaption><b>Yuliia Ritz</b> <span data-i18n="role_yuliia">Creative Director</span></figcaption>
+    </figure>
+    <div class="about-text">
+      <p class="about-kicker" data-i18n="aboutKicker">About Kids Nearby</p>
+      <h2 id="about-h" data-i18n="aboutTitle">Why I made this app</h2>
+      <div class="about-story" data-i18n-html="aboutStory"></div>
+      <p class="about-sign" data-i18n="aboutSign">Yuliia, mom and founder of MomUp</p>
+    </div>
+  </section>
   <section class="contact" id="contact" aria-labelledby="contact-h">
     <div>
       <h2 id="contact-h" data-i18n="contactTitle">Contact us</h2>

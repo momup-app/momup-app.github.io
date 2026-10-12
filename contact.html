@@ -30,6 +30,7 @@
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="uk" aria-pressed="false" lang="uk">UA</button>
           <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
         </div>
         <a class="insta" href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank" aria-label="Instagram @momup_app">
@@ -145,7 +146,7 @@
   <script>
     // Language for this page: same rules as the main page (link, last choice, browser).
     (function () {
-      var LANGS = ["de", "en", "ru"];
+      var LANGS = ["de", "en", "uk", "ru"];
       function pick() {
         var fromUrl = new URLSearchParams(location.search).get("lang");
         if (LANGS.indexOf(fromUrl) !== -1) return fromUrl;

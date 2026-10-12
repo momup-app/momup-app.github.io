@@ -30,6 +30,7 @@
         <div class="lang" role="group" data-i18n-attr="aria-label:langLabel" aria-label="Language">
           <button type="button" data-lang="de" aria-pressed="false" lang="de">DE</button>
           <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+          <button type="button" data-lang="uk" aria-pressed="false" lang="uk">UA</button>
           <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
         </div>
       </div>
@@ -147,7 +148,7 @@
     (function () {
       "use strict";
       var lang = KN.pickLang();
-      var LOCALES = { de: "de-DE", en: "en-GB", ru: "ru-RU" };
+      var LOCALES = { de: "de-DE", en: "en-GB", uk: "uk-UA", ru: "ru-RU" };
       var t = function (k, v) { return KN.t(lang, k, v); };
       var $ = function (id) { return document.getElementById(id); };
       var acc = null, me = null, admin = false;

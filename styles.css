@@ -496,3 +496,20 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 /* events imported from berlin.de */
 .event .acts .via { color: var(--muted); font-weight: 600; }
 .event .acts .via:hover { color: var(--accent); }
+
+/* about: Yuliia's story */
+.about { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px 44px; align-items: start; margin: 48px 0 28px; padding: 36px 40px; background: var(--card); border: 1px solid var(--line); border-radius: 24px; scroll-margin-top: 24px; }
+.about-photo { margin: 0; text-align: center; }
+.about-photo img { width: 100%; max-width: 240px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 6px solid var(--soft); box-shadow: 0 10px 30px rgba(134, 112, 214, .22); }
+.about-photo figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.about-photo figcaption b { display: block; color: var(--ink); font-size: 16px; }
+.about-kicker { margin: 0 0 6px; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.about h2 { margin: 0 0 16px; font-size: clamp(26px, 3.4vw, 36px); line-height: 1.15; }
+.about-story { max-width: 62ch; }
+.about-story p { margin: 0 0 14px; font-size: 17px; line-height: 1.65; }
+.about-story p:first-child::first-letter { float: left; font-size: 3.1em; line-height: .9; font-weight: 800; color: var(--brand); margin: 6px 8px 0 0; }
+.about-sign { margin: 18px 0 0; font-weight: 700; font-style: italic; color: var(--accent); }
+@media (max-width: 760px) {
+  .about { grid-template-columns: 1fr; padding: 26px 20px; margin-top: 36px; }
+  .about-photo img { max-width: 150px; }
+}

@@ -9,8 +9,9 @@ permissions:
   contents: write
   pages: write
 
+# Shared with the other import, so the two never edit the data files (and the translations) at the same time.
 concurrency:
-  group: instagram-sync
+  group: data-sync
   cancel-in-progress: false
 
 jobs:
@@ -22,6 +23,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - run: npm ci
 
       - name: Test the caption reader
         run: node --test scripts/
@@ -30,6 +34,11 @@ jobs:
         run: node scripts/instagram-sync.mjs
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+
+      - name: Translate new listings (en, de, uk, ru)
+        run: node scripts/translate-listings.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Publish changes
         env:
@@ -41,7 +50,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/events.json data/geocode-cache.json
+          git add data/activities.json data/events.json data/berlin-events.json data/geocode-cache.json data/translations-cache.json
           git commit -m "Sync events from Instagram"
           git push
           # Pushes made by this workflow don't always start a Pages build, so ask for one.

@@ -44,6 +44,7 @@ test("email in the person's language, with links and escaping", () => {
   assert.doesNotMatch(en.html, /Teen <Swap>/);
 
   assert.match(buildEmail("ru", sales).subject, /Новые детские распродажи в Берлине: 2/);
+  assert.match(buildEmail("uk", sales).subject, /Нові дитячі розпродажі в Берліні: 2/);
   assert.equal(buildEmail("fr", sales).subject, "2 new kids' clothes sales in Berlin"); // unknown language → English
 });
 

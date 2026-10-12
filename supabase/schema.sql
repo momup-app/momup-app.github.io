@@ -1,12 +1,12 @@
 -- Kids Nearby accounts. Paste this whole file into Supabase → SQL Editor → Run, once.
--- Then run 002_sales_alerts.sql, 003_chat.sql, 004_family.sql, 005_push.sql and 006_going.sql the same way, in that order.
+-- Then run 002_sales_alerts.sql, 003_chat.sql, 004_family.sql, 005_push.sql, 006_going.sql and 007_ukrainian.sql the same way, in that order.
 -- Every table has row-level security: people can only read and change their own rows.
 
 -- ---------- profiles: one row per account ----------
 create table if not exists public.profiles (
   id            uuid primary key references auth.users (id) on delete cascade,
   display_name  text check (char_length(display_name) <= 80),
-  language      text not null default 'de' check (language in ('de', 'en', 'ru')),
+  language      text not null default 'de' check (language in ('de', 'en', 'uk', 'ru')),
   postcode      text check (postcode ~ '^[0-9]{5}$'),
   -- Only ages, never names or photos of children.
   kids_ages     smallint[] not null default '{}' check (kids_ages <@ array[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]::smallint[]),
