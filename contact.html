@@ -50,6 +50,7 @@
           <span data-i18n="contactButton">Message @momup_app</span>
         </a>
         <a class="btn ghost" href="#suggest" data-i18n="suggest">Suggest an activity</a>
+        <a class="btn ghost" href="#collab" data-i18n="collabTitle">Collaborate with us</a>
         <a class="btn ghost app-link" href="install.html" data-keep-lang="install.html" data-i18n="appLink">📲 Install the app</a>
       </div>
     </section>
@@ -71,6 +72,37 @@
           <small data-i18n="suggestPrivacy">We only use your details to reply to you.</small>
         </div>
         <p class="wide form-msg" id="suggest-msg" role="status" hidden></p>
+      </form>
+    </section>
+
+    <section class="suggest collab" id="collab" aria-labelledby="collab-h">
+      <h2 id="collab-h" data-i18n="collabTitle">Collaborate with us</h2>
+      <p data-i18n="collabIntro">A brand, shop, studio, venue, school or blogger? Send Yuliia your idea for working together: a giveaway, a joint event, a discount for our moms, a feature. She reads every offer and replies by email.</p>
+      <form id="collab-form" novalidate>
+        <label><span><span data-i18n="collabOrg">Company or project</span> *</span><input name="org" required autocomplete="organization"></label>
+        <label><span data-i18n="collabKind">What you are</span>
+          <select name="kind">
+            <option value="Brand or shop" data-i18n="collabKind_brand">Brand or shop</option>
+            <option value="Studio, club or school" data-i18n="collabKind_studio">Studio, club or school</option>
+            <option value="Venue or café" data-i18n="collabKind_venue">Venue or café</option>
+            <option value="Blogger or media" data-i18n="collabKind_media">Blogger or media</option>
+            <option value="Non-profit or city" data-i18n="collabKind_public">Non-profit or city</option>
+            <option value="Other" data-i18n="collabKind_other">Other</option>
+          </select>
+        </label>
+        <label class="wide"><span><span data-i18n="collabOffer">Your offer</span> *</span>
+          <textarea name="message" rows="7" required data-i18n-attr="placeholder:collabOfferHint" placeholder="What you'd like to do together, for whom, when, and what you offer…"></textarea>
+        </label>
+        <label class="wide"><span data-i18n="collabSite">Website or Instagram</span><input name="site" autocomplete="url" placeholder="https://… or @…"></label>
+        <label><span data-i18n="suggestYourName">Your name</span><input name="name" autocomplete="name"></label>
+        <label><span><span data-i18n="suggestEmail">Email</span> *</span><input name="email" type="email" required autocomplete="email" inputmode="email"></label>
+        <label class="wide"><span data-i18n="suggestPhone">Phone or Instagram</span><input name="phone" autocomplete="tel" data-i18n-attr="placeholder:suggestPhoneHint" placeholder="+49 … or @yourname"></label>
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="wide send">
+          <button type="submit" class="btn" id="collab-submit" data-i18n="collabSubmit">Send offer</button>
+          <small data-i18n="suggestPrivacy">We only use your details to reply to you.</small>
+        </div>
+        <p class="wide form-msg" id="collab-msg" role="status" hidden></p>
       </form>
     </section>
 
@@ -150,43 +182,71 @@
       // Suggest form: sends the message to Yuliia's email through FormSubmit (formsubmit.co).
       // Set SUGGEST_TO to her email address (or the alias FormSubmit gives after activation).
       var SUGGEST_TO = "yuliia.designer.ux@gmail.com";
-      var form = document.getElementById("suggest-form");
-      var msgBox = document.getElementById("suggest-msg");
-      var submit = document.getElementById("suggest-submit");
       function tt(k) { var d = window.I18N[current]; return d[k] != null ? d[k] : window.I18N.en[k]; }
-      function say(key, kind) {
-        msgBox.textContent = tt(key);
-        msgBox.className = "wide form-msg " + (kind || "");
-        msgBox.hidden = false;
-      }
-      form.addEventListener("submit", function (ev) {
-        ev.preventDefault();
-        var f = form.elements;
-        if (!f.message.value.trim()) { say("suggestNeedMessage", "error"); f.message.focus(); return; }
-        if (!f.email.value.trim() && !f.phone.value.trim()) { say("suggestNeedContact", "error"); f.email.focus(); return; }
-        if (f.email.value.trim() && !f.email.checkValidity()) { say("suggestBadEmail", "error"); f.email.focus(); return; }
-        if (f._honey.value) return; // spam bot
-        if (!SUGGEST_TO) { say("suggestError", "error"); return; }
-        submit.disabled = true;
-        submit.textContent = tt("suggestSending");
-        fetch("https://formsubmit.co/ajax/" + encodeURIComponent(SUGGEST_TO), {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify({
-            _subject: "Kids Nearby: new activity suggestion",
-            _template: "table",
-            _replyto: f.email.value.trim() || undefined,
-            Message: f.message.value.trim(),
-            Name: f.name.value.trim() || "-",
-            Email: f.email.value.trim() || "-",
-            "Phone or Instagram": f.phone.value.trim() || "-",
-            Language: current
+
+      // Both forms work the same way; only the fields, checks and email subject differ.
+      function wireForm(id, opts) {
+        var form = document.getElementById(id + "-form");
+        var msgBox = document.getElementById(id + "-msg");
+        var submit = document.getElementById(id + "-submit");
+        function say(key, kind) {
+          msgBox.textContent = tt(key);
+          msgBox.className = "wide form-msg " + (kind || "");
+          msgBox.hidden = false;
+        }
+        form.addEventListener("submit", function (ev) {
+          ev.preventDefault();
+          var f = form.elements;
+          var problem = opts.check(f);
+          if (problem) { say(problem[0], "error"); problem[1].focus(); return; }
+          if (f.email.value.trim() && !f.email.checkValidity()) { say("suggestBadEmail", "error"); f.email.focus(); return; }
+          if (f._honey.value) return; // spam bot
+          if (!SUGGEST_TO) { say("suggestError", "error"); return; }
+          submit.disabled = true;
+          submit.textContent = tt("suggestSending");
+          fetch("https://formsubmit.co/ajax/" + encodeURIComponent(SUGGEST_TO), {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify(Object.assign({
+              _subject: opts.subject(f),
+              _template: "table",
+              _replyto: f.email.value.trim() || undefined
+            }, opts.fields(f), { Language: current }))
           })
-        })
-          .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== "true") throw new Error(j.message); }); })
-          .then(function () { form.reset(); say("suggestThanks", "ok"); })
-          .catch(function () { say("suggestError", "error"); })
-          .then(function () { submit.disabled = false; submit.textContent = tt("suggestSubmit"); });
+            .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== "true") throw new Error(j.message); }); })
+            .then(function () { form.reset(); say(opts.thanks, "ok"); })
+            .catch(function () { say("suggestError", "error"); })
+            .then(function () { submit.disabled = false; submit.textContent = tt(opts.submitKey); });
+        });
+      }
+      function val(input) { return input.value.trim() || "-"; }
+
+      wireForm("suggest", {
+        submitKey: "suggestSubmit", thanks: "suggestThanks",
+        subject: function () { return "Kids Nearby: new activity suggestion"; },
+        check: function (f) {
+          if (!f.message.value.trim()) return ["suggestNeedMessage", f.message];
+          if (!f.email.value.trim() && !f.phone.value.trim()) return ["suggestNeedContact", f.email];
+        },
+        fields: function (f) {
+          return { Message: f.message.value.trim(), Name: val(f.name), Email: val(f.email), "Phone or Instagram": val(f.phone) };
+        }
+      });
+
+      wireForm("collab", {
+        submitKey: "collabSubmit", thanks: "collabThanks",
+        subject: function (f) { return "Kids Nearby: collaboration offer from " + f.org.value.trim(); },
+        check: function (f) {
+          if (!f.org.value.trim()) return ["collabNeedOrg", f.org];
+          if (!f.message.value.trim()) return ["collabNeedOffer", f.message];
+          if (!f.email.value.trim()) return ["collabNeedEmail", f.email];
+        },
+        fields: function (f) {
+          return {
+            "Company or project": f.org.value.trim(), "What they are": f.kind.value, Offer: f.message.value.trim(),
+            "Website or Instagram": val(f.site), Name: val(f.name), Email: f.email.value.trim(), "Phone or Instagram": val(f.phone)
+          };
+        }
       });
     })();
   </script>
