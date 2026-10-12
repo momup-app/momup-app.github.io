@@ -78,7 +78,7 @@ In [the repository](https://github.com/momup-app/momup-app.github.io): **Setting
 ### 5. Let GitHub renew the token automatically
 
 1. On GitHub as **yuliiaux**: **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**. Set **Resource owner** to **momup-app**. If momup-app isn't offered, allow fine-grained tokens first in the organization's **Settings → Personal access tokens**.
-2. Repository access: only `kids-nearby`. Permissions: **Secrets → Read and write**. Choose the longest expiry you're comfortable with.
+2. Repository access: only `momup-app.github.io`. Permissions: **Secrets → Read and write**. Choose the longest expiry you're comfortable with.
 3. Save it in the repository as a second secret named `REPO_ADMIN_TOKEN`.
 
 The "Refresh Instagram token" workflow then renews the Instagram token on the 1st and 15th of each month. If this GitHub token expires, that workflow fails and GitHub emails you. Make a new one and replace the secret.
