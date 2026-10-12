@@ -11,7 +11,7 @@ import { INSTRUCTIONS, missingTexts, applyTranslations, mergeResults, pruneCache
 
 const FILES = ["activities.json", "events.json", "berlin-events.json"].map((f) => new URL("../data/" + f, import.meta.url));
 const CACHE_FILE = new URL("../data/translations-cache.json", import.meta.url);
-const MODEL = "claude-opus-5-5";
+const MODEL = "claude-haiku-5-5"; // the cheapest Claude model; plenty for short listing texts
 const BATCH = 30;      // texts per request
 const MAX_TEXTS = 600; // per run, so a bad day can't run up the bill; the rest come next run
 
