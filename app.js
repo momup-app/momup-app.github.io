@@ -246,7 +246,8 @@
 
   function goersList(list) {
     var ul = el("ul", "goers");
-    goerNames(list).forEach(function (g) { ul.appendChild(el("li", g.me ? "me" : null, g.text)); });
+    // "goer-you", not "me": .me is the "you are here" dot on the map.
+    goerNames(list).forEach(function (g) { ul.appendChild(el("li", g.me ? "goer-you" : null, g.text)); });
     return ul;
   }
 
@@ -276,6 +277,7 @@
     li.appendChild(dateBadge(e));
     li.appendChild(el("h3", null, tr(e, "title")));
     li.appendChild(el("p", "day", dayLabel(e, now) + ", " + timeRange(e)));
+    li.appendChild(el("p", "going-count", tn("goingCount", state.going[e.id].length)));
     li.appendChild(goersList(state.going[e.id]));
     return li;
   }
