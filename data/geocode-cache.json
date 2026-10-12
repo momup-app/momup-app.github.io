@@ -194,5 +194,21 @@
  "Cuvrystraße 13/14, 10997 Berlin": {
   "lat": 52.49859,
   "lng": 13.44376
+ },
+ "Schottstr. 2, 10365 Berlin": {
+  "lat": 52.51483,
+  "lng": 13.49078
+ },
+ "Am Tierpark 125, 10319 Berlin": {
+  "lat": 52.50413,
+  "lng": 13.52321
+ },
+ "Berkaer Str. 7, 14199 Berlin": {
+  "lat": 52.47758,
+  "lng": 13.28789
+ },
+ "Halemweg 18, 13627 Berlin": {
+  "lat": 52.5375,
+  "lng": 13.28719
  }
 }
