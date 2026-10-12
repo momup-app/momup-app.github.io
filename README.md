@@ -11,7 +11,7 @@ Live: [momup-app.github.io](https://momup-app.github.io)
 - List sorted by distance, with every in-person activity on a map
 - Save favorites (kept in your own browser only)
 - Share a search: filters are kept in the page link
-- German, English and Russian: opens in the browser's language, switch any time with DE | EN | RU
+- German, English, Ukrainian and Russian: a first-visit welcome asks once ("I speak …"), switch any time with DE | EN | UA | RU
 - Free accounts (email login link, no password): saved activities on every device ([setup](docs/accounts-setup.md))
 - Mom chat: members start topics and reply to each other live ([setup](docs/chat.md))
 - Daily email and phone notification about new kids' clothes sales & flea markets for parents who opt in ([setup](docs/sales-alerts.md))

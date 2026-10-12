@@ -1,4 +1,4 @@
-// All interface text in English, German and Russian.
+// All interface text in English, German, Ukrainian and Russian.
 // Listing text lives in data/*.json: English in the main fields, translations in "de", "uk" and "ru".
 // Keys ending in _one / _few / _many / _other are plural forms (see tn() in app.js).
 window.I18N = {
