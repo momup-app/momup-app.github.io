@@ -309,28 +309,6 @@
   }
  },
  {
-  "id": "berlin-266308",
-  "date": "2026-10-12",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Drinnen oder draußen spielen",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "outdoors",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
-  "district": "Mitte",
-  "lat": 52.55361,
-  "lng": 13.3795,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=266308"
-  }
- },
- {
   "id": "berlin-276031",
   "date": "2026-10-12",
   "start": "16:00",
@@ -350,6 +328,28 @@
   "source": {
    "name": "berlin.de",
    "url": "https://www.berlin.de/land/kalender/index.php?detail=276031"
+  }
+ },
+ {
+  "id": "berlin-266308",
+  "date": "2026-10-12",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Drinnen oder draußen spielen",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "outdoors",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=266308"
   }
  },
  {
@@ -875,28 +875,6 @@
   }
  },
  {
-  "id": "berlin-253657",
-  "date": "2026-10-13",
-  "start": "16:00",
-  "end": "",
-  "title": "Gaming mit der Switch 2",
-  "organizer": "Humboldt-Bibliothek",
-  "category": "stem",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59194,
-  "lng": 13.2806,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=253657"
-  }
- },
- {
   "id": "berlin-236278",
   "date": "2026-10-13",
   "start": "16:00",
@@ -916,6 +894,28 @@
   "source": {
    "name": "berlin.de",
    "url": "https://www.berlin.de/land/kalender/index.php?detail=236278"
+  }
+ },
+ {
+  "id": "berlin-253657",
+  "date": "2026-10-13",
+  "start": "16:00",
+  "end": "",
+  "title": "Gaming mit der Switch 2",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=253657"
   }
  },
  {
@@ -1453,31 +1453,6 @@
   }
  },
  {
-  "id": "berlin-288254",
-  "date": "2026-10-14",
-  "start": "16:00",
-  "end": "",
-  "title": "AUSGEBUCHT: \"Steinsuppe\" - Kindertheater mit dem Nimú Theatre",
-  "organizer": "Stadtbibliothek Neukölln",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   3,
-   6
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
-  "district": "Neukölln",
-  "lat": 52.41894,
-  "lng": 13.49432,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=288254"
-  }
- },
- {
   "id": "berlin-284194",
   "date": "2026-10-14",
   "start": "16:00",
@@ -1522,6 +1497,31 @@
   "source": {
    "name": "berlin.de",
    "url": "https://www.berlin.de/land/kalender/index.php?detail=283402"
+  }
+ },
+ {
+  "id": "berlin-288254",
+  "date": "2026-10-14",
+  "start": "16:00",
+  "end": "",
+  "title": "AUSGEBUCHT: \"Steinsuppe\" - Kindertheater mit dem Nimú Theatre",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   3,
+   6
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "district": "Neukölln",
+  "lat": 52.41894,
+  "lng": 13.49432,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=288254"
   }
  },
  {
