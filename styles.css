@@ -359,22 +359,37 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 #profile-form .visible input:disabled { opacity: .6; }
 #profile-form .visible small { margin-left: 28px; }
 
-/* sales for kids: red like a shop sale, so they stand apart from play events (yellow) and activities (purple) */
-:root { --sale: #D62828; --sale-ink: #FFFFFF; --sale-bg: #FFF0EE; --sale-line: #F7C9C4; }
-@media (prefers-color-scheme: dark) { :root { --sale: #FF6B66; --sale-ink: #2A0D0C; --sale-bg: #2E1719; --sale-line: #5A2A2C; } }
-.events.sales { margin-top: 32px; padding-top: 20px; padding-bottom: 22px; background: var(--sale-bg); border: 1px solid var(--sale-line); border-radius: 22px; max-width: calc(1200px - 48px); }
+/* sales for kids: MomUp lavender and violet with a pink date, so they stand apart from play events (yellow) */
+:root {
+  --sale: #7B3FD6; --sale-ink: #FFFFFF; --sale-title: #3E1A8C; --sale-line: #DCC8FA;
+  --sale-bg: linear-gradient(135deg, #F7F0FF 0%, #EBDDFF 55%, #D9C0FC 100%);
+  --sale-date: linear-gradient(160deg, #FF6FB1 0%, #B44DE8 100%);
+  --sale-pill: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sale: #C29BFF; --sale-ink: #1A0F33; --sale-title: #EADCFF; --sale-line: #43336B;
+    --sale-bg: linear-gradient(135deg, #2D2050 0%, #241A40 55%, #1B1430 100%);
+    --sale-pill: #3A2B63;
+  }
+}
+.events.sales { margin-top: 32px; padding-top: 22px; padding-bottom: 22px; background: var(--sale-bg); border: 1px solid var(--sale-line); border-radius: 24px; max-width: calc(1200px - 48px); box-shadow: 0 10px 34px rgba(123, 63, 214, .14); }
 @media (max-width: 1248px) { .events.sales { margin-left: 24px; margin-right: 24px; } }
 @media (max-width: 480px) { .events.sales { margin-left: 12px; margin-right: 12px; padding-left: 14px; padding-right: 14px; } }
-.events.sales h2 { color: var(--sale); display: flex; align-items: center; gap: 10px; }
-.events.sales h2::before { content: "%"; flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--sale); color: var(--sale-ink); font-size: 18px; font-weight: 800; transform: rotate(-12deg); }
-.events.sales .events-count { color: var(--sale); opacity: .8; }
-.events.sales .events-head .link { color: var(--sale); }
-.event.sale { border-color: var(--sale-line); border-left-color: var(--sale); }
-.event.sale:hover, .event.sale.active { border-color: var(--sale); border-left-color: var(--sale); box-shadow: 0 4px 18px rgba(214, 40, 40, .18); }
-.event.sale .date { background: var(--sale); }
-.event.sale .date b, .event.sale .date small { color: var(--sale-ink); }
+.events.sales h2 { color: var(--sale-title); display: flex; align-items: center; gap: 12px; }
+.events.sales h2::before { content: "%"; flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sale-pill); color: var(--sale); font-size: 20px; font-weight: 800; box-shadow: 0 4px 14px rgba(123, 63, 214, .25); }
+.events.sales .events-count { color: var(--sale); }
+.sales-lede { margin: -6px 0 14px 52px; font-size: 14px; color: var(--sale-title); opacity: .75; }
+@media (max-width: 480px) { .sales-lede { margin-left: 0; } }
+.events.sales .events-head .link { background: var(--sale-pill); color: var(--sale-title); padding: 9px 16px; border-radius: 999px; box-shadow: 0 3px 12px rgba(123, 63, 214, .18); }
+.events.sales .events-head .link::after { content: " →"; }
+.event.sale { border-color: var(--sale-line); border-left: 1px solid var(--sale-line); border-radius: 18px; }
+.event.sale:hover, .event.sale.active { border-color: var(--sale); box-shadow: 0 6px 22px rgba(123, 63, 214, .22); }
+.event.sale .date { background: var(--sale-date); box-shadow: 0 4px 12px rgba(214, 72, 170, .3); }
+.event.sale .date b, .event.sale .date small { color: #FFFFFF; }
+.event.sale .badges .free { background: rgba(31, 160, 90, .15); }
 .event.sale .acts a, .event.sale .acts button { color: var(--sale); }
-.pin.sale-pin { background: var(--sale); }
+.pin.sale-pin { background: #D64BB4; }
 .events[hidden] { display: none; }
 
 /* "add to home screen" hint */
@@ -513,3 +528,14 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
   .about { grid-template-columns: 1fr; padding: 26px 20px; margin-top: 36px; }
   .about-photo img { max-width: 150px; }
 }
+
+/* WhatsApp community */
+:root { --wa: #1F8F4E; --wa-ink: #FFFFFF; }
+@media (prefers-color-scheme: dark) { :root { --wa: #3DCB78; --wa-ink: #0E2417; } }
+.btn.wa { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; background: var(--wa); border-color: var(--wa); color: var(--wa-ink); }
+.btn.wa svg { width: 18px; height: 18px; }
+.wa-hint { margin: 22px 0 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.wa-hint .btn { display: flex; justify-content: center; margin-top: 10px; line-height: 1.3; }
+.btn.wa svg { flex: none; }
+.wa-link { margin: 4px 0 0; font-size: 14px; }
+.wa-link a { color: var(--wa); font-weight: 700; text-decoration: none; }

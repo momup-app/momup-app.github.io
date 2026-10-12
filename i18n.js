@@ -66,6 +66,7 @@ window.I18N = {
     berlinTime: "Berlin time",
     eventsTitle: "Upcoming play events",
     salesTitle: "Upcoming sales for kids",
+    salesLede: "Kids' clothes, toys and more from Berlin moms",
     salesNone: "No upcoming sales match these filters.",
     eventsNone: "No upcoming events match these filters.",
     showAll: "Show all {n}",
@@ -143,6 +144,9 @@ window.I18N = {
     collabThanks: "Thank you! Yuliia got your offer and will reply by email.",
     // DRAFT: replace aboutStory with Yuliia's own story (her research and why she made the app), in every language.
     navAbout: "About",
+    waJoin: "Join our WhatsApp community",
+    waChatHint: "Prefer WhatsApp? Yuliia also runs a WhatsApp community for moms.",
+    waAlso: "Also on WhatsApp: join our community ↗",
     aboutKicker: "About Kids Nearby",
     aboutTitle: "Why I made this app",
     aboutStory: "<p>When you have small kids in Berlin, one simple question takes hours: what can my child do near home, on a Tuesday after Kita, and what does it cost?</p><p>The answers are scattered across WhatsApp groups, Kita notice boards, Instagram posts and dozens of studio and club websites, often only in German. So I started asking other moms how they search, and collecting everything in one place.</p><p>Kids Nearby is the result: activities, events and kids' sales on one map, in your language, free for every family.</p>",
@@ -381,6 +385,7 @@ window.I18N = {
     berlinTime: "Berliner Zeit",
     eventsTitle: "Kommende Spiel-Events",
     salesTitle: "Kommende Kinder-Basare & Flohmärkte",
+    salesLede: "Kinderkleidung, Spielzeug und mehr von Berliner Mamas",
     salesNone: "Keine kommenden Basare passen zu diesen Filtern.",
     eventsNone: "Keine kommenden Veranstaltungen passen zu diesen Filtern.",
     showAll: "Alle {n} anzeigen",
@@ -457,6 +462,9 @@ window.I18N = {
     collabNeedEmail: "Bitte gib eine E-Mail an, damit Yuliia antworten kann.",
     collabThanks: "Danke! Yuliia hat dein Angebot bekommen und antwortet per E-Mail.",
     navAbout: "Über uns",
+    waJoin: "Unserer WhatsApp-Community beitreten",
+    waChatHint: "Lieber WhatsApp? Yuliia hat auch eine WhatsApp-Community für Mamas.",
+    waAlso: "Auch auf WhatsApp: tritt unserer Community bei ↗",
     aboutKicker: "Über Kids Nearby",
     aboutTitle: "Warum ich diese App gemacht habe",
     aboutStory: "<p>Mit kleinen Kindern in Berlin kostet eine einfache Frage Stunden: Was kann mein Kind in der Nähe machen, dienstags nach der Kita, und was kostet das?</p><p>Die Antworten sind über WhatsApp-Gruppen, Aushänge in der Kita, Instagram-Posts und Dutzende Websites von Studios und Vereinen verstreut. Also habe ich andere Mamas gefragt, wie sie suchen, und alles an einem Ort gesammelt.</p><p>Daraus ist Kids Nearby entstanden: Kurse, Veranstaltungen und Kinderbasare auf einer Karte, in deiner Sprache, kostenlos für jede Familie.</p>",
@@ -710,6 +718,7 @@ window.I18N = {
     berlinTime: "по Берлину",
     eventsTitle: "Ближайшие игровые события",
     salesTitle: "Ближайшие детские распродажи",
+    salesLede: "Детские вещи, игрушки и многое другое от мам Берлина",
     salesNone: "Нет распродаж по этим фильтрам.",
     eventsNone: "Нет событий по этим фильтрам.",
     showAll: "Показать все ({n})",
@@ -788,6 +797,9 @@ window.I18N = {
     collabNeedEmail: "Оставьте email, чтобы Юлия могла ответить.",
     collabThanks: "Спасибо! Юлия получила ваше предложение и ответит по email.",
     navAbout: "О нас",
+    waJoin: "Вступить в наше сообщество в WhatsApp",
+    waChatHint: "Удобнее в WhatsApp? У Юлии есть сообщество для мам в WhatsApp.",
+    waAlso: "Мы есть и в WhatsApp: вступайте в сообщество ↗",
     aboutKicker: "О Kids Nearby",
     aboutTitle: "Почему я сделала это приложение",
     aboutStory: "<p>Когда у тебя маленькие дети в Берлине, простой вопрос отнимает часы: чем ребёнку заняться рядом с домом, во вторник после садика, и сколько это стоит?</p><p>Ответы разбросаны по WhatsApp-группам, объявлениям в Kita, постам в Instagram и десяткам сайтов студий и клубов, часто только на немецком. Поэтому я начала расспрашивать других мам, как они ищут, и собирать всё в одном месте.</p><p>Так появился Kids Nearby: занятия, события и детские распродажи на одной карте, на вашем языке и бесплатно для каждой семьи.</p>",
@@ -1049,6 +1061,7 @@ window.I18N = {
     berlinTime: "за Берліном",
     eventsTitle: "Найближчі ігрові події",
     salesTitle: "Найближчі дитячі розпродажі",
+    salesLede: "Дитячі речі, іграшки та багато іншого від мам Берліна",
     salesNone: "Немає розпродажів за цими фільтрами.",
     eventsNone: "Немає подій за цими фільтрами.",
     showAll: "Показати всі ({n})",
@@ -1127,6 +1140,9 @@ window.I18N = {
     collabNeedEmail: "Залиште email, щоб Юлія могла відповісти.",
     collabThanks: "Дякуємо! Юлія отримала вашу пропозицію і відповість на email.",
     navAbout: "Про нас",
+    waJoin: "Приєднатися до нашої спільноти у WhatsApp",
+    waChatHint: "Зручніше у WhatsApp? Юлія також веде спільноту для мам у WhatsApp.",
+    waAlso: "Ми є й у WhatsApp: приєднуйтеся до спільноти ↗",
     aboutKicker: "Про Kids Nearby",
     aboutTitle: "Чому я створила цей застосунок",
     aboutStory: "<p>Коли в тебе маленькі діти в Берліні, просте питання забирає години: чим дитині зайнятися поруч із домом, у вівторок після садочка, і скільки це коштує?</p><p>Відповіді розкидані по WhatsApp-групах, оголошеннях у Kita, дописах в Instagram і десятках сайтів студій і клубів, часто лише німецькою. Тож я почала розпитувати інших мам, як вони шукають, і збирати все в одному місці.</p><p>Так з'явився Kids Nearby: заняття, події й дитячі розпродажі на одній карті, вашою мовою і безкоштовно для кожної родини.</p>",
@@ -1356,3 +1372,14 @@ window.KN = {
     });
   }
 };
+
+// Yuliia's WhatsApp community. Paste the invite link (https://chat.whatsapp.com/…) here;
+// until then the WhatsApp buttons stay hidden.
+window.KN.WHATSAPP_COMMUNITY = "https://chat.whatsapp.com/D8bJuAtgKueF7hvG0Xunzu";
+
+(function () {
+  var link = window.KN.WHATSAPP_COMMUNITY;
+  if (!/^https:\/\/chat\.whatsapp\.com\/[A-Za-z0-9]+$/.test(link)) return;
+  document.querySelectorAll("a.wa, a[data-community-link]").forEach(function (a) { a.href = link; });
+  document.querySelectorAll("[data-community]").forEach(function (n) { n.hidden = false; });
+})();
