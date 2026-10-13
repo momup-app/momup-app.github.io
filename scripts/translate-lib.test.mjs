@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { textKey, missingTexts, applyTranslations, mergeResults, pruneCache, chunks } from "./translate-lib.mjs";
+import { textKey, missingTexts, applyTranslations, mergeResults, pruneCache, chunks, splitAddress, withOriginal, composeAddress, readGoogleAnswer } from "./translate-lib.mjs";
 
 const BERLIN = {
   id: "berlin-1",
@@ -64,4 +64,49 @@ test("pruning keeps only texts still in use", () => {
 
 test("chunks splits a list into batches", () => {
   assert.deepEqual(chunks([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
+});
+
+test("addresses: only the venue name is translated, the street stays as written", () => {
+  const parts = splitAddress("Jugendamt Berlin-Lichtenberg, Große-Leege-Str. 103, 13053 Berlin");
+  assert.deepEqual(parts, { venue: "Jugendamt Berlin-Lichtenberg", rest: "Große-Leege-Str. 103, 13053 Berlin" });
+  assert.equal(composeAddress("ru", "Управление по делам молодежи", parts.venue, parts.rest),
+    "Управление по делам молодежи (Jugendamt Berlin-Lichtenberg), Große-Leege-Str. 103, 13053 Berlin");
+  assert.equal(composeAddress("en", "Youth Office", parts.venue, parts.rest), "Youth Office, Große-Leege-Str. 103, 13053 Berlin");
+});
+
+test("addresses without a venue name in front are left alone", () => {
+  assert.equal(splitAddress("Große-Leege-Str. 103, 13053 Berlin"), null);
+  assert.equal(splitAddress("Online"), null);
+});
+
+test("the original name is kept in brackets only for Ukrainian and Russian, and only when it changed", () => {
+  assert.equal(withOriginal("uk", "Міська бібліотека", "Stadtbibliothek"), "Міська бібліотека (Stadtbibliothek)");
+  assert.equal(withOriginal("en", "City library", "Stadtbibliothek"), "City library");
+  assert.equal(withOriginal("ru", "Kita", "Kita"), "Kita");
+});
+
+test("reads Google's answer, joining sentences", () => {
+  const body = [[["Erster Satz. ", "First sentence. "], ["Zweiter.", "Second."]], null, "en"];
+  assert.deepEqual(readGoogleAnswer(body), { text: "Erster Satz. Zweiter.", detected: "en" });
+  assert.deepEqual(readGoogleAnswer([["Привіт, світ", "de"]]), { text: "Привіт, світ", detected: "de" });
+  assert.deepEqual(readGoogleAnswer(null), { text: "", detected: null });
+});
+
+test("automatic translations follow the cache; hand-written ones never change", () => {
+  const cache = { [textKey("title", OURS.title)]: full("v1"), [textKey("organizer", OURS.organizer)]: full("o") };
+  const [first] = applyTranslations([OURS], cache);
+  assert.equal(first.uk.title, "v1 UK");
+  assert.ok(first.autoTranslated.includes("uk.title"));
+  assert.ok(!first.autoTranslated.includes("de.title")); // hand-written German stays hand-written
+  const fixed = { ...cache, [textKey("title", OURS.title)]: full("v2") };
+  const [second] = applyTranslations([first], fixed);
+  assert.equal(second.uk.title, "v2 UK");
+  assert.equal(second.de.title, "Musik für Kleinkinder");
+});
+
+test("a changed original drops its old automatic translation instead of showing a wrong one", () => {
+  const cache = { [textKey("title", OURS.title)]: full("v1") };
+  const [first] = applyTranslations([OURS], cache);
+  const [changed] = applyTranslations([{ ...first, title: "Brand new title" }], cache);
+  assert.equal(changed.uk && changed.uk.title, undefined);
 });

@@ -1,4 +1,5 @@
 // Pure logic for translating listings (no network, so it's easy to test: translate-lib.test.mjs).
+// The translating itself is done by Google's free translator in translate-listings.mjs.
 // Every text is translated once into all site languages and kept in data/translations-cache.json,
 // keyed by a hash of the original text. Hand-made translations in a listing always win.
 
@@ -17,9 +18,15 @@ function original(item, field) {
   return typeof v === "string" && v.trim() ? v.trim() : "";
 }
 
+// Fields filled in from the cache are listed in "autoTranslated" (e.g. "uk.title"), so they keep following the
+// cache. Anything else in a listing's "uk"/"ru"/… block was written by hand and is never replaced.
+function isAuto(item, lang, field) {
+  return Array.isArray(item.autoTranslated) && item.autoTranslated.includes(lang + "." + field);
+}
+
 function hasOwn(item, lang, field) {
   const v = item[lang] && item[lang][field];
-  return typeof v === "string" && v.trim() !== "";
+  return typeof v === "string" && v.trim() !== "" && !isAuto(item, lang, field);
 }
 
 /** Texts that still need translating: [{ key, field, text }], each text once. */
@@ -42,21 +49,30 @@ export function missingTexts(items, cache) {
 export function applyTranslations(items, cache) {
   return items.map((item) => {
     const next = { ...item };
+    const auto = [];
     for (const lang of LANGS) {
       const block = { ...(item[lang] || {}) };
       for (const field of FIELDS) {
         const text = original(item, field);
         if (!text || hasOwn(item, lang, field)) continue;
         const cached = cache[textKey(field, text)];
-        if (cached && cached[lang]) block[field] = cached[lang];
+        if (cached && cached[lang]) {
+          block[field] = cached[lang];
+          auto.push(lang + "." + field);
+        } else if (isAuto(item, lang, field)) {
+          delete block[field]; // its text changed and has no translation yet: show the original instead
+        }
       }
       if (Object.keys(block).length) next[lang] = block;
+      else delete next[lang];
     }
+    if (auto.length) next.autoTranslated = auto;
+    else delete next.autoTranslated;
     return next;
   });
 }
 
-/** Adds checked results from the model to the cache. Skips anything incomplete, so it's asked again next run. */
+/** Adds checked results to the cache. Skips anything incomplete, so it's asked again next run. */
 export function mergeResults(cache, asked, results) {
   const byKey = new Map(asked.map((a) => [a.key, a]));
   const next = { ...cache };
@@ -87,13 +103,33 @@ export function chunks(list, size) {
   return out;
 }
 
-export const INSTRUCTIONS = `You translate short listings about kids' activities and events in Berlin for parents.
-Each input item has a key, a field and a text. The text can be in German, English, Russian or Ukrainian.
-For every item, return the text in English (en), German (de), Ukrainian (uk) and Russian (ru). If the text is already in one of these languages, return it unchanged for that language.
+// Addresses: only the venue name is translated. Street, house number and postcode stay as written,
+// because moms need them for maps and street signs. "Venue, Street 1, 12345 Berlin" → { venue, rest }.
+export function splitAddress(text) {
+  const parts = text.split(",").map((p) => p.trim()).filter(Boolean);
+  if (parts.length < 3 || /\d/.test(parts[0])) return null; // no venue name in front
+  return { venue: parts[0], rest: parts.slice(1).join(", ") };
+}
 
-Rules by field:
-- title, description: natural, friendly translation. Keep names of shows, books, brands and people as they are.
-- organizer: translate the kind of institution (library, youth office, museum…) and keep its proper name, e.g. "Stadtbibliothek Charlottenburg-Wilmersdorf" → ru "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)". Put the original in parentheses after the translation in uk and ru.
-- address: keep the street, house number, postcode and "Berlin" exactly as written, in Latin letters, because people need them to find the place and use maps. Translate only the name of the venue before the street, and in uk and ru add the original venue name in parentheses. Example: "Jugendamt Berlin-Lichtenberg, Große-Leege-Str. 103, 13053 Berlin" → ru "Управление по делам молодёжи Берлин-Лихтенберг (Jugendamt Berlin-Lichtenberg), Große-Leege-Str. 103, 13053 Berlin".
-- district: a Berlin district name. Keep it in en and de; write it in Cyrillic letters in uk and ru (e.g. "Lichtenberg" → "Ліхтенберг" / "Лихтенберг").
-Never add information that isn't in the text. Return every key you were given.`;
+// In Ukrainian and Russian, the original name follows in brackets, so it still matches signs and Google Maps.
+const KEEP_ORIGINAL = ["uk", "ru"];
+export function withOriginal(lang, translated, original) {
+  if (!translated || translated === original) return original;
+  return KEEP_ORIGINAL.includes(lang) ? `${translated} (${original})` : translated;
+}
+
+export function composeAddress(lang, translatedVenue, venue, rest) {
+  return `${withOriginal(lang, translatedVenue, venue)}, ${rest}`;
+}
+
+/** Text and detected language from Google's free translator. Two answer shapes exist:
+ *  clients5 "dict-chrome-ex": [["text", "de"]]   ·   googleapis "gtx": [[["Sentence. ", "Satz. "], …], null, "de"] */
+export function readGoogleAnswer(body) {
+  const first = Array.isArray(body) ? body[0] : null;
+  if (Array.isArray(first) && typeof first[0] === "string") {
+    return { text: first[0], detected: typeof first[1] === "string" ? first[1] : null };
+  }
+  if (typeof first === "string") return { text: first, detected: null };
+  const text = (first || []).map((part) => part && part[0]).filter(Boolean).join("");
+  return { text, detected: body && typeof body[2] === "string" ? body[2] : null };
+}

@@ -31,7 +31,29 @@
       "description": "Осенняя и зимняя одежда, обувь и игрушки, разложенные по размерам. Беременных пускают на 30 минут раньше. Возьмите свою сумку.",
       "address": "Рядом с Boxhagener Platz, 10245 Berlin"
     },
-    "sample": true
+    "sample": true,
+    "en": {
+      "title": "Kids' Clothes Bazaar",
+      "organizer": "School parents' council (sample)",
+      "description": "Autumn and winter clothes, shoes and toys sorted by size. Pregnant visitors get in 30 minutes early. Bring your own bag.",
+      "address": "Near Boxhagener Platz, 10245 Berlin"
+    },
+    "uk": {
+      "title": "Базар дитячого одягу",
+      "organizer": "Батьківська рада школи (зразок)",
+      "description": "Осінній та зимовий одяг, взуття та іграшки розсортовані за розміром. Вагітні відвідувачі приходять на 30 хвилин раніше. Принесіть свою сумку.",
+      "address": "Near Boxhagener Platz, 10245 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "2026-10-18-kids-flea-market",
@@ -65,7 +87,29 @@
       "description": "Дети продают свои игрушки и книги. Хотите место — возьмите плед, запись не нужна.",
       "address": "Рядом с Winterfeldtplatz, 10781 Berlin"
     },
-    "sample": true
+    "sample": true,
+    "en": {
+      "title": "Kids' Flea Market",
+      "organizer": "Parents of Schöneberg (sample)",
+      "description": "Kids sell their own toys and books. Bring a blanket if you want a spot, no booking needed.",
+      "address": "Near Winterfeldtplatz, 10781 Berlin"
+    },
+    "uk": {
+      "title": "Дитячий барахолка",
+      "organizer": "Батьки Шенеберга (зразок)",
+      "description": "Діти продають власні іграшки та книги. Візьміть з собою ковдру, якщо хочете місце, бронювання не потрібне.",
+      "address": "Near Winterfeldtplatz, 10781 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "2026-11-07-winter-jacket-swap",
@@ -99,6 +143,28 @@
       "description": "Приносите зимние куртки, комбинезоны и сапоги, из которых дети выросли, и забирайте то, что подходит. Остальное передаём в местную благотворительную организацию.",
       "address": "Рядом с Leopoldplatz, 13353 Berlin"
     },
-    "sample": true
+    "sample": true,
+    "en": {
+      "title": "Winter Jacket & Boots Swap",
+      "organizer": "Neighborhood family center (sample)",
+      "description": "Bring outgrown winter jackets, snow pants and boots, and take what fits. Leftovers go to a local charity.",
+      "address": "Near Leopoldplatz, 13353 Berlin"
+    },
+    "uk": {
+      "title": "Обмін зимової куртки та черевиків",
+      "organizer": "Мікрорайонний сімейний центр (зразок)",
+      "description": "Беріть із собою зимові куртки, зимові штани та черевики та беріть те, що підходить. Залишки йдуть до місцевої благодійної організації.",
+      "address": "Near Leopoldplatz, 13353 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   }
 ]

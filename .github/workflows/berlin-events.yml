@@ -34,13 +34,9 @@ jobs:
       - name: Read the next kids' events
         run: node scripts/berlin-sync.mjs
 
-      # Paused until the Claude account has credit. To switch on: Settings → Secrets and variables → Actions →
-      # Variables → New repository variable, name TRANSLATE, value on (docs/translations.md).
+      # Free Google translation, no key needed (docs/translations.md).
       - name: Translate new listings (en, de, uk, ru)
-        if: vars.TRANSLATE == 'on'
         run: node scripts/translate-listings.mjs
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Publish changes
         env:

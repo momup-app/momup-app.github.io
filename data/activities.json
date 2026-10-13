@@ -25,13 +25,39 @@
     "de": {
       "title": "Fußball für Einsteiger",
       "organizer": "Jugendverein Prenzlauer Berg (Beispiel)",
-      "description": "Ballgefühl und kleine Spiele für Anfänger. Training auf Deutsch und Englisch."
+      "description": "Ballgefühl und kleine Spiele für Anfänger. Training auf Deutsch und Englisch.",
+      "address": "Mauerpark, Prenzlauer Berg, 10437 Berlin"
     },
     "ru": {
       "title": "Футбол для начинающих",
       "organizer": "Молодёжный клуб Пренцлауэр-Берг (пример)",
-      "description": "Работа с мячом и мини-игры для новичков. Тренировки на немецком и английском."
-    }
+      "description": "Работа с мячом и мини-игры для новичков. Тренировки на немецком и английском.",
+      "address": "Мауэрпарк (Mauerpark), Prenzlauer Berg, 10437 Berlin"
+    },
+    "en": {
+      "title": "Kids Football Basics",
+      "organizer": "Prenzlauer Berg youth club (sample)",
+      "description": "Ball skills and small-sided games for beginners. Coaching in German and English.",
+      "address": "Mauerpark, Prenzlauer Berg, 10437 Berlin"
+    },
+    "uk": {
+      "title": "Основи дитячого футболу",
+      "organizer": "Молодіжний клуб Пренцлауер Берг (зразок) (Prenzlauer Berg youth club (sample))",
+      "description": "Вправність з м'ячем та дрібні ігри для початківців. Коучинг німецькою та англійською мовами.",
+      "address": "Мауерпарк (Mauerpark), Prenzlauer Berg, 10437 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "kollwitz-storytime",
@@ -66,7 +92,29 @@
       "organizer": "Районная библиотека (пример)",
       "description": "Книжки с картинками, песенки и стишки на немецком и английском. Без записи.",
       "address": "Рядом с Kollwitzplatz, 10405 Berlin"
-    }
+    },
+    "en": {
+      "title": "Bilingual Story Time (DE/EN)",
+      "organizer": "Neighborhood library (sample)",
+      "description": "Picture books, songs and rhymes in German and English. No sign-up needed.",
+      "address": "Near Kollwitzplatz, 10405 Berlin"
+    },
+    "uk": {
+      "title": "Двомовний час історії (DE/EN)",
+      "organizer": "Сусідська бібліотека (зразок)",
+      "description": "Книжки з картинками, пісні та віршики німецькою та англійською. Реєстрація не потрібна.",
+      "address": "Near Kollwitzplatz, 10405 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "wedding-deutsch-spielend",
@@ -100,7 +148,29 @@
       "organizer": "Семейный центр Веддинг (пример)",
       "description": "Игры, песни и поделки на немецком для детей, которые только начинают учить язык.",
       "address": "Рядом с Leopoldplatz, 13353 Berlin"
-    }
+    },
+    "en": {
+      "title": "Learn German Through Play",
+      "organizer": "Wedding family center (sample)",
+      "description": "Games, songs and crafts in German for children who are new to the language.",
+      "address": "Near Leopoldplatz, 13353 Berlin"
+    },
+    "uk": {
+      "title": "Вивчайте німецьку через гру",
+      "organizer": "Весільний сімейний центр (зразок)",
+      "description": "Ігри, пісні та рукоділля німецькою для дітей, які не знайомі з мовою.",
+      "address": "Near Leopoldplatz, 13353 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "bergmann-clay",
@@ -128,13 +198,39 @@
     "de": {
       "title": "Töpfern für Kinder",
       "organizer": "Töpferstudio Kreuzberg (Beispiel)",
-      "description": "Aufbautechnik und erste Schritte an der Drehscheibe. Die Stücke werden glasiert, gebrannt und mit nach Hause genommen."
+      "description": "Aufbautechnik und erste Schritte an der Drehscheibe. Die Stücke werden glasiert, gebrannt und mit nach Hause genommen.",
+      "address": "Bergmannstraße, 10961 Berlin"
     },
     "ru": {
       "title": "Керамика для детей",
       "organizer": "Гончарная студия Кройцберг (пример)",
-      "description": "Лепка руками и первые шаги за гончарным кругом. Изделия покрывают глазурью, обжигают и забирают домой."
-    }
+      "description": "Лепка руками и первые шаги за гончарным кругом. Изделия покрывают глазурью, обжигают и забирают домой.",
+      "address": "Bergmannstraße, 10961 Berlin"
+    },
+    "en": {
+      "title": "Kids Clay & Pottery",
+      "organizer": "Kreuzberg clay studio (sample)",
+      "description": "Hand-building and wheel basics. Pieces are glazed and fired to take home.",
+      "address": "Bergmannstraße, 10961 Berlin"
+    },
+    "uk": {
+      "title": "Дитяча глина та кераміка",
+      "organizer": "Студія глини Kreuzberg (зразок)",
+      "description": "Ручне конструювання та основи колеса. Шматки глазурують і обпалюють, щоб забрати їх додому.",
+      "address": "Bergmannstraße, 10961 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "mitte-robotics",
@@ -163,13 +259,39 @@
     "de": {
       "title": "LEGO-Robotik-Club",
       "organizer": "MINT-Labor Mitte (Beispiel)",
-      "description": "Im Team Roboter bauen und programmieren, am Monatsende gibt es ein Rennen."
+      "description": "Im Team Roboter bauen und programmieren, am Monatsende gibt es ein Rennen.",
+      "address": "Torstraße, 10119 Berlin"
     },
     "ru": {
       "title": "Клуб LEGO-робототехники",
       "organizer": "STEM-лаборатория Митте (пример)",
-      "description": "Собираем и программируем роботов в командах, а в конце месяца устраиваем гонки."
-    }
+      "description": "Собираем и программируем роботов в командах, а в конце месяца устраиваем гонки.",
+      "address": "Torstraße, 10119 Berlin"
+    },
+    "en": {
+      "title": "LEGO Robotics Club",
+      "organizer": "Mitte STEM lab (sample)",
+      "description": "Build and program robots in teams, then race them at the end of each month.",
+      "address": "Torstraße, 10119 Berlin"
+    },
+    "uk": {
+      "title": "Клуб робототехніки LEGO",
+      "organizer": "Mitte STEM lab (зразок)",
+      "description": "Створюйте та програмуйте роботів у командах, а потім змагайтеся з ними наприкінці кожного місяця.",
+      "address": "Torstraße, 10119 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "tiergarten-naturalists",
@@ -195,13 +317,39 @@
     "de": {
       "title": "Kleine Naturforscher",
       "organizer": "Ehrenamtliche im Park (Beispiel)",
-      "description": "Vögel beobachten, Blätter abpausen und Käfer suchen, mit Begleitung. Wasser und feste Schuhe mitbringen."
+      "description": "Vögel beobachten, Blätter abpausen und Käfer suchen, mit Begleitung. Wasser und feste Schuhe mitbringen.",
+      "address": "Großer Tiergarten, 10557 Berlin"
     },
     "ru": {
       "title": "Юные натуралисты",
       "organizer": "Волонтёры парка (пример)",
-      "description": "Наблюдаем за птицами, делаем оттиски листьев и ищем жуков вместе с гидом. Возьмите воду и удобную обувь."
-    }
+      "description": "Наблюдаем за птицами, делаем оттиски листьев и ищем жуков вместе с гидом. Возьмите воду и удобную обувь.",
+      "address": "Großer Tiergarten, 10557 Berlin"
+    },
+    "en": {
+      "title": "Little Naturalists Walk",
+      "organizer": "Park volunteers (sample)",
+      "description": "Bird spotting, leaf rubbing and bug hunts with a guide. Bring water and sturdy shoes.",
+      "address": "Großer Tiergarten, 10557 Berlin"
+    },
+    "uk": {
+      "title": "Прогулянка маленьких натуралістів",
+      "organizer": "Волонтери парку (зразок)",
+      "description": "Спостереження за птахами, тертя листя та полювання на жуків з гідом. Візьміть з собою воду та міцне взуття.",
+      "address": "Großer Tiergarten, 10557 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "tempelhof-balance-bikes",
@@ -235,7 +383,29 @@
       "organizer": "Велосипедисты Темпельхофер-Фельд (пример)",
       "description": "Берите беговел и шлем. Конусы, горки и целая взлётная полоса для катания.",
       "address": "Tempelhofer Feld, вход с Columbiadamm, 12101 Berlin"
-    }
+    },
+    "en": {
+      "title": "Balance Bike Mornings",
+      "organizer": "Tempelhofer Feld cyclists (sample)",
+      "description": "Bring a balance bike and helmet. Cones, ramps and the whole runway to ride on.",
+      "address": "Tempelhofer Feld, Columbiadamm entrance, 12101 Berlin"
+    },
+    "uk": {
+      "title": "Баланс велосипедний ранок",
+      "organizer": "Велосипедисти Tempelhofer Feld (зразок)",
+      "description": "Візьміть з собою велосипед і шолом. Конуси, пандуси та ціла злітно-посадкова смуга, на якій можна кататися.",
+      "address": "Темпельгофер Фельд (Tempelhofer Feld), Columbiadamm entrance, 12101 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "neukoelln-hiphop",
@@ -264,13 +434,39 @@
     "de": {
       "title": "Hip-Hop-Tanz für Kids",
       "organizer": "Tanzkollektiv Neukölln (Beispiel)",
-      "description": "Grooves, Freestyle und jeden Monat eine kleine Choreo. Aufführung zum Saisonende."
+      "description": "Grooves, Freestyle und jeden Monat eine kleine Choreo. Aufführung zum Saisonende.",
+      "address": "Weserstraße, 12047 Berlin"
     },
     "ru": {
       "title": "Хип-хоп для детей",
       "organizer": "Танцевальный коллектив Нойкёльн (пример)",
-      "description": "Грувы, фристайл и новая связка каждый месяц. В конце сезона выступление."
-    }
+      "description": "Грувы, фристайл и новая связка каждый месяц. В конце сезона выступление.",
+      "address": "Weserstraße, 12047 Berlin"
+    },
+    "en": {
+      "title": "Hip-Hop Dance for Kids",
+      "organizer": "Neukölln dance collective (sample)",
+      "description": "Grooves, freestyle and a short routine every month. End-of-season showcase.",
+      "address": "Weserstraße, 12047 Berlin"
+    },
+    "uk": {
+      "title": "Хіп-хоп танець для дітей",
+      "organizer": "Танцювальний колектив Neukölln (зразок)",
+      "description": "Груви, фрістайл і коротка рутина щомісяця. Вітрина в кінці сезону.",
+      "address": "Weserstraße, 12047 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "charlottenburg-swim",
@@ -307,7 +503,29 @@
       "organizer": "Школа плавания Шарлоттенбург (пример)",
       "description": "Небольшие группы, цель — значок Seepferdchen. Сначала привыкаем к воде, потом учим движения.",
       "address": "Рядом с Wilmersdorfer Straße, 10627 Berlin"
-    }
+    },
+    "en": {
+      "title": "Learn to Swim (Seepferdchen)",
+      "organizer": "Charlottenburg swim school (sample)",
+      "description": "Small groups working toward the Seepferdchen badge. Water confidence first, strokes second.",
+      "address": "Near Wilmersdorfer Straße, 10627 Berlin"
+    },
+    "uk": {
+      "title": "Навчіться плавати (Seepferdchen)",
+      "organizer": "Школа плавання Шарлоттенбург (зразок)",
+      "description": "Невеликі групи працюють над значком Seepferdchen. По-перше, впевненість у воді, а потім – погладжування.",
+      "address": "Near Wilmersdorfer Straße, 10627 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "schoeneberg-piano",
@@ -336,13 +554,39 @@
     "de": {
       "title": "Klavier in der Gruppe für Anfänger",
       "organizer": "Musikschule Schöneberg (Beispiel)",
-      "description": "Ein Keyboard für jedes Kind, Noten lesen ab der ersten Woche, ein kleines Konzert im Juni."
+      "description": "Ein Keyboard für jedes Kind, Noten lesen ab der ersten Woche, ein kleines Konzert im Juni.",
+      "address": "Akazienstraße, 10823 Berlin"
     },
     "ru": {
       "title": "Фортепиано в группе для начинающих",
       "organizer": "Музыкальная школа Шёнеберг (пример)",
-      "description": "У каждого ребёнка свой синтезатор, ноты с первой недели, в июне небольшой концерт."
-    }
+      "description": "У каждого ребёнка свой синтезатор, ноты с первой недели, в июне небольшой концерт.",
+      "address": "Akazienstraße, 10823 Berlin"
+    },
+    "en": {
+      "title": "Group Piano for Beginners",
+      "organizer": "Schöneberg music school (sample)",
+      "description": "A keyboard for every child, reading notes from week one, a small concert in June.",
+      "address": "Akazienstraße, 10823 Berlin"
+    },
+    "uk": {
+      "title": "Групове фортепіано для початківців",
+      "organizer": "Музична школа Шенеберг (зразок)",
+      "description": "Клавіатура для кожної дитини, читання нот з першого тижня, невеликий концерт у червні.",
+      "address": "Akazienstraße, 10823 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "boxhagener-messy-art",
@@ -379,7 +623,29 @@
       "organizer": "Детская студия Фридрихсхайн (пример)",
       "description": "Краски, клей, слаймы и сенсорные игры. Наденьте одежду, которую не жалко испачкать.",
       "address": "Рядом с Boxhagener Platz, 10245 Berlin"
-    }
+    },
+    "en": {
+      "title": "Messy Art Lab",
+      "organizer": "Friedrichshain kids studio (sample)",
+      "description": "Paint, glue, slime and sensory play. Wear clothes that can get dirty.",
+      "address": "Near Boxhagener Platz, 10245 Berlin"
+    },
+    "uk": {
+      "title": "Messy Art Lab",
+      "organizer": "Дитяча студія Friedrichshain (зразок)",
+      "description": "Фарба, клей, слиз і сенсорна гра. Носіть одяг, який можна забруднити.",
+      "address": "Near Boxhagener Platz, 10245 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "treptow-chess",
@@ -415,7 +681,29 @@
       "organizer": "Шахматный уголок Трептов (пример)",
       "description": "Занятия по уровням, потом свободные партии. Подготовка к турнирам для желающих.",
       "address": "Рядом с Treptower Park, 12435 Berlin"
-    }
+    },
+    "en": {
+      "title": "Chess Club",
+      "organizer": "Treptow chess corner (sample)",
+      "description": "Lessons by level, then friendly games. Tournament prep for those who want it.",
+      "address": "Near Treptower Park, 12435 Berlin"
+    },
+    "uk": {
+      "title": "Шаховий клуб",
+      "organizer": "Шаховий куточок Treptow (зразок)",
+      "description": "Уроки за рівнями, потім товариські ігри. Підготовка до турніру для бажаючих.",
+      "address": "Near Treptower Park, 12435 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address"
+    ]
   },
   {
     "id": "moabit-ukrainian-school",
@@ -443,13 +731,39 @@
     "de": {
       "title": "Ukrainische Samstagsschule",
       "organizer": "Kulturzentrum (Beispiel)",
-      "description": "Lesen, Schreiben, Lieder und Traditionen, in kleinen Gruppen nach Alter."
+      "description": "Lesen, Schreiben, Lieder und Traditionen, in kleinen Gruppen nach Alter.",
+      "address": "Turmstraße, 10551 Berlin"
     },
     "ru": {
       "title": "Украинская субботняя школа",
       "organizer": "Культурный центр (пример)",
-      "description": "Чтение, письмо, песни и традиции в небольших группах по возрасту."
-    }
+      "description": "Чтение, письмо, песни и традиции в небольших группах по возрасту.",
+      "address": "Turmstraße, 10551 Berlin"
+    },
+    "en": {
+      "title": "Ukrainian Saturday School",
+      "organizer": "Community cultural center (sample)",
+      "description": "Reading, writing, songs and traditions, taught in small groups by age.",
+      "address": "Turmstraße, 10551 Berlin"
+    },
+    "uk": {
+      "title": "Суботня українська школа",
+      "organizer": "Громадський будинок культури (зразок)",
+      "description": "Читання, письмо, пісні та традиції, навчають у малих групах за віком.",
+      "address": "Turmstraße, 10551 Berlin"
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "en.address",
+      "de.address",
+      "uk.title",
+      "uk.organizer",
+      "uk.description",
+      "uk.address",
+      "ru.address"
+    ]
   },
   {
     "id": "online-coding-scratch",
@@ -482,7 +796,25 @@
       "title": "Создаём игры в Scratch",
       "organizer": "Онлайн-клуб программирования (пример)",
       "description": "Живой видеоурок для группы до восьми детей, на немецком или английском. Каждую неделю — новая игра, которой можно поделиться."
-    }
+    },
+    "en": {
+      "title": "Make Games with Scratch",
+      "organizer": "Online coding club (sample)",
+      "description": "Live video class of up to eight kids, in English or German. Each week ends with a game they can share."
+    },
+    "uk": {
+      "title": "Створення ігор за допомогою Scratch",
+      "organizer": "Онлайн клуб кодування (зразок)",
+      "description": "Відеоклас у прямому ефірі до восьми дітей англійською або німецькою мовами. Кожен тиждень закінчується грою, якою вони можуть поділитися."
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "uk.title",
+      "uk.organizer",
+      "uk.description"
+    ]
   },
   {
     "id": "online-mandarin",
@@ -514,7 +846,25 @@
       "title": "Китайский через песни",
       "organizer": "Онлайн-кружок языков (пример)",
       "description": "Короткие занятия с песнями, рядом кто-то из родителей. Тексты песен присылаем каждую неделю."
-    }
+    },
+    "en": {
+      "title": "Mandarin Through Songs",
+      "organizer": "Online language circle (sample)",
+      "description": "Short, song-based sessions with a parent nearby. Lyric sheets sent each week."
+    },
+    "uk": {
+      "title": "Мандарин через пісні",
+      "organizer": "Онлайн мовний гурток (зразок)",
+      "description": "Короткі заняття з піснями з батьками поруч. Аркуші з текстами надсилаються щотижня."
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "uk.title",
+      "uk.organizer",
+      "uk.description"
+    ]
   },
   {
     "id": "online-drawing",
@@ -544,7 +894,25 @@
       "title": "Рисуем вместе в прямом эфире",
       "organizer": "Онлайн-арт-студия (пример)",
       "description": "Иллюстратор рисует шаг за шагом, а дети повторяют на бумаге фломастерами."
-    }
+    },
+    "en": {
+      "title": "Draw-Along Live",
+      "organizer": "Online art room (sample)",
+      "description": "An illustrator draws step by step and kids follow along with paper and markers."
+    },
+    "uk": {
+      "title": "Draw-Along Live",
+      "organizer": "Інтернет-кімната мистецтва (зразок)",
+      "description": "Ілюстратор малює крок за кроком, а діти слідують йому за допомогою паперу та фломастерів."
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "uk.title",
+      "uk.organizer",
+      "uk.description"
+    ]
   },
   {
     "id": "online-guitar",
@@ -576,6 +944,24 @@
       "title": "Первые аккорды на гитаре",
       "organizer": "Онлайн-школа музыки (пример)",
       "description": "Четыре аккорда, а потом настоящие песни. Нужна гитара, есть вариант для укулеле."
-    }
+    },
+    "en": {
+      "title": "First Guitar Chords",
+      "organizer": "Online music school (sample)",
+      "description": "Four chords, then real songs. Needs a guitar; a ukulele track is available too."
+    },
+    "uk": {
+      "title": "Перші гітарні акорди",
+      "organizer": "Музична онлайн школа (зразок)",
+      "description": "Чотири акорди, потім справжні пісні. Потрібна гітара; також доступний трек для укулеле."
+    },
+    "autoTranslated": [
+      "en.title",
+      "en.organizer",
+      "en.description",
+      "uk.title",
+      "uk.organizer",
+      "uk.description"
+    ]
   }
 ]

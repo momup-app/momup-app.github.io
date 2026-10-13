@@ -1,23 +1,25 @@
-// Translates every listing into all site languages (en, de, uk, ru) with Claude, so a mom who only reads
-// Russian or Ukrainian sees berlin.de and Instagram events in her language too.
-// Run after the imports by .github/workflows/berlin-events.yml and instagram-sync.yml.
-// Needs the ANTHROPIC_API_KEY secret; without it, the listings stay as they are and the site still works.
+// Translates every listing into all site languages (en, de, uk, ru) with Google's free translator, so a mom
+// who only reads Ukrainian or Russian sees berlin.de and Instagram events in her language too.
+// Run after the imports by .github/workflows/berlin-events.yml and instagram-sync.yml. No account or key needed.
+// Google's free endpoint is unofficial: if it refuses, the listings stay as they are and the rest waits for the next run.
 
 import { readFile, writeFile } from "node:fs/promises";
-import Anthropic from "@anthropic-ai/sdk";
-import { z } from "zod";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
-import { INSTRUCTIONS, missingTexts, applyTranslations, mergeResults, pruneCache, chunks } from "./translate-lib.mjs";
+import {
+  LANGS, missingTexts, applyTranslations, mergeResults, pruneCache,
+  splitAddress, withOriginal, composeAddress, readGoogleAnswer,
+} from "./translate-lib.mjs";
 
 const FILES = ["activities.json", "events.json", "berlin-events.json"].map((f) => new URL("../data/" + f, import.meta.url));
 const CACHE_FILE = new URL("../data/translations-cache.json", import.meta.url);
-const MODEL = "claude-haiku-5-5"; // the cheapest Claude model; plenty for short listing texts
-const BATCH = 30;      // texts per request
-const MAX_TEXTS = 600; // per run, so a bad day can't run up the bill; the rest come next run
+// The "dict-chrome-ex" address answers scripts; translate.googleapis.com/…client=gtx refuses Node with 429.
+const ENDPOINT = "https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto";
+const MAX_TEXTS = 300;  // per run; each text is 4 requests. The rest come next run.
+const PAUSE_MS = 250;   // between requests, to stay polite
+const MAX_CHARS = 4500; // longer texts are left untranslated
 
-const Answer = z.object({
-  items: z.array(z.object({ key: z.string(), en: z.string(), de: z.string(), uk: z.string(), ru: z.string() })),
-});
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+class Refused extends Error {}
 
 async function readJson(url, fallback) {
   try { return JSON.parse(await readFile(url, "utf8")); } catch (e) {
@@ -32,18 +34,44 @@ async function indentOf(url) {
   return m ? m[1].length / 2 : 1;
 }
 
-async function translate(client, batch) {
-  const response = await client.messages.parse({
-    model: MODEL,
-    max_tokens: 16000,
-    output_config: { effort: "low", format: zodOutputFormat(Answer) },
-    system: INSTRUCTIONS,
-    messages: [{ role: "user", content: JSON.stringify(batch.map(({ key, field, text }) => ({ key, field, text }))) }],
-  });
-  if (response.stop_reason !== "end_turn" || !response.parsed_output) {
-    throw new Error(`Unexpected answer (stop_reason: ${response.stop_reason})`);
+async function google(text, lang) {
+  await sleep(PAUSE_MS);
+  const res = await fetch(`${ENDPOINT}&tl=${lang}&q=${encodeURIComponent(text)}`);
+  if (res.status === 429 || res.status === 403) throw new Refused(`Google refused (${res.status})`);
+  if (!res.ok) throw new Error(`Google answered ${res.status}`);
+  return readGoogleAnswer(await res.json());
+}
+
+/** One text in all four languages, plus the language Google detected (which keeps the original text). */
+async function translateAll(text) {
+  const out = {};
+  let source = null;
+  for (const lang of LANGS) {
+    const { text: translated, detected } = await google(text, lang);
+    source = source || detected;
+    out[lang] = detected === lang ? text : translated || text;
   }
-  return response.parsed_output.items;
+  return { out, source };
+}
+
+// German names are what moms see on signs and in Google Maps, so only those keep the original in brackets.
+const SIGN_LANGUAGE = "de";
+
+async function translateItem({ field, text }) {
+  if (text.length > MAX_CHARS) return null;
+  if (field === "address") {
+    const parts = splitAddress(text);
+    if (!parts) return Object.fromEntries(LANGS.map((l) => [l, text])); // nothing to translate in a bare street address
+    const venue = await translateAll(parts.venue);
+    return Object.fromEntries(LANGS.map((l) => [l, venue.source === SIGN_LANGUAGE
+      ? composeAddress(l, venue.out[l], parts.venue, parts.rest)
+      : `${venue.out[l]}, ${parts.rest}`]));
+  }
+  const all = await translateAll(text);
+  if (field === "organizer" && all.source === SIGN_LANGUAGE) {
+    return Object.fromEntries(LANGS.map((l) => [l, withOriginal(l, all.out[l], text)]));
+  }
+  return all.out;
 }
 
 async function main() {
@@ -52,34 +80,20 @@ async function main() {
   let cache = await readJson(CACHE_FILE, {});
 
   const todo = missingTexts(all, cache).slice(0, MAX_TEXTS);
-  if (todo.length && !process.env.ANTHROPIC_API_KEY) {
-    console.log(`::warning::${todo.length} texts need translating, but the ANTHROPIC_API_KEY secret isn't set. Skipping.`);
-  } else if (todo.length) {
-    const client = new Anthropic();
-    let failed = 0;
-    for (const batch of chunks(todo, BATCH)) {
-      try {
-        cache = mergeResults(cache, batch, await translate(client, batch));
-      } catch (e) {
-        failed += batch.length; // asked again next run
-        console.log(`::warning::Translation batch failed: ${e.message}`);
-        if (/credit balance is too low/i.test(e.message)) {
-          // Every other batch would fail the same way: say it once, clearly, and stop asking.
-          console.log("::error::Listings were not translated: the Claude account has no credit left. Add credit at platform.claude.com → Settings → Billing, then run this workflow again.");
-          failed = todo.length;
-          break;
-        }
+  let done = 0;
+  for (const item of todo) {
+    try {
+      const result = await translateItem(item);
+      if (result) { cache = mergeResults(cache, [item], [{ key: item.key, ...result }]); done++; }
+    } catch (e) {
+      if (e instanceof Refused) {
+        console.log(`::warning::${e.message}. ${todo.length - done} texts wait for the next run.`);
+        break;
       }
+      console.log(`::warning::Skipped one text (${e.message}); it's tried again next run.`);
     }
-    if (failed === todo.length) {
-      // The imported events are still published; only the translations wait for the next run.
-      console.log(`::error::No listings were translated this run (${failed} texts waiting). See the warnings above.`);
-    } else {
-      console.log(`Translated ${todo.length - failed} texts${failed ? `, ${failed} left for next run` : ""}.`);
-    }
-  } else {
-    console.log("Every listing is already translated.");
   }
+  console.log(todo.length ? `Translated ${done} of ${todo.length} texts.` : "Every listing is already translated.");
 
   cache = pruneCache(cache, all);
   await Promise.all(FILES.map(async (file, i) => {
