@@ -1,5 +1,9 @@
 # Mom chat
 
+> **Since October 2026 the Chat tab opens Yuliia's MomUp app** ([momup.vercel.app](https://momup.vercel.app)), where the Berlin moms already are: "Open the moms' chat" goes to `/chat/general`, "My private messages" to `/messages`, sign-up to `/register`. MomUp is linked, not embedded, because Google sign-in and iPhone logins don't work inside a frame. The WhatsApp community button stays on the page.
+>
+> The built-in chat described below is switched off: its page was replaced, but its tables and messages are still in Supabase, and the old page is in the git history (`git show 4898f23:chat.html`).
+
 The **Chat** tab ([chat.html](../chat.html)) lets parents start a topic and reply to each other. New replies show up live, without reloading the page.
 
 - Only members can read and write. Visitors see a "Log in to join the chat" button.
