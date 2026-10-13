@@ -8,6 +8,7 @@
   var LOCALES = { de: "de-DE", en: "en-GB", uk: "uk-UA", ru: "ru-RU" };
   var WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   var EVENTS_PREVIEW = 4;
+  var FAR_KM = 50; // further than this from the centre of Berlin counts as "outside Berlin"
 
   var state = {
     origin: DEFAULT_ORIGIN, activities: [], events: [], saved: loadSaved(), activeId: null,
@@ -777,6 +778,8 @@
 
   // ---------- location ----------
   function setOrigin(lat, lng, label, query) {
+    var km = kmBetween(DEFAULT_ORIGIN, { lat: lat, lng: lng });
+    if (km > FAR_KM) { showFarAway(km); return; }
     state.origin = { lat: lat, lng: lng, label: label, exact: true, query: query };
     if (meMarker) meMarker.remove();
     meMarker = L.marker([lat, lng], {
@@ -794,12 +797,42 @@
     return fetch(url, { headers: { "Accept-Language": state.lang } })
       .then(function (r) { return r.json(); })
       .then(function (rows) {
-        if (!rows.length) { setStatus("statusNotFound", { q: query }); return; }
+        if (!rows.length) return lookOutsideBerlin(query);
         var label = rows[0].display_name.split(",").slice(0, 2).join(",");
         setOrigin(Number(rows[0].lat), Number(rows[0].lon), label, query);
       })
       .catch(function () { setStatus("statusLookupFailed"); });
   }
+
+  // Not in Berlin: look across Germany, so a postcode from another city gets the "outside Berlin" window
+  // instead of "not found". Only after the Berlin search found nothing, so Berlin street names still win.
+  function lookOutsideBerlin(query) {
+    var url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=de&q=" + encodeURIComponent(query);
+    return fetch(url, { headers: { "Accept-Language": state.lang } })
+      .then(function (r) { return r.json(); })
+      .then(function (rows) {
+        if (!rows.length) { setStatus("statusNotFound", { q: query }); return; }
+        setOrigin(Number(rows[0].lat), Number(rows[0].lon), rows[0].display_name.split(",").slice(0, 2).join(","), query);
+      });
+  }
+
+  // ---------- outside Berlin ----------
+  var farDialog = document.getElementById("far-dialog");
+  function showFarAway(km) {
+    setStatus("statusFar");
+    document.getElementById("far-text").textContent = t("farText", { km: Math.round(km).toLocaleString(locale()) });
+    if (!farDialog.open) farDialog.showModal();
+  }
+  document.getElementById("far-online").addEventListener("click", function () {
+    els.filters.format.value = "online";
+    els.filters.radius.value = "";
+    farDialog.close();
+    render();
+    document.getElementById("results").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("far-berlin").addEventListener("click", function () { farDialog.close(); });
+  document.getElementById("far-close").addEventListener("click", function () { farDialog.close(); });
+  farDialog.addEventListener("click", function (ev) { if (ev.target === farDialog) farDialog.close(); });
 
   els.form.addEventListener("submit", function (e) {
     e.preventDefault();

@@ -162,6 +162,18 @@
     <p class="empty small notranslate" id="sales-empty" hidden data-i18n="salesNone">No upcoming sales match these filters.</p>
   </section>
 
+  <dialog class="sheet far notranslate" id="far-dialog" aria-labelledby="far-h">
+    <button type="button" class="sheet-close" id="far-close" data-i18n-attr="aria-label:close" aria-label="Close">×</button>
+    <div class="far-pin" aria-hidden="true">📍</div>
+    <h2 id="far-h" data-i18n="farTitle">Oops, you're outside Berlin</h2>
+    <p id="far-text"></p>
+    <div class="far-actions">
+      <button type="button" class="btn" id="far-online" data-i18n="farOnline">Show online activities</button>
+      <button type="button" class="btn ghost" id="far-berlin" data-i18n="farBerlin">Look at Berlin anyway</button>
+    </div>
+    <p class="far-follow"><a href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank" data-i18n="farFollow">Follow @momup_app to hear when we come to your city</a></p>
+  </dialog>
+
   <dialog class="sheet" id="event-dialog" aria-labelledby="ed-title">
     <button type="button" class="sheet-close notranslate" id="ed-close" data-i18n-attr="aria-label:close" aria-label="Close">×</button>
     <div id="ed-body"></div>

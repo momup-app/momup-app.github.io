@@ -572,3 +572,12 @@ input, select { font: inherit; color: var(--ink); background: var(--card); borde
 .welcome-choice .mark { grid-row: span 2; font-size: 28px; line-height: 1; text-align: center; }
 .welcome-choice .text { font-size: 18px; font-weight: 700; }
 .welcome-choice small { font-size: 13px; color: var(--muted); }
+
+/* outside Berlin */
+.far { text-align: center; }
+.far-pin { font-size: 44px; line-height: 1; margin: 4px 0 8px; }
+.far h2 { margin: 0 0 8px; font-size: 22px; }
+.far p { margin: 0 0 18px; color: var(--muted); }
+.far-actions { display: grid; gap: 8px; }
+.far-actions .btn { width: 100%; }
+.far .far-follow { margin: 16px 0 0; font-size: 14px; }
