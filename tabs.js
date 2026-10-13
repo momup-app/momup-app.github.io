@@ -20,7 +20,7 @@
   if (page === "index") page = "home";
 
   var nav = document.createElement("nav");
-  nav.className = "tabs";
+  nav.className = "tabs notranslate";
   nav.setAttribute("data-i18n-attr", "aria-label:tabsLabel");
   nav.setAttribute("aria-label", "App");
   TABS.forEach(function (tab) {

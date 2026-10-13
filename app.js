@@ -290,7 +290,7 @@
 
   // The "Who is going" box inside the event window.
   function goingBox(e) {
-    var box = el("div", "going-box");
+    var box = el("div", "going-box notranslate");
     if (!state.account) { box.appendChild(loginPrompt("goingLoginEvent")); return box; }
     var list = state.going[e.id] || [];
     box.appendChild(el("p", null, list.length ? tn("goingCount", list.length) : t("goingNobody")));
@@ -488,7 +488,7 @@
   }
 
   function badgesFor(a) {
-    var badges = el("ul", "badges");
+    var badges = el("ul", "badges notranslate");
     if (a.ages) badges.appendChild(el("li", null, t("ages", { from: a.ages[0], to: a.ages[1] })));
     badges.appendChild(el("li", null, t("cat_" + a.category)));
     if (a.price.type !== "unknown") badges.appendChild(el("li", a.price.type === "free" ? "free" : null, priceText(a.price)));
@@ -525,7 +525,7 @@
 
     var days = a.days.map(function (d) { return t("day_" + d); }).join(", ");
     var address = tr(a, "address");
-    li.appendChild(el("p", "meta", days + " · " + timeText(a) + (address ? " · " + address : "")));
+    li.appendChild(el("p", "meta notranslate", days + " · " + timeText(a) + (address ? " · " + address : "")));
     return li;
   }
 
@@ -570,7 +570,7 @@
     li.setAttribute("aria-haspopup", "dialog");
     selectable(li, e.id, function () { openEvent(e); });
 
-    var when = el("div", "when");
+    var when = el("div", "when notranslate");
     when.appendChild(dateBadge(e));
     var day = el("p", "day");
     day.style.margin = "0";
@@ -583,11 +583,11 @@
     li.appendChild(el("h3", null, title));
     li.appendChild(badgesFor(e));
     var place = tr(e, "address");
-    li.appendChild(el("p", "place", [place, tr(e, "organizer")].filter(Boolean).join(" · ")));
+    li.appendChild(el("p", "place notranslate", [place, tr(e, "organizer")].filter(Boolean).join(" · ")));
     var desc = tr(e, "description");
     if (desc) li.appendChild(el("p", "desc", desc));
 
-    var acts = el("div", "acts");
+    var acts = el("div", "acts notranslate");
     var cal = el("button", null, t("addToCalendar"));
     cal.type = "button";
     cal.addEventListener("click", function (ev) { ev.stopPropagation(); downloadIcs(e); });
@@ -620,7 +620,7 @@
     dialogBody.replaceChildren();
 
     var isEvent = !!e.date; // activities repeat weekly and have no date
-    var head = el("div", "when");
+    var head = el("div", "when notranslate");
     var day = el("p", "day");
     if (isEvent) {
       head.appendChild(dateBadge(e));
@@ -643,11 +643,11 @@
     var desc = tr(e, "description");
     if (desc) dialogBody.appendChild(el("p", "desc", desc));
     var place = tr(e, "address");
-    if (place) dialogBody.appendChild(el("p", "place", "📍 " + place + (e.district ? " · " + tr(e, "district") : "")));
+    if (place) dialogBody.appendChild(el("p", "place notranslate", "📍 " + place + (e.district ? " · " + tr(e, "district") : "")));
     if (e.source) dialogBody.appendChild(el("p", "desc", t("fullOnSource", { source: e.source.name })));
     if (isEvent && state.accountsOn) dialogBody.appendChild(goingBox(e));
 
-    var acts = el("div", "sheet-actions");
+    var acts = el("div", "sheet-actions notranslate");
     if (isEvent) {
       var cal = el("button", "btn", t("addToCalendar"));
       cal.type = "button";
@@ -678,6 +678,8 @@
       src.href = e.source.url; src.target = "_blank"; src.rel = "noopener";
       acts.insertBefore(src, acts.firstChild);
     }
+    var translate = translateLink(e);
+    if (translate) acts.appendChild(translate);
     var share = el("button", "btn ghost", t("share"));
     share.type = "button";
     share.addEventListener("click", function () {
@@ -693,6 +695,21 @@
     document.querySelectorAll(".event.active, .item.active").forEach(function (n) { n.classList.remove("active"); });
     var card = document.getElementById("item-" + e.id);
     if (card) card.classList.add("active");
+  }
+
+  // Opens Google Translate with this listing's text, for listings nobody has translated into the current language.
+  // Nothing goes to Google unless the mom taps it. Not shown where the text is already in her language.
+  var TRANSLATE_MAX = 4500; // Google Translate's text box takes 5000 characters
+  function translateLink(e) {
+    if (e[state.lang] && e[state.lang].title) return null;
+    var fromBerlin = e.source && e.source.name === "berlin.de";
+    if (state.lang === "de" && fromBerlin) return null; // berlin.de listings are German
+    if (state.lang === "en" && !e.source) return null;  // our own listings are written in English
+    var text = [e.title, e.description, e.organizer].filter(Boolean).join("\n\n").slice(0, TRANSLATE_MAX);
+    var a = el("a", "btn ghost", t("translateGoogle") + " ↗");
+    a.href = "https://translate.google.com/?sl=auto&tl=" + state.lang + "&text=" + encodeURIComponent(text) + "&op=translate";
+    a.target = "_blank"; a.rel = "noopener";
+    return a;
   }
 
   dialog.addEventListener("close", function () {

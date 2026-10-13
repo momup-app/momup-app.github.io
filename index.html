@@ -23,7 +23,7 @@
 <body>
   <a class="skip" href="#results" data-i18n="skip">Skip to results</a>
 
-  <header class="top">
+  <header class="top notranslate">
     <div class="wrap">
       <a class="brand" href="./"><img class="logo" src="images/icon.svg" width="34" height="34" alt="">Kids Nearby</a>
       <div class="end">
@@ -45,7 +45,7 @@
     </div>
   </header>
 
-  <section class="hero has-photo" id="top">
+  <section class="hero has-photo notranslate" id="top">
     <div class="wrap">
       <h1 data-i18n="heroTitle">Activities for kids in Berlin</h1>
       <p class="hero-text" data-i18n="heroText">Classes, clubs, events and online options, close to home.</p>
@@ -60,7 +60,7 @@
     </div>
   </section>
 
-  <section class="filter-bar wrap">
+  <section class="filter-bar wrap notranslate">
     <form class="filters" id="filters" aria-label="Filters" data-i18n-attr="aria-label:filters" onsubmit="return false">
       <label><span class="sr-only" data-i18n="age">Child&rsquo;s age</span>
         <select name="age">
@@ -114,8 +114,8 @@
     </form>
   </section>
 
-  <section class="events going wrap" id="going" aria-labelledby="going-h" hidden>
-    <div class="events-head">
+  <section class="events going wrap notranslate" id="going" aria-labelledby="going-h" hidden>
+    <div class="events-head notranslate">
       <h2 id="going-h"><span data-i18n="goingTitle">See who is going</span> <span class="events-count" id="going-count"></span></h2>
     </div>
     <ol class="going-list" id="going-list"></ol>
@@ -123,17 +123,17 @@
   </section>
 
   <section class="events wrap" id="events" aria-labelledby="events-h">
-    <div class="events-head">
+    <div class="events-head notranslate">
       <h2 id="events-h"><span data-i18n="eventsTitle">Upcoming play events</span> <span class="events-count" id="events-count"></span></h2>
       <button type="button" class="link" id="events-more" hidden></button>
     </div>
     <ol class="event-list" id="events-list"></ol>
-    <p class="empty small" id="events-empty" hidden data-i18n="eventsNone">No upcoming events match these filters.</p>
+    <p class="empty small notranslate" id="events-empty" hidden data-i18n="eventsNone">No upcoming events match these filters.</p>
   </section>
 
   <section class="events sales wrap" id="sales" aria-labelledby="sales-h">
     <div class="sales-banner">
-      <div class="sales-banner-text">
+      <div class="sales-banner-text notranslate">
         <h2 id="sales-h"><span><span data-i18n="salesTitle">Upcoming sales for kids</span> <span class="events-count" id="sales-count"></span></span></h2>
         <p class="sales-lede" data-i18n="salesLede">Kids' clothes, toys and more from Berlin moms</p>
         <p class="sales-next" id="sales-next" hidden></p>
@@ -159,19 +159,19 @@
       </div>
     </div>
     <ol class="event-list" id="sales-list"></ol>
-    <p class="empty small" id="sales-empty" hidden data-i18n="salesNone">No upcoming sales match these filters.</p>
+    <p class="empty small notranslate" id="sales-empty" hidden data-i18n="salesNone">No upcoming sales match these filters.</p>
   </section>
 
   <dialog class="sheet" id="event-dialog" aria-labelledby="ed-title">
-    <button type="button" class="sheet-close" id="ed-close" data-i18n-attr="aria-label:close" aria-label="Close">×</button>
+    <button type="button" class="sheet-close notranslate" id="ed-close" data-i18n-attr="aria-label:close" aria-label="Close">×</button>
     <div id="ed-body"></div>
   </dialog>
 
   <main class="layout wrap">
     <section id="results" aria-label="Results" data-i18n-attr="aria-label:results">
-      <p class="count" id="count" aria-live="polite"></p>
+      <p class="count notranslate" id="count" aria-live="polite"></p>
       <ol class="list" id="list"></ol>
-      <p class="empty" id="empty" hidden data-i18n="empty">No activities match these filters. Try another day or a wider distance.</p>
+      <p class="empty notranslate" id="empty" hidden data-i18n="empty">No activities match these filters. Try another day or a wider distance.</p>
     </section>
     <div class="mapbox">
       <div id="map" role="region" aria-label="Map of activities" data-i18n-attr="aria-label:mapLabel"></div>
@@ -179,7 +179,7 @@
   </main>
 
   <div class="wrap">
-  <section class="about" id="about" aria-labelledby="about-h">
+  <section class="about notranslate" id="about" aria-labelledby="about-h">
     <figure class="about-photo">
       <img src="images/team/yuliia.jpg" alt="" width="280" height="280" loading="lazy">
       <figcaption><b>Yuliia Ritz</b> <span data-i18n="role_yuliia">Creative Director</span></figcaption>
@@ -191,7 +191,7 @@
       <p class="about-sign" data-i18n="aboutSign">Yuliia, mom and founder of MomUp</p>
     </div>
   </section>
-  <section class="contact" id="contact" aria-labelledby="contact-h">
+  <section class="contact notranslate" id="contact" aria-labelledby="contact-h">
     <div>
       <h2 id="contact-h" data-i18n="contactTitle">Contact us</h2>
       <p data-i18n="contactText">Questions, ideas, or want to list your class or club? Send us a message on Instagram, we read every one.</p>
@@ -233,7 +233,7 @@
   </section>
   </div>
 
-  <footer class="wrap foot">
+  <footer class="wrap foot notranslate">
     <p data-i18n-html="footSample">Listings are <b>sample data</b> for this demo. Follow <a href="https://www.instagram.com/momup_app/" rel="noopener" target="_blank">@momup_app</a> on Instagram for updates.</p>
     <p data-i18n="footPrivacy">This site stores nothing about you or your child: no cookies, no tracking. Saved activities stay in your own browser. Map tiles and address lookup come from OpenStreetMap.</p>
       <p><a class="app-link" href="install.html" data-keep-lang="install.html" data-i18n="appLink">📲 Install the app</a></p>
