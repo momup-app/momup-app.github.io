@@ -1121,12 +1121,6 @@
   "uk": "Рукоділля для дітей у бібліотеці імені Генріха Шульца",
   "ru": "Поделки для детей в библиотеке Генриха Шульца"
  },
- "27a33a01f0765147": {
-  "en": "Russian reading and storytelling with volunteer readers in the Philipp Schaeffer Library",
-  "de": "Russisch Vorlesen und Erzählen mit ehrenamtlichen Vorleser_innen in der Philipp-Schaeffer-Bibliothek",
-  "uk": "Російське читання та оповідання з читачами-добровольцями в бібліотеці Філіпа Шеффера",
-  "ru": "Русское чтение и рассказывание историй с читателями-волонтерами в библиотеке Филиппа Шеффера"
- },
  "1fab1514edeaacdc": {
   "en": "Word treasures - story time for the little ones (from 3 years)",
   "de": "Wortschätze - Erzählstunde für die Kleinsten (ab 3 Jahren)",
@@ -1366,5 +1360,11 @@
   "de": "Kinder Puppentheater „Hatschi“",
   "uk": "Дитячий ляльковий театр «Хачі»",
   "ru": "Детский кукольный театр «Хачи»"
+ },
+ "be5abd3e14f8d20a": {
+  "en": "Russian reading and storytelling with volunteer readers in the Philipp Schaeffer Library",
+  "de": "Russisch Vorlesen und Erzählen mit ehrenamtlichen Vorleser*innen in der Philipp-Schaeffer-Bibliothek",
+  "uk": "Російське читання та оповідання з читачами-добровольцями в бібліотеці Філіпа Шеффера",
+  "ru": "Русское чтение и рассказывание историй с читателями-волонтерами в библиотеке Филиппа Шеффера"
  }
 }
