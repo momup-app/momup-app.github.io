@@ -1432,5 +1432,17 @@
   "de": "Brettspiele für Kinder – wöchentlicher Spieletreff für Kinder",
   "uk": "Настільні ігри для дітей – щотижнева ігрова зустріч для дітей",
   "ru": "Настольные игры для детей – еженедельная игровая встреча для детей"
+ },
+ "28172bccc23ce6b0": {
+  "en": "Kamishibai or picture book cinema in the Schöneberg library",
+  "de": "Kamishibai oder Bilderbuchkino in der Bibliothek Schöneberg",
+  "uk": "Камішибай або кінотеатр із картинками в бібліотеці Шенеберга",
+  "ru": "Камисибай или кинотеатр с книжками с картинками в библиотеке Шёнеберга"
+ },
+ "3189fcb7cf77b5dc": {
+  "en": "Schöneberg Library “Theodor Heuss Library”, Hauptstraße 40, 10827 Berlin",
+  "de": "Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\", Hauptstraße 40, 10827 Berlin",
+  "uk": "Бібліотека Шенеберга «Бібліотека Теодора Гайсса» (Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"), Hauptstraße 40, 10827 Berlin",
+  "ru": "Библиотека Шёнеберга «Библиотека Теодора Хойсса» (Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"), Hauptstraße 40, 10827 Berlin"
  }
 }
