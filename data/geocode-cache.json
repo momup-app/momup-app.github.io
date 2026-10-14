@@ -210,5 +210,22 @@
  "Halemweg 18, 13627 Berlin": {
   "lat": 52.5375,
   "lng": 13.28719
+ },
+ "Gruppenraum der Trude-Jugend-Bib Bat-Yam-Platz 1, 12353 Berlin": null,
+ "Gertrud-Junge-Bibliothek, Berlin": {
+  "lat": 52.42567,
+  "lng": 13.46207
+ },
+ "Auguste-Viktoria-Allee 29-31, 13403 Berlin": {
+  "lat": 52.57141,
+  "lng": 13.31555
+ },
+ "Frankfurter Allee 14A, 10247 Berlin": {
+  "lat": 52.51455,
+  "lng": 13.45705
+ },
+ "Fuchssteinerweg 17, 13465 Berlin": {
+  "lat": 52.63544,
+  "lng": 13.29517
  }
 }
