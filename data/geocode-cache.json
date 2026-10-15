@@ -231,5 +231,23 @@
  "Hauptstraße 40, 10827 Berlin": {
   "lat": 52.4839,
   "lng": 13.35101
+ },
+ "(in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin": null,
+ "Helene-Nathan-Bibliothek, Berlin": {
+  "lat": 52.48196,
+  "lng": 13.43277
+ },
+ "Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin": null,
+ "Zitadelle Spandau, Berlin": {
+  "lat": 52.54103,
+  "lng": 13.21274
+ },
+ "Heynstraße 8, 13187 Berlin": {
+  "lat": 52.56422,
+  "lng": 13.40245
+ },
+ "Kleine Gertraudenstraße 8, 10178 Berlin": {
+  "lat": 52.51294,
+  "lng": 13.40334
  }
 }
