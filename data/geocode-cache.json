@@ -249,5 +249,26 @@
  "Kleine Gertraudenstraße 8, 10178 Berlin": {
   "lat": 52.51294,
   "lng": 13.40334
+ },
+ "Frankfurter Allee 14 A, 10247 Berlin": {
+  "lat": 52.51455,
+  "lng": 13.45705
+ },
+ "Glogauer Straße 13, 10999 Berlin": {
+  "lat": 52.49259,
+  "lng": 13.43636
+ },
+ "Alt-Britz 81, 12359 Berlin": {
+  "lat": 52.44597,
+  "lng": 13.43778
+ },
+ "Marzahner Promenade 52-54, 12679 Berlin": {
+  "lat": 52.54207,
+  "lng": 13.54431
+ },
+ "Veranstaltungsraum Schönhauser Allee 75, 10439 Berlin": null,
+ "Bettina-von-Arnim-Bibliothek, Berlin": {
+  "lat": 52.54926,
+  "lng": 13.41409
  }
 }
