@@ -270,5 +270,18 @@
  "Bettina-von-Arnim-Bibliothek, Berlin": {
   "lat": 52.54926,
   "lng": 13.41409
+ },
+ "Marienfelder Allee 109, 12277 Berlin": {
+  "lat": 52.41676,
+  "lng": 13.36654
+ },
+ "Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin": null,
+ "Sterndamm 102, 12487 Berlin": {
+  "lat": 52.44353,
+  "lng": 13.50227
+ },
+ "Gutschmidtstr. 33, 12359 Berlin": {
+  "lat": 52.43669,
+  "lng": 13.44602
  }
 }
