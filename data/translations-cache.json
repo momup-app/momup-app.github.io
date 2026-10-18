@@ -683,12 +683,6 @@
   "uk": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
   "ru": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin"
  },
- "50ccee8696de3ea2": {
-  "en": "Familienbibliothek Else Ury – Pop-Up-Else",
-  "de": "Familienbibliothek Else Ury – Pop-Up-Else",
-  "uk": "Familienbibliothek Else Ury – Pop-Up-Else",
-  "ru": "Familienbibliothek Else Ury – Pop-Up-Else"
- },
  "bb6d854a54b3f210": {
   "en": "Makerspace in der Ehm-Welk-Bibliothek",
   "de": "Makerspace in der Ehm-Welk-Bibliothek",
@@ -761,12 +755,6 @@
   "uk": "Райнікендорф-Західна районна бібліотека (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
   "ru": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin"
  },
- "529d20846594e78a": {
-  "en": "Frankfurter Allee District Central Library - Pablo Neruda Library",
-  "de": "Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek",
-  "uk": "Центральна бібліотека округу Франкфуртер-Алеє - Бібліотека імені Пабло Неруди (Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek)",
-  "ru": "Центральная библиотека района Франкфуртер-Алли - Библиотека Пабло Неруды (Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek)"
- },
  "eedb4fb4b2120152": {
   "en": "Every 2nd Friday: Coding with OSMO",
   "de": "Jeden 2. Freitag: Coding mit OSMO",
@@ -803,77 +791,11 @@
   "uk": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
   "ru": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin"
  },
- "8bd6d382e8512753": {
-  "en": "Guided tour as part of Children's Culture Month",
-  "de": "Führung im Rahmen des Kinderkulturmonats",
-  "uk": "Екскурсія в рамках Місячника дитячої культури",
-  "ru": "Экскурсия в рамках Месяца детской культуры"
- },
- "312a5f1e0bd84f59": {
-  "en": "Office for Further Education and Culture, Museum Department",
-  "de": "Amt für Weiterbildung und Kultur, Fachbereich Museum",
-  "uk": "Управління додаткової освіти і культури, музейний відділ (Amt für Weiterbildung und Kultur, Fachbereich Museum)",
-  "ru": "Управление дополнительного образования и культуры, музейный отдел (Amt für Weiterbildung und Kultur, Fachbereich Museum)"
- },
- "45f0ebb6851e8598": {
-  "en": "Pankow Museum, Standort Heynstraße, Heynstraße 8, 13187 Berlin",
-  "de": "Museum Pankow, Standort Heynstraße, Heynstraße 8, 13187 Berlin",
-  "uk": "Панківський музей (Museum Pankow), Standort Heynstraße, Heynstraße 8, 13187 Berlin",
-  "ru": "Музей Панкова (Museum Pankow), Standort Heynstraße, Heynstraße 8, 13187 Berlin"
- },
- "a9567ea1d8d31562": {
-  "en": "Podcast with Paul [CANCELED]",
-  "de": "Podcast mit Paul [ABGESAGT]",
-  "uk": "Подкаст із Полом [СКАСУВАНО]",
-  "ru": "Подкаст с Полом [ОТМЕНЕНО]"
- },
  "a5d5d6ae755d01b6": {
   "en": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
   "de": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
   "uk": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
   "ru": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin"
- },
- "933fe3e1af4cbd03": {
-  "en": "Workshop: Creative meets digital for children – making 3D models",
-  "de": "Workshop: Kreativ trifft digital für Kinder – 3D-Modelle basteln",
-  "uk": "Майстер-клас: Creative meets digital для дітей – створення 3D моделей",
-  "ru": "Мастер-класс: Креатив и цифровые технологии для детей – создание 3D-моделей"
- },
- "15c8b8d2bee959fc": {
-  "en": "Listen to what that sounds like!",
-  "de": "Hört mal, was da klingt!",
-  "uk": "Послухайте, як це звучить!",
-  "ru": "Послушайте, как это звучит!"
- },
- "b4011ab78bf63130": {
-  "en": "Little researchers – big discoveries!",
-  "de": "Kleine Forscher – große Entdeckungen!",
-  "uk": "Маленькі дослідники – великі відкриття!",
-  "ru": "Маленькие исследователи – большие открытия!"
- },
- "556f4d80d2b7f9d3": {
-  "en": "Crafting with Daniela",
-  "de": "Basteln mit Daniela",
-  "uk": "Майструй з Даніелою",
-  "ru": "Творим вместе с Даниэлой"
- },
- "97e32d65f319fc79": {
-  "en": "Family tour / exhibition discussion at PETRI Berlin: Berlin archäoLogisch!",
-  "de": "Familienführung / Ausstellungsgespräch im PETRI Berlin: Berlin archäoLogisch!",
-  "uk": "Сімейний тур / обговорення виставки в PETRI Berlin: Berlin archäoLogisch!",
-  "ru": "Семейный тур/обсуждение выставки в PETRI Berlin: Berlin ArchäoLogisch!"
- },
- "4eb078f2db06743e": {
-  "en": "PETRI Berlin, Kleine Gertraudenstraße 8, 10178 Berlin",
-  "de": "PETRI Berlin, Kleine Gertraudenstraße 8, 10178 Berlin",
-  "uk": "ПЕТРІ Берлін, Kleine Gertraudenstraße 8, 10178 Berlin",
-  "ru": "ПЕТРИ Берлин, Kleine Gertraudenstraße 8, 10178 Berlin"
- },
- "be3e0de5ec3a9188": {
-  "en": "Craft workshop “Halloween masks”",
-  "de": "Bastel-Workshop „Halloween-Masken“",
-  "uk": "Майстер-клас «Хеловінські маски»",
-  "ru": "Мастер-класс «Маски на Хэллоуин»"
  },
  "b3ea79f165af4dd9": {
   "en": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
@@ -881,77 +803,11 @@
   "uk": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
   "ru": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin"
  },
- "5b6764e4d36284a7": {
-  "en": "Tinkering Saturday for families - topic: virtual worlds",
-  "de": "Tüftel-Samstag für Familien - Thema: Virtuelle Welten",
-  "uk": "Майстерна субота для сімей - тема: віртуальні світи",
-  "ru": "Суббота мастерства для всей семьи – тема: виртуальные миры"
- },
- "7466faa6189bfda3": {
-  "en": "Bookbinding - craft workshop with Meike Dölp",
-  "de": "Buchbinden - Bastelworkshop mit Meike Dölp",
-  "uk": "Палітурна майстерня з Майке Дольп",
-  "ru": "Переплетное дело - ремесленная мастерская с Майке Дёлп"
- },
- "1bc93afdcea282f2": {
-  "en": "Alfons Zitterbacke - Reading Ensemble presents",
-  "de": "Alfons Zitterbacke - Vorlese-Ensemble präsentiert",
-  "uk": "Alfons Zitterbacke - Reading Ensemble presents",
-  "ru": "Альфонс Зиттербаке - Ансамбль чтения представляет"
- },
- "6d5ea3e735fb6ab9": {
-  "en": "Creative craft meeting with Carla",
-  "de": "Kreativer Basteltreff mit Carla",
-  "uk": "Творча рукодільна зустріч з Карлою",
-  "ru": "Kreativer Basteltreff mit Carla"
- },
  "0577e5ae07ab9342": {
   "en": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
   "de": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
   "uk": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
   "ru": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin"
- },
- "7dec3ebf7cfe0953": {
-  "en": "Workshop (from 8 years) at PETRI Berlin: Shards bring luck",
-  "de": "Workshop (ab 8 Jahre) im PETRI Berlin: Scherben bringen Glück",
-  "uk": "Майстер-клас (з 8 років) у PETRI Berlin: Осколки приносять удачу",
-  "ru": "Мастер-класс (от 8 лет) в PETRI Berlin: Осколки приносят удачу"
- },
- "3b26d6a7727b78b1": {
-  "en": "Interactive reading I Heike Faller: Hundred",
-  "de": "Interaktive Lesung I Heike Faller: Hundert",
-  "uk": "Інтерактивне читання I Хайке Фаллер: Сотня",
-  "ru": "Интерактивное чтение I Heike Faller: Hundred"
- },
- "19a14c3c829e141f": {
-  "en": "Word treasures - story time in the yurt",
-  "de": "Wortschätze - Erzählstunde in der Jurte",
-  "uk": "Скарби слова - час історії в юрті",
-  "ru": "Сокровища слов - время истории в юрте"
- },
- "b0ab59fb3436cab4": {
-  "en": "Playing field - swap meet & games meeting",
-  "de": "Spielfeld - Tauschbörse & Spieletreff",
-  "uk": "Ігрове поле - зустрічі обміну та ігри",
-  "ru": "Игровое поле - обмен мнениями и игровые встречи"
- },
- "937a567e14392f18": {
-  "en": "Pablo-Neruda-Bibliothek, Frankfurter Allee 14 A, 10247 Berlin",
-  "de": "Pablo-Neruda-Bibliothek, Frankfurter Allee 14 A, 10247 Berlin",
-  "uk": "Бібліотека Пабло Неруди, Frankfurter Allee 14 A, 10247 Berlin",
-  "ru": "Пабло-Неруда-Библиотека, Frankfurter Allee 14 A, 10247 Berlin"
- },
- "8bdc05be0010e001": {
-  "en": "Writing workshop in the Pop-Up Else: Creative writing for children",
-  "de": "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder",
-  "uk": "Майстер-клас з письма в Pop-Up Else: творче письмо для дітей",
-  "ru": "Мастер-класс по письму в Pop-Up Else: Творческое письмо для детей"
- },
- "e1abfd033196be99": {
-  "en": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-  "de": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-  "uk": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-  "ru": "Семейная библиотека Эльзы Ури, Glogauer Straße 13, 10999 Berlin"
  },
  "3ae664b6bbfe59ca": {
   "en": "MeerMärchen - About fish, fishermen and the magic of the waves",
@@ -1432,5 +1288,77 @@
   "de": "Vorlesestunde mit Lesewelt e.V. in der Adolf-Reichwein-Bibliothek",
   "uk": "Година читання з Lesewelt e.V. в бібліотеці Адольфа Райхвайна",
   "ru": "Час чтения с Lesewelt e.V. в библиотеке Адольфа Райхвайна"
+ },
+ "78a02f1a7c9ac615": {
+  "en": "Library afternoon for the little ones",
+  "de": "Bibliotheksnachmittag für die Kleinsten",
+  "uk": "Бібліотечний полудень для найменших",
+  "ru": "Библиотечный день для самых маленьких"
+ },
+ "be7e255aefad0c6b": {
+  "en": "We read aloud in the Mark Twain Library",
+  "de": "Wir lesen vor in der Mark-Twain-Bibliothek",
+  "uk": "Ми читаємо вголос у бібліотеці Марка Твена",
+  "ru": "Читаем вслух в библиотеке Марка Твена"
+ },
+ "20fd2a277c0f0153": {
+  "en": "Story time in the Gottfried Benn Library",
+  "de": "Erzählzeit in der Gottfried-Benn-Bibliothek",
+  "uk": "Час історії в бібліотеці Готфріда Бенна",
+  "ru": "Время историй в библиотеке Готфрида Бенна"
+ },
+ "150ce624c56e49c8": {
+  "en": "Reading lesson from Lesewelt Berlin e.V. for children in the Ingeborg Drewitz Library",
+  "de": "Vorlesestunde von Lesewelt Berlin e.V. für Kinder in der Ingeborg-Drewitz-Bibliothek",
+  "uk": "Урок читання від Lesewelt Berlin e.V. для дітей у бібліотеці Інґеборґ Древіц",
+  "ru": "Урок чтения от Lesewelt Berlin e.V. для детей в библиотеке Ингеборги Древиц"
+ },
+ "142882a8dd8db33c": {
+  "en": "Reading to children in the Kurt Tucholsky Library",
+  "de": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+  "uk": "Читання дітям у Бібліотеці Курта Тухольського",
+  "ru": "Чтение детям в Библиотеке Курта Тухольского"
+ },
+ "406bee30976abf78": {
+  "en": "Reading hour with Lesewelt e.V. in the Eberhard Alexander Burgh Library",
+  "de": "Vorlesestunde mit Lesewelt e.V. in der Eberhard-Alexander-Burgh-Bibliothek",
+  "uk": "Година читання з Lesewelt e.V. в бібліотеці Еберхарда Олександра Берга",
+  "ru": "Час чтения с Lesewelt e.V. в библиотеке Эберхарда Александра Бурга"
+ },
+ "296e691113a0b0cc": {
+  "en": "Eberhard Alexander Burgh Library, Rüdesheimer Str. 14, 14197 Berlin",
+  "de": "Eberhard-Alexander-Burgh-Bibliothek, Rüdesheimer Str. 14, 14197 Berlin",
+  "uk": "Бібліотека Еберхарда Олександра Берга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin",
+  "ru": "Библиотека Эберхарда Александра Бурга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin"
+ },
+ "eab33d9c47202504": {
+  "en": "Reading club for children",
+  "de": "Leseclub für Kinder",
+  "uk": "Читальний клуб для дітей",
+  "ru": "Читальный клуб для детей"
+ },
+ "c427e498283dc8d8": {
+  "en": "DistrictTalk - Multilingualism among children",
+  "de": "BezirksTalk - Mehrsprachigkeit bei Kindern",
+  "uk": "DistrictTalk - Багатомовність серед дітей",
+  "ru": "DistrictTalk - Многоязычие среди детей"
+ },
+ "a4f5b70bb242227a": {
+  "en": "Level-Design mit Mario Maker | Gaming Workshop",
+  "de": "Level-Design mit Mario Maker | Gaming-Workshop",
+  "uk": "Дизайн рівнів з Mario Maker | Ігрова майстерня",
+  "ru": "Дизайн уровней с Mario Maker | Игровая мастерская"
+ },
+ "3f422a66652ffd83": {
+  "en": "Playgroup",
+  "de": "Krabbelgruppe",
+  "uk": "Ігрова група",
+  "ru": "Игровая группа"
+ },
+ "43116f161281e3d0": {
+  "en": "Ozobot City | Robotics for children",
+  "de": "Ozobot Stadt | Robotik für Kinder",
+  "uk": "Місто Озобот | Робототехніка для дітей",
+  "ru": "Озобот Сити | Робототехника для детей"
  }
 }
