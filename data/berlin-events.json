@@ -1,7 +1,7 @@
 [
  {
   "id": "berlin-281089",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "start": "",
   "end": "",
   "title": "Wanderausstellung „Neu-Hohenschönhausen im Miniaturformat“",
@@ -51,332 +51,6 @@
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-290063",
-  "date": "2026-10-18",
-  "start": "14:00",
-  "end": "",
-  "title": "MeerMärchen - Von Fischen, Fischern und dem Zauber der Wellen",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.48721,
-  "lng": 13.32004,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290063"
-  },
-  "en": {
-   "title": "MeerMärchen - About fish, fishermen and the magic of the waves",
-   "address": "Dietrich Bonhoeffer Library, Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "MeerMärchen - Von Fischen, Fischern und dem Zauber der Wellen",
-   "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "MeerMärchen - Про рибу, рибалок і магію хвиль",
-   "address": "Бібліотека Дітріха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "MeerMärchen - О рыбах, рыбаках и волшебстве волн",
-   "address": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-292303",
-  "date": "2026-10-18",
-  "start": "14:00",
-  "end": "",
-  "title": "Bilderflüsterer & Trickfilm-Zauberer",
-  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.51438,
-  "lng": 13.31637,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=292303"
-  },
-  "en": {
-   "title": "Image whisperer & animation magician",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Heinrich Schulz Library, Otto-Suhr-Allee 98, 10585 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Bilderflüsterer & Trickfilm-Zauberer",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Шепіт зображень і маг анімації",
-   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Бібліотека імені Генріха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Заклинатель изображений и волшебник анимации",
-   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Библиотека Генриха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-268717",
-  "date": "2026-10-18",
-  "start": "15:30",
-  "end": "16:00",
-  "title": "Bilderbuchkino in der Bibliothek Tempelhof",
-  "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.46378,
-  "lng": 13.38774,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=268717"
-  },
-  "en": {
-   "title": "Picture book cinema in the Tempelhof library",
-   "organizer": "District Central Library “Eva-Maria-Buch-Haus”",
-   "address": "Tempelhof Library “Eva-Maria-Buch-Haus”, Götzstr. 8-12, 12099 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "de": {
-   "title": "Bilderbuchkino in der Bibliothek Tempelhof",
-   "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
-   "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "uk": {
-   "title": "Кінотеатр у бібліотеці Tempelhof",
-   "organizer": "Районна центральна бібліотека «Єва-Марія-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
-   "address": "Темпельгофська бібліотека «Дім Єви Марії Бух» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
-   "district": "Темпельгоф-Шенеберг"
-  },
-  "ru": {
-   "title": "Кинотеатр с картинками в библиотеке Темпельхоф",
-   "organizer": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
-   "address": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-293017",
-  "date": "2026-10-18",
-  "start": "16:00",
-  "end": "",
-  "title": "12. Carl Bechstein Wettbewerb für junge Musiker:innen | Abschlusskonzert",
-  "organizer": "Kulturstiftung Schloss Britz",
-  "category": "music",
-  "format": "in-person",
-  "ages": [
-   0,
-   16
-  ],
-  "price": {
-   "type": "paid",
-   "amount": 15,
-   "per": "ticket"
-  },
-  "address": "Gutshof Schloss Britz - Kulturstall, Alt-Britz 81, 12359 Berlin",
-  "district": "Neukölln",
-  "lat": 52.44597,
-  "lng": 13.43778,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293017"
-  },
-  "en": {
-   "title": "12th Carl Bechstein Competition for Young Musicians | Final concert",
-   "organizer": "Britz Castle Cultural Foundation",
-   "address": "Gutshof Schloss Britz - cultural stable, Alt-Britz 81, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "de": {
-   "title": "12. Carl Bechstein Wettbewerb für junge Musiker:innen | Abschlusskonzert",
-   "organizer": "Kulturstiftung Schloss Britz",
-   "address": "Gutshof Schloss Britz - Kulturstall, Alt-Britz 81, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "uk": {
-   "title": "12-й Конкурс молодих музикантів імені Карла Бехштейна | Фінальний концерт",
-   "organizer": "Культурний фонд замку Бріц (Kulturstiftung Schloss Britz)",
-   "address": "Gutshof Schloss Britz - культурна конюшня (Gutshof Schloss Britz - Kulturstall), Alt-Britz 81, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "ru": {
-   "title": "12-й конкурс молодых музыкантов имени Карла Бехштейна | Заключительный концерт",
-   "organizer": "Культурный фонд замка Бритц (Kulturstiftung Schloss Britz)",
-   "address": "Gutshof Schloss Britz - культурная конюшня (Gutshof Schloss Britz - Kulturstall), Alt-Britz 81, 12359 Berlin",
-   "district": "Нойкёльн"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-288908",
-  "date": "2026-10-18",
-  "start": "16:00",
-  "end": "",
-  "title": "GANZ SCHNELL NIRGENDWOHIN LAUFEN Stadttheater Spandau auf der Zitadelle",
-  "organizer": "Fachbereich Kultur",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   10,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Zitadelle Spandau, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "district": "Spandau",
-  "lat": 52.54103,
-  "lng": 13.21274,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=288908"
-  },
-  "en": {
-   "title": "RUN NOWHERE VERY FAST City Theater Spandau on the citadel",
-   "organizer": "Department of Culture",
-   "address": "Spandau Citadel, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-   "district": "Spandau"
-  },
-  "de": {
-   "title": "GANZ SCHNELL NIRGENDWOHIN LAUFEN Stadttheater Spandau auf der Zitadelle",
-   "organizer": "Fachbereich Kultur",
-   "address": "Zitadelle Spandau, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-   "district": "Spandau"
-  },
-  "uk": {
-   "title": "БІГАТИ НІКУДИ ДУЖЕ ШВИДКО Міський театр Шпандау на цитаделі",
-   "organizer": "Управління культури (Fachbereich Kultur)",
-   "address": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-   "district": "Шпандау"
-  },
-  "ru": {
-   "title": "БЕГИТЕ НИКУДА ОЧЕНЬ БЫСТРО Городской театр Шпандау на цитадели",
-   "organizer": "Департамент культуры (Fachbereich Kultur)",
-   "address": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-   "district": "Шпандау"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1468,57 +1142,65 @@
   ]
  },
  {
-  "id": "berlin-276031",
+  "id": "berlin-267922",
   "date": "2026-10-19",
   "start": "16:00",
   "end": "17:00",
-  "title": "Wir lesen vor",
-  "organizer": "",
-  "category": "language",
+  "title": "Bastel-Montag",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "arts",
   "format": "in-person",
   "ages": null,
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.53063,
-  "lng": 13.47051,
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=276031"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=267922"
   },
   "en": {
-   "title": "We read aloud",
-   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
+   "title": "Craft Monday",
+   "organizer": "Humboldt Library",
+   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
   },
   "de": {
-   "title": "Wir lesen vor",
-   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
+   "title": "Bastel-Montag",
+   "organizer": "Humboldt-Bibliothek",
+   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
   },
   "uk": {
-   "title": "Читаємо вголос",
-   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Ліхтенберг"
+   "title": "Ремісничий понеділок",
+   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райнікендорф"
   },
   "ru": {
-   "title": "Мы читаем вслух",
-   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Лихтенберг"
+   "title": "Ремесленный понедельник",
+   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райникендорф"
   },
   "autoTranslated": [
    "en.title",
+   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
+   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
+   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
+   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1588,65 +1270,57 @@
   ]
  },
  {
-  "id": "berlin-267922",
+  "id": "berlin-276031",
   "date": "2026-10-19",
   "start": "16:00",
   "end": "17:00",
-  "title": "Bastel-Montag",
-  "organizer": "Humboldt-Bibliothek",
-  "category": "arts",
+  "title": "Wir lesen vor",
+  "organizer": "",
+  "category": "language",
   "format": "in-person",
   "ages": null,
   "price": {
-   "type": "unknown"
+   "type": "free"
   },
-  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59194,
-  "lng": 13.2806,
+  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.53063,
+  "lng": 13.47051,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=267922"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276031"
   },
   "en": {
-   "title": "Craft Monday",
-   "organizer": "Humboldt Library",
-   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
+   "title": "We read aloud",
+   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Lichtenberg"
   },
   "de": {
-   "title": "Bastel-Montag",
-   "organizer": "Humboldt-Bibliothek",
-   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
+   "title": "Wir lesen vor",
+   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Lichtenberg"
   },
   "uk": {
-   "title": "Ремісничий понеділок",
-   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райнікендорф"
+   "title": "Читаємо вголос",
+   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Ліхтенберг"
   },
   "ru": {
-   "title": "Ремесленный понедельник",
-   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райникендорф"
+   "title": "Мы читаем вслух",
+   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Лихтенберг"
   },
   "autoTranslated": [
    "en.title",
-   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
-   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
-   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1954,65 +1628,6 @@
   ]
  },
  {
-  "id": "berlin-145957",
-  "date": "2026-10-19",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   8
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59767,
-  "lng": 13.35232,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=145957"
-  },
-  "en": {
-   "title": "Reading hour in the library in the Märkischesviertel",
-   "address": "Library in the Märkischesviertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
-   "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Година читання в бібліотеці в Märkischesviertel",
-   "address": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Час чтения в библиотеке в Меркишесфиртеле",
-   "address": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-267751",
   "date": "2026-10-19",
   "start": "16:30",
@@ -2054,6 +1669,65 @@
   "ru": {
    "title": "Час чтения в библиотеке Шеферзее",
    "address": "Библиотека в Шеферзее (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-145957",
+  "date": "2026-10-19",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   8
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59767,
+  "lng": 13.35232,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=145957"
+  },
+  "en": {
+   "title": "Reading hour in the library in the Märkischesviertel",
+   "address": "Library in the Märkischesviertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
+   "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Година читання в бібліотеці в Märkischesviertel",
+   "address": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Час чтения в библиотеке в Меркишесфиртеле",
+   "address": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
    "district": "Райникендорф"
   },
   "autoTranslated": [
@@ -2393,73 +2067,6 @@
   ]
  },
  {
-  "id": "berlin-293533",
-  "date": "2026-10-20",
-  "start": "10:00",
-  "end": "12:00",
-  "title": "Workshop: Mini Podcast in der Bibliothek Lichtenrade",
-  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   7,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.38787,
-  "lng": 13.39715,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293533"
-  },
-  "en": {
-   "title": "Workshop: Mini Podcast in the Lichtenrade library",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "de": {
-   "title": "Workshop: Mini Podcast in der Bibliothek Lichtenrade",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "uk": {
-   "title": "Семінар: міні-подкаст у бібліотеці Lichtenrade",
-   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельгоф-Шенеберг"
-  },
-  "ru": {
-   "title": "Мастер-класс: Мини-подкаст в библиотеке Лихтенраде",
-   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-292141",
   "date": "2026-10-20",
   "start": "10:00",
@@ -2505,6 +2112,73 @@
    "title": "Сделайте свою собственную книжную лампу в библиотеке Шёнеберга",
    "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
    "address": "Библиотека Шёнеберга «Библиотека Теодора Хойсса» (Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"), Hauptstraße 40, 10827 Berlin",
+   "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-293533",
+  "date": "2026-10-20",
+  "start": "10:00",
+  "end": "12:00",
+  "title": "Workshop: Mini Podcast in der Bibliothek Lichtenrade",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   7,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.38787,
+  "lng": 13.39715,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293533"
+  },
+  "en": {
+   "title": "Workshop: Mini Podcast in the Lichtenrade library",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "de": {
+   "title": "Workshop: Mini Podcast in der Bibliothek Lichtenrade",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "uk": {
+   "title": "Семінар: міні-подкаст у бібліотеці Lichtenrade",
+   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Темпельгоф-Шенеберг"
+  },
+  "ru": {
+   "title": "Мастер-класс: Мини-подкаст в библиотеке Лихтенраде",
+   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
    "district": "Темпельхоф-Шёнеберг"
   },
   "autoTranslated": [
@@ -2910,7 +2584,7 @@
   ]
  },
  {
-  "id": "berlin-295087",
+  "id": "berlin-294718",
   "date": "2026-10-20",
   "start": "11:30",
   "end": "",
@@ -2931,7 +2605,7 @@
   "lng": 13.28806,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295087"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294718"
   },
   "en": {
    "title": "Mario Kart tournament during the fall holidays",
@@ -2977,7 +2651,7 @@
   ]
  },
  {
-  "id": "berlin-294718",
+  "id": "berlin-295087",
   "date": "2026-10-20",
   "start": "11:30",
   "end": "",
@@ -2998,7 +2672,7 @@
   "lng": 13.28806,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294718"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295087"
   },
   "en": {
    "title": "Mario Kart tournament during the fall holidays",
@@ -3480,6 +3154,65 @@
   ]
  },
  {
+  "id": "berlin-293299",
+  "date": "2026-10-20",
+  "start": "15:00",
+  "end": "17:00",
+  "title": "Die Abenteuer der ersten Pilotinnen – Workshop und Museumsrallye für Kinder im Museum Treptow, 20.10.2026",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   9,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Museum Treptow, Sterndamm 102, 12487 Berlin",
+  "district": "Treptow-Köpenick",
+  "lat": 52.44353,
+  "lng": 13.50227,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293299"
+  },
+  "en": {
+   "title": "The adventures of the first female pilots - workshop and museum rally for children in the Treptow Museum, October 20, 2026",
+   "address": "Treptow Museum, Sterndamm 102, 12487 Berlin",
+   "district": "Treptow-Köpenick"
+  },
+  "de": {
+   "title": "Die Abenteuer der ersten Pilotinnen – Workshop und Museumsrallye für Kinder im Museum Treptow, 20.10.2026",
+   "address": "Museum Treptow, Sterndamm 102, 12487 Berlin",
+   "district": "Treptow-Köpenick"
+  },
+  "uk": {
+   "title": "Пригоди перших пілотів - майстерня та музейне ралі для дітей у музеї Трептов, 20 жовтня 2026",
+   "address": "Музей Трептов (Museum Treptow), Sterndamm 102, 12487 Berlin",
+   "district": "Трептов-Кьопеник"
+  },
+  "ru": {
+   "title": "Приключения первых женщин-пилотов - мастер-класс и музейный слет для детей в Трептовском музее, 20 октября 2026 г.",
+   "address": "Трептов музей (Museum Treptow), Sterndamm 102, 12487 Berlin",
+   "district": "Трептов-Кёпеник"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-294463",
   "date": "2026-10-20",
   "start": "15:00",
@@ -3539,65 +3272,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-293299",
-  "date": "2026-10-20",
-  "start": "15:00",
-  "end": "17:00",
-  "title": "Die Abenteuer der ersten Pilotinnen – Workshop und Museumsrallye für Kinder im Museum Treptow, 20.10.2026",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   9,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Museum Treptow, Sterndamm 102, 12487 Berlin",
-  "district": "Treptow-Köpenick",
-  "lat": 52.44353,
-  "lng": 13.50227,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293299"
-  },
-  "en": {
-   "title": "The adventures of the first female pilots - workshop and museum rally for children in the Treptow Museum, October 20, 2026",
-   "address": "Treptow Museum, Sterndamm 102, 12487 Berlin",
-   "district": "Treptow-Köpenick"
-  },
-  "de": {
-   "title": "Die Abenteuer der ersten Pilotinnen – Workshop und Museumsrallye für Kinder im Museum Treptow, 20.10.2026",
-   "address": "Museum Treptow, Sterndamm 102, 12487 Berlin",
-   "district": "Treptow-Köpenick"
-  },
-  "uk": {
-   "title": "Пригоди перших пілотів - майстерня та музейне ралі для дітей у музеї Трептов, 20 жовтня 2026",
-   "address": "Музей Трептов (Museum Treptow), Sterndamm 102, 12487 Berlin",
-   "district": "Трептов-Кьопеник"
-  },
-  "ru": {
-   "title": "Приключения первых женщин-пилотов - мастер-класс и музейный слет для детей в Трептовском музее, 20 октября 2026 г.",
-   "address": "Трептов музей (Museum Treptow), Sterndamm 102, 12487 Berlin",
-   "district": "Трептов-Кёпеник"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -5116,6 +4790,254 @@
   "ru": {
    "title": "Кино с картинками",
    "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-292120",
+  "date": "2026-10-21",
+  "start": "10:30",
+  "end": "",
+  "title": "Pünktchen und Anton",
+  "organizer": "Katharina Fial, Puppentheater Fingerleicht",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "paid",
+   "amount": 6,
+   "per": "ticket"
+  },
+  "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45693,
+  "lng": 13.3194,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292120"
+  },
+  "en": {
+   "title": "Pünktchen and Anton",
+   "organizer": "Katharina Fial, puppet theater as easy as fingers",
+   "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "Pünktchen und Anton",
+   "organizer": "Katharina Fial, Puppentheater Fingerleicht",
+   "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "Пюнкхен і Антон",
+   "organizer": "Катаріна Фіал, ляльковий театр простий як пальці (Katharina Fial, Puppentheater Fingerleicht)",
+   "address": "Вілла Шварцше, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "Пюнктхен и Антон",
+   "organizer": "Катарина Фиал, кукольный театр «просто как пальцы» (Katharina Fial, Puppentheater Fingerleicht)",
+   "address": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-289070",
+  "date": "2026-10-21",
+  "start": "11:00",
+  "end": "13:00",
+  "title": "Ferienprogramm: Upcycling",
+  "organizer": "Stadtbibliothek Reinickendorf",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59767,
+  "lng": 13.35232,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289070"
+  },
+  "en": {
+   "title": "Holiday program: Upcycling",
+   "organizer": "Reinickendorf City Library",
+   "address": "Library in the Märkischesviertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Ferienprogramm: Upcycling",
+   "organizer": "Stadtbibliothek Reinickendorf",
+   "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Святкова програма: Upcycling",
+   "organizer": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
+   "address": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Праздничная программа: Апсайклинг",
+   "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
+   "address": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-249334",
+  "date": "2026-10-21",
+  "start": "12:00",
+  "end": "14:00",
+  "title": "Familiencafé in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=249334"
+  },
+  "en": {
+   "title": "Family café in the Ingeborg Drewitz Library",
+   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "Familiencafé in der Ingeborg-Drewitz-Bibliothek",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "Сімейне кафе в бібліотеці Інгеборг Древіц",
+   "address": "Бібліотека Інгеборг Древіц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "Семейное кафе в библиотеке Ингеборги Древиц.",
+   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-242212",
+  "date": "2026-10-21",
+  "start": "13:00",
+  "end": "17:00",
+  "title": "Gamingnachmittag (Nintendo Switch)",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.63567,
+  "lng": 13.4943,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=242212"
+  },
+  "en": {
+   "title": "Gamingnachmittag (Nintendo Switch)",
+   "address": "District library book, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Gamingnachmittag (Nintendo Switch)",
+   "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Gamingnachmittag (Nintendo Switch)",
+   "address": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Gamingnachmittag (Nintendo Switch)",
+   "address": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
    "district": "Панков"
   },
   "autoTranslated": [

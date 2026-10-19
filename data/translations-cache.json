@@ -461,12 +461,6 @@
   "uk": "Ліхтенберг",
   "ru": "Лихтенберг"
  },
- "7f63ad4d3ac9d0e3": {
-  "en": "Spandau",
-  "de": "Spandau",
-  "uk": "Шпандау",
-  "ru": "Шпандау"
- },
  "ca3cbce84f06fced": {
   "en": "America Memorial Library",
   "de": "Amerika-Gedenkbibliothek",
@@ -773,24 +767,6 @@
   "uk": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
   "ru": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)"
  },
- "54703d9e6e0f13ce": {
-  "en": "RUN NOWHERE VERY FAST City Theater Spandau on the citadel",
-  "de": "GANZ SCHNELL NIRGENDWOHIN LAUFEN Stadttheater Spandau auf der Zitadelle",
-  "uk": "БІГАТИ НІКУДИ ДУЖЕ ШВИДКО Міський театр Шпандау на цитаделі",
-  "ru": "БЕГИТЕ НИКУДА ОЧЕНЬ БЫСТРО Городской театр Шпандау на цитадели"
- },
- "24dec11c50a7beeb": {
-  "en": "Department of Culture",
-  "de": "Fachbereich Kultur",
-  "uk": "Управління культури (Fachbereich Kultur)",
-  "ru": "Департамент культуры (Fachbereich Kultur)"
- },
- "d58a89a9cc2f2b5b": {
-  "en": "Spandau Citadel, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "de": "Zitadelle Spandau, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "uk": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "ru": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin"
- },
  "a5d5d6ae755d01b6": {
   "en": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
   "de": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
@@ -809,53 +785,11 @@
   "uk": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
   "ru": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin"
  },
- "3ae664b6bbfe59ca": {
-  "en": "MeerMärchen - About fish, fishermen and the magic of the waves",
-  "de": "MeerMärchen - Von Fischen, Fischern und dem Zauber der Wellen",
-  "uk": "MeerMärchen - Про рибу, рибалок і магію хвиль",
-  "ru": "MeerMärchen - О рыбах, рыбаках и волшебстве волн"
- },
- "f9d00ac2fb21bcfd": {
-  "en": "Image whisperer & animation magician",
-  "de": "Bilderflüsterer & Trickfilm-Zauberer",
-  "uk": "Шепіт зображень і маг анімації",
-  "ru": "Заклинатель изображений и волшебник анимации"
- },
- "3aa15bc6217a9bdc": {
-  "en": "Picture book cinema in the Tempelhof library",
-  "de": "Bilderbuchkino in der Bibliothek Tempelhof",
-  "uk": "Кінотеатр у бібліотеці Tempelhof",
-  "ru": "Кинотеатр с картинками в библиотеке Темпельхоф"
- },
- "966cd5ce3dee174a": {
-  "en": "District Central Library “Eva-Maria-Buch-Haus”",
-  "de": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
-  "uk": "Районна центральна бібліотека «Єва-Марія-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
-  "ru": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)"
- },
  "cfa9293601a3ed9e": {
   "en": "Tempelhof Library “Eva-Maria-Buch-Haus”, Götzstr. 8-12, 12099 Berlin",
   "de": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
   "uk": "Темпельгофська бібліотека «Дім Єви Марії Бух» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
   "ru": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin"
- },
- "1d0bca13f563516b": {
-  "en": "12th Carl Bechstein Competition for Young Musicians | Final concert",
-  "de": "12. Carl Bechstein Wettbewerb für junge Musiker:innen | Abschlusskonzert",
-  "uk": "12-й Конкурс молодих музикантів імені Карла Бехштейна | Фінальний концерт",
-  "ru": "12-й конкурс молодых музыкантов имени Карла Бехштейна | Заключительный концерт"
- },
- "54cf6dd3c73ee4b5": {
-  "en": "Britz Castle Cultural Foundation",
-  "de": "Kulturstiftung Schloss Britz",
-  "uk": "Культурний фонд замку Бріц (Kulturstiftung Schloss Britz)",
-  "ru": "Культурный фонд замка Бритц (Kulturstiftung Schloss Britz)"
- },
- "c7be19e9c47b3d93": {
-  "en": "Gutshof Schloss Britz - cultural stable, Alt-Britz 81, 12359 Berlin",
-  "de": "Gutshof Schloss Britz - Kulturstall, Alt-Britz 81, 12359 Berlin",
-  "uk": "Gutshof Schloss Britz - культурна конюшня (Gutshof Schloss Britz - Kulturstall), Alt-Britz 81, 12359 Berlin",
-  "ru": "Gutshof Schloss Britz - культурная конюшня (Gutshof Schloss Britz - Kulturstall), Alt-Britz 81, 12359 Berlin"
  },
  "0cd1c0a5f66fb741": {
   "en": "Holiday project: design meets making",
@@ -1360,5 +1294,47 @@
   "de": "Ozobot Stadt | Robotik für Kinder",
   "uk": "Місто Озобот | Робототехніка для дітей",
   "ru": "Озобот Сити | Робототехника для детей"
+ },
+ "dfe9f4a5510b82b8": {
+  "en": "Pünktchen and Anton",
+  "de": "Pünktchen und Anton",
+  "uk": "Пюнкхен і Антон",
+  "ru": "Пюнктхен и Антон"
+ },
+ "04cc4b875be28a8b": {
+  "en": "Katharina Fial, puppet theater as easy as fingers",
+  "de": "Katharina Fial, Puppentheater Fingerleicht",
+  "uk": "Катаріна Фіал, ляльковий театр простий як пальці (Katharina Fial, Puppentheater Fingerleicht)",
+  "ru": "Катарина Фиал, кукольный театр «просто как пальцы» (Katharina Fial, Puppentheater Fingerleicht)"
+ },
+ "839dc6ad9e9ca0af": {
+  "en": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "de": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "uk": "Вілла Шварцше, Grunewaldstraße 55, 12165 Berlin",
+  "ru": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin"
+ },
+ "e9a1d7b2d0d26cc4": {
+  "en": "Holiday program: Upcycling",
+  "de": "Ferienprogramm: Upcycling",
+  "uk": "Святкова програма: Upcycling",
+  "ru": "Праздничная программа: Апсайклинг"
+ },
+ "3be77789d12b2cd0": {
+  "en": "Family café in the Ingeborg Drewitz Library",
+  "de": "Familiencafé in der Ingeborg-Drewitz-Bibliothek",
+  "uk": "Сімейне кафе в бібліотеці Інгеборг Древіц",
+  "ru": "Семейное кафе в библиотеке Ингеборги Древиц."
+ },
+ "deece4217286f747": {
+  "en": "Gamingnachmittag (Nintendo Switch)",
+  "de": "Gamingnachmittag (Nintendo Switch)",
+  "uk": "Gamingnachmittag (Nintendo Switch)",
+  "ru": "Gamingnachmittag (Nintendo Switch)"
+ },
+ "17bd923790ba2c34": {
+  "en": "District library book, Wiltbergstraße 19, 13125 Berlin",
+  "de": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "uk": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+  "ru": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin"
  }
 }
