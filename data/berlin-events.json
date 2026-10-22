@@ -639,70 +639,6 @@
   ]
  },
  {
-  "id": "berlin-292492",
-  "date": "2026-10-22",
-  "start": "14:00",
-  "end": "16:45",
-  "title": "Ferienangebot: 2-tägiger Workshop \"Achtsames Zeichnen\"",
-  "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Bettina-von-Arnim-Bibliothek, Schönhauser Allee 75, 10439 Berlin",
-  "district": "Pankow",
-  "lat": 52.54921,
-  "lng": 13.41414,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=292492"
-  },
-  "en": {
-   "title": "Holiday offer: 2-day workshop “Mindful Drawing”",
-   "organizer": "Bettina von Arnim Library, Office for Further Education and Culture",
-   "address": "Bettina von Arnim Library, Schönhauser Allee 75, 10439 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Ferienangebot: 2-tägiger Workshop \"Achtsames Zeichnen\"",
-   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
-   "address": "Bettina-von-Arnim-Bibliothek, Schönhauser Allee 75, 10439 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Святкова пропозиція: 2-денний майстер-клас «Усвідомлене малювання»",
-   "organizer": "Бібліотека Беттіни фон Арнім, Управління додаткової освіти та культури (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
-   "address": "Бібліотека Беттіни фон Арнім (Bettina-von-Arnim-Bibliothek), Schönhauser Allee 75, 10439 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Праздничное предложение: 2-дневный мастер-класс «Осознанное рисование»",
-   "organizer": "Библиотека Беттины фон Арним, Управление дальнейшего образования и культуры (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
-   "address": "Библиотека Беттины фон Арним (Bettina-von-Arnim-Bibliothek), Schönhauser Allee 75, 10439 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-293536",
   "date": "2026-10-22",
   "start": "14:00",
@@ -749,6 +685,70 @@
    "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
    "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
    "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-292492",
+  "date": "2026-10-22",
+  "start": "14:00",
+  "end": "16:45",
+  "title": "Ferienangebot: 2-tägiger Workshop \"Achtsames Zeichnen\"",
+  "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Bettina-von-Arnim-Bibliothek, Schönhauser Allee 75, 10439 Berlin",
+  "district": "Pankow",
+  "lat": 52.54921,
+  "lng": 13.41414,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292492"
+  },
+  "en": {
+   "title": "Holiday offer: 2-day workshop “Mindful Drawing”",
+   "organizer": "Bettina von Arnim Library, Office for Further Education and Culture",
+   "address": "Bettina von Arnim Library, Schönhauser Allee 75, 10439 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Ferienangebot: 2-tägiger Workshop \"Achtsames Zeichnen\"",
+   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
+   "address": "Bettina-von-Arnim-Bibliothek, Schönhauser Allee 75, 10439 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Святкова пропозиція: 2-денний майстер-клас «Усвідомлене малювання»",
+   "organizer": "Бібліотека Беттіни фон Арнім, Управління додаткової освіти та культури (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
+   "address": "Бібліотека Беттіни фон Арнім (Bettina-von-Arnim-Bibliothek), Schönhauser Allee 75, 10439 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Праздничное предложение: 2-дневный мастер-класс «Осознанное рисование»",
+   "organizer": "Библиотека Беттины фон Арним, Управление дальнейшего образования и культуры (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
+   "address": "Библиотека Беттины фон Арним (Bettina-von-Arnim-Bibliothek), Schönhauser Allee 75, 10439 Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
@@ -1406,65 +1406,6 @@
   ]
  },
  {
-  "id": "berlin-293965",
-  "date": "2026-10-22",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Familien-Tüftel-Donnerstag im Märker Space",
-  "organizer": "",
-  "category": "stem",
-  "format": "in-person",
-  "ages": [
-   6,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59767,
-  "lng": 13.35232,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293965"
-  },
-  "en": {
-   "title": "Family Tinkering Thursday at Märker Space",
-   "address": "Library in the Märkischesviertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Familien-Tüftel-Donnerstag im Märker Space",
-   "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Сімейний четвер у Märker Space",
-   "address": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Семейные мастер-классы в четверг в Märker Space",
-   "address": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
-   "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-295084",
   "date": "2026-10-22",
   "start": "16:00",
@@ -1524,6 +1465,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-293965",
+  "date": "2026-10-22",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Familien-Tüftel-Donnerstag im Märker Space",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59767,
+  "lng": 13.35232,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293965"
+  },
+  "en": {
+   "title": "Family Tinkering Thursday at Märker Space",
+   "address": "Library in the Märkischesviertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Familien-Tüftel-Donnerstag im Märker Space",
+   "address": "Bibliothek im Märkischen Viertel, Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Сімейний четвер у Märker Space",
+   "address": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Семейные мастер-классы в четверг в Märker Space",
+   "address": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3369,6 +3369,73 @@
    "organizer": "Лингулино – детский театр на ходу (Lingulino - Kindertheater unterwegs)",
    "address": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin",
    "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-296585",
+  "date": "2026-10-23",
+  "start": "12:00",
+  "end": "14:00",
+  "title": "Krabbelgruppe „Büchermäuse“",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   2
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51455,
+  "lng": 13.294,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296585"
+  },
+  "en": {
+   "title": "“Book mice” crawling group",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Ingeborg Bachmann Library (West District Library), Nehringstr. 10, 14059 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Krabbelgruppe „Büchermäuse“",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Група повзання «Книжкові миші».",
+   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Бібліотека Інгеборг Бахманн (Бібліотека Західного округу) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Ползущая группа «Книжные мыши»",
+   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Библиотека Ингеборги Бахманн (Библиотека Западного округа) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
    "en.title",
