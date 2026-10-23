@@ -291,5 +291,13 @@
  "Adalbertstraße 2, 10999 Berlin": {
   "lat": 52.49983,
   "lng": 13.4185
+ },
+ "Frankfurter Allee 149, 10365 Berlin": {
+  "lat": 52.51335,
+  "lng": 13.48103
+ },
+ "Hardenbergplatz 8, 10787 Berlin": {
+  "lat": 52.50612,
+  "lng": 13.34034
  }
 }

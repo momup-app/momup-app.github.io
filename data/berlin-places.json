@@ -69,7 +69,7 @@
   "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
   "district": "Steglitz-Zehlendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "223170": {
   "place": "Humboldt-Bibliothek Tegel",
@@ -107,6 +107,15 @@
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bruno-loesche-bibliothek/",
   "seen": "2026-10-12"
  },
+ "233203": {
+  "place": "Bruno-Lösche-Bibliothek",
+  "street": "Perleberger Str. 33",
+  "city": "10559 Berlin",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "district": "Mitte",
+  "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bruno-loesche-bibliothek/",
+  "seen": "2026-10-23"
+ },
  "233278": {
   "place": "Bibliothek am Luisenbad",
   "street": "Badstraße 39",
@@ -132,7 +141,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/kurt-tucholsky-bibliothek/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "236278": {
   "place": "Stadtteilzentrum Kaulsdorf",
@@ -186,7 +195,7 @@
   "organizer": "Gottfried-Benn-Bibliothek",
   "district": "Steglitz-Zehlendorf",
   "homepage": "https://www.berlin.de/stadtbibliothek-steglitz-zehlendorf/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "239053": {
   "place": "Gottfried-Benn-Bibliothek",
@@ -204,7 +213,7 @@
   "organizer": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen",
   "district": "Lichtenberg",
   "homepage": "",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "241693": {
   "place": "Heinrich-Böll-Bibliothek",
@@ -249,7 +258,7 @@
   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "242092": {
   "place": "Bibliothek am Wasserturm",
@@ -258,7 +267,7 @@
   "organizer": "Bibliothek am Wasserturm",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "242110": {
   "place": "Heinrich-Böll-Bibliothek",
@@ -357,7 +366,7 @@
   "organizer": "Stadtteilbibliothek Lankwitz",
   "district": "Steglitz-Zehlendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "252103": {
   "place": "Egon-Erwin-Kisch-Bibliothek",
@@ -366,7 +375,7 @@
   "organizer": "Egon-Erwin-Kisch-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "253261": {
   "place": "Tierpark Berlin",
@@ -375,7 +384,7 @@
   "organizer": "Tierpark Berlin-Friedrichsfelde GmbH",
   "district": "Lichtenberg",
   "homepage": "https://shop.tierpark-berlin.de/de/article/370",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "253657": {
   "place": "Humboldt-Bibliothek Tegel",
@@ -393,7 +402,16 @@
   "organizer": "Humboldt-Bibliothek",
   "district": "Reinickendorf",
   "homepage": "https://www.berlin.de/stadtbibliothek-reinickendorf/aktuelles/veranstaltungen/artikel.1259613.php#Samstag",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
+ },
+ "254893": {
+  "place": "Egon-Erwin-Kisch-Bibliothek",
+  "street": "Frankfurter Allee 149",
+  "city": "10365 Berlin",
+  "organizer": "Egon-Erwin-Kisch-Bibliothek",
+  "district": "Lichtenberg",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "256159": {
   "place": "Ingeborg-Drewitz-Bibliothek",
@@ -429,7 +447,7 @@
   "organizer": "Stadtbibliothek Neukölln",
   "district": "Neukölln",
   "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "265483": {
   "place": "Bodo-Uhse-Bibliothek",
@@ -456,7 +474,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bibliothek-am-luisenbad/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "266311": {
   "place": "Bibliothek Tiergarten-Süd",
@@ -510,7 +528,7 @@
   "organizer": "Stadtteilbibliothek Frohnau",
   "district": "Reinickendorf",
   "homepage": "https://www.berlin.de/stadtbibliothek-reinickendorf/lesen-lernen/artikel.1208986.php#Vorlesestunden",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "267751": {
   "place": "Bibliothek am Schäfersee",
@@ -537,7 +555,7 @@
   "organizer": "Humboldt-Bibliothek",
   "district": "Reinickendorf",
   "homepage": "https://www.berlin.de/stadtbibliothek-reinickendorf/angebote/regelmaessige-veranstaltungen/artikel.1622723.php#Humboldt",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "268666": {
   "place": "Bettina-von-Arnim-Bibliothek",
@@ -555,7 +573,7 @@
   "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
   "district": "Tempelhof-Schöneberg",
   "homepage": "http://www.stb-tempelhof-schoeneberg.de",
-  "seen": "2026-10-18"
+  "seen": "2026-10-23"
  },
  "269152": {
   "place": "Gertrud-Haß-Bibliothek",
@@ -573,7 +591,7 @@
   "organizer": "Familienbüro Lichtenberg",
   "district": "Lichtenberg",
   "homepage": "https://familienbuero-lichtenberg.de/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "270247": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
@@ -582,7 +600,7 @@
   "organizer": "Wolfdietrich-Schnurre-Bibliothek",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-12"
+  "seen": "2026-10-23"
  },
  "270280": {
   "place": "Stadtteilbibliothek Buch",
@@ -636,7 +654,7 @@
   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
   "district": "Tempelhof-Schöneberg",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "272005": {
   "place": "Ingeborg-Drewitz-Bibliothek",
@@ -656,6 +674,15 @@
   "homepage": "",
   "seen": "2026-10-22"
  },
+ "272737": {
+  "place": "Kurt-Tucholsky-Bibliothek",
+  "street": "Esmarchstraße 18",
+  "city": "10407 Berlin",
+  "organizer": "Amt für Weiterbildung und Kultur, Kurt-Tucholsky-Bibliothek",
+  "district": "Pankow",
+  "homepage": "https://kiezundkurt.de/",
+  "seen": "2026-10-23"
+ },
  "273964": {
   "place": "Bibliothek am Luisenbad",
   "street": "Badstraße 39",
@@ -663,7 +690,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bibliothek-am-luisenbad/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "274156": {
   "place": "Stadtteilzentrum Kaulsdorf",
@@ -708,7 +735,7 @@
   "organizer": "Mittelpunktbibliothek \"Ehm Welk\"",
   "district": "Marzahn-Hellersdorf",
   "homepage": "https://www.berlin.de/bibliotheken-mh/angebote/makerspace-in-der-ehm-welk-bibliothek-1601014.php",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "275908": {
   "place": "Ingeborg-Drewitz-Bibliothek",
@@ -726,7 +753,7 @@
   "organizer": "Anton-Saefkow-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-lichtenberg/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "276085": {
   "place": "Heinrich-Schulz- Bibliothek",
@@ -762,7 +789,7 @@
   "organizer": "Amt für Weiterbildung und Kultur, Kurt-Tucholsky-Bibliothek",
   "district": "Pankow",
   "homepage": "https://kiezundkurt.de/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "276751": {
   "place": "Bibliothek Tiergarten-Süd",
@@ -798,7 +825,7 @@
   "organizer": "Eberhard-Alexander-Burgh-Bibliothek",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "277420": {
   "place": "Kulturhaus Spandau | Theatersaal",
@@ -843,7 +870,7 @@
   "organizer": "Familienzentrum Zukunftshaus Wedding",
   "district": "Mitte",
   "homepage": "http://www.pgssoziales.de",
-  "seen": "2026-10-11"
+  "seen": "2026-10-23"
  },
  "279667": {
   "place": "Bibliothek Lichtenrade",
@@ -861,7 +888,7 @@
   "organizer": "Jugendamt Berlin-Lichtenberg",
   "district": "Lichtenberg",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "281566": {
   "place": "Gertrud-Haß-Bibliothek",
@@ -933,7 +960,7 @@
   "organizer": "Heinrich-Böll-Bibliothek",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "284641": {
   "place": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)",
@@ -1023,7 +1050,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/schiller-bibliothek-mit-hugojugendmedienetage/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "285673": {
   "place": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen",
@@ -1033,6 +1060,15 @@
   "district": "Lichtenberg",
   "homepage": "",
   "seen": "2026-10-19"
+ },
+ "286027": {
+  "place": "Bibliothek am Wasserturm",
+  "street": "Prenzlauer Allee 227-228",
+  "city": "10405 Berlin Berlin",
+  "organizer": "Bibliothek am Wasserturm",
+  "district": "Pankow",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "286360": {
   "place": "PETRI Berlin",
@@ -1149,7 +1185,7 @@
   "organizer": "Bibliothek am Wasserturm",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "287890": {
   "place": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)",
@@ -1194,7 +1230,7 @@
   "organizer": "Stadtbibliothek Neukölln",
   "district": "Neukölln",
   "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/gertrud-junge-bibliothek/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "288437": {
   "place": "Bodo-Uhse-Bibliothek",
@@ -1204,6 +1240,15 @@
   "district": "Lichtenberg",
   "homepage": "",
   "seen": "2026-10-20"
+ },
+ "288521": {
+  "place": "Stadtteilbibliothek Karow",
+  "street": "Achillesstraße 77",
+  "city": "13125 Berlin",
+  "organizer": "Stadtteilbibliothek Karow",
+  "district": "Pankow",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "288794": {
   "place": "Stadtteilbibliothek Karow",
@@ -1221,7 +1266,7 @@
   "organizer": "Fachbereich Kultur",
   "district": "Spandau",
   "homepage": "https://stadttheater-spandau.de/produktion/ganz-schnell-nirgendwohin-laufen",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289055": {
   "place": "Stadtteilbibliothek Reinickendorf- West",
@@ -1248,7 +1293,7 @@
   "organizer": "Stadtbibliothek Reinickendorf",
   "district": "Reinickendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289070": {
   "place": "Bibliothek im Märkischen Viertel",
@@ -1266,7 +1311,7 @@
   "organizer": "Humboldt-Bibliothek",
   "district": "Reinickendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289088": {
   "place": "Stadtteilbibliothek Reinickendorf- West",
@@ -1275,7 +1320,7 @@
   "organizer": "Stadtbibliothek Reinickendorf",
   "district": "Reinickendorf",
   "homepage": "https://www.berlin.de/stadtbibliothek-reinickendorf/bibliotheken/stadtteilbibliothek-reinickendorf-west/veranstaltungen-in-der-stadtteilbibliothek-reinickendorf-west/artikel.1113997.php",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "289115": {
   "place": "Philipp-Schaeffer-Bibliothek",
@@ -1347,7 +1392,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289700": {
   "place": "Anton-Saefkow-Bibliothek",
@@ -1356,7 +1401,7 @@
   "organizer": "Anton-Saefkow-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-lichtenberg/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289787": {
   "place": "Heinrich-Schulz- Bibliothek",
@@ -1365,7 +1410,7 @@
   "organizer": "Heinrich-Schulz- Bibliothek",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "289799": {
   "place": "Schiller-Bibliothek",
@@ -1421,6 +1466,15 @@
   "homepage": "",
   "seen": "2026-10-18"
  },
+ "290075": {
+  "place": "Heinrich-Schulz- Bibliothek",
+  "street": "Otto-Suhr-Allee 98",
+  "city": "10585 Berlin",
+  "organizer": "Heinrich-Schulz- Bibliothek",
+  "district": "Charlottenburg-Wilmersdorf",
+  "homepage": "",
+  "seen": "2026-10-23"
+ },
  "290807": {
   "place": "Bibliothek am Wasserturm",
   "street": "Prenzlauer Allee 227-228",
@@ -1446,7 +1500,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-12"
+  "seen": "2026-10-23"
  },
  "291101": {
   "place": "Amerika-Gedenkbibliothek der ZLB",
@@ -1455,7 +1509,7 @@
   "organizer": "Amerika-Gedenkbibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.zlb.de/suchergebnisse/?tx_solr%5Bq%5D=robo+werkstatt#searched-for",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291146": {
   "place": "Humboldt-Bibliothek Tegel",
@@ -1464,7 +1518,7 @@
   "organizer": "Stadtbibliothek Reinickendorf",
   "district": "Reinickendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291149": {
   "place": "Humboldt-Bibliothek Tegel",
@@ -1484,6 +1538,15 @@
   "homepage": "",
   "seen": "2026-10-22"
  },
+ "291164": {
+  "place": "Humboldt-Bibliothek Tegel",
+  "street": "Karolinenstraße 19",
+  "city": "13507 Berlin",
+  "organizer": "Stadtbibliothek Reinickendorf",
+  "district": "Reinickendorf",
+  "homepage": "",
+  "seen": "2026-10-23"
+ },
  "291182": {
   "place": "Ingeborg-Drewitz-Bibliothek",
   "street": "Grunewaldstr. 3",
@@ -1492,6 +1555,15 @@
   "district": "Steglitz-Zehlendorf",
   "homepage": "",
   "seen": "2026-10-15"
+ },
+ "291194": {
+  "place": "Ingeborg-Drewitz-Bibliothek",
+  "street": "Grunewaldstr. 3",
+  "city": "12165 Berlin",
+  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+  "district": "Steglitz-Zehlendorf",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "291217": {
   "place": "Amerika-Gedenkbibliothek der ZLB",
@@ -1509,7 +1581,7 @@
   "organizer": "Amerika-Gedenkbibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.zlb.de/suchergebnisse/?tx_solr%5Bq%5D=Level-Design+mit+Mario+Maker#searched-for",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291235": {
   "place": "Pablo-Neruda-Bibliothek",
@@ -1536,7 +1608,7 @@
   "organizer": "Amerika-Gedenkbibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.zlb.de/suchergebnisse/?tx_solr%5Bq%5D=Wortsch%C3%A4tze#searched-for",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291502": {
   "place": "Amerika-Gedenkbibliothek der ZLB",
@@ -1545,7 +1617,7 @@
   "organizer": "Amerika-Gedenkbibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.zlb.de/suchergebnisse/?tx_solr%5Bq%5D=Kuscheltier-%C3%9Cbernachtung#searched-for",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291505": {
   "place": "Amerika-Gedenkbibliothek der ZLB",
@@ -1554,7 +1626,7 @@
   "organizer": "Amerika-Gedenkbibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.zlb.de/veranstaltungsuebersicht/margit-auer-liesst-die-schule-der-magischen-tiere/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291520": {
   "place": "Bezirkszentralbibliothek Pablo Neruda",
@@ -1581,7 +1653,25 @@
   "organizer": "Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
+ },
+ "291574": {
+  "place": "Bezirkszentralbibliothek Pablo Neruda",
+  "street": "Frankfurter Allee 14A",
+  "city": "10247 Berlin",
+  "organizer": "Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek",
+  "district": "Friedrichshain-Kreuzberg",
+  "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/",
+  "seen": "2026-10-23"
+ },
+ "291655": {
+  "place": "Zoo Berlin",
+  "street": "Hardenbergplatz 8",
+  "city": "10787 Berlin",
+  "organizer": "Zoo Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "homepage": "https://shop.zoo-berlin.de/de/article/698",
+  "seen": "2026-10-23"
  },
  "291661": {
   "place": "Stadtteilbibliothek Halemweg",
@@ -1590,7 +1680,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291664": {
   "place": "Dietrich-Bonhoeffer-Bibliothek",
@@ -1599,7 +1689,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291667": {
   "place": "Eberhard-Alexander-Burgh-Bibliothek",
@@ -1608,7 +1698,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291865": {
   "place": "Philipp-Schaeffer-Bibliothek",
@@ -1626,7 +1716,7 @@
   "organizer": "Mittelpunktbibliothek Wilhelm Liebknecht / Namik Kemal",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291931": {
   "place": "Mittelpunktbibliothek Adalbertstraße Wilhelm-Liebknecht-/Namik-Kemal-Bibliothek",
@@ -1635,7 +1725,7 @@
   "organizer": "Mittelpunktbibliothek Wilhelm Liebknecht / Namik Kemal",
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "291943": {
   "place": "Kiezanker 36 Familien und Nachbarschaftszentrum",
@@ -1725,7 +1815,7 @@
   "organizer": "Lingulino - Kindertheater unterwegs",
   "district": "Steglitz-Zehlendorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "292141": {
   "place": "Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"",
@@ -1763,6 +1853,15 @@
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bruno-loesche-bibliothek/",
   "seen": "2026-10-15"
  },
+ "292345": {
+  "place": "Margarete-Kubicka-Bibliothek",
+  "street": "Gutschmidtstr. 33",
+  "city": "12359 Berlin",
+  "organizer": "Stadtbibliothek Neukölln",
+  "district": "Neukölln",
+  "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/margarete-kubicka-bibliothek/",
+  "seen": "2026-10-23"
+ },
  "292414": {
   "place": "Bibliothek am Luisenbad",
   "street": "Badstraße 39",
@@ -1779,7 +1878,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bibliothek-am-luisenbad/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "292429": {
   "place": "Bibliothek am Wasserturm",
@@ -1817,6 +1916,15 @@
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bezirkszentralbibliothek-philipp-schaeffer/",
   "seen": "2026-10-20"
  },
+ "292465": {
+  "place": "Philipp-Schaeffer-Bibliothek",
+  "street": "Brunnenstr. 181",
+  "city": "10119 Berlin",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "district": "Mitte",
+  "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bezirkszentralbibliothek-philipp-schaeffer/",
+  "seen": "2026-10-23"
+ },
  "292492": {
   "place": "Bettina-von-Arnim-Bibliothek",
   "street": "Schönhauser Allee 75",
@@ -1842,7 +1950,7 @@
   "organizer": "Wolfdietrich-Schnurre-Bibliothek",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-19"
+  "seen": "2026-10-23"
  },
  "292579": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
@@ -1869,7 +1977,7 @@
   "organizer": "Egon-Erwin-Kisch-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "292831": {
   "place": "Egon-Erwin-Kisch-Bibliothek",
@@ -1932,7 +2040,7 @@
   "organizer": "Stadtbibliothek Neukölln",
   "district": "Neukölln",
   "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/bezirkszentralbibliothek-helene-nathan-bibliothek/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "293242": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
@@ -1986,7 +2094,7 @@
   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
   "district": "Tempelhof-Schöneberg",
   "homepage": "https://app.cituro.com/go/3758846/lichtenrade",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "293614": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
@@ -1995,7 +2103,7 @@
   "organizer": "Wolfdietrich-Schnurre-Bibliothek",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "293656": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
@@ -2022,7 +2130,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/schiller-bibliothek-mit-hugojugendmedienetage/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "293884": {
   "place": "Bibliothek am Wasserturm",
@@ -2032,6 +2140,15 @@
   "district": "Pankow",
   "homepage": "",
   "seen": "2026-10-17"
+ },
+ "293941": {
+  "place": "Gertrud-Haß-Bibliothek",
+  "street": "Alt-Rudow 45",
+  "city": "12357 Berlin",
+  "organizer": "Stadtbibliothek Neukölln",
+  "district": "Neukölln",
+  "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/gertrud-hass-bibliothek/",
+  "seen": "2026-10-23"
  },
  "293965": {
   "place": "Bibliothek im Märkischen Viertel",
@@ -2058,7 +2175,7 @@
   "organizer": "Bibliothek am Wasserturm",
   "district": "Pankow",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "294097": {
   "place": "Bettina-von-Arnim-Bibliothek",
@@ -2076,7 +2193,7 @@
   "organizer": "Anton-Saefkow-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-lichtenberg/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "294403": {
   "place": "Janusz- Korczak-Bibliothek",
@@ -2112,7 +2229,16 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
+ },
+ "294496": {
+  "place": "Dietrich-Bonhoeffer-Bibliothek",
+  "street": "Brandenburgische Str. 2",
+  "city": "10713 Berlin",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "district": "Charlottenburg-Wilmersdorf",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "294532": {
   "place": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)",
@@ -2132,6 +2258,15 @@
   "homepage": "http://www.stb-tempelhof-schoeneberg.de ",
   "seen": "2026-10-19"
  },
+ "294547": {
+  "place": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"",
+  "street": "Götzstr. 8-12",
+  "city": "12099 Berlin",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "district": "Tempelhof-Schöneberg",
+  "homepage": "http://www.stb-tempelhof-schoeneberg.de ",
+  "seen": "2026-10-23"
+ },
  "294607": {
   "place": "Schiller-Bibliothek",
   "street": "Müllerstraße 149",
@@ -2139,7 +2274,7 @@
   "organizer": "Stadtbibliothek Berlin-Mitte",
   "district": "Mitte",
   "homepage": "https://www.berlin.de/stadtbibliothek-mitte/bibliotheken/schiller-bibliothek-mit-hugojugendmedienetage/",
-  "seen": "2026-10-20"
+  "seen": "2026-10-23"
  },
  "294610": {
   "place": "Helene-Nathan-Bibliothek",
@@ -2157,7 +2292,7 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "294646": {
   "place": "Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"",
@@ -2265,7 +2400,7 @@
   "organizer": "Stadtbibliothek Neukölln",
   "district": "Neukölln",
   "homepage": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/bezirkszentralbibliothek-helene-nathan-bibliothek/",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
  },
  "295538": {
   "place": "Familienbibliothek Else Ury",
@@ -2292,7 +2427,16 @@
   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
   "district": "Marzahn-Hellersdorf",
   "homepage": "https://www.berlin.de/bibliotheken-mh/aktuelles/veranstaltungen/aktionswoche-zum-tag-der-bibliotheken-2026-1725714.php",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
+ },
+ "296534": {
+  "place": "Heinrich-Schulz- Bibliothek",
+  "street": "Otto-Suhr-Allee 98",
+  "city": "10585 Berlin",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "district": "Charlottenburg-Wilmersdorf",
+  "homepage": "",
+  "seen": "2026-10-23"
  },
  "296585": {
   "place": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)",
@@ -2301,6 +2445,24 @@
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
   "district": "Charlottenburg-Wilmersdorf",
   "homepage": "",
-  "seen": "2026-10-22"
+  "seen": "2026-10-23"
+ },
+ "296606": {
+  "place": "Bodo-Uhse-Bibliothek",
+  "street": "Erich-Kurz-Str. 9",
+  "city": "10319 Berlin",
+  "organizer": "Bodo-Uhse-Bibliothek",
+  "district": "Lichtenberg",
+  "homepage": "",
+  "seen": "2026-10-23"
+ },
+ "296615": {
+  "place": "Bodo-Uhse-Bibliothek",
+  "street": "Erich-Kurz-Str. 9",
+  "city": "10319 Berlin",
+  "organizer": "Bodo-Uhse-Bibliothek",
+  "district": "Lichtenberg",
+  "homepage": "https://www.berlin.de/stadtbibliothek-lichtenberg",
+  "seen": "2026-10-23"
  }
 }
