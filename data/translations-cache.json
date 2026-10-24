@@ -545,12 +545,6 @@
   "uk": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
   "ru": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)"
  },
- "ffc776b5f2a1dab3": {
-  "en": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "de": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "uk": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "ru": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin"
- },
  "496a686554a2b9da": {
   "en": "Tempelhof-Schöneberg",
   "de": "Tempelhof-Schöneberg",
@@ -611,23 +605,11 @@
   "uk": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
   "ru": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)"
  },
- "8287688e4e5ab25d": {
-  "en": "Gertrud Junge Library, Bat-Yam-Platz 1, 12353 Berlin",
-  "de": "Gertrud-Junge-Bibliothek, Bat-Yam-Platz 1, 12353 Berlin",
-  "uk": "Бібліотека Гертруди Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin",
-  "ru": "Библиотека Гертруды Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin"
- },
  "aea4e19d212c7867": {
   "en": "Neukölln",
   "de": "Neukölln",
   "uk": "Neukölln",
   "ru": "Нойкёльн"
- },
- "3731204d9285a47a": {
-  "en": "Gottfried Benn Library, Nentershäuser Platz 1, 14163 Berlin",
-  "de": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
-  "uk": "Бібліотека Готфріда Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
-  "ru": "Библиотека Готфрида Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin"
  },
  "c390741bd0638b0e": {
   "en": "Picture book cinema",
@@ -670,18 +652,6 @@
   "de": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
   "uk": "Бібліотека Дітріха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
   "ru": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin"
- },
- "d352fdd15cf2ff4c": {
-  "en": "Halemweg district library, Halemweg 18, 13627 Berlin",
-  "de": "Stadtteilbibliothek Halemweg, Halemweg 18, 13627 Berlin",
-  "uk": "Районна бібліотека Халемвег (Stadtteilbibliothek Halemweg), Halemweg 18, 13627 Berlin",
-  "ru": "Районная библиотека Халемвега (Stadtteilbibliothek Halemweg), Halemweg 18, 13627 Berlin"
- },
- "3189fcb7cf77b5dc": {
-  "en": "Schöneberg Library “Theodor Heuss Library”, Hauptstraße 40, 10827 Berlin",
-  "de": "Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\", Hauptstraße 40, 10827 Berlin",
-  "uk": "Бібліотека Шенеберга «Бібліотека Теодора Гайсса» (Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"), Hauptstraße 40, 10827 Berlin",
-  "ru": "Библиотека Шёнеберга «Библиотека Теодора Хойсса» (Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\"), Hauptstraße 40, 10827 Berlin"
  },
  "e87d02020ced2161": {
   "en": "Reinickendorf City Library",
@@ -737,24 +707,6 @@
   "uk": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
   "ru": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin"
  },
- "296e691113a0b0cc": {
-  "en": "Eberhard Alexander Burgh Library, Rüdesheimer Str. 14, 14197 Berlin",
-  "de": "Eberhard-Alexander-Burgh-Bibliothek, Rüdesheimer Str. 14, 14197 Berlin",
-  "uk": "Бібліотека Еберхарда Олександра Берга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin",
-  "ru": "Библиотека Эберхарда Александра Бурга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin"
- },
- "a4f5b70bb242227a": {
-  "en": "Level-Design mit Mario Maker | Gaming Workshop",
-  "de": "Level-Design mit Mario Maker | Gaming-Workshop",
-  "uk": "Дизайн рівнів з Mario Maker | Ігрова майстерня",
-  "ru": "Дизайн уровней с Mario Maker | Игровая мастерская"
- },
- "839dc6ad9e9ca0af": {
-  "en": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
-  "de": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
-  "uk": "Вілла Шварцше, Grunewaldstraße 55, 12165 Berlin",
-  "ru": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin"
- },
  "ef958879f171085c": {
   "en": "Robo workshop | Coding for kids",
   "de": "Robo-Werkstatt | Coding für Kinder",
@@ -791,12 +743,6 @@
   "uk": "Бібліотека Курта Тухольського (Kurt-Tucholsky-Bibliothek), Esmarchstraße 18, 10407 Berlin",
   "ru": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Esmarchstraße 18, 10407 Berlin"
  },
- "2f5b2991f661ca2e": {
-  "en": "LEGO® time",
-  "de": "LEGO® Zeit",
-  "uk": "Час LEGO®",
-  "ru": "LEGO® время"
- },
  "952583fa23e5dfa2": {
   "en": "Lankwitz district library, Bruchwitzstrasse 37, 12247 Berlin",
   "de": "Stadtteilbibliothek Lankwitz, Bruchwitzstrasse 37, 12247 Berlin",
@@ -808,30 +754,6 @@
   "de": "Stadtteilbibliothek Reinickendorf- West, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
   "uk": "Райнікендорф-Західна районна бібліотека (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
   "ru": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin"
- },
- "06d488b40e99ba85": {
-  "en": "Mobile family office - advice for parents and children",
-  "de": "Mobiles Familienbüro - Beratung für Eltern und Kinder",
-  "uk": "Мобільний сімейний офіс - поради батькам і дітям",
-  "ru": "Мобильный семейный офис – советы родителям и детям"
- },
- "25fb1609c63b4204": {
-  "en": "Lichtenberg family office",
-  "de": "Familienbüro Lichtenberg",
-  "uk": "Сімейний офіс Ліхтенбергів (Familienbüro Lichtenberg)",
-  "ru": "Семейный офис Лихтенбергов (Familienbüro Lichtenberg)"
- },
- "c26a740799c35bd1": {
-  "en": "Workshop: Talking poster in the Lichtenrade library",
-  "de": "Workshop: Sprechendes Plakat in der Bibliothek Lichtenrade",
-  "uk": "Семінар: Розмовний плакат у бібліотеці Ліхтенраде",
-  "ru": "Мастер-класс: Говорящий плакат в библиотеке Лихтенраде"
- },
- "d2094af0489f0d58": {
-  "en": "Spooky week: Build a witch's house out of cookies",
-  "de": "Gruselwoche: Hexenhäuschen aus Keksen bauen",
-  "uk": "Моторошний тиждень: побудуйте будинок відьми з печива",
-  "ru": "Жуткая неделя: построй ведьмин дом из печенья"
  },
  "54703d9e6e0f13ce": {
   "en": "RUN NOWHERE VERY FAST City Theater Spandau on the citadel",
@@ -857,47 +779,11 @@
   "uk": "Шпандау",
   "ru": "Шпандау"
  },
- "4604065d3fd86055": {
-  "en": "Baby on board - tune in!",
-  "de": "Baby an Bord – schaltet ein!",
-  "uk": "Дитина на борту - налаштовуйтеся!",
-  "ru": "Малышка на борту – присоединяйтесь!"
- },
- "e66a69060584b51f": {
-  "en": "Night cat and roof ghost",
-  "de": "Nachtkatze und Dachgespenst",
-  "uk": "Нічний кіт і привид на даху",
-  "ru": "Ночной кот и призрак с крыши"
- },
- "0ca7c5e95bb6648b": {
-  "en": "Lingulino - children's theater on the move",
-  "de": "Lingulino - Kindertheater unterwegs",
-  "uk": "Лінгуліно - дитячий театр на русі (Lingulino - Kindertheater unterwegs)",
-  "ru": "Лингулино – детский театр на ходу (Lingulino - Kindertheater unterwegs)"
- },
- "7a6531b2ea17f084": {
-  "en": "Virtual Reality: Experience the future – with Virtual Reality! (Age: 14-18 yrs.)",
-  "de": "Virtual Reality: Erlebe die Zukunft – mit Virtual Reality! (Alter: 14-18 J.)",
-  "uk": "Віртуальна реальність: відчуйте майбутнє – з віртуальною реальністю! (Вік: 14-18 років.)",
-  "ru": "Виртуальная реальность: испытайте будущее – с виртуальной реальностью! (Возраст: 14-18 лет.)"
- },
- "f64ac48a313be99b": {
-  "en": "Leni's Creative Lab",
-  "de": "Lenis Kreativlabor",
-  "uk": "Творча лабораторія Лені",
-  "ru": "Творческая лаборатория Лени"
- },
  "9636821746f8ee65": {
   "en": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
   "de": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
   "uk": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
   "ru": "Хелен-Натан-Библиотека, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin"
- },
- "3c9360a472a999a9": {
-  "en": "Creative gaming during the fall holidays – we build the world the way we like it!",
-  "de": "Kreatives Gaming in den Herbsferien – Wir bauen uns die Welt, wie sie uns gefällt!",
-  "uk": "Креативні ігри під час осінніх канікул – будуємо світ так, як нам подобається!",
-  "ru": "Творческие игры во время осенних каникул – мы строим мир таким, каким он нам нравится!"
  },
  "529d20846594e78a": {
   "en": "Frankfurter Allee District Central Library - Pablo Neruda Library",
@@ -911,113 +797,17 @@
   "uk": "Районна центральна бібліотека імені Пабло Неруди (Bezirkszentralbibliothek Pablo Neruda), Frankfurter Allee 14A, 10247 Berlin",
   "ru": "Центральная библиотека района Пабло Неруда (Bezirkszentralbibliothek Pablo Neruda), Frankfurter Allee 14A, 10247 Berlin"
  },
- "e2b2036bbca8d3ff": {
-  "en": "Reading lesson",
-  "de": "Vorlese-Stunde",
-  "uk": "Урок читання",
-  "ru": "Урок чтения"
- },
- "76a6ef295a9641a6": {
-  "en": "LEGO® construction day in the Dietrich Bonhoeffer Library!",
-  "de": "LEGO® Bautag in der Dietrich-Bonhoeffer-Bibliothek!",
-  "uk": "День конструювання LEGO® у бібліотеці Дітріха Бонхеффера!",
-  "ru": "День строительства LEGO® в библиотеке Дитриха Бонхеффера!"
- },
- "f8a6ad30b97eed2e": {
-  "en": "Holiday program: LEGO® Playful City",
-  "de": "Ferienprogramm: LEGO® Playful City",
-  "uk": "Святкова програма: LEGO® Playful City",
-  "ru": "Праздничная программа: LEGO® Playful City"
- },
- "db2f14607c0f3cdc": {
-  "en": "Come play: Lego education",
-  "de": "Komm spielen: Lego education",
-  "uk": "Приходьте грати: Лего освіта",
-  "ru": "Приходите играть: Лего-образование"
- },
- "15fa4073c74de9a5": {
-  "en": "Reading hour in the Frohnau district library",
-  "de": "Vorlesestunde in der Stadtteilbibliothek Frohnau",
-  "uk": "Година читання у Фрохнауській районній бібліотеці",
-  "ru": "Час чтения в районной библиотеке Фронау"
- },
- "babedac6d6cb1a8b": {
-  "en": "Frohnau district library, Fuchssteinerweg 17, 13465 Berlin",
-  "de": "Stadtteilbibliothek Frohnau, Fuchssteinerweg 17, 13465 Berlin",
-  "uk": "Фронауська районна бібліотека (Stadtteilbibliothek Frohnau), Fuchssteinerweg 17, 13465 Berlin",
-  "ru": "Районная библиотека Фронау (Stadtteilbibliothek Frohnau), Fuchssteinerweg 17, 13465 Berlin"
- },
- "ec82ea5904121f42": {
-  "en": "Interested in LEGO®? Build with us!",
-  "de": "Lust auf LEGO®? Bau mit uns!",
-  "uk": "Вас цікавить LEGO®? Будуйте з нами!",
-  "ru": "Заинтересованы в LEGO®? Стройте вместе с нами!"
- },
- "b0d73f2b03dceef9": {
-  "en": "Board games for children – weekly games meeting for children",
-  "de": "Brettspiele für Kinder – wöchentlicher Spieletreff für Kinder",
-  "uk": "Настільні ігри для дітей – щотижнева ігрова зустріч для дітей",
-  "ru": "Настольные игры для детей – еженедельная игровая встреча для детей"
- },
- "46b095122e70f5ea": {
-  "en": "Get creative through the fall",
-  "de": "Kreativ durch den Herbst",
-  "uk": "Проявіть творчість до осені",
-  "ru": "Проявите творческий подход осенью"
- },
- "d863ce57696aa984": {
-  "en": "Popcorn cinema in the Gottfried Benn Library for children",
-  "de": "Popcornkino in der Gottfried-Benn-Bibliothek für Kinder",
-  "uk": "Попкорн-кіно в дитячій бібліотеці імені Готфріда Бенна",
-  "ru": "Кинотеатр «Попкорн» в детской библиотеке Готфрида Бенна"
- },
- "b85f4f0c7048fcd4": {
-  "en": "Musical reading aloud in the Ingeborg Drewitz Library",
-  "de": "Musikalisches Vorlesen in der Ingeborg-Drewitz-Bibliothek",
-  "uk": "Нотне читання вголос у бібліотеці Інґеборґ Древіц",
-  "ru": "Музыкальное чтение вслух в библиотеке Ингеборг Древиц"
- },
  "af310e1e2cd43d04": {
   "en": "Steglitz-Zehlendorf City Library",
   "de": "Stadtbibliothek Steglitz-Zehlendorf",
   "uk": "Міська бібліотека Штегліц-Целендорф (Stadtbibliothek Steglitz-Zehlendorf)",
   "ru": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)"
  },
- "e2b9220579564da4": {
-  "en": "Game 4U in the Schöneberg library",
-  "de": "Game 4U in der Bibliothek Schöneberg",
-  "uk": "Гра 4U в бібліотеці Шенеберг",
-  "ru": "Игра 4U в библиотеке Шёнеберга"
- },
- "6589bdebfd300d62": {
-  "en": "FULLY BOOKED Reading with Margit Auer – “The School of Magical Animals - Volume 17: High Aim!”",
-  "de": "AUSGEBUCHT Lesung mit Margit Auer – „Die Schule der magischen Tiere - Band 17: Hoch hinaus!“",
-  "uk": "ЧИТАННЯ з Маргіт Ауер – “Школа чарівних тварин – Том 17: Висока мета!”",
-  "ru": "ПОЛНОСТЬЮ ЗАКАЗАН Чтение с Маргит Ауэр – «Школа волшебных животных – Том 17: Высокая цель!»"
- },
- "e1d1aa4de20c58db": {
-  "en": "Reading time in the Lankwitz district library",
-  "de": "Vorlesezeit in der Stadtteilbibliothek Lankwitz",
-  "uk": "Час читання в Ланквіцькій районній бібліотеці",
-  "ru": "Время чтения в районной библиотеке Ланквица"
- },
- "6b590067a9946bb4": {
-  "en": "Story time at the Eberhard Alexander Burgh Library",
-  "de": "Geschichtenzeit in der Eberhard-Alexander-Burgh-Bibliothek",
-  "uk": "Час історії в бібліотеці Еберхарда Олександра Берга",
-  "ru": "Время историй в библиотеке Эберхарда Александра Бурга"
- },
  "e72512940c2c6c11": {
   "en": "Cuddly toy overnight stay and collection of the cuddly toys",
   "de": "Kuscheltier-Übernachtung und Abholung der Kuscheltiere",
   "uk": "Ночівля з м'якими іграшками та колекція м'яких іграшок",
   "ru": "Мягкая игрушка ночевка и сбор плюшевых игрушек"
- },
- "e1560fa0af2d4957": {
-  "en": "Open story time in the Heinrich Schulz Library",
-  "de": "Offene Geschichtenzeit in der Heinrich-Schulz-Bibliothek",
-  "uk": "Відкритий час історії в бібліотеці імені Генріха Шульца",
-  "ru": "Время открытых историй в библиотеке Генриха Шульца"
  },
  "933fe3e1af4cbd03": {
   "en": "Workshop: Creative meets digital for children – making 3D models",
@@ -1396,5 +1186,167 @@
   "de": "Codierung & Co.",
   "uk": "Coding & Co.",
   "ru": "Кодирование и Ко."
+ },
+ "2c0b61b4504c229d": {
+  "en": "Story time: Clothes make the man...",
+  "de": "Märchenstunde: Kleider machen Leute …",
+  "uk": "Час історії: Одяг робить людину...",
+  "ru": "Время истории: Одежда делает человека..."
+ },
+ "aa169f41ce9164da": {
+  "en": "Kamishibai in the Lankwitz district library",
+  "de": "Kamishibai in der Stadtteilbibliothek Lankwitz",
+  "uk": "Камішибай у Ланквіцькій районній бібліотеці",
+  "ru": "Камисибай в районной библиотеке Ланквица"
+ },
+ "9fd370732fa146bb": {
+  "en": "LEGO ® Build the Change - We are building change in the Ingeborg Drewitz Library",
+  "de": "LEGO ® Build the Change - Wir bauen die Veränderung in der Ingeborg-Drewitz-Bibliothek",
+  "uk": "LEGO ® Build the Change - Ми створюємо зміни в бібліотеці Інґеборг Древіц",
+  "ru": "LEGO ® Build the Change — Мы создаем перемены в библиотеке Ингеборг Древитц"
+ },
+ "cdbc9a28a860ccda": {
+  "en": "Reading Monday at Weinerts",
+  "de": "Lesemontag bei Weinerts",
+  "uk": "Читання понеділка у Вайнерта",
+  "ru": "Чтение понедельника в Weinerts"
+ },
+ "755b621b42c58cf8": {
+  "en": "“Erich Weinert” district library",
+  "de": "Stadtteilbibliothek \"Erich Weinert\"",
+  "uk": "Районна бібліотека “Еріх Вайнерт”. (Stadtteilbibliothek \"Erich Weinert\")",
+  "ru": "Районная библиотека «Эрих Вайнерт» (Stadtteilbibliothek \"Erich Weinert\")"
+ },
+ "ddc64a35577d5f32": {
+  "en": "Erich Weinert district library, Helene-Weigel-Platz 4, 12681 Berlin",
+  "de": "Stadtteilbibliothek Erich Weinert, Helene-Weigel-Platz 4, 12681 Berlin",
+  "uk": "Районна бібліотека імені Еріха Вайнерта (Stadtteilbibliothek Erich Weinert), Helene-Weigel-Platz 4, 12681 Berlin",
+  "ru": "Районная библиотека Эриха Вайнерта (Stadtteilbibliothek Erich Weinert), Helene-Weigel-Platz 4, 12681 Berlin"
+ },
+ "aaaa266e288fa236": {
+  "en": "Picture book stories for ages 3 and up",
+  "de": "Bilderbuchgeschichten ab 3 Jahren",
+  "uk": "Розповіді з картинок для дітей від 3 років",
+  "ru": "Рассказы в книжках с картинками для детей от 3 лет и старше."
+ },
+ "3f3663834895e2d0": {
+  "en": "Reading hour in the library in the Märkischesviertel",
+  "de": "Vorlesestunde in der Bibliothek im Märkischen Viertel",
+  "uk": "Година читання в бібліотеці в Märkischesviertel",
+  "ru": "Час чтения в библиотеке в Меркишесфиртеле"
+ },
+ "1f8bd5511e7a1506": {
+  "en": "Reading hour in the library at Schäfersee",
+  "de": "Vorlesestunde in der Bibliothek am Schäfersee",
+  "uk": "Година читання в бібліотеці на Шеферзеє",
+  "ru": "Час чтения в библиотеке Шеферзее"
+ },
+ "0b0a5ca67138ddc7": {
+  "en": "Library at Schäfersee, Markstr. 36, 13409 Berlin",
+  "de": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
+  "uk": "Бібліотека на Шеферзеє (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
+  "ru": "Библиотека в Шеферзее (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin"
+ },
+ "301ea5514c280c3a": {
+  "en": "Story time – Michaela tells fairy tales",
+  "de": "Märchenstunde – Michaela erzählt Märchen",
+  "uk": "Час історії – Мікаела розповідає казки",
+  "ru": "Время историй – Микаэла рассказывает сказки"
+ },
+ "ee1200cee61b53e2": {
+  "en": "Reading and telling stories with volunteer readers in the Philipp Schaeffer Library",
+  "de": "Vorlesen und Erzählen mit ehrenamtlichen Vorleser*innen in der Philipp-Schaeffer-Bibliothek",
+  "uk": "Читання та розповідання історій з читачами-добровольцями в бібліотеці Філіпа Шеффера",
+  "ru": "Чтение и рассказ историй с читателями-волонтерами в библиотеке Филиппа Шеффера."
+ },
+ "317b0c0a6be4d450": {
+  "en": "monthly toy exchange - old favorites get a new home",
+  "de": "monatliche Spielzeugtauschbörse - Alte Lieblingsstücke bekommen ein neues Zuhause",
+  "uk": "щомісячний обмін іграшками - старі улюбленці отримують новий дім",
+  "ru": "ежемесячный обмен игрушками – старые любимцы обретают новый дом"
+ },
+ "a18a909c22957f3d": {
+  "en": "Fascinating light experiments: research garden with Thorsten Winkel",
+  "de": "Faszinierende Lichtexperimente: Forschergarten mit Thorsten Winkel",
+  "uk": "Захоплюючі експерименти зі світлом: дослідницький сад із Торстеном Вінкелем",
+  "ru": "Увлекательные эксперименты со светом: исследовательский сад с Торстеном Винкелем"
+ },
+ "cd066ca56a4693c4": {
+  "en": "Programming with LEGO during the fall holidays",
+  "de": "Programmieren mit LEGO in den Herbstferien",
+  "uk": "Програмування з LEGO під час осінніх канікул",
+  "ru": "Программирование с LEGO во время осенних каникул"
+ },
+ "a64b720406e3fb78": {
+  "en": "Monster Modeling: Design your own Halloween keychain",
+  "de": "Monsterhaftes Modellieren: Entwirf deinen eigenen Halloween-Schlüsselanhänger",
+  "uk": "Моделювання монстрів: створіть свій власний брелок на Хелловін",
+  "ru": "Моделирование монстров: создайте свой собственный брелок для ключей на Хэллоуин"
+ },
+ "ec9f9c8726a2476f": {
+  "en": "Holiday offer: Comic riddle reading with Steffen Gumpert: Light into the darkness!",
+  "de": "Ferienangebot: Comic-Rätsellesung mit Steffen Gumpert: Licht ins Dunkel!",
+  "uk": "Святкова пропозиція: Читання жартівливих загадок зі Штеффеном Гумпертом: Світло у темряву!",
+  "ru": "Праздничное предложение: Шуточное чтение загадок со Штеффеном Гумпертом: Свет во тьме!"
+ },
+ "cec13e972308a571": {
+  "en": "Playgroups in the children's café of the Kaulsdorf district center",
+  "de": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
+  "uk": "Ігрові групи в дитячому кафе районного центру Каульсдорф",
+  "ru": "Игровые группы в детском кафе райцентра Каульсдорф"
+ },
+ "1281c4ec806b49c4": {
+  "en": "Kaulsdorf district center, Brodauer Straße 27-29, 12621 Berlin",
+  "de": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "uk": "Районний центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
+  "ru": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin"
+ },
+ "838401afb73d7f5c": {
+  "en": "Research Garden | Experiment and research",
+  "de": "Forschergarten | Experimentieren und Forschen",
+  "uk": "Дослідний сад | Експеримент і дослідження",
+  "ru": "Исследовательский сад | Эксперимент и исследование"
+ },
+ "f3b570101f74757f": {
+  "en": "Creepy fib spooky - We make up scary stories",
+  "de": "Gruselwusel-Flunkerspuk - Wir erfinden Gruselgeschichten",
+  "uk": "Gruselwusel-Flunkerspuk - Wir erfinden Gruselgeschichten",
+  "ru": "Жуткая выдумка - Мы придумываем страшные истории"
+ },
+ "8840434728bc236e": {
+  "en": "Open knitting and crochet group",
+  "de": "Offene Strick– und Häkelgruppe",
+  "uk": "Відкрита група спицями та гачком",
+  "ru": "Открытая группа вязания спицами и крючком."
+ },
+ "c25d6c62680de21c": {
+  "en": "Glass graffiti in the youth area of ​​the Tempelhof library",
+  "de": "Glass-Graffiti im Jugendbereich der Bibliothek Tempelhof",
+  "uk": "Скляні графіті в молодіжній зоні бібліотеки Tempelhof",
+  "ru": "Стеклянные граффити в молодежной зоне библиотеки Темпельхоф"
+ },
+ "9bec8d101afda18d": {
+  "en": "Make monster bookmarks",
+  "de": "Monster-Lesezeichen basteln",
+  "uk": "Зробіть закладки-монстри",
+  "ru": "Делайте закладки-монстры"
+ },
+ "e25be7041ae6e141": {
+  "en": "Spooky week: Make your own slime",
+  "de": "Gruselwoche: Schleim selber herstellen",
+  "uk": "Моторошний тиждень: створіть свій власний слиз",
+  "ru": "Жуткая неделя: создайте свой собственный слайм"
+ },
+ "1b265d6687d8c2ef": {
+  "en": "Adolf Reichwein Library (Schmargendorf Town Hall), Berkaer Platz 1, 14199 Berlin",
+  "de": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
+  "uk": "Бібліотека Адольфа Райхвайна (Ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin",
+  "ru": "Библиотека Адольфа Райхвайна (ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin"
+ },
+ "e9a1d7b2d0d26cc4": {
+  "en": "Holiday program: Upcycling",
+  "de": "Ferienprogramm: Upcycling",
+  "uk": "Святкова програма: Upcycling",
+  "ru": "Праздничная программа: Апсайклинг"
  }
 }
