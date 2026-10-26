@@ -719,30 +719,6 @@
   "uk": "Райнікендорф-Західна районна бібліотека (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
   "ru": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin"
  },
- "54703d9e6e0f13ce": {
-  "en": "RUN NOWHERE VERY FAST City Theater Spandau on the citadel",
-  "de": "GANZ SCHNELL NIRGENDWOHIN LAUFEN Stadttheater Spandau auf der Zitadelle",
-  "uk": "БІГАТИ НІКУДИ ДУЖЕ ШВИДКО Міський театр Шпандау на цитаделі",
-  "ru": "БЕГИТЕ НИКУДА ОЧЕНЬ БЫСТРО Городской театр Шпандау на цитадели"
- },
- "24dec11c50a7beeb": {
-  "en": "Department of Culture",
-  "de": "Fachbereich Kultur",
-  "uk": "Управління культури (Fachbereich Kultur)",
-  "ru": "Департамент культуры (Fachbereich Kultur)"
- },
- "d58a89a9cc2f2b5b": {
-  "en": "Spandau Citadel, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "de": "Zitadelle Spandau, Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "uk": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin",
-  "ru": "Цитадель Шпандау (Zitadelle Spandau), Alte Kaserne Dachgeschoss Am Juliusturm 64, 13599 Berlin"
- },
- "7f63ad4d3ac9d0e3": {
-  "en": "Spandau",
-  "de": "Spandau",
-  "uk": "Шпандау",
-  "ru": "Шпандау"
- },
  "529d20846594e78a": {
   "en": "Frankfurter Allee District Central Library - Pablo Neruda Library",
   "de": "Bezirkszentralbibliothek Frankfurter Allee - Pablo-Neruda-Bibliothek",
@@ -797,35 +773,11 @@
   "uk": "Бібліотека Інгеборг Бахманн (Бібліотека Західного округу) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
   "ru": "Библиотека Ингеборги Бахманн (Библиотека Западного округа) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin"
  },
- "48003504413907d2": {
-  "en": "Dad-child games & fun",
-  "de": "Papa-Kind-Spiel & Spaß",
-  "uk": "Тато-дитина ігри та розваги",
-  "ru": "Игры и развлечения для папы и ребенка"
- },
  "cea5767fa608fc53": {
   "en": "Family Center Future House Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "de": "Familienzentrum Zukunftshaus Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "uk": "Сімейний Центр Будинок Майбутнього Весілля (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "ru": "Семейный Центр Будущий Дом Свадьба (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin"
- },
- "90fd9255124513e9": {
-  "en": "Small horror variety show – funny and bizarre marionette theater",
-  "de": "Kleines Gruselvarieté – Witzig-Skurriles Marionettentheater",
-  "uk": "Невелике хоррор-вар'єте – смішний і химерний театр маріонеток",
-  "ru": "Маленькое хоррор-варьете – смешной и причудливый театр марионеток"
- },
- "59e275f1dd506bf3": {
-  "en": "Theater on the ironing board - visiting the devil",
-  "de": "Theater auf dem Bügelbrett - Beim Teufel zu Besuch",
-  "uk": "Театр на прасувальній дошці - в гостях у диявола",
-  "ru": "Театр на гладильной доске – в гостях у дьявола"
- },
- "9ae22f3b61133022": {
-  "en": "NarrationTime I Good luck in misfortune with Johanna Wollin",
-  "de": "ErzählZeit I Glück im Unglück mit Johanna Wollin",
-  "uk": "NarrationTime I Удачі в нещасті з Йоганною Воллін",
-  "ru": "Время повествования I Удачи в несчастье с Джоанной Воллин"
  },
  "3aa15bc6217a9bdc": {
   "en": "Picture book cinema in the Tempelhof library",
@@ -1300,5 +1252,23 @@
   "de": "Zu viele Daten verderben den Bot - Eine KI-Werkstatt zum Entdecken, Sortieren und Ausprobieren",
   "uk": "Забагато даних псує бота - Майстерня штучного інтелекту для виявлення, сортування та випробування",
   "ru": "Слишком много данных портит бота — семинар по искусственному интеллекту для обнаружения, сортировки и тестирования"
+ },
+ "8332212ceb88c1e0": {
+  "en": "Scary week: What does a monster beat sound like?",
+  "de": "Gruselwoche: Wie klingt ein Monster Beat?",
+  "uk": "Страшний тиждень: як звучить монстр-ритм?",
+  "ru": "Страшная неделя: как звучит монстр-бит?"
+ },
+ "deece4217286f747": {
+  "en": "Gamingnachmittag (Nintendo Switch)",
+  "de": "Gamingnachmittag (Nintendo Switch)",
+  "uk": "Gamingnachmittag (Nintendo Switch)",
+  "ru": "Gamingnachmittag (Nintendo Switch)"
+ },
+ "17bd923790ba2c34": {
+  "en": "District library book, Wiltbergstraße 19, 13125 Berlin",
+  "de": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "uk": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+  "ru": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin"
  }
 }
