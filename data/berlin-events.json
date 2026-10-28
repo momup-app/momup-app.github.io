@@ -1019,6 +1019,62 @@
   ]
  },
  {
+  "id": "berlin-296255",
+  "date": "2026-10-28",
+  "start": "15:00",
+  "end": "17:00",
+  "title": "Freies Testen der TOMMI-Spiele",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296255"
+  },
+  "en": {
+   "title": "Free testing of TOMMI games",
+   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Freies Testen der TOMMI-Spiele",
+   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Безкоштовне тестування ігор TOMMI",
+   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Бесплатное тестирование игр TOMMI",
+   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-291553",
   "date": "2026-10-28",
   "start": "15:00",
@@ -1081,62 +1137,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296255",
-  "date": "2026-10-28",
-  "start": "15:00",
-  "end": "17:00",
-  "title": "Freies Testen der TOMMI-Spiele",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.56498,
-  "lng": 13.50612,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296255"
-  },
-  "en": {
-   "title": "Free testing of TOMMI games",
-   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Freies Testen der TOMMI-Spiele",
-   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Безкоштовне тестування ігор TOMMI",
-   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Бесплатное тестирование игр TOMMI",
-   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -1457,6 +1457,70 @@
   ]
  },
  {
+  "id": "berlin-292468",
+  "date": "2026-10-28",
+  "start": "16:00",
+  "end": "",
+  "title": "Kürbis schnitzen für Kinder",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
+  "district": "Mitte",
+  "lat": 52.53171,
+  "lng": 13.39849,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292468"
+  },
+  "en": {
+   "title": "Pumpkin carving for children",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Philipp Schaeffer Library, Brunnenstr. 181, 10119 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Kürbis schnitzen für Kinder",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Карвінг з гарбуза для дітей",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Філіпа Шеффера (Philipp-Schaeffer-Bibliothek), Brunnenstr. 181, 10119 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Вырезание тыквы для детей",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Филиппа Шеффера (Philipp-Schaeffer-Bibliothek), Brunnenstr. 181, 10119 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-291394",
   "date": "2026-10-28",
   "start": "16:00",
@@ -1503,70 +1567,6 @@
    "organizer": "Управление дальнейшего образования и культуры, Библиотека Курта Тухольского (Amt für Weiterbildung und Kultur, Kurt-Tucholsky-Bibliothek)",
    "address": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Esmarchstraße 18, 10407 Berlin",
    "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-292468",
-  "date": "2026-10-28",
-  "start": "16:00",
-  "end": "",
-  "title": "Kürbis schnitzen für Kinder",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
-  "district": "Mitte",
-  "lat": 52.53171,
-  "lng": 13.39849,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=292468"
-  },
-  "en": {
-   "title": "Pumpkin carving for children",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Philipp Schaeffer Library, Brunnenstr. 181, 10119 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Kürbis schnitzen für Kinder",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Philipp-Schaeffer-Bibliothek, Brunnenstr. 181, 10119 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Карвінг з гарбуза для дітей",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Філіпа Шеффера (Philipp-Schaeffer-Bibliothek), Brunnenstr. 181, 10119 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Вырезание тыквы для детей",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Филиппа Шеффера (Philipp-Schaeffer-Bibliothek), Brunnenstr. 181, 10119 Berlin",
-   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
@@ -1770,6 +1770,65 @@
   ]
  },
  {
+  "id": "berlin-273661",
+  "date": "2026-10-28",
+  "start": "16:00",
+  "end": "",
+  "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   3,
+   8
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=273661"
+  },
+  "en": {
+   "title": "Craft stories – creative afternoon for children",
+   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
+   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Craft stories – творчий полудень для дітей",
+   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Поделочные истории – творческий день для детей",
+   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-233269",
   "date": "2026-10-28",
   "start": "16:00",
@@ -1832,124 +1891,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-273661",
-  "date": "2026-10-28",
-  "start": "16:00",
-  "end": "",
-  "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   3,
-   8
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-  "district": "Pankow",
-  "lat": 52.53332,
-  "lng": 13.42024,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=273661"
-  },
-  "en": {
-   "title": "Craft stories – creative afternoon for children",
-   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
-   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Craft stories – творчий полудень для дітей",
-   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Поделочные истории – творческий день для детей",
-   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-236287",
-  "date": "2026-10-28",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Basteln mit dem Deutsch-Polnischen Hilfswerk e.V.",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.5611,
-  "lng": 13.36528,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=236287"
-  },
-  "en": {
-   "title": "Crafting with the German-Polish Relief Organization e.V.",
-   "address": "Library at Schäfersee, Markstr. 36, 13409 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Basteln mit dem Deutsch-Polnischen Hilfswerk e.V.",
-   "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Створення спільно з німецько-польською організацією допомоги e.V.",
-   "address": "Бібліотека на Шеферзеє (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Творчество с Немецко-польской организацией помощи e.V.",
-   "address": "Библиотека в Шеферзее (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
-   "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -2204,6 +2145,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-236287",
+  "date": "2026-10-28",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Basteln mit dem Deutsch-Polnischen Hilfswerk e.V.",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.5611,
+  "lng": 13.36528,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=236287"
+  },
+  "en": {
+   "title": "Crafting with the German-Polish Relief Organization e.V.",
+   "address": "Library at Schäfersee, Markstr. 36, 13409 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Basteln mit dem Deutsch-Polnischen Hilfswerk e.V.",
+   "address": "Bibliothek am Schäfersee, Markstr. 36, 13409 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Створення спільно з німецько-польською організацією допомоги e.V.",
+   "address": "Бібліотека на Шеферзеє (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Творчество с Немецко-польской организацией помощи e.V.",
+   "address": "Библиотека в Шеферзее (Bibliothek am Schäfersee), Markstr. 36, 13409 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -2585,6 +2585,70 @@
   ]
  },
  {
+  "id": "berlin-292162",
+  "date": "2026-10-29",
+  "start": "10:00",
+  "end": "",
+  "title": "Gruselwoche: Tierische Grusel-Lesung",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.47757,
+  "lng": 13.28806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=292162"
+  },
+  "en": {
+   "title": "Scary week: Animal horror reading",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Adolf Reichwein Library (Schmargendorf Town Hall), Berkaer Platz 1, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Gruselwoche: Tierische Grusel-Lesung",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Страшний тиждень: чтиво жахів про тварин",
+   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Бібліотека Адольфа Райхвайна (Ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Страшная неделя: чтение ужасов о животных",
+   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Библиотека Адольфа Райхвайна (ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-291158",
   "date": "2026-10-29",
   "start": "10:00",
@@ -2631,70 +2695,6 @@
    "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
    "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
    "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-292162",
-  "date": "2026-10-29",
-  "start": "10:00",
-  "end": "",
-  "title": "Gruselwoche: Tierische Grusel-Lesung",
-  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.47757,
-  "lng": 13.28806,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=292162"
-  },
-  "en": {
-   "title": "Scary week: Animal horror reading",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Adolf Reichwein Library (Schmargendorf Town Hall), Berkaer Platz 1, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Gruselwoche: Tierische Grusel-Lesung",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf), Berkaer Platz 1, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Страшний тиждень: чтиво жахів про тварин",
-   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Бібліотека Адольфа Райхвайна (Ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Страшная неделя: чтение ужасов о животных",
-   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Библиотека Адольфа Райхвайна (ратуша Шмаргендорфа) (Adolf-Reichwein-Bibliothek (Rathaus Schmargendorf)), Berkaer Platz 1, 14199 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
    "en.title",
@@ -5132,6 +5132,70 @@
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Районная библиотека Халемвега (Stadtteilbibliothek Halemweg), Halemweg 18, 13627 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-269947",
+  "date": "2026-10-30",
+  "start": "09:00",
+  "end": "13:00",
+  "title": "Mobiles Familienbüro - Beratung für Eltern und Kinder",
+  "organizer": "Familienbüro Lichtenberg",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.49763,
+  "lng": 13.52078,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=269947"
+  },
+  "en": {
+   "title": "Mobile family office - advice for parents and children",
+   "organizer": "Lichtenberg family office",
+   "address": "Bodo Uhse Library, Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Mobiles Familienbüro - Beratung für Eltern und Kinder",
+   "organizer": "Familienbüro Lichtenberg",
+   "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Мобільний сімейний офіс - поради батькам і дітям",
+   "organizer": "Сімейний офіс Ліхтенбергів (Familienbüro Lichtenberg)",
+   "address": "Бібліотека Бодо Усе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Мобильный семейный офис – советы родителям и детям",
+   "organizer": "Семейный офис Лихтенбергов (Familienbüro Lichtenberg)",
+   "address": "Библиотека Бодо Узе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Лихтенберг"
   },
   "autoTranslated": [
    "en.title",
