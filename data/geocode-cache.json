@@ -304,5 +304,9 @@
   "lat": 52.48224,
   "lng": 13.52388
  },
- "im Freien vor der Zitadelle Am Juliusturm 64, 13599 Berlin": null
+ "im Freien vor der Zitadelle Am Juliusturm 64, 13599 Berlin": null,
+ "Am Schloßpark 20, 13187 Berlin": {
+  "lat": 52.57529,
+  "lng": 13.40999
+ }
 }
