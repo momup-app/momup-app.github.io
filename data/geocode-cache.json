@@ -308,5 +308,9 @@
  "Am Schloßpark 20, 13187 Berlin": {
   "lat": 52.57529,
   "lng": 13.40999
+ },
+ "Spandauer Damm 10-22, 14059 Berlin": {
+  "lat": 52.52132,
+  "lng": 13.29923
  }
 }
