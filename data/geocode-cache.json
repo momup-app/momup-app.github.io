@@ -312,5 +312,13 @@
  "Spandauer Damm 10-22, 14059 Berlin": {
   "lat": 52.52132,
   "lng": 13.29923
+ },
+ "Gleimstraße 31, 10437 Berlin": {
+  "lat": 52.54772,
+  "lng": 13.41215
+ },
+ "Havemannstr. 17b, 12689 Berlin": {
+  "lat": 52.56827,
+  "lng": 13.57397
  }
 }
