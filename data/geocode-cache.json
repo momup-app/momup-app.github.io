@@ -320,5 +320,11 @@
  "Havemannstr. 17b, 12689 Berlin": {
   "lat": 52.56827,
   "lng": 13.57397
+ },
+ "Makerspace im EG Hauptstraße 40, 10827 Berlin": null,
+ "Bibliothek Schöneberg \"Theodor-Heuss-Bibliothek\", Berlin": null,
+ "10827 Berlin": {
+  "lat": 52.48383,
+  "lng": 13.35432
  }
 }
