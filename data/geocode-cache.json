@@ -326,5 +326,10 @@
  "10827 Berlin": {
   "lat": 52.48383,
   "lng": 13.35432
+ },
+ "krueger@kultur-in-lichtenberg.de Treskowallee 112, 10318 Berlin": null,
+ "Kulturhaus Karlshorst, Berlin": {
+  "lat": 52.48206,
+  "lng": 13.52512
  }
 }
