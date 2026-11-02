@@ -701,24 +701,6 @@
   "uk": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
   "ru": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin"
  },
- "839dc6ad9e9ca0af": {
-  "en": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
-  "de": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
-  "uk": "Вілла Шварцше, Grunewaldstraße 55, 12165 Berlin",
-  "ru": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin"
- },
- "24dec11c50a7beeb": {
-  "en": "Department of Culture",
-  "de": "Fachbereich Kultur",
-  "uk": "Управління культури (Fachbereich Kultur)",
-  "ru": "Департамент культуры (Fachbereich Kultur)"
- },
- "7f63ad4d3ac9d0e3": {
-  "en": "Spandau",
-  "de": "Spandau",
-  "uk": "Шпандау",
-  "ru": "Шпандау"
- },
  "bb6d854a54b3f210": {
   "en": "Makerspace in der Ehm-Welk-Bibliothek",
   "de": "Makerspace in der Ehm-Welk-Bibliothek",
@@ -815,36 +797,6 @@
   "uk": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
   "ru": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin"
  },
- "8ee2ec9385f17b2e": {
-  "en": "The big Popolino",
-  "de": "Der große Popolino",
-  "uk": "Великий Пополіно",
-  "ru": "Большое Пополино"
- },
- "25da7adf2db17454": {
-  "en": "“Citadel & Family Sunday” – free of charge",
-  "de": "\"Zitadellen- & FamilienSonntag\" - kostenfrei",
-  "uk": "«Citadel & Family Sunday» – безкоштовно",
-  "ru": "«Цитадель и семейное воскресенье» – бесплатно"
- },
- "63e7babf686374d3": {
-  "en": "Spandau Citadel, Am Juliusturm 64, 13599 Berlin",
-  "de": "Zitadelle Spandau, Am Juliusturm 64, 13599 Berlin",
-  "uk": "Цитадель Шпандау (Zitadelle Spandau), Am Juliusturm 64, 13599 Berlin",
-  "ru": "Цитадель Шпандау (Zitadelle Spandau), Am Juliusturm 64, 13599 Berlin"
- },
- "b47933922ff3a54f": {
-  "en": "Scary Tales",
-  "de": "Gruselgeschichten",
-  "uk": "Страшні казки",
-  "ru": "Страшные сказки"
- },
- "6a36b805a6c88100": {
-  "en": "Theater on the ironing board - witch on trial",
-  "de": "Theater auf dem Bügelbrett - Hexe auf Probe",
-  "uk": "Театр на прасувальній дошці - відьма під судом",
-  "ru": "Театр на гладильной доске - суд над ведьмой"
- },
  "3aa15bc6217a9bdc": {
   "en": "Picture book cinema in the Tempelhof library",
   "de": "Bilderbuchkino in der Bibliothek Tempelhof",
@@ -856,12 +808,6 @@
   "de": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
   "uk": "Районна центральна бібліотека “Єва-Марія-Бух-Хаус” (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
   "ru": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)"
- },
- "fd388ce22d6bff33": {
-  "en": "Children’s theater “The Great Popolino”, Matthias Goike",
-  "de": "Kindertheater „Der große Popolino“, Matthias Goike",
-  "uk": "Дитячий театр «Великий Пополіно», Маттіас Гойке (Kindertheater „Der große Popolino“, Matthias Goike)",
-  "ru": "Kindertheater „Der große Popolino“, Matthias Goike"
  },
  "6ceea6ab4814d351": {
   "en": "The crawl meeting",
@@ -1366,5 +1312,47 @@
   "de": "Gertrud-Junge-Bibliothek, Bat-Yam-Platz 1, 12353 Berlin",
   "uk": "Бібліотека Гертруди Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin",
   "ru": "Библиотека Гертруды Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin"
+ },
+ "a96de3c23d66c352": {
+  "en": "Knowledge between the books: 3D printing workshop",
+  "de": "Wissen zwischen den Büchern: 3D-Druck Workshop",
+  "uk": "Знання між книгами: практикум 3D-друку",
+  "ru": "Знания между книгами: Мастер-класс по 3D-печати"
+ },
+ "0233b0a2f6d42184": {
+  "en": "Chess in the Margarete Kubicka Library",
+  "de": "Schach in der Margarete-Kubicka-Bibliothek",
+  "uk": "Шахи в бібліотеці Маргарети Кубіцької",
+  "ru": "Шахматы в библиотеке Маргарет Кубицкой"
+ },
+ "1e347d4c05bbf183": {
+  "en": "After School Gaming",
+  "de": "Spielen nach der Schule",
+  "uk": "Ігри після школи",
+  "ru": "После школы игры"
+ },
+ "390c862edb1a89e9": {
+  "en": "Family workshop Code & Play I Discover robotics: Blue Bot & Dash",
+  "de": "Familienwerkstatt Code & Play I Robotik entdecken: Blue Bot & Dash",
+  "uk": "Сімейна майстерня Code & Play I Discover robotics: Blue Bot & Dash",
+  "ru": "Семейный мастер-класс Code & Play I Откройте для себя робототехнику: Blue Bot & Dash"
+ },
+ "be437ea7025968b3": {
+  "en": "Egon Erwin Kisch Library, Frankfurter Allee 149, 10365 Berlin",
+  "de": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee 149, 10365 Berlin",
+  "uk": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin",
+  "ru": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin"
+ },
+ "53b0600e201c6eda": {
+  "en": "Snippets & Schnapsel in the Gottfried Benn Library",
+  "de": "Schnipsel & Schnapsel in der Gottfried-Benn-Bibliothek",
+  "uk": "Snippets & Schnapsel у бібліотеці Готфріда Бенна",
+  "ru": "Фрагменты и шнапсель в библиотеке Готфрида Бенна"
+ },
+ "dab03363cf9b502d": {
+  "en": "Library meets neighborhood: reading afternoon",
+  "de": "Bibliothek trifft Nachbarschaft: Vorlesenachmittag",
+  "uk": "Бібліотека зустрічається з сусідами: читання після обіду",
+  "ru": "Библиотека встречает соседей: чтение после обеда"
  }
 }
