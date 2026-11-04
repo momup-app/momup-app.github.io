@@ -4444,6 +4444,65 @@
   ]
  },
  {
+  "id": "berlin-293128",
+  "date": "2026-11-05",
+  "start": "16:30",
+  "end": "",
+  "title": "Puppentheater: Herr Eichhorn und der erste Schnee",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293128"
+  },
+  "en": {
+   "title": "Puppet theater: Mr. Eichhorn and the first snow",
+   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Puppentheater: Herr Eichhorn und der erste Schnee",
+   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Ляльковий театр: Містер Айхгорн і перший сніг",
+   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Кукольный театр: Господин Эйххорн и первый снег",
+   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-291397",
   "date": "2026-11-05",
   "start": "16:30",
@@ -4506,65 +4565,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-293128",
-  "date": "2026-11-05",
-  "start": "16:30",
-  "end": "",
-  "title": "Puppentheater: Herr Eichhorn und der erste Schnee",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   3,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-  "district": "Pankow",
-  "lat": 52.53332,
-  "lng": 13.42024,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293128"
-  },
-  "en": {
-   "title": "Puppet theater: Mr. Eichhorn and the first snow",
-   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Puppentheater: Herr Eichhorn und der erste Schnee",
-   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Ляльковий театр: Містер Айхгорн і перший сніг",
-   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Кукольный театр: Господин Эйххорн и первый снег",
-   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
