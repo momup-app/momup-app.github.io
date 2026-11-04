@@ -335,5 +335,10 @@
  "Egon-Erwin-Kisch-Straße 1 A, 13509 Berlin": {
   "lat": 52.57475,
   "lng": 13.50383
+ },
+ "Alte Kaserne 2. OG - Saal A Am Juliusturm 64, 13599 Berlin": null,
+ "Heckerdamm 242, 13627 Berlin": {
+  "lat": 52.54027,
+  "lng": 13.29439
  }
 }
