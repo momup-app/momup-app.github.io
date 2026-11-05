@@ -1772,6 +1772,15 @@
   "homepage": "",
   "seen": "2026-11-05"
  },
+ "289688": {
+  "place": "Musikschule Béla Bartók, Standort Senefelderstr.",
+  "street": "Senefelderstr. 6",
+  "city": "10435 Berlin",
+  "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
+  "district": "Pankow",
+  "homepage": "https://www.berlin.de/musikschule-pankow/aktuelles/veranstaltungen/",
+  "seen": "2026-11-05"
+ },
  "289700": {
   "place": "Anton-Saefkow-Bibliothek",
   "street": "Anton-Saefkow-Platz 14",
@@ -2779,6 +2788,15 @@
   "district": "Pankow",
   "homepage": "",
   "seen": "2026-10-17"
+ },
+ "293701": {
+  "place": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek",
+  "street": "Marzahner Promenade 52-54",
+  "city": "12679 Berlin",
+  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+  "district": "Marzahn-Hellersdorf",
+  "homepage": "https://www.berlin.de/bibliotheken-mh/bibliotheken/mark-twain-bibliothek/",
+  "seen": "2026-11-05"
  },
  "293719": {
   "place": "Wolfdietrich-Schnurre-Bibliothek",
