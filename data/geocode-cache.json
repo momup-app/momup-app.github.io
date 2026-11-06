@@ -348,5 +348,29 @@
  "Senefelderstr. 6, 10435 Berlin": {
   "lat": 52.54054,
   "lng": 13.42352
+ },
+ "Artothek Marzahner Promenade 52-54, 12679 Berlin": null,
+ "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Berlin": null,
+ "12679 Berlin": {
+  "lat": 52.54925,
+  "lng": 13.5638
+ },
+ "Eva-Mamlok-Platz 1, 10961 Berlin": {
+  "lat": 52.49657,
+  "lng": 13.39249
+ },
+ "Hinterhaus, 3. OG Schönfließer Straße 7, 10439 Berlin": null,
+ "Theater unterm Dach (Interimsspielstätte), Berlin": null,
+ "10439 Berlin": {
+  "lat": 52.55215,
+  "lng": 13.41214
+ },
+ "Antonplatz 1, 13086 Berlin": {
+  "lat": 52.5488,
+  "lng": 13.45087
+ },
+ "Dudenstraße 18-20, 10965 Berlin": {
+  "lat": 52.48501,
+  "lng": 13.38248
  }
 }
