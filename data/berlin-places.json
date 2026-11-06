@@ -4039,5 +4039,14 @@
   "district": "Friedrichshain-Kreuzberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/stadtteilbibliothek-friedrich-von-raumer/",
   "seen": "2026-11-06"
+ },
+ "297671": {
+  "place": "Egon-Erwin-Kisch-Bibliothek",
+  "street": "Frankfurter Allee 149",
+  "city": "10365 Berlin",
+  "organizer": "Egon-Erwin-Kisch-Bibliothek",
+  "district": "Lichtenberg",
+  "homepage": "",
+  "seen": "2026-11-06"
  }
 }

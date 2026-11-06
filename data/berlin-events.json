@@ -2395,70 +2395,6 @@
   ]
  },
  {
-  "id": "berlin-289688",
-  "date": "2026-11-07",
-  "start": "10:00",
-  "end": "14:30",
-  "title": "CELLO-Ensemble-Workshop",
-  "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
-  "category": "music",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
-  "district": "Pankow",
-  "lat": 52.54054,
-  "lng": 13.42352,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=289688"
-  },
-  "en": {
-   "title": "CELLO-Ensemble-Workshop",
-   "organizer": "Office for Continuing Education and Culture, Béla Bartók Music School",
-   "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "CELLO-Ensemble-Workshop",
-   "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
-   "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Віолончель-Ансамбль-Майстерня",
-   "organizer": "Управління безперервної освіти та культури музичної школи Бели Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
-   "address": "Музична школа Бели Бартока, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "CELLO-Ансамбль-Мастерская",
-   "organizer": "Управление непрерывного образования и культуры Музыкальной школы Белы Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
-   "address": "Музыкальная школа Белы Бартока, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-293701",
   "date": "2026-11-07",
   "start": "10:00",
@@ -2593,6 +2529,70 @@
   ]
  },
  {
+  "id": "berlin-289688",
+  "date": "2026-11-07",
+  "start": "10:00",
+  "end": "14:30",
+  "title": "CELLO-Ensemble-Workshop",
+  "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
+  "category": "music",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
+  "district": "Pankow",
+  "lat": 52.54054,
+  "lng": 13.42352,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289688"
+  },
+  "en": {
+   "title": "CELLO-Ensemble-Workshop",
+   "organizer": "Office for Continuing Education and Culture, Béla Bartók Music School",
+   "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "CELLO-Ensemble-Workshop",
+   "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
+   "address": "Musikschule Béla Bartók, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Віолончель-Ансамбль-Майстерня",
+   "organizer": "Управління безперервної освіти та культури музичної школи Бели Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
+   "address": "Музична школа Бели Бартока, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "CELLO-Ансамбль-Мастерская",
+   "organizer": "Управление непрерывного образования и культуры Музыкальной школы Белы Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
+   "address": "Музыкальная школа Белы Бартока, Standort Senefelderstr., Senefelderstr. 6, 10435 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-293743",
   "date": "2026-11-07",
   "start": "10:30",
@@ -2636,73 +2636,6 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека Шиллера (Schiller-Bibliothek), Müllerstraße 149, 13353 Berlin",
    "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296033",
-  "date": "2026-11-07",
-  "start": "11:00",
-  "end": "",
-  "title": "\"Bunt ist die Welt\" - Buchvorstellung und Mini-Workshop mit Jenny Boidol",
-  "organizer": "Stadtbibliothek Neukölln",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
-  "district": "Neukölln",
-  "lat": 52.48196,
-  "lng": 13.43277,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296033"
-  },
-  "en": {
-   "title": "\"The world is colorful\" - book presentation and mini-workshop with Jenny Boidol",
-   "organizer": "Neukölln City Library",
-   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
-   "district": "Neukölln"
-  },
-  "de": {
-   "title": "\"Bunt ist die Welt\" - Buchvorstellung und Mini-Workshop mit Jenny Boidol",
-   "organizer": "Stadtbibliothek Neukölln",
-   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
-   "district": "Neukölln"
-  },
-  "uk": {
-   "title": "«Світ різнобарвний» - презентація книги та міні-воркшоп з Дженні Бойдол",
-   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
-   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
-   "district": "Neukölln"
-  },
-  "ru": {
-   "title": "«Мир многоцветен» - презентация книги и мини-мастер-класс с Дженни Бойдол",
-   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
-   "address": "Хелен-Натан-Библиотека, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
-   "district": "Нойкёльн"
   },
   "autoTranslated": [
    "en.title",
@@ -2850,6 +2783,73 @@
   ]
  },
  {
+  "id": "berlin-296033",
+  "date": "2026-11-07",
+  "start": "11:00",
+  "end": "",
+  "title": "\"Bunt ist die Welt\" - Buchvorstellung und Mini-Workshop mit Jenny Boidol",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   5,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
+  "district": "Neukölln",
+  "lat": 52.48196,
+  "lng": 13.43277,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296033"
+  },
+  "en": {
+   "title": "\"The world is colorful\" - book presentation and mini-workshop with Jenny Boidol",
+   "organizer": "Neukölln City Library",
+   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
+   "district": "Neukölln"
+  },
+  "de": {
+   "title": "\"Bunt ist die Welt\" - Buchvorstellung und Mini-Workshop mit Jenny Boidol",
+   "organizer": "Stadtbibliothek Neukölln",
+   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
+   "district": "Neukölln"
+  },
+  "uk": {
+   "title": "«Світ різнобарвний» - презентація книги та міні-воркшоп з Дженні Бойдол",
+   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
+   "address": "Helene-Nathan-Bibliothek, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
+   "district": "Neukölln"
+  },
+  "ru": {
+   "title": "«Мир многоцветен» - презентация книги и мини-мастер-класс с Дженни Бойдол",
+   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
+   "address": "Хелен-Натан-Библиотека, (in den Neukölln Arcaden, Parkdeck 4) Karl-Marx-Straße 66, 12043 Berlin",
+   "district": "Нойкёльн"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-292780",
   "date": "2026-11-07",
   "start": "11:00",
@@ -2891,62 +2891,6 @@
   "ru": {
    "title": "Поднимите занавес для отличных историй! | Читающий театр Камисибай",
    "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296762",
-  "date": "2026-11-07",
-  "start": "13:00",
-  "end": "16:00",
-  "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.56498,
-  "lng": 13.50612,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296762"
-  },
-  "en": {
-   "title": "Creative with confidence - zine workshop for everyone",
-   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
-   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Creative with confidence - майстерня журналу для всіх",
-   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Творите с уверенностью – зин-семинар для всех",
-   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
    "district": "Лихтенберг"
   },
   "autoTranslated": [
@@ -3032,6 +2976,62 @@
   ]
  },
  {
+  "id": "berlin-296762",
+  "date": "2026-11-07",
+  "start": "13:00",
+  "end": "16:00",
+  "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296762"
+  },
+  "en": {
+   "title": "Creative with confidence - zine workshop for everyone",
+   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
+   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Creative with confidence - майстерня журналу для всіх",
+   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Творите с уверенностью – зин-семинар для всех",
+   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-254590",
   "date": "2026-11-07",
   "start": "13:00",
@@ -3075,6 +3075,126 @@
    "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
    "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
    "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-297671",
+  "date": "2026-11-07",
+  "start": "13:30",
+  "end": "17:00",
+  "title": "offenes Basteln I Schallplattenspiegel",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee 149, 10365 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.51335,
+  "lng": 13.48103,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297671"
+  },
+  "en": {
+   "title": "open crafting I record mirror",
+   "address": "Egon Erwin Kisch Library, Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "offenes Basteln I Schallplattenspiegel",
+   "address": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "відкритий крафт Я записую дзеркало",
+   "address": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "открываю крафт записываю зеркало",
+   "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-295940",
+  "date": "2026-11-07",
+  "start": "14:00",
+  "end": "",
+  "title": "Bastelworkshop: Drucken mit Meike Dölp",
+  "organizer": "Stadtbibliothek Pankow",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295940"
+  },
+  "en": {
+   "title": "Craft workshop: Printing with Meike Dölp",
+   "organizer": "Pankow City Library",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bastelworkshop: Drucken mit Meike Dölp",
+   "organizer": "Stadtbibliothek Pankow",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Реміснича майстерня: друк із Мейке Дольп",
+   "organizer": "Панківська міська бібліотека (Stadtbibliothek Pankow)",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Ремесленная мастерская: Печать с Мейке Дёлп",
+   "organizer": "Городская библиотека Панкова (Stadtbibliothek Pankow)",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
@@ -3163,65 +3283,57 @@
   ]
  },
  {
-  "id": "berlin-295940",
+  "id": "berlin-289904",
   "date": "2026-11-07",
   "start": "14:00",
   "end": "",
-  "title": "Bastelworkshop: Drucken mit Meike Dölp",
-  "organizer": "Stadtbibliothek Pankow",
-  "category": "arts",
+  "title": "ErzählZeit I Kamishibai",
+  "organizer": "",
+  "category": "language",
   "format": "in-person",
   "ages": null,
   "price": {
    "type": "unknown"
   },
-  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-  "district": "Pankow",
-  "lat": 52.54774,
-  "lng": 13.45284,
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295940"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289904"
   },
   "en": {
-   "title": "Craft workshop: Printing with Meike Dölp",
-   "organizer": "Pankow City Library",
-   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
+   "title": "NarrationTime I Kamishibai",
+   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
   },
   "de": {
-   "title": "Bastelworkshop: Drucken mit Meike Dölp",
-   "organizer": "Stadtbibliothek Pankow",
-   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
+   "title": "ErzählZeit I Kamishibai",
+   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
   },
   "uk": {
-   "title": "Реміснича майстерня: друк із Мейке Дольп",
-   "organizer": "Панківська міська бібліотека (Stadtbibliothek Pankow)",
-   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панків"
+   "title": "РозповідьЧас I Камішибай",
+   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Ліхтенберг"
   },
   "ru": {
-   "title": "Ремесленная мастерская: Печать с Мейке Дёлп",
-   "organizer": "Городская библиотека Панкова (Stadtbibliothek Pankow)",
-   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панков"
+   "title": "Время повествования I Камисибай",
+   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Лихтенберг"
   },
   "autoTranslated": [
    "en.title",
-   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
-   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
-   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -3286,44 +3398,106 @@
   ]
  },
  {
-  "id": "berlin-289904",
+  "id": "berlin-294691",
   "date": "2026-11-07",
-  "start": "14:00",
-  "end": "",
-  "title": "ErzählZeit I Kamishibai",
+  "start": "15:00",
+  "end": "17:00",
+  "title": "Bastel-Workshop „Oktopus oder Puppe aus Garn“",
   "organizer": "",
-  "category": "language",
+  "category": "arts",
   "format": "in-person",
-  "ages": null,
+  "ages": [
+   4,
+   12
+  ],
   "price": {
-   "type": "unknown"
+   "type": "free"
   },
-  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
   "district": "Lichtenberg",
-  "lat": 52.56498,
-  "lng": 13.50612,
+  "lat": 52.53063,
+  "lng": 13.47051,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=289904"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294691"
   },
   "en": {
-   "title": "NarrationTime I Kamishibai",
-   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "title": "Craft workshop “Octopus or doll made of yarn”",
+   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
    "district": "Lichtenberg"
   },
   "de": {
-   "title": "ErzählZeit I Kamishibai",
-   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "title": "Bastel-Workshop „Oktopus oder Puppe aus Garn“",
+   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
    "district": "Lichtenberg"
   },
   "uk": {
-   "title": "РозповідьЧас I Камішибай",
-   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "title": "Майстер-клас «Восьминіг або лялька з пряжі»",
+   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
    "district": "Ліхтенберг"
   },
   "ru": {
-   "title": "Время повествования I Камисибай",
-   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "title": "Мастер-класс «Осьминог или кукла из пряжи»",
+   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-297254",
+  "date": "2026-11-07",
+  "start": "15:00",
+  "end": "17:30",
+  "title": "Bastel-Workshop „Kleine Laternen“",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.49763,
+  "lng": 13.52078,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297254"
+  },
+  "en": {
+   "title": "Craft workshop “Small Lanterns”",
+   "address": "Bodo Uhse Library, Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Bastel-Workshop „Kleine Laternen“",
+   "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Майстер-клас «Ліхтарики»",
+   "address": "Бібліотека Бодо Усе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Ремесленная мастерская «Маленькие фонарики»",
+   "address": "Библиотека Бодо Узе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
    "district": "Лихтенберг"
   },
   "autoTranslated": [
@@ -3448,124 +3622,6 @@
    "title": "Лаборатория кодирования | Луанти II",
    "address": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
    "district": "Фридрихсхайн-Кройцберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-294691",
-  "date": "2026-11-07",
-  "start": "15:00",
-  "end": "17:00",
-  "title": "Bastel-Workshop „Oktopus oder Puppe aus Garn“",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.53063,
-  "lng": 13.47051,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294691"
-  },
-  "en": {
-   "title": "Craft workshop “Octopus or doll made of yarn”",
-   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Bastel-Workshop „Oktopus oder Puppe aus Garn“",
-   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Майстер-клас «Восьминіг або лялька з пряжі»",
-   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Мастер-класс «Осьминог или кукла из пряжи»",
-   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-297254",
-  "date": "2026-11-07",
-  "start": "15:00",
-  "end": "17:30",
-  "title": "Bastel-Workshop „Kleine Laternen“",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.49763,
-  "lng": 13.52078,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297254"
-  },
-  "en": {
-   "title": "Craft workshop “Small Lanterns”",
-   "address": "Bodo Uhse Library, Erich-Kurz-Str. 9, 10319 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Bastel-Workshop „Kleine Laternen“",
-   "address": "Bodo-Uhse-Bibliothek, Erich-Kurz-Str. 9, 10319 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Майстер-клас «Ліхтарики»",
-   "address": "Бібліотека Бодо Усе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Ремесленная мастерская «Маленькие фонарики»",
-   "address": "Библиотека Бодо Узе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
-   "district": "Лихтенберг"
   },
   "autoTranslated": [
    "en.title",
@@ -3838,20 +3894,17 @@
   ]
  },
  {
-  "id": "berlin-297125",
+  "id": "berlin-297224",
   "date": "2026-11-08",
   "start": "14:00",
   "end": "",
-  "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
+  "title": "Stickworkshop für Kinder: BellaLiya",
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "music",
+  "category": "other",
   "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
+  "ages": null,
   "price": {
-   "type": "unknown"
+   "type": "free"
   },
   "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
   "district": "Charlottenburg-Wilmersdorf",
@@ -3859,28 +3912,28 @@
   "lng": 13.31637,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297125"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297224"
   },
   "en": {
-   "title": "Canceled: Music workshop for families: Immerse yourself in the world of Latin American music!",
+   "title": "Embroidery workshop for children: BellaLiya",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich Schulz Library, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "de": {
-   "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
+   "title": "Stickworkshop für Kinder: BellaLiya",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "uk": {
-   "title": "Відмінено: Музичний семінар для сімей: Пориньте у світ латиноамериканської музики!",
+   "title": "Майстер-клас з вишивання для дітей: БеллаЛія",
    "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Бібліотека імені Генріха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вільмерсдорф"
   },
   "ru": {
-   "title": "Отменено: Музыкальный мастер-класс для всей семьи: погрузитесь в мир латиноамериканской музыки!",
+   "title": "Мастер-класс по вышивке для детей: БеллаЛия",
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Генриха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
@@ -3969,17 +4022,20 @@
   ]
  },
  {
-  "id": "berlin-297224",
+  "id": "berlin-297125",
   "date": "2026-11-08",
   "start": "14:00",
   "end": "",
-  "title": "Stickworkshop für Kinder: BellaLiya",
+  "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "other",
+  "category": "music",
   "format": "in-person",
-  "ages": null,
+  "ages": [
+   4,
+   12
+  ],
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
   "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
   "district": "Charlottenburg-Wilmersdorf",
@@ -3987,28 +4043,28 @@
   "lng": 13.31637,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297224"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297125"
   },
   "en": {
-   "title": "Embroidery workshop for children: BellaLiya",
+   "title": "Canceled: Music workshop for families: Immerse yourself in the world of Latin American music!",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich Schulz Library, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "de": {
-   "title": "Stickworkshop für Kinder: BellaLiya",
+   "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "uk": {
-   "title": "Майстер-клас з вишивання для дітей: БеллаЛія",
+   "title": "Відмінено: Музичний семінар для сімей: Пориньте у світ латиноамериканської музики!",
    "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Бібліотека імені Генріха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вільмерсдорф"
   },
   "ru": {
-   "title": "Мастер-класс по вышивке для детей: БеллаЛия",
+   "title": "Отменено: Музыкальный мастер-класс для всей семьи: погрузитесь в мир латиноамериканской музыки!",
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Генриха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
@@ -4964,73 +5020,6 @@
   ]
  },
  {
-  "id": "berlin-293959",
-  "date": "2026-11-09",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Workshop: Dia de los Muertos",
-  "organizer": "Stadtbibliothek Neukölln",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Margarete-Kubicka-Bibliothek, Gutschmidtstr. 33, 12359 Berlin",
-  "district": "Neukölln",
-  "lat": 52.43669,
-  "lng": 13.44602,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293959"
-  },
-  "en": {
-   "title": "Workshop: Day of the Dead",
-   "organizer": "Neukölln City Library",
-   "address": "Margarete Kubicka Library, Gutschmidtstr. 33, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "de": {
-   "title": "Workshop: Dia de los Muertos",
-   "organizer": "Stadtbibliothek Neukölln",
-   "address": "Margarete-Kubicka-Bibliothek, Gutschmidtstr. 33, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "uk": {
-   "title": "Майстер-клас: День мертвих",
-   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
-   "address": "Бібліотека Маргарети Кубіцької (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin",
-   "district": "Neukölln"
-  },
-  "ru": {
-   "title": "Мастер-класс: День мертвых",
-   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
-   "address": "Библиотека Маргарет Кубицкой (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin",
-   "district": "Нойкёльн"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-295286",
   "date": "2026-11-09",
   "start": "16:00",
@@ -5077,6 +5066,73 @@
    "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
    "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
    "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-293959",
+  "date": "2026-11-09",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Workshop: Dia de los Muertos",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Margarete-Kubicka-Bibliothek, Gutschmidtstr. 33, 12359 Berlin",
+  "district": "Neukölln",
+  "lat": 52.43669,
+  "lng": 13.44602,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293959"
+  },
+  "en": {
+   "title": "Workshop: Day of the Dead",
+   "organizer": "Neukölln City Library",
+   "address": "Margarete Kubicka Library, Gutschmidtstr. 33, 12359 Berlin",
+   "district": "Neukölln"
+  },
+  "de": {
+   "title": "Workshop: Dia de los Muertos",
+   "organizer": "Stadtbibliothek Neukölln",
+   "address": "Margarete-Kubicka-Bibliothek, Gutschmidtstr. 33, 12359 Berlin",
+   "district": "Neukölln"
+  },
+  "uk": {
+   "title": "Майстер-клас: День мертвих",
+   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
+   "address": "Бібліотека Маргарети Кубіцької (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin",
+   "district": "Neukölln"
+  },
+  "ru": {
+   "title": "Мастер-класс: День мертвых",
+   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
+   "address": "Библиотека Маргарет Кубицкой (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin",
+   "district": "Нойкёльн"
   },
   "autoTranslated": [
    "en.title",
