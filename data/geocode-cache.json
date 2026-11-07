@@ -372,5 +372,9 @@
  "Dudenstraße 18-20, 10965 Berlin": {
   "lat": 52.48501,
   "lng": 13.38248
+ },
+ "Markstraße 6, 13409 Berlin": {
+  "lat": 52.56295,
+  "lng": 13.36415
  }
 }
