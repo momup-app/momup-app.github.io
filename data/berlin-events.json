@@ -574,6 +574,65 @@
   ]
  },
  {
+  "id": "berlin-295496",
+  "date": "2026-11-07",
+  "start": "11:00",
+  "end": "",
+  "title": "Mitmachmärchen für Klein und Groß",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   5,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.61655,
+  "lng": 13.4917,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295496"
+  },
+  "en": {
+   "title": "Participatory fairy tales for young and old",
+   "address": "Karow district library, Achillesstraße 77, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Mitmachmärchen für Klein und Groß",
+   "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Спільні казки для малих і дорослих",
+   "address": "Карівська районна бібліотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Совместные сказки для детей и взрослых",
+   "address": "Каровская районная библиотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-295931",
   "date": "2026-11-07",
   "start": "11:00",
@@ -641,65 +700,6 @@
   ]
  },
  {
-  "id": "berlin-295496",
-  "date": "2026-11-07",
-  "start": "11:00",
-  "end": "",
-  "title": "Mitmachmärchen für Klein und Groß",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
-  "district": "Pankow",
-  "lat": 52.61655,
-  "lng": 13.4917,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295496"
-  },
-  "en": {
-   "title": "Participatory fairy tales for young and old",
-   "address": "Karow district library, Achillesstraße 77, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Mitmachmärchen für Klein und Groß",
-   "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Спільні казки для малих і дорослих",
-   "address": "Карівська районна бібліотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Совместные сказки для детей и взрослых",
-   "address": "Каровская районная библиотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-292780",
   "date": "2026-11-07",
   "start": "11:00",
@@ -741,6 +741,62 @@
   "ru": {
    "title": "Поднимите занавес для отличных историй! | Читающий театр Камисибай",
    "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-296762",
+  "date": "2026-11-07",
+  "start": "13:00",
+  "end": "16:00",
+  "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.56498,
+  "lng": 13.50612,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296762"
+  },
+  "en": {
+   "title": "Creative with confidence - zine workshop for everyone",
+   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
+   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Creative with confidence - майстерня журналу для всіх",
+   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Творите с уверенностью – зин-семинар для всех",
+   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
    "district": "Лихтенберг"
   },
   "autoTranslated": [
@@ -821,62 +877,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296762",
-  "date": "2026-11-07",
-  "start": "13:00",
-  "end": "16:00",
-  "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.56498,
-  "lng": 13.50612,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296762"
-  },
-  "en": {
-   "title": "Creative with confidence - zine workshop for everyone",
-   "address": "Anna Seghers Library in the Linden Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Kreativ mit Zuversicht - Zine-Workshop für alle",
-   "address": "Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen, Prerower Platz 2, 13051 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Creative with confidence - майстерня журналу для всіх",
-   "address": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Творите с уверенностью – зин-семинар для всех",
-   "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -1248,65 +1248,6 @@
   ]
  },
  {
-  "id": "berlin-294025",
-  "date": "2026-11-07",
-  "start": "15:00",
-  "end": "18:00",
-  "title": "Coding Lab | Luanti II",
-  "organizer": "",
-  "category": "stem",
-  "format": "in-person",
-  "ages": [
-   10,
-   16
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
-  "district": "Friedrichshain-Kreuzberg",
-  "lat": 52.49657,
-  "lng": 13.39249,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294025"
-  },
-  "en": {
-   "title": "Coding Lab | Luanti II",
-   "address": "America Memorial Library, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "de": {
-   "title": "Codierungslabor | Luanti II",
-   "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "uk": {
-   "title": "Лабораторія кодування | Луанті II",
-   "address": "Меморіальна бібліотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Фрідріхсхайн-Кройцберг"
-  },
-  "ru": {
-   "title": "Лаборатория кодирования | Луанти II",
-   "address": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Фридрихсхайн-Кройцберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-297542",
   "date": "2026-11-07",
   "start": "15:00",
@@ -1366,6 +1307,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-294025",
+  "date": "2026-11-07",
+  "start": "15:00",
+  "end": "18:00",
+  "title": "Coding Lab | Luanti II",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": [
+   10,
+   16
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
+  "district": "Friedrichshain-Kreuzberg",
+  "lat": 52.49657,
+  "lng": 13.39249,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294025"
+  },
+  "en": {
+   "title": "Coding Lab | Luanti II",
+   "address": "America Memorial Library, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "de": {
+   "title": "Codierungslabor | Luanti II",
+   "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "uk": {
+   "title": "Лабораторія кодування | Луанті II",
+   "address": "Меморіальна бібліотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Фрідріхсхайн-Кройцберг"
+  },
+  "ru": {
+   "title": "Лаборатория кодирования | Луанти II",
+   "address": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Фридрихсхайн-Кройцберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -1619,6 +1619,70 @@
   ]
  },
  {
+  "id": "berlin-296129",
+  "date": "2026-11-08",
+  "start": "10:00",
+  "end": "13:00",
+  "title": "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf",
+  "organizer": "Stadtbibliothek Reinickendorf",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296129"
+  },
+  "en": {
+   "title": "Children's junk in the Humboldt Library - with entertainment program and cake sale",
+   "organizer": "Reinickendorf City Library",
+   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf",
+   "organizer": "Stadtbibliothek Reinickendorf",
+   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Дитячий мотлох у бібліотеці Гумбольдта - з розважальною програмою та розпродажем тортів",
+   "organizer": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
+   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Детский хлам в библиотеке Гумбольдта – с развлекательной программой и продажей тортов",
+   "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
+   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-294265",
   "date": "2026-11-08",
   "start": "10:00",
@@ -1662,70 +1726,6 @@
   "ru": {
    "title": "Детский хлам",
    "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296129",
-  "date": "2026-11-08",
-  "start": "10:00",
-  "end": "13:00",
-  "title": "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf",
-  "organizer": "Stadtbibliothek Reinickendorf",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59194,
-  "lng": 13.2806,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296129"
-  },
-  "en": {
-   "title": "Children's junk in the Humboldt Library - with entertainment program and cake sale",
-   "organizer": "Reinickendorf City Library",
-   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf",
-   "organizer": "Stadtbibliothek Reinickendorf",
-   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Дитячий мотлох у бібліотеці Гумбольдта - з розважальною програмою та розпродажем тортів",
-   "organizer": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
-   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Детский хлам в библиотеке Гумбольдта – с развлекательной программой и продажей тортов",
-   "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
    "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
    "district": "Райникендорф"
   },
@@ -1872,20 +1872,17 @@
   ]
  },
  {
-  "id": "berlin-297125",
+  "id": "berlin-297224",
   "date": "2026-11-08",
   "start": "14:00",
   "end": "",
-  "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
+  "title": "Stickworkshop für Kinder: BellaLiya",
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "music",
+  "category": "other",
   "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
+  "ages": null,
   "price": {
-   "type": "unknown"
+   "type": "free"
   },
   "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
   "district": "Charlottenburg-Wilmersdorf",
@@ -1893,28 +1890,28 @@
   "lng": 13.31637,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297125"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297224"
   },
   "en": {
-   "title": "Canceled: Music workshop for families: Immerse yourself in the world of Latin American music!",
+   "title": "Embroidery workshop for children: BellaLiya",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich Schulz Library, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "de": {
-   "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
+   "title": "Stickworkshop für Kinder: BellaLiya",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "uk": {
-   "title": "Відмінено: Музичний семінар для сімей: Пориньте у світ латиноамериканської музики!",
+   "title": "Майстер-клас з вишивання для дітей: БеллаЛія",
    "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Бібліотека імені Генріха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вільмерсдорф"
   },
   "ru": {
-   "title": "Отменено: Музыкальный мастер-класс для всей семьи: погрузитесь в мир латиноамериканской музыки!",
+   "title": "Мастер-класс по вышивке для детей: БеллаЛия",
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Генриха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
@@ -2003,17 +2000,20 @@
   ]
  },
  {
-  "id": "berlin-297224",
+  "id": "berlin-297125",
   "date": "2026-11-08",
   "start": "14:00",
   "end": "",
-  "title": "Stickworkshop für Kinder: BellaLiya",
+  "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "other",
+  "category": "music",
   "format": "in-person",
-  "ages": null,
+  "ages": [
+   4,
+   12
+  ],
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
   "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
   "district": "Charlottenburg-Wilmersdorf",
@@ -2021,28 +2021,28 @@
   "lng": 13.31637,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297224"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297125"
   },
   "en": {
-   "title": "Embroidery workshop for children: BellaLiya",
+   "title": "Canceled: Music workshop for families: Immerse yourself in the world of Latin American music!",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich Schulz Library, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "de": {
-   "title": "Stickworkshop für Kinder: BellaLiya",
+   "title": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
    "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
    "address": "Heinrich-Schulz- Bibliothek, Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Charlottenburg-Wilmersdorf"
   },
   "uk": {
-   "title": "Майстер-клас з вишивання для дітей: БеллаЛія",
+   "title": "Відмінено: Музичний семінар для сімей: Пориньте у світ латиноамериканської музики!",
    "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Бібліотека імені Генріха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вільмерсдорф"
   },
   "ru": {
-   "title": "Мастер-класс по вышивке для детей: БеллаЛия",
+   "title": "Отменено: Музыкальный мастер-класс для всей семьи: погрузитесь в мир латиноамериканской музыки!",
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Генриха Шульца (Heinrich-Schulz- Bibliothek), Otto-Suhr-Allee 98, 10585 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
@@ -5002,6 +5002,62 @@
   ]
  },
  {
+  "id": "berlin-297482",
+  "date": "2026-11-10",
+  "start": "16:00",
+  "end": "",
+  "title": "Lesung \"Der kluge Weihnachtsmann- Sommergeschichten\"",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297482"
+  },
+  "en": {
+   "title": "Reading “The Smart Santa Claus – Summer Stories”",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Lesung \"Der kluge Weihnachtsmann- Sommergeschichten\"",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Читання «Розумний Дід Мороз – літні історії»",
+   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Чтение «Умного Деда Мороза – Летние истории»",
+   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-294880",
   "date": "2026-11-10",
   "start": "16:00",
@@ -5043,62 +5099,6 @@
   "ru": {
    "title": "The Zeyer Hungeriker Opfreser / Маленькая гусеница Ниммерсатт: двуязычный урок чтения для детей на немецком и идише.",
    "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-297482",
-  "date": "2026-11-10",
-  "start": "16:00",
-  "end": "",
-  "title": "Lesung \"Der kluge Weihnachtsmann- Sommergeschichten\"",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-  "district": "Pankow",
-  "lat": 52.5686,
-  "lng": 13.41231,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297482"
-  },
-  "en": {
-   "title": "Reading “The Smart Santa Claus – Summer Stories”",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Lesung \"Der kluge Weihnachtsmann- Sommergeschichten\"",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Читання «Розумний Дід Мороз – літні історії»",
-   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Чтение «Умного Деда Мороза – Летние истории»",
-   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
    "district": "Панков"
   },
   "autoTranslated": [
