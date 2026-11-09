@@ -611,12 +611,6 @@
   "uk": "Бібліотека в Märkischesviertel (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin",
   "ru": "Библиотека в Меркишесфиртеле (Bibliothek im Märkischen Viertel), Wilhelmsruher Damm 142 c, 13439 Berlin"
  },
- "c62d9997aec6879c": {
-  "en": "Dietrich Bonhoeffer Library, Brandenburgische Str. 2, 10713 Berlin",
-  "de": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
-  "uk": "Бібліотека Дітріха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
-  "ru": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin"
- },
  "a5d5d6ae755d01b6": {
   "en": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
   "de": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
@@ -712,24 +706,6 @@
   "de": "Margarete-Kubicka-Bibliothek, Gutschmidtstr. 33, 12359 Berlin",
   "uk": "Бібліотека Маргарети Кубіцької (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin",
   "ru": "Библиотека Маргарет Кубицкой (Margarete-Kubicka-Bibliothek), Gutschmidtstr. 33, 12359 Berlin"
- },
- "1b7d68e4ce50cbf3": {
-  "en": "Lantern run through the Berlin Zoo",
-  "de": "Laternenlauf durch den Tierpark Berlin",
-  "uk": "Пробіг ліхтарями по Берлінському зоопарку",
-  "ru": "Фонарь пробегает по Берлинскому зоопарку"
- },
- "0809b91029d474cd": {
-  "en": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "de": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "uk": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "ru": "Тирпарк Берлин-Фридрихсфельде ГмбХ"
- },
- "05fe4bf231a7995b": {
-  "en": "Berlin Zoo, Am Tierpark 125, 10319 Berlin",
-  "de": "Tierpark Berlin, Am Tierpark 125, 10319 Berlin",
-  "uk": "Берлінський зоопарк (Tierpark Berlin), Am Tierpark 125, 10319 Berlin",
-  "ru": "Берлинский зоопарк (Tierpark Berlin), Am Tierpark 125, 10319 Berlin"
  },
  "839dc6ad9e9ca0af": {
   "en": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
@@ -839,54 +815,6 @@
   "uk": "Міська бібліотека Фрідріхсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
   "ru": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)"
  },
- "cd0a1e1758f74b0b": {
-  "en": "Children's junk",
-  "de": "Kindertrödel",
-  "uk": "Дитячий мотлох",
-  "ru": "Детский хлам"
- },
- "d600012524b40677": {
-  "en": "Children's junk in the Humboldt Library - with entertainment program and cake sale",
-  "de": "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf",
-  "uk": "Дитячий мотлох у бібліотеці Гумбольдта - з розважальною програмою та розпродажем тортів",
-  "ru": "Детский хлам в библиотеке Гумбольдта – с развлекательной программой и продажей тортов"
- },
- "48003504413907d2": {
-  "en": "Dad-child games & fun",
-  "de": "Papa-Kind-Spiel & Spaß",
-  "uk": "Тато-дитина ігри та розваги",
-  "ru": "Игры и развлечения для папы и ребенка"
- },
- "cea5767fa608fc53": {
-  "en": "Family Center Future House Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
-  "de": "Familienzentrum Zukunftshaus Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
-  "uk": "Сімейний Центр Будинок Майбутнього Весілля (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
-  "ru": "Семейный Центр Будущий Дом Свадьба (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin"
- },
- "2f655094cf93e91e": {
-  "en": "Canceled: Music workshop for families: Immerse yourself in the world of Latin American music!",
-  "de": "Entfällt: Musikworkshop für Familien: Taucht ein in die Welt der Lateinamerikanischen Musik!",
-  "uk": "Відмінено: Музичний семінар для сімей: Пориньте у світ латиноамериканської музики!",
-  "ru": "Отменено: Музыкальный мастер-класс для всей семьи: погрузитесь в мир латиноамериканской музыки!"
- },
- "1225837e776f5a0e": {
-  "en": "Magically magnetic: craft workshop “refrigerator magnets”",
-  "de": "Magisch magnetisch: Bastel-Workshop „Kühlschrankmagnete“",
-  "uk": "Чарівно магнітні: майстер-клас «магніти на холодильник»",
-  "ru": "Магически магнитные: мастер-класс «магниты на холодильник»"
- },
- "a41dbd18977cea60": {
-  "en": "Embroidery workshop for children: BellaLiya",
-  "de": "Stickworkshop für Kinder: BellaLiya",
-  "uk": "Майстер-клас з вишивання для дітей: БеллаЛія",
-  "ru": "Мастер-класс по вышивке для детей: БеллаЛия"
- },
- "083c8360b7b3ee70": {
-  "en": "Upcycling - turn old into new!",
-  "de": "Upcycling - Aus Alt mach Neu!",
-  "uk": "Апсайклінг - перетвори старе на нове!",
-  "ru": "Апсайклинг – преврати старое в новое!"
- },
  "3aa15bc6217a9bdc": {
   "en": "Picture book cinema in the Tempelhof library",
   "de": "Bilderbuchkino in der Bibliothek Tempelhof",
@@ -904,18 +832,6 @@
   "de": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
   "uk": "Темпельгофська бібліотека “Будинок Єви-Марії-Буха” (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
   "ru": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin"
- },
- "d851ee495231b91e": {
-  "en": "The tarapank comes from the forest",
-  "de": "Das Tarapank kommt aus dem Wald",
-  "uk": "Тарапанк родом із лісу",
-  "ru": "Тарапанк родом из леса"
- },
- "6af27d06b2ef105a": {
-  "en": "Peter Venzka",
-  "de": "Peter Venzka",
-  "uk": "Петро Венцка",
-  "ru": "Питер Вензка"
  },
  "825d964f48a6794e": {
   "en": "Picture book reading: Ulrich Hub – Birthday in the vacuum cleaner",
@@ -1354,5 +1270,71 @@
   "de": "Krabbelgruppe",
   "uk": "Ігрова група",
   "ru": "Игровая группа"
+ },
+ "baa7f15f2a05458c": {
+  "en": "MOPS",
+  "de": "MOPS",
+  "uk": "швабри",
+  "ru": "ШВАБРЫ"
+ },
+ "9f435b08905c541e": {
+  "en": "Kazbize THeater",
+  "de": "Kazbize-Theater",
+  "uk": "Театр Казбізе",
+  "ru": "Театр Казбизе"
+ },
+ "deece4217286f747": {
+  "en": "Gamingnachmittag (Nintendo Switch)",
+  "de": "Gamingnachmittag (Nintendo Switch)",
+  "uk": "Gamingnachmittag (Nintendo Switch)",
+  "ru": "Gamingnachmittag (Nintendo Switch)"
+ },
+ "17bd923790ba2c34": {
+  "en": "District library book, Wiltbergstraße 19, 13125 Berlin",
+  "de": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "uk": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+  "ru": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin"
+ },
+ "a5a2e1f4b372a84b": {
+  "en": "Fake News Detectives: Here we track down the lies and truths on the internet",
+  "de": "Fake News Detektive: Hier spüren wir den Lügen und Wahrheiten im Netz nach",
+  "uk": "Детективи фейкових новин: тут ми відстежуємо брехню та правду в Інтернеті",
+  "ru": "Детективы фейковых новостей: здесь мы выявляем ложь и правду в Интернете"
+ },
+ "da9d32629656e15b": {
+  "en": "Virtual Reality: Experience the future – with Virtual Reality! (Age: 10-14 years)",
+  "de": "Virtual Reality: Erlebe die Zukunft – mit Virtual Reality! (Alter: 10-14 J.)",
+  "uk": "Віртуальна реальність: відчуйте майбутнє – з віртуальною реальністю! (Вік: 10-14 років)",
+  "ru": "Виртуальная реальность: окунитесь в будущее – с виртуальной реальностью! (Возраст: 10-14 лет)"
+ },
+ "8287688e4e5ab25d": {
+  "en": "Gertrud Junge Library, Bat-Yam-Platz 1, 12353 Berlin",
+  "de": "Gertrud-Junge-Bibliothek, Bat-Yam-Platz 1, 12353 Berlin",
+  "uk": "Бібліотека Гертруди Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin",
+  "ru": "Библиотека Гертруды Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin"
+ },
+ "1e347d4c05bbf183": {
+  "en": "After School Gaming",
+  "de": "Spielen nach der Schule",
+  "uk": "Ігри після школи",
+  "ru": "После школы игры"
+ },
+ "bc49ec086d585491": {
+  "en": "Family workshop Code & Play I Dash robot: driving, turning, course",
+  "de": "Familienwerkstatt Code & Play I Dash-Roboter: Fahren, Drehen, Parcours",
+  "uk": "Сімейна майстерня Code & Play I Dash robot: водіння, поворот, курс",
+  "ru": "Семейный мастер-класс Code & Play I Dash робот: вождение, поворот, курс"
+ },
+ "be437ea7025968b3": {
+  "en": "Egon Erwin Kisch Library, Frankfurter Allee 149, 10365 Berlin",
+  "de": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee 149, 10365 Berlin",
+  "uk": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin",
+  "ru": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin"
+ },
+ "cf3d860674ca592a": {
+  "en": "Sometimes Wednesday (Wednesday)",
+  "de": "Mal Mal Mit(twoch)",
+  "uk": "Іноді середа (середа)",
+  "ru": "Иногда среда (среда)"
  }
 }
