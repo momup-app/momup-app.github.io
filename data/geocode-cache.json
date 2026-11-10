@@ -376,5 +376,9 @@
  "Markstraße 6, 13409 Berlin": {
   "lat": 52.56295,
   "lng": 13.36415
+ },
+ "Westfälische Straße 16 A, 10709 Berlin": {
+  "lat": 52.4935,
+  "lng": 13.30694
  }
 }
