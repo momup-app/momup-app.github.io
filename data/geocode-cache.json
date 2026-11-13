@@ -381,5 +381,11 @@
   "lat": 52.4935,
   "lng": 13.30694
  },
- "Treffpunkt im Torhaus Am Juliusturm 64, 13599 Berlin": null
+ "Treffpunkt im Torhaus Am Juliusturm 64, 13599 Berlin": null,
+ "Treskowalle 13, 10318 Berlin": null,
+ "HTW Berlin Hauptgebäude, Raum.238, Berlin": null,
+ "10318 Berlin": {
+  "lat": 52.48346,
+  "lng": 13.52881
+ }
 }
