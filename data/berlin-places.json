@@ -1023,7 +1023,7 @@
   "organizer": "Anton-Saefkow-Bibliothek",
   "district": "Lichtenberg",
   "homepage": "https://www.berlin.de/stadtbibliothek-lichtenberg/",
-  "seen": "2026-11-09"
+  "seen": "2026-11-13"
  },
  "276076": {
   "place": "Bibliothek Heinrich-von-Kleist",
@@ -4650,6 +4650,15 @@
   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
   "district": "Pankow",
   "homepage": "",
+  "seen": "2026-11-13"
+ },
+ "298472": {
+  "place": "Stadtteilbibliothek Friedrich von Raumer",
+  "street": "Dudenstraße 18-20",
+  "city": "10965 Berlin",
+  "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+  "district": "Friedrichshain-Kreuzberg",
+  "homepage": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/bibliotheken/stadtteilbibliothek-friedrich-von-raumer/",
   "seen": "2026-11-13"
  }
 }
