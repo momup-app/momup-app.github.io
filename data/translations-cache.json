@@ -737,36 +737,6 @@
   "uk": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
   "ru": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin"
  },
- "1b7d68e4ce50cbf3": {
-  "en": "Lantern run through the Berlin Zoo",
-  "de": "Laternenlauf durch den Tierpark Berlin",
-  "uk": "Пробіг ліхтарями по Берлінському зоопарку",
-  "ru": "Фонарь пробегает по Берлинскому зоопарку"
- },
- "0809b91029d474cd": {
-  "en": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "de": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "uk": "Tierpark Berlin-Friedrichsfelde GmbH",
-  "ru": "Тирпарк Берлин-Фридрихсфельде ГмбХ"
- },
- "05fe4bf231a7995b": {
-  "en": "Berlin Zoo, Am Tierpark 125, 10319 Berlin",
-  "de": "Tierpark Berlin, Am Tierpark 125, 10319 Berlin",
-  "uk": "Берлінський зоопарк (Tierpark Berlin), Am Tierpark 125, 10319 Berlin",
-  "ru": "Берлинский зоопарк (Tierpark Berlin), Am Tierpark 125, 10319 Berlin"
- },
- "c55793e2ad97fefe": {
-  "en": "Band workshop in the Spirale youth and cultural center",
-  "de": "Bandworkshop im Jugend- und Kulturzentrum Spirale",
-  "uk": "Гурт-майстерня в молодіжно-культурному центрі «Спіраль».",
-  "ru": "Мастер-класс оркестра в молодёжно-культурном центре Spirale"
- },
- "c83ff9bd49ce9ef5": {
-  "en": "Spirale Youth & Cultural Center, Westfälische Straße 16 A, 10709 Berlin",
-  "de": "Jugend- & Kulturzentrum Spirale, Westfälische Straße 16 A, 10709 Berlin",
-  "uk": "Молодіжно-культурний центр Spirale (Jugend- & Kulturzentrum Spirale), Westfälische Straße 16 A, 10709 Berlin",
-  "ru": "Молодежный и культурный центр Спирале (Jugend- & Kulturzentrum Spirale), Westfälische Straße 16 A, 10709 Berlin"
- },
  "bb6d854a54b3f210": {
   "en": "Makerspace in der Ehm-Welk-Bibliothek",
   "de": "Makerspace in der Ehm-Welk-Bibliothek",
@@ -827,12 +797,6 @@
   "uk": "Бібліотека Бодо Усе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin",
   "ru": "Библиотека Бодо Узе (Bodo-Uhse-Bibliothek), Erich-Kurz-Str. 9, 10319 Berlin"
  },
- "0f3d5937671f5bb6": {
-  "en": "Flausen stage",
-  "de": "Flausenbühne",
-  "uk": "Стадія Флаузена (Flausenbühne)",
-  "ru": "Стадия Флаузена (Flausenbühne)"
- },
  "8331ceae9e8d984c": {
   "en": "“Book mice” crawling group",
   "de": "Krabbelgruppe „Büchermäuse“",
@@ -863,12 +827,6 @@
   "uk": "Темпельгофська бібліотека “Будинок Єви-Марії-Буха” (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
   "ru": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin"
  },
- "07a6dce00e8d6bdc": {
-  "en": "Spot on - Build your own glowing bookmarks!",
-  "de": "Spot an - Leuchtende Lesezeichen selbst bauen!",
-  "uk": "На місці – створюйте власні сяючі закладки!",
-  "ru": "Внимание! Создайте свои собственные светящиеся закладки!"
- },
  "3aa15bc6217a9bdc": {
   "en": "Picture book cinema in the Tempelhof library",
   "de": "Bilderbuchkino in der Bibliothek Tempelhof",
@@ -880,18 +838,6 @@
   "de": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
   "uk": "Районна центральна бібліотека “Єва-Марія-Бух-Хаус” (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
   "ru": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)"
- },
- "85b20331520b6c52": {
-  "en": "Kasper lucky hat",
-  "de": "Kasper Glücksmütze",
-  "uk": "Щасливий капелюх Kasper",
-  "ru": "Каспер счастливая шляпа"
- },
- "623a569410141d40": {
-  "en": "Final concert for the band workshop in the Spirale youth and cultural center",
-  "de": "Abschlusskonzert zum Bandworkshop im Jugend- und Kulturzentrum Spirale",
-  "uk": "Заключний концерт гурткової майстерні в молодіжно-культурному центрі «Спіраль».",
-  "ru": "Заключительный концерт мастерской группы в Молодёжно-культурном центре Спирале"
  },
  "00056769d2d20410": {
   "en": "Children's rights campaign week in our children's library",
@@ -1342,5 +1288,29 @@
   "de": "Krabbelgruppe",
   "uk": "Ігрова група",
   "ru": "Игровая группа"
+ },
+ "1f937020af82f463": {
+  "en": "The little dragon Naseweis: Snow white and ice cold",
+  "de": "Der kleine Drache Naseweis: Schneeweiß und Eisekalt",
+  "uk": "Маленький дракон Насевейс: білосніжний і холодний лід",
+  "ru": "Маленький дракон Насевейс: белоснежный и ледяной."
+ },
+ "3be77789d12b2cd0": {
+  "en": "Family café in the Ingeborg Drewitz Library",
+  "de": "Familiencafé in der Ingeborg-Drewitz-Bibliothek",
+  "uk": "Сімейне кафе в бібліотеці Інгеборг Древіц",
+  "ru": "Семейное кафе в библиотеке Ингеборги Древиц."
+ },
+ "deece4217286f747": {
+  "en": "Gamingnachmittag (Nintendo Switch)",
+  "de": "Gamingnachmittag (Nintendo Switch)",
+  "uk": "Gamingnachmittag (Nintendo Switch)",
+  "ru": "Gamingnachmittag (Nintendo Switch)"
+ },
+ "17bd923790ba2c34": {
+  "en": "District library book, Wiltbergstraße 19, 13125 Berlin",
+  "de": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "uk": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+  "ru": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin"
  }
 }
