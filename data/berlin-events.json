@@ -1198,57 +1198,68 @@
   ]
  },
  {
-  "id": "berlin-242110",
+  "id": "berlin-285556",
   "date": "2026-11-17",
   "start": "16:00",
   "end": "",
-  "title": "Podesthelden: Bilderbuchkino, Kamishibai & Malen, Basteln",
-  "organizer": "",
+  "title": "Bilderbuchkino in der Bibliothek Marienfelde",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
   "category": "language",
   "format": "in-person",
-  "ages": null,
+  "ages": [
+   4,
+   12
+  ],
   "price": {
    "type": "free"
   },
-  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-  "district": "Pankow",
-  "lat": 52.54182,
-  "lng": 13.44085,
+  "address": "Bibliothek Marienfelde, Marienfelder Allee 109, 12277 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.41676,
+  "lng": 13.36654,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=242110"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=285556"
   },
   "en": {
-   "title": "Pedestal heroes: picture book cinema, kamishibai & painting, crafts",
-   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
+   "title": "Picture book cinema in the Marienfelde library",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Marienfelde Library, Marienfelder Allee 109, 12277 Berlin",
+   "district": "Tempelhof-Schöneberg"
   },
   "de": {
-   "title": "Podesthelden: Bilderbuchkino, Kamishibai & Malen, Basteln",
-   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
+   "title": "Bilderbuchkino in der Bibliothek Marienfelde",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Bibliothek Marienfelde, Marienfelder Allee 109, 12277 Berlin",
+   "district": "Tempelhof-Schöneberg"
   },
   "uk": {
-   "title": "Герої п’єдесталу: кіно з картинками, камішибай і живопис, ремесла",
-   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панків"
+   "title": "Кінотеатр з картинками в бібліотеці Марієнфельде",
+   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Бібліотека Марієнфельде (Bibliothek Marienfelde), Marienfelder Allee 109, 12277 Berlin",
+   "district": "Темпельгоф-Шенеберг"
   },
   "ru": {
-   "title": "Герои пьедестала: кинокнига с картинками, камисибай и живопись, поделки.",
-   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панков"
+   "title": "Кинотеатр с картинками в библиотеке Мариенфельде",
+   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Библиотека Мариенфельде (Bibliothek Marienfelde), Marienfelder Allee 109, 12277 Berlin",
+   "district": "Темпельхоф-Шёнеберг"
   },
   "autoTranslated": [
    "en.title",
+   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
+   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
+   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
+   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1318,68 +1329,57 @@
   ]
  },
  {
-  "id": "berlin-285556",
+  "id": "berlin-242110",
   "date": "2026-11-17",
   "start": "16:00",
   "end": "",
-  "title": "Bilderbuchkino in der Bibliothek Marienfelde",
-  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "title": "Podesthelden: Bilderbuchkino, Kamishibai & Malen, Basteln",
+  "organizer": "",
   "category": "language",
   "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
+  "ages": null,
   "price": {
    "type": "free"
   },
-  "address": "Bibliothek Marienfelde, Marienfelder Allee 109, 12277 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.41676,
-  "lng": 13.36654,
+  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+  "district": "Pankow",
+  "lat": 52.54182,
+  "lng": 13.44085,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=285556"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=242110"
   },
   "en": {
-   "title": "Picture book cinema in the Marienfelde library",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Marienfelde Library, Marienfelder Allee 109, 12277 Berlin",
-   "district": "Tempelhof-Schöneberg"
+   "title": "Pedestal heroes: picture book cinema, kamishibai & painting, crafts",
+   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
+   "district": "Pankow"
   },
   "de": {
-   "title": "Bilderbuchkino in der Bibliothek Marienfelde",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Bibliothek Marienfelde, Marienfelder Allee 109, 12277 Berlin",
-   "district": "Tempelhof-Schöneberg"
+   "title": "Podesthelden: Bilderbuchkino, Kamishibai & Malen, Basteln",
+   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+   "district": "Pankow"
   },
   "uk": {
-   "title": "Кінотеатр з картинками в бібліотеці Марієнфельде",
-   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Бібліотека Марієнфельде (Bibliothek Marienfelde), Marienfelder Allee 109, 12277 Berlin",
-   "district": "Темпельгоф-Шенеберг"
+   "title": "Герої п’єдесталу: кіно з картинками, камішибай і живопис, ремесла",
+   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
+   "district": "Панків"
   },
   "ru": {
-   "title": "Кинотеатр с картинками в библиотеке Мариенфельде",
-   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Библиотека Мариенфельде (Bibliothek Marienfelde), Marienfelder Allee 109, 12277 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
+   "title": "Герои пьедестала: кинокнига с картинками, камисибай и живопись, поделки.",
+   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
-   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
-   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
-   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1495,70 +1495,6 @@
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-253657",
-  "date": "2026-11-17",
-  "start": "16:00",
-  "end": "",
-  "title": "Gaming mit der Switch 2",
-  "organizer": "Humboldt-Bibliothek",
-  "category": "stem",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59194,
-  "lng": 13.2806,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=253657"
-  },
-  "en": {
-   "title": "Gaming with the Switch 2",
-   "organizer": "Humboldt Library",
-   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Gaming mit der Switch 2",
-   "organizer": "Humboldt-Bibliothek",
-   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Ігри за допомогою Switch 2",
-   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Игры с Switch 2",
-   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1955,6 +1891,70 @@
   ]
  },
  {
+  "id": "berlin-253657",
+  "date": "2026-11-17",
+  "start": "16:00",
+  "end": "",
+  "title": "Gaming mit der Switch 2",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=253657"
+  },
+  "en": {
+   "title": "Gaming with the Switch 2",
+   "organizer": "Humboldt Library",
+   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Gaming mit der Switch 2",
+   "organizer": "Humboldt-Bibliothek",
+   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Ігри за допомогою Switch 2",
+   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Игры с Switch 2",
+   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-289121",
   "date": "2026-11-17",
   "start": "16:00",
@@ -2214,70 +2214,6 @@
   ]
  },
  {
-  "id": "berlin-293704",
-  "date": "2026-11-17",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Wir lesen vor - Tag der Kinderrechte",
-  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-  "district": "Marzahn-Hellersdorf",
-  "lat": 52.54207,
-  "lng": 13.54431,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293704"
-  },
-  "en": {
-   "title": "We read aloud - Children's Rights Day",
-   "organizer": "Mark Twain District Central Library",
-   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "de": {
-   "title": "Wir lesen vor - Tag der Kinderrechte",
-   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "uk": {
-   "title": "Читаємо вголос - День прав дитини",
-   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Геллерсдорф"
-  },
-  "ru": {
-   "title": "Читаем вслух - День прав ребенка",
-   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Хеллерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-291343",
   "date": "2026-11-17",
   "start": "16:30",
@@ -2324,6 +2260,70 @@
    "organizer": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)",
    "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
    "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-293704",
+  "date": "2026-11-17",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Wir lesen vor - Tag der Kinderrechte",
+  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.54207,
+  "lng": 13.54431,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293704"
+  },
+  "en": {
+   "title": "We read aloud - Children's Rights Day",
+   "organizer": "Mark Twain District Central Library",
+   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "de": {
+   "title": "Wir lesen vor - Tag der Kinderrechte",
+   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "uk": {
+   "title": "Читаємо вголос - День прав дитини",
+   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Геллерсдорф"
+  },
+  "ru": {
+   "title": "Читаем вслух - День прав ребенка",
+   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Хеллерсдорф"
   },
   "autoTranslated": [
    "en.title",
@@ -2468,73 +2468,6 @@
   ]
  },
  {
-  "id": "berlin-268717",
-  "date": "2026-11-17",
-  "start": "16:30",
-  "end": "17:00",
-  "title": "Bilderbuchkino in der Bibliothek Tempelhof",
-  "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.46378,
-  "lng": 13.38774,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=268717"
-  },
-  "en": {
-   "title": "Picture book cinema in the Tempelhof library",
-   "organizer": "District Central Library “Eva-Maria-Buch-Haus”",
-   "address": "Tempelhof Library “Eva-Maria-Buch-Haus”, Götzstr. 8-12, 12099 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "de": {
-   "title": "Bilderbuchkino in der Bibliothek Tempelhof",
-   "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
-   "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "uk": {
-   "title": "Кінотеатр у бібліотеці Tempelhof",
-   "organizer": "Районна центральна бібліотека “Єва-Марія-Бух-Хаус” (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
-   "address": "Темпельгофська бібліотека “Будинок Єви-Марії-Буха” (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
-   "district": "Темпельгоф-Шенеберг"
-  },
-  "ru": {
-   "title": "Кинотеатр с картинками в библиотеке Темпельхоф",
-   "organizer": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
-   "address": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-285421",
   "date": "2026-11-17",
   "start": "16:30",
@@ -2581,6 +2514,73 @@
    "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
    "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
    "district": "Марцан-Хеллерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-268717",
+  "date": "2026-11-17",
+  "start": "16:30",
+  "end": "17:00",
+  "title": "Bilderbuchkino in der Bibliothek Tempelhof",
+  "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.46378,
+  "lng": 13.38774,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=268717"
+  },
+  "en": {
+   "title": "Picture book cinema in the Tempelhof library",
+   "organizer": "District Central Library “Eva-Maria-Buch-Haus”",
+   "address": "Tempelhof Library “Eva-Maria-Buch-Haus”, Götzstr. 8-12, 12099 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "de": {
+   "title": "Bilderbuchkino in der Bibliothek Tempelhof",
+   "organizer": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
+   "address": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "uk": {
+   "title": "Кінотеатр у бібліотеці Tempelhof",
+   "organizer": "Районна центральна бібліотека “Єва-Марія-Бух-Хаус” (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
+   "address": "Темпельгофська бібліотека “Будинок Єви-Марії-Буха” (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
+   "district": "Темпельгоф-Шенеберг"
+  },
+  "ru": {
+   "title": "Кинотеатр с картинками в библиотеке Темпельхоф",
+   "organizer": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
+   "address": "Библиотека Темпельхоф «Ева-Мария-Бух-Хаус» (Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\"), Götzstr. 8-12, 12099 Berlin",
+   "district": "Темпельхоф-Шёнеберг"
   },
   "autoTranslated": [
    "en.title",
@@ -2669,73 +2669,6 @@
   ]
  },
  {
-  "id": "berlin-287125",
-  "date": "2026-11-17",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   0,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
-  "district": "Mitte",
-  "lat": 52.53158,
-  "lng": 13.3262,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=287125"
-  },
-  "en": {
-   "title": "Reading to children in the Kurt Tucholsky Library",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Kurt Tucholsky Library, Rostocker Str. 32b, 10553 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Читання дітям у Бібліотеці Курта Тухольського",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Курта Тухольського (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Чтение детям в Библиотеке Курта Тухольского",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-284647",
   "date": "2026-11-17",
   "start": "16:30",
@@ -2782,6 +2715,73 @@
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Эберхарда Александра Бурга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-287125",
+  "date": "2026-11-17",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287125"
+  },
+  "en": {
+   "title": "Reading to children in the Kurt Tucholsky Library",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Kurt Tucholsky Library, Rostocker Str. 32b, 10553 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Читання дітям у Бібліотеці Курта Тухольського",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Курта Тухольського (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Чтение детям в Библиотеке Курта Тухольского",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
+   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
@@ -3557,6 +3557,62 @@
   ]
  },
  {
+  "id": "berlin-298340",
+  "date": "2026-11-18",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.51344,
+  "lng": 13.48137,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=298340"
+  },
+  "en": {
+   "title": "Vernissage | Fairy tale time: An exhibition by children from the school at Victoriastadt",
+   "address": "Egon Erwin Kisch Library, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
+   "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Вернісаж | Час казок: виставка дітей зі школи Вікторіяштадт",
+   "address": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Вернисаж | Время сказок: выставка детей из школы Викториаштадта.",
+   "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-292063",
   "date": "2026-11-18",
   "start": "16:00",
@@ -3619,62 +3675,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-298340",
-  "date": "2026-11-18",
-  "start": "16:00",
-  "end": "17:30",
-  "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.51344,
-  "lng": 13.48137,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=298340"
-  },
-  "en": {
-   "title": "Vernissage | Fairy tale time: An exhibition by children from the school at Victoriastadt",
-   "address": "Egon Erwin Kisch Library, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
-   "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Вернісаж | Час казок: виставка дітей зі школи Вікторіяштадт",
-   "address": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Вернисаж | Время сказок: выставка детей из школы Викториаштадта.",
-   "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3913,70 +3913,6 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека Шиллера (Schiller-Bibliothek), Müllerstraße 149, 13353 Berlin",
    "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-223170",
-  "date": "2026-11-18",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Offene Go-Gruppe",
-  "organizer": "Humboldt-Bibliothek",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.59194,
-  "lng": 13.2806,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=223170"
-  },
-  "en": {
-   "title": "Open Go group",
-   "organizer": "Humboldt Library",
-   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Offene Go-Gruppe",
-   "organizer": "Humboldt-Bibliothek",
-   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Відкрийте групу Go",
-   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Открытая группа Го",
-   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
-   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
-   "district": "Райникендорф"
   },
   "autoTranslated": [
    "en.title",
@@ -4255,6 +4191,137 @@
   ]
  },
  {
+  "id": "berlin-223170",
+  "date": "2026-11-18",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Offene Go-Gruppe",
+  "organizer": "Humboldt-Bibliothek",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.59194,
+  "lng": 13.2806,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=223170"
+  },
+  "en": {
+   "title": "Open Go group",
+   "organizer": "Humboldt Library",
+   "address": "Humboldt Library Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Offene Go-Gruppe",
+   "organizer": "Humboldt-Bibliothek",
+   "address": "Humboldt-Bibliothek Tegel, Karolinenstraße 19, 13507 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Відкрийте групу Go",
+   "organizer": "Бібліотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Бібліотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Открытая группа Го",
+   "organizer": "Библиотека Гумбольдта (Humboldt-Bibliothek)",
+   "address": "Библиотека Гумбольдта Тегель (Humboldt-Bibliothek Tegel), Karolinenstraße 19, 13507 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-297521",
+  "date": "2026-11-18",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Bilinguale Märchentage: Deutsch - Spanisch",
+  "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bettina-von-Arnim-Bibliothek, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
+  "district": "Pankow",
+  "lat": 52.54926,
+  "lng": 13.41409,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297521"
+  },
+  "en": {
+   "title": "Bilingual fairy tale days: German - Spanish",
+   "organizer": "Bettina von Arnim Library, Office for Further Education and Culture",
+   "address": "Bettina von Arnim Library, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bilinguale Märchentage: Deutsch - Spanisch",
+   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
+   "address": "Bettina-von-Arnim-Bibliothek, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Двомовні казкові дні: німецько - іспанська",
+   "organizer": "Бібліотека Беттіни фон Арнім, Управління додаткової освіти та культури (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
+   "address": "Бібліотека Беттіни фон Арнім (Bettina-von-Arnim-Bibliothek), Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Двуязычные сказочные дни: немецкий - испанский",
+   "organizer": "Библиотека Беттины фон Арним, Управление дальнейшего образования и культуры (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
+   "address": "Библиотека Беттины фон Арним (Bettina-von-Arnim-Bibliothek), Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-296549",
   "date": "2026-11-18",
   "start": "16:30",
@@ -4368,73 +4435,6 @@
    "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
    "address": "Библиотека Гертруды Хасса (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
    "district": "Нойкёльн"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-297521",
-  "date": "2026-11-18",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Bilinguale Märchentage: Deutsch - Spanisch",
-  "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   3,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bettina-von-Arnim-Bibliothek, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
-  "district": "Pankow",
-  "lat": 52.54926,
-  "lng": 13.41409,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297521"
-  },
-  "en": {
-   "title": "Bilingual fairy tale days: German - Spanish",
-   "organizer": "Bettina von Arnim Library, Office for Further Education and Culture",
-   "address": "Bettina von Arnim Library, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Bilinguale Märchentage: Deutsch - Spanisch",
-   "organizer": "Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur",
-   "address": "Bettina-von-Arnim-Bibliothek, Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Двомовні казкові дні: німецько - іспанська",
-   "organizer": "Бібліотека Беттіни фон Арнім, Управління додаткової освіти та культури (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
-   "address": "Бібліотека Беттіни фон Арнім (Bettina-von-Arnim-Bibliothek), Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Двуязычные сказочные дни: немецкий - испанский",
-   "organizer": "Библиотека Беттины фон Арним, Управление дальнейшего образования и культуры (Bettina-von Arnim-Bibliothek, Amt für Weiterbildung und Kultur)",
-   "address": "Библиотека Беттины фон Арним (Bettina-von-Arnim-Bibliothek), Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin",
-   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
