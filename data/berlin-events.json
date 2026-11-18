@@ -1261,6 +1261,62 @@
   ]
  },
  {
+  "id": "berlin-298340",
+  "date": "2026-11-18",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.51344,
+  "lng": 13.48137,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=298340"
+  },
+  "en": {
+   "title": "Vernissage | Fairy tale time: An exhibition by children from the school at Victoriastadt",
+   "address": "Egon Erwin Kisch Library, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
+   "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Вернісаж | Час казок: виставка дітей зі школи Вікторіяштадт",
+   "address": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Вернисаж | Время сказок: выставка детей из школы Викториаштадта.",
+   "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-292063",
   "date": "2026-11-18",
   "start": "16:00",
@@ -1323,121 +1379,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-298340",
-  "date": "2026-11-18",
-  "start": "16:00",
-  "end": "17:30",
-  "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.51344,
-  "lng": 13.48137,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=298340"
-  },
-  "en": {
-   "title": "Vernissage | Fairy tale time: An exhibition by children from the school at Victoriastadt",
-   "address": "Egon Erwin Kisch Library, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Vernissage | Märchenzeit : Eine Ausstellung von Kindern aus der Schule an der Victoriastadt",
-   "address": "Egon-Erwin-Kisch-Bibliothek, Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Вернісаж | Час казок: виставка дітей зі школи Вікторіяштадт",
-   "address": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Вернисаж | Время сказок: выставка детей из школы Викториаштадта.",
-   "address": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Ecke Rathausstr. Frankfurter Allee 149, 10365 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-273661",
-  "date": "2026-11-18",
-  "start": "16:00",
-  "end": "",
-  "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   3,
-   8
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-  "district": "Pankow",
-  "lat": 52.53332,
-  "lng": 13.42024,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=273661"
-  },
-  "en": {
-   "title": "Craft stories – creative afternoon for children",
-   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
-   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Craft stories – творчий полудень для дітей",
-   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Поделочные истории – творческий день для детей",
-   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -1633,6 +1574,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-273661",
+  "date": "2026-11-18",
+  "start": "16:00",
+  "end": "",
+  "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   3,
+   8
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=273661"
+  },
+  "en": {
+   "title": "Craft stories – creative afternoon for children",
+   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bastelgeschichten – Kreativer Nachmittag für Kinder",
+   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Craft stories – творчий полудень для дітей",
+   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Поделочные истории – творческий день для детей",
+   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -2154,6 +2154,73 @@
   ]
  },
  {
+  "id": "berlin-290693",
+  "date": "2026-11-18",
+  "start": "16:30",
+  "end": "18:00",
+  "title": "K-Pop Tanz Workshop mit Yulia Kim",
+  "organizer": "Stadtbibliothek Neukölln",
+  "category": "dance",
+  "format": "in-person",
+  "ages": [
+   10,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "district": "Neukölln",
+  "lat": 52.41894,
+  "lng": 13.49432,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290693"
+  },
+  "en": {
+   "title": "K-Pop dance workshop with Yulia Kim",
+   "organizer": "Neukölln City Library",
+   "address": "Gertrud Haß Library, Alt-Rudow 45, 12357 Berlin",
+   "district": "Neukölln"
+  },
+  "de": {
+   "title": "K-Pop Tanz Workshop mit Yulia Kim",
+   "organizer": "Stadtbibliothek Neukölln",
+   "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+   "district": "Neukölln"
+  },
+  "uk": {
+   "title": "K-Pop dance workshop з Юлією Кім",
+   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
+   "address": "Бібліотека Гертруди Хас (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
+   "district": "Neukölln"
+  },
+  "ru": {
+   "title": "K-Pop танцевальный мастер-класс с Юлией Ким",
+   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
+   "address": "Библиотека Гертруды Хасса (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
+   "district": "Нойкёльн"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-298823",
   "date": "2026-11-18",
   "start": "16:30",
@@ -2331,73 +2398,6 @@
    "organizer": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
    "address": "Центральная библиотека района Пабло Неруда (Bezirkszentralbibliothek Pablo Neruda), Frankfurter Allee 14A, 10247 Berlin",
    "district": "Фридрихсхайн-Кройцберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-290693",
-  "date": "2026-11-18",
-  "start": "16:30",
-  "end": "18:00",
-  "title": "K-Pop Tanz Workshop mit Yulia Kim",
-  "organizer": "Stadtbibliothek Neukölln",
-  "category": "dance",
-  "format": "in-person",
-  "ages": [
-   10,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
-  "district": "Neukölln",
-  "lat": 52.41894,
-  "lng": 13.49432,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290693"
-  },
-  "en": {
-   "title": "K-Pop dance workshop with Yulia Kim",
-   "organizer": "Neukölln City Library",
-   "address": "Gertrud Haß Library, Alt-Rudow 45, 12357 Berlin",
-   "district": "Neukölln"
-  },
-  "de": {
-   "title": "K-Pop Tanz Workshop mit Yulia Kim",
-   "organizer": "Stadtbibliothek Neukölln",
-   "address": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
-   "district": "Neukölln"
-  },
-  "uk": {
-   "title": "K-Pop dance workshop з Юлією Кім",
-   "organizer": "Міська бібліотека Нойкельн (Stadtbibliothek Neukölln)",
-   "address": "Бібліотека Гертруди Хас (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
-   "district": "Neukölln"
-  },
-  "ru": {
-   "title": "K-Pop танцевальный мастер-класс с Юлией Ким",
-   "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
-   "address": "Библиотека Гертруды Хасса (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
-   "district": "Нойкёльн"
   },
   "autoTranslated": [
    "en.title",
@@ -2919,6 +2919,65 @@
   ]
  },
  {
+  "id": "berlin-274474",
+  "date": "2026-11-19",
+  "start": "16:00",
+  "end": "19:00",
+  "title": "SchlossKultur - Kultur im Schloss! - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=274474"
+  },
+  "en": {
+   "title": "CastleCulture - Culture in the castle! - for the festival month in the Ingeborg Drewitz Library",
+   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "SchlossKultur - Kultur im Schloss! - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "CastleCulture - Культура в замку! - на фестивальний місяць у бібліотеці Інґеборґ Древіц",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "CastleCulture - Культура в замке! - на фестивальный месяц в Библиотеке Ингеборги Древиц",
+   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-256162",
   "date": "2026-11-19",
   "start": "16:00",
@@ -3042,47 +3101,44 @@
   ]
  },
  {
-  "id": "berlin-274474",
+  "id": "berlin-275323",
   "date": "2026-11-19",
   "start": "16:00",
-  "end": "19:00",
-  "title": "SchlossKultur - Kultur im Schloss! - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
+  "end": "18:00",
+  "title": "Strick In - der Handarbeitstreff in der Bibliothek",
   "organizer": "",
-  "category": "language",
+  "category": "arts",
   "format": "in-person",
-  "ages": [
-   6,
-   12
-  ],
+  "ages": null,
   "price": {
    "type": "unknown"
   },
-  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
   "district": "Steglitz-Zehlendorf",
-  "lat": 52.45778,
-  "lng": 13.31963,
+  "lat": 52.43208,
+  "lng": 13.25544,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=274474"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=275323"
   },
   "en": {
-   "title": "CastleCulture - Culture in the castle! - for the festival month in the Ingeborg Drewitz Library",
-   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
+   "title": "Strick In - the craft meeting in the library",
+   "address": "Gottfried Benn Library, Nentershäuser Platz 1, 14163 Berlin",
    "district": "Steglitz-Zehlendorf"
   },
   "de": {
-   "title": "SchlossKultur - Kultur im Schloss! - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "title": "Strick In - der Handarbeitstreff in der Bibliothek",
+   "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
    "district": "Steglitz-Zehlendorf"
   },
   "uk": {
-   "title": "CastleCulture - Культура в замку! - на фестивальний місяць у бібліотеці Інґеборґ Древіц",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "title": "Strick In - реміснича зустріч у бібліотеці",
+   "address": "Бібліотека Готфріда Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
    "district": "Штегліц-Целендорф"
   },
   "ru": {
-   "title": "CastleCulture - Культура в замке! - на фестивальный месяц в Библиотеке Ингеборги Древиц",
-   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "title": "Srick In - ремесленная встреча в библиотеке",
+   "address": "Библиотека Готфрида Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
    "district": "Штеглиц-Целендорф"
   },
   "autoTranslated": [
@@ -3160,62 +3216,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-275323",
-  "date": "2026-11-19",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Strick In - der Handarbeitstreff in der Bibliothek",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
-  "district": "Steglitz-Zehlendorf",
-  "lat": 52.43208,
-  "lng": 13.25544,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=275323"
-  },
-  "en": {
-   "title": "Strick In - the craft meeting in the library",
-   "address": "Gottfried Benn Library, Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "de": {
-   "title": "Strick In - der Handarbeitstreff in der Bibliothek",
-   "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "uk": {
-   "title": "Strick In - реміснича зустріч у бібліотеці",
-   "address": "Бібліотека Готфріда Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Штегліц-Целендорф"
-  },
-  "ru": {
-   "title": "Srick In - ремесленная встреча в библиотеке",
-   "address": "Библиотека Готфрида Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Штеглиц-Целендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -4058,6 +4058,73 @@
   ]
  },
  {
+  "id": "berlin-295772",
+  "date": "2026-11-19",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Puppentheater „Nachtkatze und Dachgespenst“",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   3,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+  "district": "Mitte",
+  "lat": 52.53124,
+  "lng": 13.34751,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295772"
+  },
+  "en": {
+   "title": "Puppet theater “Night Cat and Roof Ghost”",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Bruno Lösche Library, Perleberger Str. 33, 10559 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Puppentheater „Nachtkatze und Dachgespenst“",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Ляльковий театр «Нічний кіт і привид на даху»",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Бруно Леше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Кукольный театр «Ночной кот и привидение с крыши»",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-298730",
   "date": "2026-11-19",
   "start": "16:30",
@@ -4176,73 +4243,6 @@
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-295772",
-  "date": "2026-11-19",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Puppentheater „Nachtkatze und Dachgespenst“",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   3,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
-  "district": "Mitte",
-  "lat": 52.53124,
-  "lng": 13.34751,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295772"
-  },
-  "en": {
-   "title": "Puppet theater “Night Cat and Roof Ghost”",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Bruno Lösche Library, Perleberger Str. 33, 10559 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Puppentheater „Nachtkatze und Dachgespenst“",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Ляльковий театр «Нічний кіт і привид на даху»",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Бруно Леше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Кукольный театр «Ночной кот и привидение с крыши»",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -5013,6 +5013,62 @@
   ]
  },
  {
+  "id": "berlin-295502",
+  "date": "2026-11-19",
+  "start": "17:00",
+  "end": "",
+  "title": "Medienkompetente Familie – Kinder und Jugendliche digital begleiten",
+  "organizer": "",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.61655,
+  "lng": 13.4917,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295502"
+  },
+  "en": {
+   "title": "Media-competent family – accompany children and young people digitally",
+   "address": "Karow district library, Achillesstraße 77, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Medienkompetente Familie – Kinder und Jugendliche digital begleiten",
+   "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Медіакомпетентна родина – супроводжуйте дітей та молодь цифровим способом",
+   "address": "Карівська районна бібліотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Медиа-компетентная семья – сопровождайте детей и молодых людей в цифровом формате",
+   "address": "Каровская районная библиотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-294490",
   "date": "2026-11-19",
   "start": "17:00",
@@ -5072,62 +5128,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-295502",
-  "date": "2026-11-19",
-  "start": "17:00",
-  "end": "",
-  "title": "Medienkompetente Familie – Kinder und Jugendliche digital begleiten",
-  "organizer": "",
-  "category": "stem",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
-  "district": "Pankow",
-  "lat": 52.61655,
-  "lng": 13.4917,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295502"
-  },
-  "en": {
-   "title": "Media-competent family – accompany children and young people digitally",
-   "address": "Karow district library, Achillesstraße 77, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Medienkompetente Familie – Kinder und Jugendliche digital begleiten",
-   "address": "Stadtteilbibliothek Karow, Achillesstraße 77, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Медіакомпетентна родина – супроводжуйте дітей та молодь цифровим способом",
-   "address": "Карівська районна бібліотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Медиа-компетентная семья – сопровождайте детей и молодых людей в цифровом формате",
-   "address": "Каровская районная библиотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
