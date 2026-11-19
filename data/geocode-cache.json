@@ -388,5 +388,26 @@
   "lat": 52.48346,
   "lng": 13.52881
  },
- "Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin": null
+ "Eingang rechts neben Burger King, 3. OG Schönhauser Allee 75, 10439 Berlin": null,
+ "Budapester Straße 32, 10787 Berlin": {
+  "lat": 52.506,
+  "lng": 13.34085
+ },
+ "Derfflinger Straße 7, 10785 Berlin": {
+  "lat": 52.50302,
+  "lng": 13.35504
+ },
+ "Derfflinger Str. 7, 10785 Berlin": {
+  "lat": 52.50302,
+  "lng": 13.35504
+ },
+ "1. Etage Ratssaal Sterndamm 102, 12487 Berlin": null,
+ "Museum Treptow, Berlin": {
+  "lat": 52.44345,
+  "lng": 13.50223
+ },
+ "Invalidenstr. 117, 10115 Berlin": {
+  "lat": 52.53028,
+  "lng": 13.38516
+ }
 }
