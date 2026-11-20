@@ -1609,6 +1609,62 @@
   ]
  },
  {
+  "id": "berlin-298337",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Märchenstunde",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+  "district": "Pankow",
+  "lat": 52.54182,
+  "lng": 13.44085,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=298337"
+  },
+  "en": {
+   "title": "Story time",
+   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Märchenstunde",
+   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Час історії",
+   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Время истории",
+   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-298214",
   "date": "2026-11-20",
   "start": "16:00",
@@ -1668,188 +1724,6 @@
   ]
  },
  {
-  "id": "berlin-293548",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "",
-  "title": "WagnerHowitz zeigt: \"Frau Holle außer Kontrolle\" in der Bibliothek Lichtenrade",
-  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   10,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.38787,
-  "lng": 13.39715,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=293548"
-  },
-  "en": {
-   "title": "WagnerHowitz shows: “Frau Holle out of control” in the Lichtenrade library",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "de": {
-   "title": "WagnerHowitz zeigt: \"Frau Holle außer Kontrolle\" in der Bibliothek Lichtenrade",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
-  },
-  "uk": {
-   "title": "WagnerHowitz показує: «Фрау Голле вийшла з-під контролю» в бібліотеці Ліхтенраде",
-   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельгоф-Шенеберг"
-  },
-  "ru": {
-   "title": "WagnerHowitz показывает: «Фрау Холле вышла из-под контроля» в библиотеке Лихтенраде",
-   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-298337",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Märchenstunde",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-  "district": "Pankow",
-  "lat": 52.54182,
-  "lng": 13.44085,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=298337"
-  },
-  "en": {
-   "title": "Story time",
-   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Märchenstunde",
-   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Час історії",
-   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Время истории",
-   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-294253",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "17:30",
-  "title": "Bundesweiter Vorlesetag | Marathonlesung",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
-  "district": "Friedrichshain-Kreuzberg",
-  "lat": 52.49657,
-  "lng": 13.39249,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294253"
-  },
-  "en": {
-   "title": "Nationwide Reading Day | Marathon reading",
-   "address": "America Memorial Library, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "de": {
-   "title": "Bundesweiter Vorlesetag | Marathonlesung",
-   "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "uk": {
-   "title": "Всеукраїнський день читання | Марафон читання",
-   "address": "Меморіальна бібліотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Фрідріхсхайн-Кройцберг"
-  },
-  "ru": {
-   "title": "Всероссийский день чтения | Марафонское чтение",
-   "address": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
-   "district": "Фридрихсхайн-Кройцберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-297644",
   "date": "2026-11-20",
   "start": "16:00",
@@ -1889,62 +1763,6 @@
    "title": "ОТМЕНЕНО! Общенациональный день чтения: «Наша самая обычная поездка в Канаду»",
    "address": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
    "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-297086",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "",
-  "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-  "district": "Pankow",
-  "lat": 52.53332,
-  "lng": 13.42024,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297086"
-  },
-  "en": {
-   "title": "Nationwide Volese Day in the library at the water tower",
-   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
-   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Загальнодержавний день Волеся в бібліотеці на водонапірній башті",
-   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Всероссийский день Волезе в библиотеке водонапорной башни",
-   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
-   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
@@ -2024,6 +1842,188 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-293548",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "",
+  "title": "WagnerHowitz zeigt: \"Frau Holle außer Kontrolle\" in der Bibliothek Lichtenrade",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   10,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.38787,
+  "lng": 13.39715,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=293548"
+  },
+  "en": {
+   "title": "WagnerHowitz shows: “Frau Holle out of control” in the Lichtenrade library",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "de": {
+   "title": "WagnerHowitz zeigt: \"Frau Holle außer Kontrolle\" in der Bibliothek Lichtenrade",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "uk": {
+   "title": "WagnerHowitz показує: «Фрау Голле вийшла з-під контролю» в бібліотеці Ліхтенраде",
+   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Темпельгоф-Шенеберг"
+  },
+  "ru": {
+   "title": "WagnerHowitz показывает: «Фрау Холле вышла из-под контроля» в библиотеке Лихтенраде",
+   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-294253",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "Bundesweiter Vorlesetag | Marathonlesung",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
+  "district": "Friedrichshain-Kreuzberg",
+  "lat": 52.49657,
+  "lng": 13.39249,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294253"
+  },
+  "en": {
+   "title": "Nationwide Reading Day | Marathon reading",
+   "address": "America Memorial Library, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "de": {
+   "title": "Bundesweiter Vorlesetag | Marathonlesung",
+   "address": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "uk": {
+   "title": "Всеукраїнський день читання | Марафон читання",
+   "address": "Меморіальна бібліотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Фрідріхсхайн-Кройцберг"
+  },
+  "ru": {
+   "title": "Всероссийский день чтения | Марафонское чтение",
+   "address": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
+   "district": "Фридрихсхайн-Кройцберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-297086",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "",
+  "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297086"
+  },
+  "en": {
+   "title": "Nationwide Volese Day in the library at the water tower",
+   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
+   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Загальнодержавний день Волеся в бібліотеці на водонапірній башті",
+   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Всероссийский день Волезе в библиотеке водонапорной башни",
+   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -2678,6 +2678,65 @@
   ]
  },
  {
+  "id": "berlin-290369",
+  "date": "2026-11-20",
+  "start": "16:30",
+  "end": "",
+  "title": "Duo Isenbügel und Assmann spielen \"Der Scheegenbogen\" in der Gottfried-Benn-Bibliothek",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.43208,
+  "lng": 13.25544,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290369"
+  },
+  "en": {
+   "title": "Duo Iseneisen and Assmann play “Der Scheegenbogen” in the Gottfried Benn Library",
+   "address": "Gottfried Benn Library, Nentershäuser Platz 1, 14163 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "Duo Isenbügel und Assmann spielen \"Der Scheegenbogen\" in der Gottfried-Benn-Bibliothek",
+   "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "Дует Iseneisen і Assmann грає «Der Scheegenbogen» у бібліотеці Готфріда Бенна",
+   "address": "Бібліотека Готфріда Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "Дуэт Изенеизен и Ассманн играют «Шегенбоген» в библиотеке Готфрида Бенна.",
+   "address": "Библиотека Готфрида Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
+   "district": "Штеглиц-Целендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-296162",
   "date": "2026-11-20",
   "start": "16:30",
@@ -2740,65 +2799,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-290369",
-  "date": "2026-11-20",
-  "start": "16:30",
-  "end": "",
-  "title": "Duo Isenbügel und Assmann spielen \"Der Scheegenbogen\" in der Gottfried-Benn-Bibliothek",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
-  "district": "Steglitz-Zehlendorf",
-  "lat": 52.43208,
-  "lng": 13.25544,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290369"
-  },
-  "en": {
-   "title": "Duo Iseneisen and Assmann play “Der Scheegenbogen” in the Gottfried Benn Library",
-   "address": "Gottfried Benn Library, Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "de": {
-   "title": "Duo Isenbügel und Assmann spielen \"Der Scheegenbogen\" in der Gottfried-Benn-Bibliothek",
-   "address": "Gottfried-Benn-Bibliothek, Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "uk": {
-   "title": "Дует Iseneisen і Assmann грає «Der Scheegenbogen» у бібліотеці Готфріда Бенна",
-   "address": "Бібліотека Готфріда Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Штегліц-Целендорф"
-  },
-  "ru": {
-   "title": "Дуэт Изенеизен и Ассманн играют «Шегенбоген» в библиотеке Готфрида Бенна.",
-   "address": "Библиотека Готфрида Бенна (Gottfried-Benn-Bibliothek), Nentershäuser Platz 1, 14163 Berlin",
-   "district": "Штеглиц-Целендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3432,6 +3432,62 @@
   ]
  },
  {
+  "id": "berlin-286567",
+  "date": "2026-11-21",
+  "start": "10:30",
+  "end": "",
+  "title": "Im Märchen versteckt - Malen in der Bibliothek",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=286567"
+  },
+  "en": {
+   "title": "Hidden in a fairy tale - painting in the library",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Im Märchen versteckt - Malen in der Bibliothek",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Захований у казці – малювання в бібліотеці",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Спрятанное в сказке - картина в библиотеке",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-293743",
   "date": "2026-11-21",
   "start": "10:30",
@@ -3560,62 +3616,6 @@
   ]
  },
  {
-  "id": "berlin-294730",
-  "date": "2026-11-21",
-  "start": "11:00",
-  "end": "14:00",
-  "title": "Tag der offenen Tür im Französischen Gymnasium",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
-  "district": "Mitte",
-  "lat": 52.50302,
-  "lng": 13.35504,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294730"
-  },
-  "en": {
-   "title": "Open day at the French High School",
-   "address": "French high school, Derfflinger Straße 7, 10785 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Tag der offenen Tür im Französischen Gymnasium",
-   "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "День відкритих дверей у Французькій гімназії",
-   "address": "Французька середня школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "День открытых дверей во французской средней школе",
-   "address": "Французская средняя школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-294739",
   "date": "2026-11-21",
   "start": "11:00",
@@ -3675,6 +3675,62 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-294730",
+  "date": "2026-11-21",
+  "start": "11:00",
+  "end": "14:00",
+  "title": "Tag der offenen Tür im Französischen Gymnasium",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
+  "district": "Mitte",
+  "lat": 52.50302,
+  "lng": 13.35504,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294730"
+  },
+  "en": {
+   "title": "Open day at the French High School",
+   "address": "French high school, Derfflinger Straße 7, 10785 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Tag der offenen Tür im Französischen Gymnasium",
+   "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "День відкритих дверей у Французькій гімназії",
+   "address": "Французька середня школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "День открытых дверей во французской средней школе",
+   "address": "Французская средняя школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3803,6 +3859,65 @@
   ]
  },
  {
+  "id": "berlin-289568",
+  "date": "2026-11-21",
+  "start": "13:00",
+  "end": "17:00",
+  "title": "Bastel-Workshop „3D-Bilderrahmen“",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   5,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.53063,
+  "lng": 13.47051,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289568"
+  },
+  "en": {
+   "title": "Craft workshop “3D picture frames”",
+   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Lichtenberg"
+  },
+  "de": {
+   "title": "Bastel-Workshop „3D-Bilderrahmen“",
+   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Lichtenberg"
+  },
+  "uk": {
+   "title": "Майстер-клас «3D рамки для картин»",
+   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Ліхтенберг"
+  },
+  "ru": {
+   "title": "Мастер-класс «3D рамки для картин»",
+   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
+   "district": "Лихтенберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-297239",
   "date": "2026-11-21",
   "start": "13:00",
@@ -3872,65 +3987,6 @@
   ]
  },
  {
-  "id": "berlin-289568",
-  "date": "2026-11-21",
-  "start": "13:00",
-  "end": "17:00",
-  "title": "Bastel-Workshop „3D-Bilderrahmen“",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.53063,
-  "lng": 13.47051,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=289568"
-  },
-  "en": {
-   "title": "Craft workshop “3D picture frames”",
-   "address": "Anton Saefkow Library, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "Bastel-Workshop „3D-Bilderrahmen“",
-   "address": "Anton-Saefkow-Bibliothek, Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Майстер-клас «3D рамки для картин»",
-   "address": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Мастер-класс «3D рамки для картин»",
-   "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-223167",
   "date": "2026-11-21",
   "start": "13:00",
@@ -3990,62 +4046,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-289574",
-  "date": "2026-11-21",
-  "start": "14:00",
-  "end": "",
-  "title": "Wäschekorbtheater zum Mitmachen mit Anna Srivastava",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-  "district": "Pankow",
-  "lat": 52.54774,
-  "lng": 13.45284,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=289574"
-  },
-  "en": {
-   "title": "Laundry basket theater to participate in with Anna Srivastava",
-   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Wäschekorbtheater zum Mitmachen mit Anna Srivastava",
-   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Театр кошиків для білизни для участі з Анною Сріваставою",
-   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Театр корзин для белья, в котором примет участие Анна Шривастава",
-   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -4157,6 +4157,62 @@
    "title": "Мастер-класс анимационного кино для детей в Трептовском музее 21 ноября 2026 г.",
    "address": "Трептов музей (Museum Treptow), 1. Etage Ratssaal Sterndamm 102, 12487 Berlin",
    "district": "Трептов-Кёпеник"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-289574",
+  "date": "2026-11-21",
+  "start": "14:00",
+  "end": "",
+  "title": "Wäschekorbtheater zum Mitmachen mit Anna Srivastava",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289574"
+  },
+  "en": {
+   "title": "Laundry basket theater to participate in with Anna Srivastava",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Wäschekorbtheater zum Mitmachen mit Anna Srivastava",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Театр кошиків для білизни для участі з Анною Сріваставою",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Театр корзин для белья, в котором примет участие Анна Шривастава",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
