@@ -1609,121 +1609,6 @@
   ]
  },
  {
-  "id": "berlin-298337",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Märchenstunde",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-  "district": "Pankow",
-  "lat": 52.54182,
-  "lng": 13.44085,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=298337"
-  },
-  "en": {
-   "title": "Story time",
-   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Märchenstunde",
-   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Час історії",
-   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Время истории",
-   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-298214",
-  "date": "2026-11-20",
-  "start": "16:00",
-  "end": "17:30",
-  "title": "Bib-Quiz: Detektive",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   13,
-   13
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-  "district": "Pankow",
-  "lat": 52.5686,
-  "lng": 13.41231,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=298214"
-  },
-  "en": {
-   "title": "Bib-Quiz: Detectives",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Bib-Quiz: Detektive",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Біб-вікторина: Детективи",
-   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Биб-викторина: Детективы",
-   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-297644",
   "date": "2026-11-20",
   "start": "16:00",
@@ -1780,68 +1665,57 @@
   ]
  },
  {
-  "id": "berlin-296726",
+  "id": "berlin-297086",
   "date": "2026-11-20",
   "start": "16:00",
-  "end": "16:30",
-  "title": "Vorlese-Karaoke mit Dr. Brumm",
-  "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+  "end": "",
+  "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
+  "organizer": "",
   "category": "language",
   "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
+  "ages": null,
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Stadtteilbibliothek Friedrich von Raumer, Dudenstraße 18-20, 10965 Berlin",
-  "district": "Friedrichshain-Kreuzberg",
-  "lat": 52.48501,
-  "lng": 13.38248,
+  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "district": "Pankow",
+  "lat": 52.53332,
+  "lng": 13.42024,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296726"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297086"
   },
   "en": {
-   "title": "Reading karaoke with Dr. Hum",
-   "organizer": "Friedrichshain-Kreuzberg City Library",
-   "address": "Friedrich von Raumer district library, Dudenstraße 18-20, 10965 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
+   "title": "Nationwide Volese Day in the library at the water tower",
+   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
   },
   "de": {
-   "title": "Vorlese-Karaoke mit Dr. Brumm",
-   "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
-   "address": "Stadtteilbibliothek Friedrich von Raumer, Dudenstraße 18-20, 10965 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
+   "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
+   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Pankow"
   },
   "uk": {
-   "title": "Читання караоке з доктором Хамом",
-   "organizer": "Міська бібліотека Фрідріхсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
-   "address": "Районна бібліотека імені Фрідріха фон Раумера (Stadtteilbibliothek Friedrich von Raumer), Dudenstraße 18-20, 10965 Berlin",
-   "district": "Фрідріхсхайн-Кройцберг"
+   "title": "Загальнодержавний день Волеся в бібліотеці на водонапірній башті",
+   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панків"
   },
   "ru": {
-   "title": "Чтение караоке с доктором Хамом",
-   "organizer": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
-   "address": "Районная библиотека Фридриха фон Раумера (Stadtteilbibliothek Friedrich von Raumer), Dudenstraße 18-20, 10965 Berlin",
-   "district": "Фридрихсхайн-Кройцберг"
+   "title": "Всероссийский день Волезе в библиотеке водонапорной башни",
+   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
-   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
-   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
-   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -1893,6 +1767,73 @@
    "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
    "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
    "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-296726",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "16:30",
+  "title": "Vorlese-Karaoke mit Dr. Brumm",
+  "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   5,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Stadtteilbibliothek Friedrich von Raumer, Dudenstraße 18-20, 10965 Berlin",
+  "district": "Friedrichshain-Kreuzberg",
+  "lat": 52.48501,
+  "lng": 13.38248,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296726"
+  },
+  "en": {
+   "title": "Reading karaoke with Dr. Hum",
+   "organizer": "Friedrichshain-Kreuzberg City Library",
+   "address": "Friedrich von Raumer district library, Dudenstraße 18-20, 10965 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "de": {
+   "title": "Vorlese-Karaoke mit Dr. Brumm",
+   "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+   "address": "Stadtteilbibliothek Friedrich von Raumer, Dudenstraße 18-20, 10965 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "uk": {
+   "title": "Читання караоке з доктором Хамом",
+   "organizer": "Міська бібліотека Фрідріхсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
+   "address": "Районна бібліотека імені Фрідріха фон Раумера (Stadtteilbibliothek Friedrich von Raumer), Dudenstraße 18-20, 10965 Berlin",
+   "district": "Фрідріхсхайн-Кройцберг"
+  },
+  "ru": {
+   "title": "Чтение караоке с доктором Хамом",
+   "organizer": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
+   "address": "Районная библиотека Фридриха фон Раумера (Stadtteilbibliothek Friedrich von Raumer), Dudenstraße 18-20, 10965 Berlin",
+   "district": "Фридрихсхайн-Кройцберг"
   },
   "autoTranslated": [
    "en.title",
@@ -1973,11 +1914,70 @@
   ]
  },
  {
-  "id": "berlin-297086",
+  "id": "berlin-298214",
   "date": "2026-11-20",
   "start": "16:00",
-  "end": "",
-  "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
+  "end": "17:30",
+  "title": "Bib-Quiz: Detektive",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   13,
+   13
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=298214"
+  },
+  "en": {
+   "title": "Bib-Quiz: Detectives",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Bib-Quiz: Detektive",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Біб-вікторина: Детективи",
+   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Биб-викторина: Детективы",
+   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-298337",
+  "date": "2026-11-20",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Märchenstunde",
   "organizer": "",
   "category": "language",
   "format": "in-person",
@@ -1985,32 +1985,32 @@
   "price": {
    "type": "unknown"
   },
-  "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+  "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
   "district": "Pankow",
-  "lat": 52.53332,
-  "lng": 13.42024,
+  "lat": 52.54182,
+  "lng": 13.44085,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297086"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=298337"
   },
   "en": {
-   "title": "Nationwide Volese Day in the library at the water tower",
-   "address": "Library at the water tower, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "title": "Story time",
+   "address": "Heinrich Böll Library, Greifswalder Straße 87, 10409 Berlin",
    "district": "Pankow"
   },
   "de": {
-   "title": "Bundesweiter Volesetag in der Bibliothek am Wasserturm",
-   "address": "Bibliothek am Wasserturm, Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "title": "Märchenstunde",
+   "address": "Heinrich-Böll-Bibliothek, Greifswalder Straße 87, 10409 Berlin",
    "district": "Pankow"
   },
   "uk": {
-   "title": "Загальнодержавний день Волеся в бібліотеці на водонапірній башті",
-   "address": "Бібліотека на водонапірній башті (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "title": "Час історії",
+   "address": "Бібліотека імені Генріха Бьолля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
    "district": "Панків"
   },
   "ru": {
-   "title": "Всероссийский день Волезе в библиотеке водонапорной башни",
-   "address": "Библиотека у водонапорной башни (Bibliothek am Wasserturm), Prenzlauer Allee 227-228, 10405 Berlin Berlin",
+   "title": "Время истории",
+   "address": "Библиотека Генриха Бёлля (Heinrich-Böll-Bibliothek), Greifswalder Straße 87, 10409 Berlin",
    "district": "Панков"
   },
   "autoTranslated": [
@@ -3368,6 +3368,62 @@
   ]
  },
  {
+  "id": "berlin-286567",
+  "date": "2026-11-21",
+  "start": "10:30",
+  "end": "",
+  "title": "Im Märchen versteckt - Malen in der Bibliothek",
+  "organizer": "",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=286567"
+  },
+  "en": {
+   "title": "Hidden in a fairy tale - painting in the library",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Im Märchen versteckt - Malen in der Bibliothek",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Захований у казці – малювання в бібліотеці",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Спрятанное в сказке - картина в библиотеке",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-287038",
   "date": "2026-11-21",
   "start": "10:30",
@@ -3427,62 +3483,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-286567",
-  "date": "2026-11-21",
-  "start": "10:30",
-  "end": "",
-  "title": "Im Märchen versteckt - Malen in der Bibliothek",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-  "district": "Pankow",
-  "lat": 52.54774,
-  "lng": 13.45284,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=286567"
-  },
-  "en": {
-   "title": "Hidden in a fairy tale - painting in the library",
-   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Im Märchen versteckt - Malen in der Bibliothek",
-   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Захований у казці – малювання в бібліотеці",
-   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Спрятанное в сказке - картина в библиотеке",
-   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3616,6 +3616,62 @@
   ]
  },
  {
+  "id": "berlin-294730",
+  "date": "2026-11-21",
+  "start": "11:00",
+  "end": "14:00",
+  "title": "Tag der offenen Tür im Französischen Gymnasium",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
+  "district": "Mitte",
+  "lat": 52.50302,
+  "lng": 13.35504,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294730"
+  },
+  "en": {
+   "title": "Open day at the French High School",
+   "address": "French high school, Derfflinger Straße 7, 10785 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Tag der offenen Tür im Französischen Gymnasium",
+   "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "День відкритих дверей у Французькій гімназії",
+   "address": "Французька середня школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "День открытых дверей во французской средней школе",
+   "address": "Французская средняя школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-294739",
   "date": "2026-11-21",
   "start": "11:00",
@@ -3675,62 +3731,6 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-294730",
-  "date": "2026-11-21",
-  "start": "11:00",
-  "end": "14:00",
-  "title": "Tag der offenen Tür im Französischen Gymnasium",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
-  "district": "Mitte",
-  "lat": 52.50302,
-  "lng": 13.35504,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294730"
-  },
-  "en": {
-   "title": "Open day at the French High School",
-   "address": "French high school, Derfflinger Straße 7, 10785 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Tag der offenen Tür im Französischen Gymnasium",
-   "address": "Französisches Gymnasium, Derfflinger Straße 7, 10785 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "День відкритих дверей у Французькій гімназії",
-   "address": "Французька середня школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "День открытых дверей во французской средней школе",
-   "address": "Французская средняя школа (Französisches Gymnasium), Derfflinger Straße 7, 10785 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -4051,70 +4051,6 @@
   ]
  },
  {
-  "id": "berlin-291173",
-  "date": "2026-11-21",
-  "start": "14:00",
-  "end": "",
-  "title": "Theater auf dem Bügelbrett präsentiert: \"Die guten Freunde\" - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
-  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-  "district": "Steglitz-Zehlendorf",
-  "lat": 52.45778,
-  "lng": 13.31963,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=291173"
-  },
-  "en": {
-   "title": "Theater on the Ironing Board presents: \"The Good Friends\" - for the festival month in the Ingeborg Drewitz Library",
-   "organizer": "Steglitz-Zehlendorf City Library",
-   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "de": {
-   "title": "Theater auf dem Bügelbrett präsentiert: \"Die guten Freunde\" - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
-   "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "uk": {
-   "title": "Театр на прасувальній дошці представляє: «Хороші друзі» - на фестивальний місяць у бібліотеці Інґеборг Древіц",
-   "organizer": "Міська бібліотека Штегліц-Целендорф (Stadtbibliothek Steglitz-Zehlendorf)",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Штегліц-Целендорф"
-  },
-  "ru": {
-   "title": "«Театр на гладильной доске» представляет: «Добрые друзья» – к фестивальному месяцу в библиотеке Ингеборги Древиц",
-   "organizer": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)",
-   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
-   "district": "Штеглиц-Целендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-298076",
   "date": "2026-11-21",
   "start": "14:00",
@@ -4157,6 +4093,65 @@
    "title": "Мастер-класс анимационного кино для детей в Трептовском музее 21 ноября 2026 г.",
    "address": "Трептов музей (Museum Treptow), 1. Etage Ratssaal Sterndamm 102, 12487 Berlin",
    "district": "Трептов-Кёпеник"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-294601",
+  "date": "2026-11-21",
+  "start": "14:00",
+  "end": "",
+  "title": "Schreibwerkstatt mit Kathrin Schrader",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   12,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=294601"
+  },
+  "en": {
+   "title": "Writing workshop with Kathrin Schrader",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Schreibwerkstatt mit Kathrin Schrader",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Майстерня з письма з Кетрін Шрейдер",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Письменный семинар с Кэтрин Шредер",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
   },
   "autoTranslated": [
    "en.title",
@@ -4230,60 +4225,65 @@
   ]
  },
  {
-  "id": "berlin-294601",
+  "id": "berlin-291173",
   "date": "2026-11-21",
   "start": "14:00",
   "end": "",
-  "title": "Schreibwerkstatt mit Kathrin Schrader",
-  "organizer": "",
+  "title": "Theater auf dem Bügelbrett präsentiert: \"Die guten Freunde\" - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
   "category": "arts",
   "format": "in-person",
-  "ages": [
-   12,
-   12
-  ],
+  "ages": null,
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-  "district": "Pankow",
-  "lat": 52.54774,
-  "lng": 13.45284,
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=294601"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=291173"
   },
   "en": {
-   "title": "Writing workshop with Kathrin Schrader",
-   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
+   "title": "Theater on the Ironing Board presents: \"The Good Friends\" - for the festival month in the Ingeborg Drewitz Library",
+   "organizer": "Steglitz-Zehlendorf City Library",
+   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
   },
   "de": {
-   "title": "Schreibwerkstatt mit Kathrin Schrader",
-   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
+   "title": "Theater auf dem Bügelbrett präsentiert: \"Die guten Freunde\" - zum Festmonat in der Ingeborg-Drewitz-Bibliothek",
+   "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
   },
   "uk": {
-   "title": "Майстерня з письма з Кетрін Шрейдер",
-   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панків"
+   "title": "Театр на прасувальній дошці представляє: «Хороші друзі» - на фестивальний місяць у бібліотеці Інґеборг Древіц",
+   "organizer": "Міська бібліотека Штегліц-Целендорф (Stadtbibliothek Steglitz-Zehlendorf)",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
   },
   "ru": {
-   "title": "Письменный семинар с Кэтрин Шредер",
-   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панков"
+   "title": "«Театр на гладильной доске» представляет: «Добрые друзья» – к фестивальному месяцу в библиотеке Ингеборги Древиц",
+   "organizer": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)",
+   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
   },
   "autoTranslated": [
    "en.title",
+   "en.organizer",
    "en.address",
    "en.district",
    "de.title",
+   "de.organizer",
    "de.address",
    "de.district",
    "uk.title",
+   "uk.organizer",
    "uk.address",
    "uk.district",
    "ru.title",
+   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -5232,6 +5232,70 @@
   ]
  },
  {
+  "id": "berlin-290882",
+  "date": "2026-11-23",
+  "start": "15:30",
+  "end": "17:30",
+  "title": "Tabletop AG",
+  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.48721,
+  "lng": 13.32004,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290882"
+  },
+  "en": {
+   "title": "Tabletop AG",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Dietrich Bonhoeffer Library, Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Tabletop AG",
+   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Настільна AG",
+   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Бібліотека Дітріха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Столешница АГ",
+   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
+   "address": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-233203",
   "date": "2026-11-23",
   "start": "15:30",
@@ -5278,70 +5342,6 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
    "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-290882",
-  "date": "2026-11-23",
-  "start": "15:30",
-  "end": "17:30",
-  "title": "Tabletop AG",
-  "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.48721,
-  "lng": 13.32004,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290882"
-  },
-  "en": {
-   "title": "Tabletop AG",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Dietrich Bonhoeffer Library, Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Tabletop AG",
-   "organizer": "Stadtbibliothek Charlottenburg-Wilmersdorf",
-   "address": "Dietrich-Bonhoeffer-Bibliothek, Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Настільна AG",
-   "organizer": "Міська бібліотека Шарлоттенбург-Вільмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Бібліотека Дітріха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Столешница АГ",
-   "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
-   "address": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
    "en.title",
