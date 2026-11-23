@@ -761,12 +761,6 @@
   "uk": "Бібліотека Анни Зегерс у Linden Center Hohenschönhausen (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin",
   "ru": "Библиотека Анны Зегерс в Линден-центре Хоэншёнхаузен (Anna-Seghers-Bibliothek im Linden-Center Hohenschönhausen), Prerower Platz 2, 13051 Berlin"
  },
- "b1ac8855f1bb3c6a": {
-  "en": "America Memorial Library, Eva-Mamlok-Platz 1, 10961 Berlin",
-  "de": "Amerika-Gedenkbibliothek, Eva-Mamlok-Platz 1, 10961 Berlin",
-  "uk": "Меморіальна бібліотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin",
-  "ru": "Мемориальная библиотека Америки, Eva-Mamlok-Platz 1, 10961 Berlin"
- },
  "cfa9293601a3ed9e": {
   "en": "Tempelhof Library “Eva-Maria-Buch-Haus”, Götzstr. 8-12, 12099 Berlin",
   "de": "Bibliothek Tempelhof \"Eva-Maria-Buch-Haus\", Götzstr. 8-12, 12099 Berlin",
@@ -779,35 +773,11 @@
   "uk": "Бібліотека Антона Сафкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
   "ru": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin"
  },
- "48003504413907d2": {
-  "en": "Dad-child games & fun",
-  "de": "Papa-Kind-Spiel & Spaß",
-  "uk": "Тато-дитина ігри та розваги",
-  "ru": "Игры и развлечения для папы и ребенка"
- },
  "cea5767fa608fc53": {
   "en": "Family Center Future House Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "de": "Familienzentrum Zukunftshaus Wedding, Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "uk": "Сімейний Центр Будинок Майбутнього Весілля (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin",
   "ru": "Семейный Центр Будущий Дом Свадьба (Familienzentrum Zukunftshaus Wedding), Müllerstraße 56 - 58, 13349 Berlin, 13349 Berlin"
- },
- "07a6dce00e8d6bdc": {
-  "en": "Spot on - Build your own glowing bookmarks!",
-  "de": "Spot an - Leuchtende Lesezeichen selbst bauen!",
-  "uk": "На місці – створюйте власні сяючі закладки!",
-  "ru": "Внимание! Создайте свои собственные светящиеся закладки!"
- },
- "637fd8221f53915f": {
-  "en": "Let there be light: craft workshop “tea light holder made of glass”",
-  "de": "Es werde Licht: Bastel-Workshop „Teelichthalter aus Glas“",
-  "uk": "Es werde Licht: Bastel-Workshop „Teelichthalter aus Glas“",
-  "ru": "Да будет свет: поделка «подсвечник из стекла»"
- },
- "6304a1e3192db886": {
-  "en": "Art course for children",
-  "de": "Kunstkurs für Kinder",
-  "uk": "Художній курс для дітей",
-  "ru": "Художественный курс для детей"
  },
  "3aa15bc6217a9bdc": {
   "en": "Picture book cinema in the Tempelhof library",
@@ -820,24 +790,6 @@
   "de": "Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“",
   "uk": "Районна центральна бібліотека “Єва-Марія-Бух-Хаус” (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)",
   "ru": "Центральная районная библиотека «Ева-Мария-Бух-Хаус» (Bezirkszentralbibliothek „Eva-Maria-Buch-Haus“)"
- },
- "fcb446a4fc8d3b6b": {
-  "en": "Stage Steps – Jazz for Kids mit Black Cat",
-  "de": "Stage Steps – Jazz für Kinder mit Black Cat",
-  "uk": "Stage Steps – Джаз для дітей з Чорним котом",
-  "ru": "Ступени – Джаз для детей с Black Cat"
- },
- "30903ee48922f5b6": {
-  "en": "City West Music School",
-  "de": "Musikschule City West",
-  "uk": "Міська Західна музична школа (Musikschule City West)",
-  "ru": "Музыкальная школа Сити Вест (Musikschule City West)"
- },
- "f6521dae6d99ce69": {
-  "en": "Kunstfabrik Schlot, Invalidenstr. 117, 10115 Berlin",
-  "de": "Kunstfabrik Schlot, Invalidenstr. 117, 10115 Berlin",
-  "uk": "Кунстфабрик Шлот, Invalidenstr. 117, 10115 Berlin",
-  "ru": "Художественная фабрика Шлот, Invalidenstr. 117, 10115 Berlin"
  },
  "86a7f15204d03821": {
   "en": "“Paula, the bookworm: stories of books and letters for reading, laughing and learning at school and at home” with the illustrator Antje Püpke",
@@ -1306,5 +1258,71 @@
   "de": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
   "uk": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
   "ru": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin"
+ },
+ "a81d2ba543dbd46e": {
+  "en": "Yallah-License",
+  "de": "Yallah-Lizenz",
+  "uk": "Yallah-Ліцензія",
+  "ru": "Yallah-Lesen"
+ },
+ "13c0a54fe567d07f": {
+  "en": "Center Library Wilhelm Liebknecht / Namık Kemal, Adalbertstraße 2, 10999 Berlin",
+  "de": "Mittelpunktbibliothek Wilhelm Liebknecht / Namık Kemal, Adalbertstraße 2, 10999 Berlin",
+  "uk": "Бібліотека Центру Вільгельма Лібкнехта / Намік Кемаль (Mittelpunktbibliothek Wilhelm Liebknecht / Namık Kemal), Adalbertstraße 2, 10999 Berlin",
+  "ru": "Центральная библиотека Вильгельма Либкнехта / Намик Кемаль (Mittelpunktbibliothek Wilhelm Liebknecht / Namık Kemal), Adalbertstraße 2, 10999 Berlin"
+ },
+ "258816b74a7753c9": {
+  "en": "Pocket Platformer Workshop",
+  "de": "Pocket Platformer-Workshop",
+  "uk": "Майстерня кишенькового платформера",
+  "ru": "Мастерская карманного платформера"
+ },
+ "29c35b401ccdbb0a": {
+  "en": "Gertrud Haß Library, Alt-Rudow 45, 12357 Berlin",
+  "de": "Gertrud-Haß-Bibliothek, Alt-Rudow 45, 12357 Berlin",
+  "uk": "Бібліотека Гертруди Хас (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin",
+  "ru": "Библиотека Гертруды Хасса (Gertrud-Haß-Bibliothek), Alt-Rudow 45, 12357 Berlin"
+ },
+ "1e347d4c05bbf183": {
+  "en": "After School Gaming",
+  "de": "Spielen nach der Schule",
+  "uk": "Ігри після школи",
+  "ru": "После школы игры"
+ },
+ "c31f7c120fb15815": {
+  "en": "Family workshop Code & Play I LEGO SPIKE vehicles & race track",
+  "de": "Familienwerkstatt Code & Play I LEGO SPIKE Fahrzeuge & Rennstrecke",
+  "uk": "Сімейна майстерня Code & Play I LEGO SPIKE Транспортні засоби та гоночна траса",
+  "ru": "Семейная мастерская Code & Play I Автомобили LEGO SPIKE и гоночная трасса"
+ },
+ "be437ea7025968b3": {
+  "en": "Egon Erwin Kisch Library, Frankfurter Allee 149, 10365 Berlin",
+  "de": "Egon-Erwin-Kisch-Bibliothek, Frankfurter Allee 149, 10365 Berlin",
+  "uk": "Бібліотека Егона Ервіна Кіша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin",
+  "ru": "Библиотека Эгона Эрвина Киша (Egon-Erwin-Kisch-Bibliothek), Frankfurter Allee 149, 10365 Berlin"
+ },
+ "cf3d860674ca592a": {
+  "en": "Sometimes Wednesday (Wednesday)",
+  "de": "Mal Mal Mit(twoch)",
+  "uk": "Іноді середа (середа)",
+  "ru": "Иногда среда (среда)"
+ },
+ "dc88b6007df32a8e": {
+  "en": "LEGO afternoon",
+  "de": "LEGO-Nachmittag",
+  "uk": "Лего вдень",
+  "ru": "Лего после полудня"
+ },
+ "c2b895721f46db35": {
+  "en": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "de": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "uk": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
+  "ru": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin"
+ },
+ "debbce461af9ffde": {
+  "en": "Oh dear, Christmas tree! A dance piece for children by the dance collective OOPSALA",
+  "de": "O je, Tannenbaum! Ein Tanzstück für Kinder von Tanzkollektiv OOPSALA",
+  "uk": "Ой дорога, ялинка! Танцювальний твір для дітей від танцювального колективу OOPSALA",
+  "ru": "О дорогая, елочка! Детский танцевальный номер от танцевального коллектива ООПСАЛА."
  }
 }
