@@ -253,65 +253,6 @@
   ]
  },
  {
-  "id": "berlin-236290",
-  "date": "2026-11-24",
-  "start": "10:00",
-  "end": "12:00",
-  "title": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   0,
-   1
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
-  "district": "Marzahn-Hellersdorf",
-  "lat": 52.51151,
-  "lng": 13.58689,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=236290"
-  },
-  "en": {
-   "title": "Playgroups in the children's café of the Kaulsdorf district center",
-   "address": "Kaulsdorf district center, Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "de": {
-   "title": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
-   "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "uk": {
-   "title": "Ігрові групи в дитячому кафе районного центру Каульсдорф",
-   "address": "Районний центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Марцан-Геллерсдорф"
-  },
-  "ru": {
-   "title": "Игровые группы в детском кафе райцентра Каульсдорф",
-   "address": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Марцан-Хеллерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-295535",
   "date": "2026-11-24",
   "start": "10:00",
@@ -374,6 +315,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-236290",
+  "date": "2026-11-24",
+  "start": "10:00",
+  "end": "12:00",
+  "title": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   0,
+   1
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=236290"
+  },
+  "en": {
+   "title": "Playgroups in the children's café of the Kaulsdorf district center",
+   "address": "Kaulsdorf district center, Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "de": {
+   "title": "Krabbelgruppen im Kindercafé des Stadtteilzentrums Kaulsdorf",
+   "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "uk": {
+   "title": "Ігрові групи в дитячому кафе районного центру Каульсдорф",
+   "address": "Районний центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Марцан-Геллерсдорф"
+  },
+  "ru": {
+   "title": "Игровые группы в детском кафе райцентра Каульсдорф",
+   "address": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Марцан-Хеллерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -697,73 +697,6 @@
   ]
  },
  {
-  "id": "berlin-276751",
-  "date": "2026-11-24",
-  "start": "15:00",
-  "end": "17:30",
-  "title": "Gemeinsam Häkeln",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   8,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
-  "district": "Mitte",
-  "lat": 52.50379,
-  "lng": 13.36323,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=276751"
-  },
-  "en": {
-   "title": "Crochet together",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Tiergarten-South Library, Lützowstr. 27, 10785 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Gemeinsam Häkeln",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Гачком разом",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Тіргартен-Південний (Bibliothek Tiergarten-Süd), Lützowstr. 27, 10785 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Вяжем крючком вместе",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Тиргартен-Юг (Bibliothek Tiergarten-Süd), Lützowstr. 27, 10785 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-270517",
   "date": "2026-11-24",
   "start": "15:00",
@@ -926,6 +859,73 @@
    "title": "Помощь в выполнении домашних заданий для 3-6 классов.",
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-276751",
+  "date": "2026-11-24",
+  "start": "15:00",
+  "end": "17:30",
+  "title": "Gemeinsam Häkeln",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
+  "district": "Mitte",
+  "lat": 52.50379,
+  "lng": 13.36323,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276751"
+  },
+  "en": {
+   "title": "Crochet together",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Tiergarten-South Library, Lützowstr. 27, 10785 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Gemeinsam Häkeln",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Bibliothek Tiergarten-Süd, Lützowstr. 27, 10785 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Гачком разом",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Тіргартен-Південний (Bibliothek Tiergarten-Süd), Lützowstr. 27, 10785 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Вяжем крючком вместе",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Тиргартен-Юг (Bibliothek Tiergarten-Süd), Lützowstr. 27, 10785 Berlin",
    "district": "Нет"
   },
   "autoTranslated": [
@@ -1892,73 +1892,6 @@
   ]
  },
  {
-  "id": "berlin-295538",
-  "date": "2026-11-24",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder",
-  "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   8,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-  "district": "Friedrichshain-Kreuzberg",
-  "lat": 52.49259,
-  "lng": 13.43636,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295538"
-  },
-  "en": {
-   "title": "Writing workshop in the Pop-Up Else: Creative writing for children",
-   "organizer": "Friedrichshain-Kreuzberg City Library",
-   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "de": {
-   "title": "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder",
-   "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
-   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-   "district": "Friedrichshain-Kreuzberg"
-  },
-  "uk": {
-   "title": "Майстер-клас з письма в Pop-Up Else: Творче письмо для дітей",
-   "organizer": "Міська бібліотека Фрідріхсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
-   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
-   "district": "Фрідріхсхайн-Кройцберг"
-  },
-  "ru": {
-   "title": "Мастер-класс по письму в Pop-Up Else: Творческое письмо для детей",
-   "organizer": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
-   "address": "Семейная библиотека Эльзы Ури, Glogauer Straße 13, 10999 Berlin",
-   "district": "Фридрихсхайн-Кройцберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-298178",
   "date": "2026-11-24",
   "start": "16:30",
@@ -2005,6 +1938,73 @@
    "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
    "address": "Библиотека Гертруды Юнге (Gertrud-Junge-Bibliothek), Bat-Yam-Platz 1, 12353 Berlin",
    "district": "Нойкёльн"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-295538",
+  "date": "2026-11-24",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder",
+  "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+  "category": "arts",
+  "format": "in-person",
+  "ages": [
+   8,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
+  "district": "Friedrichshain-Kreuzberg",
+  "lat": 52.49259,
+  "lng": 13.43636,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295538"
+  },
+  "en": {
+   "title": "Writing workshop in the Pop-Up Else: Creative writing for children",
+   "organizer": "Friedrichshain-Kreuzberg City Library",
+   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "de": {
+   "title": "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder",
+   "organizer": "Stadtbibliothek Friedrichshain-Kreuzberg",
+   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
+   "district": "Friedrichshain-Kreuzberg"
+  },
+  "uk": {
+   "title": "Майстер-клас з письма в Pop-Up Else: Творче письмо для дітей",
+   "organizer": "Міська бібліотека Фрідріхсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
+   "address": "Familienbibliothek Else Ury, Glogauer Straße 13, 10999 Berlin",
+   "district": "Фрідріхсхайн-Кройцберг"
+  },
+  "ru": {
+   "title": "Мастер-класс по письму в Pop-Up Else: Творческое письмо для детей",
+   "organizer": "Городская библиотека Фридрихсхайн-Кройцберг (Stadtbibliothek Friedrichshain-Kreuzberg)",
+   "address": "Семейная библиотека Эльзы Ури, Glogauer Straße 13, 10999 Berlin",
+   "district": "Фридрихсхайн-Кройцберг"
   },
   "autoTranslated": [
    "en.title",
@@ -2283,73 +2283,6 @@
   ]
  },
  {
-  "id": "berlin-287125",
-  "date": "2026-11-24",
-  "start": "16:30",
-  "end": "17:30",
-  "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   0,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
-  "district": "Mitte",
-  "lat": 52.53158,
-  "lng": 13.3262,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=287125"
-  },
-  "en": {
-   "title": "Reading to children in the Kurt Tucholsky Library",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Kurt Tucholsky Library, Rostocker Str. 32b, 10553 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Читання дітям у Бібліотеці Курта Тухольського",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Курта Тухольського (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Чтение детям в Библиотеке Курта Тухольского",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-284647",
   "date": "2026-11-24",
   "start": "16:30",
@@ -2396,6 +2329,73 @@
    "organizer": "Городская библиотека Шарлоттенбург-Вильмерсдорф (Stadtbibliothek Charlottenburg-Wilmersdorf)",
    "address": "Библиотека Эберхарда Александра Бурга (Eberhard-Alexander-Burgh-Bibliothek), Rüdesheimer Str. 14, 14197 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-287125",
+  "date": "2026-11-24",
+  "start": "16:30",
+  "end": "17:30",
+  "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   0,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+  "district": "Mitte",
+  "lat": 52.53158,
+  "lng": 13.3262,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287125"
+  },
+  "en": {
+   "title": "Reading to children in the Kurt Tucholsky Library",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Kurt Tucholsky Library, Rostocker Str. 32b, 10553 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Vorlesen für Kinder in der Kurt-Tucholsky-Bibliothek",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Kurt-Tucholsky-Bibliothek, Rostocker Str. 32b, 10553 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Читання дітям у Бібліотеці Курта Тухольського",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Курта Тухольського (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Чтение детям в Библиотеке Курта Тухольского",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Курта Тухольского (Kurt-Tucholsky-Bibliothek), Rostocker Str. 32b, 10553 Berlin",
+   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
@@ -3180,6 +3180,65 @@
   ]
  },
  {
+  "id": "berlin-284920",
+  "date": "2026-11-25",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "LEGO-Nachmittag",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284920"
+  },
+  "en": {
+   "title": "LEGO afternoon",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "LEGO-Nachmittag",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Лего вдень",
+   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Лего после полудня",
+   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-288200",
   "date": "2026-11-25",
   "start": "16:00",
@@ -3244,48 +3303,48 @@
   ]
  },
  {
-  "id": "berlin-284920",
+  "id": "berlin-297518",
   "date": "2026-11-25",
   "start": "16:00",
-  "end": "17:30",
-  "title": "LEGO-Nachmittag",
+  "end": "17:00",
+  "title": "Bestimmer sein – Wie Elvis die Demokratie erfand!",
   "organizer": "",
-  "category": "other",
+  "category": "language",
   "format": "in-person",
   "ages": [
-   4,
-   12
+   3,
+   8
   ],
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-  "district": "Pankow",
-  "lat": 52.5686,
-  "lng": 13.41231,
+  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.51151,
+  "lng": 13.58689,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=284920"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=297518"
   },
   "en": {
-   "title": "LEGO afternoon",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
+   "title": "Be a determiner – How Elvis invented democracy!",
+   "address": "Kaulsdorf district center, Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Marzahn-Hellersdorf"
   },
   "de": {
-   "title": "LEGO-Nachmittag",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
+   "title": "Bestimmer sein – Wie Elvis die Demokratie erfand!",
+   "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Marzahn-Hellersdorf"
   },
   "uk": {
-   "title": "Лего вдень",
-   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панків"
+   "title": "Будь визначальним – як Елвіс винайшов демократію!",
+   "address": "Районний центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Марцан-Геллерсдорф"
   },
   "ru": {
-   "title": "Лего после полудня",
-   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панков"
+   "title": "Будьте решительными – Как Элвис изобрел демократию!",
+   "address": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
+   "district": "Марцан-Хеллерсдорф"
   },
   "autoTranslated": [
    "en.title",
@@ -3343,65 +3402,6 @@
   },
   "ru": {
    "title": "Будьте решительными – Как Элвис изобрел демократию! Театр-сказка Камисибай для всей семьи!",
-   "address": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Марцан-Хеллерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-297518",
-  "date": "2026-11-25",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Bestimmer sein – Wie Elvis die Demokratie erfand!",
-  "organizer": "",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   3,
-   8
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
-  "district": "Marzahn-Hellersdorf",
-  "lat": 52.51151,
-  "lng": 13.58689,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=297518"
-  },
-  "en": {
-   "title": "Be a determiner – How Elvis invented democracy!",
-   "address": "Kaulsdorf district center, Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "de": {
-   "title": "Bestimmer sein – Wie Elvis die Demokratie erfand!",
-   "address": "Stadtteilzentrum Kaulsdorf, Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "uk": {
-   "title": "Будь визначальним – як Елвіс винайшов демократію!",
-   "address": "Районний центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
-   "district": "Марцан-Геллерсдорф"
-  },
-  "ru": {
-   "title": "Будьте решительными – Как Элвис изобрел демократию!",
    "address": "Районный центр Каульсдорф (Stadtteilzentrum Kaulsdorf), Brodauer Straße 27-29, 12621 Berlin",
    "district": "Марцан-Хеллерсдорф"
   },
@@ -3667,73 +3667,6 @@
   ]
  },
  {
-  "id": "berlin-276091",
-  "date": "2026-11-25",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Vorlesestunde mit Lesewelt e.V. in der Ingeborg-Bachmann-Bibliothek",
-  "organizer": "Lesewelt Berlin e. V.",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.51455,
-  "lng": 13.294,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=276091"
-  },
-  "en": {
-   "title": "Reading hour with Lesewelt e.V. in the Ingeborg Bachmann Library",
-   "organizer": "Reading World Berlin e. v.",
-   "address": "Ingeborg Bachmann Library (West District Library), Nehringstr. 10, 14059 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Vorlesestunde mit Lesewelt e.V. in der Ingeborg-Bachmann-Bibliothek",
-   "organizer": "Lesewelt Berlin e. V.",
-   "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Година читання з Lesewelt e.V. в бібліотеці Інґеборґ Бахман",
-   "organizer": "Reading World Berlin e. v. (Lesewelt Berlin e. V.)",
-   "address": "Бібліотека Інгеборг Бахманн (Бібліотека Західного округу) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Час чтения с Lesewelt e.V. в библиотеке Ингеборги Бахманн",
-   "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
-   "address": "Библиотека Ингеборги Бахманн (Библиотека Западного округа) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-276097",
   "date": "2026-11-25",
   "start": "16:00",
@@ -3779,6 +3712,73 @@
    "title": "Час чтения с Lesewelt e.V. в библиотеке Йоханны Моосдорф",
    "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
    "address": "Библиотека Йоханны Моосдорф (районная библиотека Нойвестенд) (Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend)), Westendallee 45, 14052 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-276091",
+  "date": "2026-11-25",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Ingeborg-Bachmann-Bibliothek",
+  "organizer": "Lesewelt Berlin e. V.",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51455,
+  "lng": 13.294,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276091"
+  },
+  "en": {
+   "title": "Reading hour with Lesewelt e.V. in the Ingeborg Bachmann Library",
+   "organizer": "Reading World Berlin e. v.",
+   "address": "Ingeborg Bachmann Library (West District Library), Nehringstr. 10, 14059 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Vorlesestunde mit Lesewelt e.V. in der Ingeborg-Bachmann-Bibliothek",
+   "organizer": "Lesewelt Berlin e. V.",
+   "address": "Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West), Nehringstr. 10, 14059 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Година читання з Lesewelt e.V. в бібліотеці Інґеборґ Бахман",
+   "organizer": "Reading World Berlin e. v. (Lesewelt Berlin e. V.)",
+   "address": "Бібліотека Інгеборг Бахманн (Бібліотека Західного округу) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Час чтения с Lesewelt e.V. в библиотеке Ингеборги Бахманн",
+   "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
+   "address": "Библиотека Ингеборги Бахманн (Библиотека Западного округа) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
@@ -4384,62 +4384,6 @@
   ]
  },
  {
-  "id": "berlin-270280",
-  "date": "2026-11-26",
-  "start": "15:00",
-  "end": "18:30",
-  "title": "LEGO-Nachmittag",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
-  "district": "Pankow",
-  "lat": 52.63567,
-  "lng": 13.4943,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=270280"
-  },
-  "en": {
-   "title": "LEGO afternoon",
-   "address": "District library book, Wiltbergstraße 19, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "LEGO-Nachmittag",
-   "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Лего вдень",
-   "address": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Лего после полудня",
-   "address": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-275797",
   "date": "2026-11-26",
   "start": "15:00",
@@ -4499,6 +4443,62 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-270280",
+  "date": "2026-11-26",
+  "start": "15:00",
+  "end": "18:30",
+  "title": "LEGO-Nachmittag",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.63567,
+  "lng": 13.4943,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=270280"
+  },
+  "en": {
+   "title": "LEGO afternoon",
+   "address": "District library book, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "LEGO-Nachmittag",
+   "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Лего вдень",
+   "address": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Лего после полудня",
+   "address": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -4921,6 +4921,70 @@
    "organizer": "Городская библиотека Нойкёльна (Stadtbibliothek Neukölln)",
    "address": "Библиотека Гертруды Юнге (Gertrud-Junge-Bibliothek), (Trude-Jugend-Bib) Bat-Yam-Platz 1, 12353 Berlin",
    "district": "Нойкёльн"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-289805",
+  "date": "2026-11-26",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Zeichnen für alle (auch Unbegabte)",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+  "district": "Mitte",
+  "lat": 52.54645,
+  "lng": 13.35728,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289805"
+  },
+  "en": {
+   "title": "Drawing for everyone (even the untalented)",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Schiller Library, Müllerstraße 149, 13353 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Zeichnen für alle (auch Unbegabte)",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Schiller-Bibliothek, Müllerstraße 149, 13353 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Малювання для всіх (навіть для безталанних)",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Шиллера (Schiller-Bibliothek), Müllerstraße 149, 13353 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Рисование доступно каждому (даже бездарному)",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Шиллера (Schiller-Bibliothek), Müllerstraße 149, 13353 Berlin",
+   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
