@@ -1142,65 +1142,6 @@
   ]
  },
  {
-  "id": "berlin-284920",
-  "date": "2026-11-25",
-  "start": "16:00",
-  "end": "17:30",
-  "title": "LEGO-Nachmittag",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-  "district": "Pankow",
-  "lat": 52.5686,
-  "lng": 13.41231,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=284920"
-  },
-  "en": {
-   "title": "LEGO afternoon",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "LEGO-Nachmittag",
-   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Лего вдень",
-   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Лего после полудня",
-   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-288200",
   "date": "2026-11-25",
   "start": "16:00",
@@ -1260,6 +1201,65 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-284920",
+  "date": "2026-11-25",
+  "start": "16:00",
+  "end": "17:30",
+  "title": "LEGO-Nachmittag",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Janusz- Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+  "district": "Pankow",
+  "lat": 52.5686,
+  "lng": 13.41231,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=284920"
+  },
+  "en": {
+   "title": "LEGO afternoon",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "LEGO-Nachmittag",
+   "address": "Janusz-Korczak-Bibliothek, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Лего вдень",
+   "address": "Бібліотека Януша Корчака, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Лего после полудня",
+   "address": "Януш-Корчак-Библиотека, Berliner Straße 120/121, 13187 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -1629,73 +1629,6 @@
   ]
  },
  {
-  "id": "berlin-276097",
-  "date": "2026-11-25",
-  "start": "16:00",
-  "end": "17:00",
-  "title": "Vorlesestunde mit Lesewelt e.V. in der Johanna-Moosdorf-Bibliothek",
-  "organizer": "Lesewelt Berlin e. V.",
-  "category": "language",
-  "format": "in-person",
-  "ages": [
-   4,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend), Westendallee 45, 14052 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.51066,
-  "lng": 13.25861,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=276097"
-  },
-  "en": {
-   "title": "Reading hour with Lesewelt e.V. in the Johanna Moosdorf Library",
-   "organizer": "Reading World Berlin e. v.",
-   "address": "Johanna Moosdorf Library (Neuwestend district library), Westendallee 45, 14052 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Vorlesestunde mit Lesewelt e.V. in der Johanna-Moosdorf-Bibliothek",
-   "organizer": "Lesewelt Berlin e. V.",
-   "address": "Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend), Westendallee 45, 14052 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Година читання з Lesewelt e.V. в бібліотеці Йоганни Моосдорф",
-   "organizer": "Reading World Berlin e. v. (Lesewelt Berlin e. V.)",
-   "address": "Бібліотека Йоганни Моосдорф (районна бібліотека Нойвестенд) (Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend)), Westendallee 45, 14052 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Час чтения с Lesewelt e.V. в библиотеке Йоханны Моосдорф",
-   "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
-   "address": "Библиотека Йоханны Моосдорф (районная библиотека Нойвестенд) (Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend)), Westendallee 45, 14052 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-276091",
   "date": "2026-11-25",
   "start": "16:00",
@@ -1741,6 +1674,73 @@
    "title": "Час чтения с Lesewelt e.V. в библиотеке Ингеборги Бахманн",
    "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
    "address": "Библиотека Ингеборги Бахманн (Библиотека Западного округа) (Ingeborg-Bachmann-Bibliothek (Stadtteilbibliothek West)), Nehringstr. 10, 14059 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-276097",
+  "date": "2026-11-25",
+  "start": "16:00",
+  "end": "17:00",
+  "title": "Vorlesestunde mit Lesewelt e.V. in der Johanna-Moosdorf-Bibliothek",
+  "organizer": "Lesewelt Berlin e. V.",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   4,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend), Westendallee 45, 14052 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.51066,
+  "lng": 13.25861,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=276097"
+  },
+  "en": {
+   "title": "Reading hour with Lesewelt e.V. in the Johanna Moosdorf Library",
+   "organizer": "Reading World Berlin e. v.",
+   "address": "Johanna Moosdorf Library (Neuwestend district library), Westendallee 45, 14052 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Vorlesestunde mit Lesewelt e.V. in der Johanna-Moosdorf-Bibliothek",
+   "organizer": "Lesewelt Berlin e. V.",
+   "address": "Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend), Westendallee 45, 14052 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Година читання з Lesewelt e.V. в бібліотеці Йоганни Моосдорф",
+   "organizer": "Reading World Berlin e. v. (Lesewelt Berlin e. V.)",
+   "address": "Бібліотека Йоганни Моосдорф (районна бібліотека Нойвестенд) (Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend)), Westendallee 45, 14052 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Час чтения с Lesewelt e.V. в библиотеке Йоханны Моосдорф",
+   "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
+   "address": "Библиотека Йоханны Моосдорф (районная библиотека Нойвестенд) (Johanna-Moosdorf- Bibliothek (Stadtteil- bibliothek Neuwestend)), Westendallee 45, 14052 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
@@ -2474,62 +2474,6 @@
   ]
  },
  {
-  "id": "berlin-270280",
-  "date": "2026-11-26",
-  "start": "15:00",
-  "end": "18:30",
-  "title": "LEGO-Nachmittag",
-  "organizer": "",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
-  "district": "Pankow",
-  "lat": 52.63567,
-  "lng": 13.4943,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=270280"
-  },
-  "en": {
-   "title": "LEGO afternoon",
-   "address": "District library book, Wiltbergstraße 19, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "LEGO-Nachmittag",
-   "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Лего вдень",
-   "address": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Лего после полудня",
-   "address": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-275797",
   "date": "2026-11-26",
   "start": "15:00",
@@ -2589,6 +2533,62 @@
    "uk.district",
    "ru.title",
    "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-270280",
+  "date": "2026-11-26",
+  "start": "15:00",
+  "end": "18:30",
+  "title": "LEGO-Nachmittag",
+  "organizer": "",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.63567,
+  "lng": 13.4943,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=270280"
+  },
+  "en": {
+   "title": "LEGO afternoon",
+   "address": "District library book, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "LEGO-Nachmittag",
+   "address": "Stadtteilbibliothek Buch, Wiltbergstraße 19, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Лего вдень",
+   "address": "Книга районної бібліотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Лего после полудня",
+   "address": "Книга районной библиотеки (Stadtteilbibliothek Buch), Wiltbergstraße 19, 13125 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
    "ru.address",
    "ru.district"
   ]
@@ -3348,73 +3348,6 @@
   ]
  },
  {
-  "id": "berlin-287890",
-  "date": "2026-11-26",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
-  "organizer": "Adolf-Reichwein-Bibliothek",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   9,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.47758,
-  "lng": 13.28789,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=287890"
-  },
-  "en": {
-   "title": "Games afternoon for families with children in the Adolf Reichwein Library",
-   "organizer": "Adolf Reichwein Library",
-   "address": "Adolf Reichwein Library (in the Schmargendorf town hall), Berkaer Str. 7, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
-   "organizer": "Adolf-Reichwein-Bibliothek",
-   "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Ігри після обіду для сімей з дітьми в бібліотеці Адольфа Райхвайна",
-   "organizer": "Бібліотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
-   "address": "Бібліотека Адольфа Райхвайна (в ратуші Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Игровой день для семей с детьми в библиотеке Адольфа Райхвайна",
-   "organizer": "Библиотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
-   "address": "Библиотека Адольфа Райхвайна (в ратуше Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-276910",
   "date": "2026-11-26",
   "start": "16:00",
@@ -3460,6 +3393,73 @@
    "title": "Час чтения с Lesewelt e.V. в библиотеке Дитриха Бонхеффера",
    "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
    "address": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-287890",
+  "date": "2026-11-26",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
+  "organizer": "Adolf-Reichwein-Bibliothek",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   9,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.47758,
+  "lng": 13.28789,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287890"
+  },
+  "en": {
+   "title": "Games afternoon for families with children in the Adolf Reichwein Library",
+   "organizer": "Adolf Reichwein Library",
+   "address": "Adolf Reichwein Library (in the Schmargendorf town hall), Berkaer Str. 7, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
+   "organizer": "Adolf-Reichwein-Bibliothek",
+   "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Ігри після обіду для сімей з дітьми в бібліотеці Адольфа Райхвайна",
+   "organizer": "Бібліотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
+   "address": "Бібліотека Адольфа Райхвайна (в ратуші Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Игровой день для семей с детьми в библиотеке Адольфа Райхвайна",
+   "organizer": "Библиотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
+   "address": "Библиотека Адольфа Райхвайна (в ратуше Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
