@@ -1518,73 +1518,6 @@
   ]
  },
  {
-  "id": "berlin-287890",
-  "date": "2026-11-26",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
-  "organizer": "Adolf-Reichwein-Bibliothek",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   9,
-   12
-  ],
-  "price": {
-   "type": "free"
-  },
-  "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
-  "district": "Charlottenburg-Wilmersdorf",
-  "lat": 52.47758,
-  "lng": 13.28789,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=287890"
-  },
-  "en": {
-   "title": "Games afternoon for families with children in the Adolf Reichwein Library",
-   "organizer": "Adolf Reichwein Library",
-   "address": "Adolf Reichwein Library (in the Schmargendorf town hall), Berkaer Str. 7, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "de": {
-   "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
-   "organizer": "Adolf-Reichwein-Bibliothek",
-   "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
-   "district": "Charlottenburg-Wilmersdorf"
-  },
-  "uk": {
-   "title": "Ігри після обіду для сімей з дітьми в бібліотеці Адольфа Райхвайна",
-   "organizer": "Бібліотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
-   "address": "Бібліотека Адольфа Райхвайна (в ратуші Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
-   "district": "Шарлоттенбург-Вільмерсдорф"
-  },
-  "ru": {
-   "title": "Игровой день для семей с детьми в библиотеке Адольфа Райхвайна",
-   "organizer": "Библиотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
-   "address": "Библиотека Адольфа Райхвайна (в ратуше Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
-   "district": "Шарлоттенбург-Вильмерсдорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-276910",
   "date": "2026-11-26",
   "start": "16:00",
@@ -1630,6 +1563,73 @@
    "title": "Час чтения с Lesewelt e.V. в библиотеке Дитриха Бонхеффера",
    "organizer": "Чтение World Berlin e. в. (Lesewelt Berlin e. V.)",
    "address": "Библиотека Дитриха Бонхеффера (Dietrich-Bonhoeffer-Bibliothek), Brandenburgische Str. 2, 10713 Berlin",
+   "district": "Шарлоттенбург-Вильмерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-287890",
+  "date": "2026-11-26",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
+  "organizer": "Adolf-Reichwein-Bibliothek",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   9,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
+  "district": "Charlottenburg-Wilmersdorf",
+  "lat": 52.47758,
+  "lng": 13.28789,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287890"
+  },
+  "en": {
+   "title": "Games afternoon for families with children in the Adolf Reichwein Library",
+   "organizer": "Adolf Reichwein Library",
+   "address": "Adolf Reichwein Library (in the Schmargendorf town hall), Berkaer Str. 7, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "de": {
+   "title": "Spielenachmittag für Familien mit Kindern in der Adolf-Reichwein-Bibliothek",
+   "organizer": "Adolf-Reichwein-Bibliothek",
+   "address": "Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf), Berkaer Str. 7, 14199 Berlin",
+   "district": "Charlottenburg-Wilmersdorf"
+  },
+  "uk": {
+   "title": "Ігри після обіду для сімей з дітьми в бібліотеці Адольфа Райхвайна",
+   "organizer": "Бібліотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
+   "address": "Бібліотека Адольфа Райхвайна (в ратуші Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
+   "district": "Шарлоттенбург-Вільмерсдорф"
+  },
+  "ru": {
+   "title": "Игровой день для семей с детьми в библиотеке Адольфа Райхвайна",
+   "organizer": "Библиотека Адольфа Райхвайна (Adolf-Reichwein-Bibliothek)",
+   "address": "Библиотека Адольфа Райхвайна (в ратуше Шмаргендорфа) (Adolf-Reichwein-Bibliothek (im Rathaus Schmargendorf)), Berkaer Str. 7, 14199 Berlin",
    "district": "Шарлоттенбург-Вильмерсдорф"
   },
   "autoTranslated": [
@@ -1719,70 +1719,6 @@
   ]
  },
  {
-  "id": "berlin-256159",
-  "date": "2026-11-26",
-  "start": "16:00",
-  "end": "18:00",
-  "title": "Offener Makerspace in der Ingeborg-Drewitz-Bibliothek",
-  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
-  "category": "stem",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-  "district": "Steglitz-Zehlendorf",
-  "lat": 52.45778,
-  "lng": 13.31963,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=256159"
-  },
-  "en": {
-   "title": "Open makerspace in the Ingeborg Drewitz Library",
-   "organizer": "Steglitz-Zehlendorf City Library",
-   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "de": {
-   "title": "Offener Makerspace in der Ingeborg-Drewitz-Bibliothek",
-   "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Steglitz-Zehlendorf"
-  },
-  "uk": {
-   "title": "Відкрити Makerspace у бібліотеці Ingeborg Drewitz",
-   "organizer": "Міська бібліотека Штегліц-Целендорф (Stadtbibliothek Steglitz-Zehlendorf)",
-   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
-   "district": "Штегліц-Целендорф"
-  },
-  "ru": {
-   "title": "Открытое творческое пространство в библиотеке Ингеборг Древиц",
-   "organizer": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)",
-   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
-   "district": "Штеглиц-Целендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-233278",
   "date": "2026-11-26",
   "start": "16:00",
@@ -1826,6 +1762,70 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
    "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-256159",
+  "date": "2026-11-26",
+  "start": "16:00",
+  "end": "18:00",
+  "title": "Offener Makerspace in der Ingeborg-Drewitz-Bibliothek",
+  "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+  "category": "stem",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45778,
+  "lng": 13.31963,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=256159"
+  },
+  "en": {
+   "title": "Open makerspace in the Ingeborg Drewitz Library",
+   "organizer": "Steglitz-Zehlendorf City Library",
+   "address": "Ingeborg Drewitz Library, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "Offener Makerspace in der Ingeborg-Drewitz-Bibliothek",
+   "organizer": "Stadtbibliothek Steglitz-Zehlendorf",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "Відкрити Makerspace у бібліотеці Ingeborg Drewitz",
+   "organizer": "Міська бібліотека Штегліц-Целендорф (Stadtbibliothek Steglitz-Zehlendorf)",
+   "address": "Ingeborg-Drewitz-Bibliothek, Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "Открытое творческое пространство в библиотеке Ингеборг Древиц",
+   "organizer": "Городская библиотека Штеглиц-Целендорфа (Stadtbibliothek Steglitz-Zehlendorf)",
+   "address": "Библиотека Ингеборги Древиц (Ingeborg-Drewitz-Bibliothek), Grunewaldstr. 3, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
   },
   "autoTranslated": [
    "en.title",
@@ -1975,70 +1975,6 @@
   ]
  },
  {
-  "id": "berlin-289133",
-  "date": "2026-11-26",
-  "start": "16:00",
-  "end": "19:00",
-  "title": "Hausaufgabenhilfe für die 3.-6. Klasse",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "other",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
-  "district": "Mitte",
-  "lat": 52.53124,
-  "lng": 13.34751,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=289133"
-  },
-  "en": {
-   "title": "Homework help for grades 3-6 Class",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Bruno Lösche Library, Perleberger Str. 33, 10559 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "Hausaufgabenhilfe für die 3.-6. Klasse",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "Допомога до домашнього завдання для 3-6 кл",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека Бруно Леше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "Помощь в выполнении домашних заданий для 3-6 классов.",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
-   "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
   "id": "berlin-289121",
   "date": "2026-11-26",
   "start": "16:00",
@@ -2081,6 +2017,70 @@
    "title": "Помощь в выполнении домашних заданий для 1-6 классов.",
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
+   "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-289133",
+  "date": "2026-11-26",
+  "start": "16:00",
+  "end": "19:00",
+  "title": "Hausaufgabenhilfe für die 3.-6. Klasse",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "other",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+  "district": "Mitte",
+  "lat": 52.53124,
+  "lng": 13.34751,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=289133"
+  },
+  "en": {
+   "title": "Homework help for grades 3-6 Class",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Bruno Lösche Library, Perleberger Str. 33, 10559 Berlin",
+   "district": "Not"
+  },
+  "de": {
+   "title": "Hausaufgabenhilfe für die 3.-6. Klasse",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Bruno-Lösche-Bibliothek, Perleberger Str. 33, 10559 Berlin",
+   "district": "Nicht"
+  },
+  "uk": {
+   "title": "Допомога до домашнього завдання для 3-6 кл",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека Бруно Леше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
+   "district": "ні"
+  },
+  "ru": {
+   "title": "Помощь в выполнении домашних заданий для 3-6 классов.",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека Бруно Лёше (Bruno-Lösche-Bibliothek), Perleberger Str. 33, 10559 Berlin",
    "district": "Нет"
   },
   "autoTranslated": [
@@ -3950,52 +3950,52 @@
   ]
  },
  {
-  "id": "berlin-295259",
+  "id": "berlin-295904",
   "date": "2026-11-27",
   "start": "16:00",
   "end": "",
-  "title": "LESUNG: Boris Pfeiffer \"Die drei ??? Kids und mehr\" in der Bibliothek Lichtenrade",
-  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-  "category": "language",
+  "title": "„Die Wunderlampe“ mit dem Puppentheater Bubales",
+  "organizer": "Stadtbibliothek Berlin-Mitte",
+  "category": "arts",
   "format": "in-person",
   "ages": [
-   6,
+   5,
    12
   ],
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-  "district": "Tempelhof-Schöneberg",
-  "lat": 52.38787,
-  "lng": 13.39715,
+  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+  "district": "Mitte",
+  "lat": 52.55361,
+  "lng": 13.3795,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295259"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295904"
   },
   "en": {
-   "title": "READING: Boris Pfeiffer \"The Three ??? Kids and more\" in the Lichtenrade library",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
+   "title": "“The Magic Lamp” with the Bubales puppet theater",
+   "organizer": "Berlin-Mitte City Library",
+   "address": "Library at Luisenbad, Badstraße 39, 13357 Berlin",
+   "district": "Not"
   },
   "de": {
-   "title": "LESUNG: Boris Pfeiffer \"Die drei ??? Kids und mehr\" in der Bibliothek Lichtenrade",
-   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
-   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Tempelhof-Schöneberg"
+   "title": "„Die Wunderlampe“ mit dem Puppentheater Bubales",
+   "organizer": "Stadtbibliothek Berlin-Mitte",
+   "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
+   "district": "Nicht"
   },
   "uk": {
-   "title": "ЧИТАННЯ: Борис Пфайффер \"Троє дітей та багато іншого\" в бібліотеці Ліхтенраде",
-   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельгоф-Шенеберг"
+   "title": "«Чарівна лампа» з ляльковим театром «Бубалес».",
+   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Бібліотека в Луїзенбаді (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
+   "district": "ні"
   },
   "ru": {
-   "title": "ЧИТАЕМ: Борис Пфайффер «Три ??? Дети и не только» в библиотеке Лихтенраде",
-   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
-   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
-   "district": "Темпельхоф-Шёнеберг"
+   "title": "«Волшебная лампа» с кукольным театром Бубалес",
+   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
+   "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
+   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
@@ -4084,6 +4084,73 @@
   ]
  },
  {
+  "id": "berlin-295259",
+  "date": "2026-11-27",
+  "start": "16:00",
+  "end": "",
+  "title": "LESUNG: Boris Pfeiffer \"Die drei ??? Kids und mehr\" in der Bibliothek Lichtenrade",
+  "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+  "category": "language",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "free"
+  },
+  "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+  "district": "Tempelhof-Schöneberg",
+  "lat": 52.38787,
+  "lng": 13.39715,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295259"
+  },
+  "en": {
+   "title": "READING: Boris Pfeiffer \"The Three ??? Kids and more\" in the Lichtenrade library",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Lichtenrade Library, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "de": {
+   "title": "LESUNG: Boris Pfeiffer \"Die drei ??? Kids und mehr\" in der Bibliothek Lichtenrade",
+   "organizer": "Stadtbibliothek Tempelhof-Schöneberg",
+   "address": "Bibliothek Lichtenrade, Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Tempelhof-Schöneberg"
+  },
+  "uk": {
+   "title": "ЧИТАННЯ: Борис Пфайффер \"Троє дітей та багато іншого\" в бібліотеці Ліхтенраде",
+   "organizer": "Міська бібліотека Темпельхоф-Шенеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Бібліотека Ліхтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Темпельгоф-Шенеберг"
+  },
+  "ru": {
+   "title": "ЧИТАЕМ: Борис Пфайффер «Три ??? Дети и не только» в библиотеке Лихтенраде",
+   "organizer": "Городская библиотека Темпельхоф-Шёнеберг (Stadtbibliothek Tempelhof-Schöneberg)",
+   "address": "Библиотека Лихтенраде (Bibliothek Lichtenrade), Alte Mälzerei | Steinstr. 41, 12307 Berlin",
+   "district": "Темпельхоф-Шёнеберг"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-296180",
   "date": "2026-11-27",
   "start": "16:00",
@@ -4130,73 +4197,6 @@
    "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
    "address": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
    "district": "Райникендорф"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-295904",
-  "date": "2026-11-27",
-  "start": "16:00",
-  "end": "",
-  "title": "„Die Wunderlampe“ mit dem Puppentheater Bubales",
-  "organizer": "Stadtbibliothek Berlin-Mitte",
-  "category": "arts",
-  "format": "in-person",
-  "ages": [
-   5,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
-  "district": "Mitte",
-  "lat": 52.55361,
-  "lng": 13.3795,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=295904"
-  },
-  "en": {
-   "title": "“The Magic Lamp” with the Bubales puppet theater",
-   "organizer": "Berlin-Mitte City Library",
-   "address": "Library at Luisenbad, Badstraße 39, 13357 Berlin",
-   "district": "Not"
-  },
-  "de": {
-   "title": "„Die Wunderlampe“ mit dem Puppentheater Bubales",
-   "organizer": "Stadtbibliothek Berlin-Mitte",
-   "address": "Bibliothek am Luisenbad, Badstraße 39, 13357 Berlin",
-   "district": "Nicht"
-  },
-  "uk": {
-   "title": "«Чарівна лампа» з ляльковим театром «Бубалес».",
-   "organizer": "Міська бібліотека Берліна-Мітте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Бібліотека в Луїзенбаді (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
-   "district": "ні"
-  },
-  "ru": {
-   "title": "«Волшебная лампа» с кукольным театром Бубалес",
-   "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
-   "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
-   "district": "Нет"
   },
   "autoTranslated": [
    "en.title",
@@ -4763,6 +4763,70 @@
   ]
  },
  {
+  "id": "berlin-290387",
+  "date": "2026-11-28",
+  "start": "10:00",
+  "end": "14:00",
+  "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
+  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.54207,
+  "lng": 13.54431,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290387"
+  },
+  "en": {
+   "title": "Craft workshop with Asja Bonitz - Every year again: craft workshop “Tree decorations”",
+   "organizer": "Mark Twain District Central Library",
+   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "de": {
+   "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
+   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "uk": {
+   "title": "Майстерня рукоділля з Ася Боніц - Щороку знову: майстерня рукоділля «Ялинкові прикраси»",
+   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Геллерсдорф"
+  },
+  "ru": {
+   "title": "Ремесленный мастер-класс с Асей Бониц - Каждый год снова: ремесленный мастер-класс «Елочные украшения»",
+   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Хеллерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-290651",
   "date": "2026-11-28",
   "start": "10:00",
@@ -4832,49 +4896,49 @@
   ]
  },
  {
-  "id": "berlin-290387",
+  "id": "berlin-287074",
   "date": "2026-11-28",
-  "start": "10:00",
-  "end": "14:00",
-  "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
-  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-  "category": "arts",
+  "start": "10:30",
+  "end": "11:30",
+  "title": "KinderUni Lichtenberg (KUL)",
+  "organizer": "sowieso Pressebüro GbR",
+  "category": "language",
   "format": "in-person",
   "ages": null,
   "price": {
-   "type": "free"
+   "type": "unknown"
   },
-  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-  "district": "Marzahn-Hellersdorf",
-  "lat": 52.54207,
-  "lng": 13.54431,
+  "address": "HTW Berlin Hauptgebäude, Raum.238, Treskowalle 13, 10318 Berlin",
+  "district": "Lichtenberg",
+  "lat": 52.48346,
+  "lng": 13.52881,
   "source": {
    "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290387"
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=287074"
   },
   "en": {
-   "title": "Craft workshop with Asja Bonitz - Every year again: craft workshop “Tree decorations”",
-   "organizer": "Mark Twain District Central Library",
-   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
+   "title": "Lichtenberg Children’s University (KUL)",
+   "organizer": "anyway Press Office GbR",
+   "address": "HTW Berlin main building, Raum.238, Treskowalle 13, 10318 Berlin",
+   "district": "Lichtenberg"
   },
   "de": {
-   "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
-   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
+   "title": "KinderUni Lichtenberg (KUL)",
+   "organizer": "sowieso Pressebüro GbR",
+   "address": "HTW Berlin Hauptgebäude, Raum.238, Treskowalle 13, 10318 Berlin",
+   "district": "Lichtenberg"
   },
   "uk": {
-   "title": "Майстерня рукоділля з Ася Боніц - Щороку знову: майстерня рукоділля «Ялинкові прикраси»",
-   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Геллерсдорф"
+   "title": "Ліхтенбергський дитячий університет (KUL)",
+   "organizer": "все одно Прес-служба GbR (sowieso Pressebüro GbR)",
+   "address": "Головна будівля HTW Berlin (HTW Berlin Hauptgebäude), Raum.238, Treskowalle 13, 10318 Berlin",
+   "district": "Ліхтенберг"
   },
   "ru": {
-   "title": "Ремесленный мастер-класс с Асей Бониц - Каждый год снова: ремесленный мастер-класс «Елочные украшения»",
-   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Хеллерсдорф"
+   "title": "Детский университет Лихтенберга (KUL)",
+   "organizer": "в любом случае Пресс-служба ГБР (sowieso Pressebüro GbR)",
+   "address": "Главное здание HTW Берлин (HTW Berlin Hauptgebäude), Raum.238, Treskowalle 13, 10318 Berlin",
+   "district": "Лихтенберг"
   },
   "autoTranslated": [
    "en.title",
@@ -5017,70 +5081,6 @@
    "uk.address",
    "uk.district",
    "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-287074",
-  "date": "2026-11-28",
-  "start": "10:30",
-  "end": "11:30",
-  "title": "KinderUni Lichtenberg (KUL)",
-  "organizer": "sowieso Pressebüro GbR",
-  "category": "language",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "HTW Berlin Hauptgebäude, Raum.238, Treskowalle 13, 10318 Berlin",
-  "district": "Lichtenberg",
-  "lat": 52.48346,
-  "lng": 13.52881,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=287074"
-  },
-  "en": {
-   "title": "Lichtenberg Children’s University (KUL)",
-   "organizer": "anyway Press Office GbR",
-   "address": "HTW Berlin main building, Raum.238, Treskowalle 13, 10318 Berlin",
-   "district": "Lichtenberg"
-  },
-  "de": {
-   "title": "KinderUni Lichtenberg (KUL)",
-   "organizer": "sowieso Pressebüro GbR",
-   "address": "HTW Berlin Hauptgebäude, Raum.238, Treskowalle 13, 10318 Berlin",
-   "district": "Lichtenberg"
-  },
-  "uk": {
-   "title": "Ліхтенбергський дитячий університет (KUL)",
-   "organizer": "все одно Прес-служба GbR (sowieso Pressebüro GbR)",
-   "address": "Головна будівля HTW Berlin (HTW Berlin Hauptgebäude), Raum.238, Treskowalle 13, 10318 Berlin",
-   "district": "Ліхтенберг"
-  },
-  "ru": {
-   "title": "Детский университет Лихтенберга (KUL)",
-   "organizer": "в любом случае Пресс-служба ГБР (sowieso Pressebüro GbR)",
-   "address": "Главное здание HTW Берлин (HTW Berlin Hauptgebäude), Raum.238, Treskowalle 13, 10318 Berlin",
-   "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
@@ -5503,6 +5503,72 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
    "district": "Нет"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-295199",
+  "date": "2026-11-28",
+  "start": "13:00",
+  "end": "",
+  "title": "24. Steglitzer Literaturfest",
+  "organizer": "LiteraturInitiative Berlin",
+  "category": "language",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "paid",
+   "amount": 16,
+   "per": "ticket"
+  },
+  "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+  "district": "Steglitz-Zehlendorf",
+  "lat": 52.45693,
+  "lng": 13.3194,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=295199"
+  },
+  "en": {
+   "title": "24th Steglitz Literature Festival",
+   "organizer": "LiteraturInitiative Berlin",
+   "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "de": {
+   "title": "24. Steglitzer Literaturfest",
+   "organizer": "LiteraturInitiative Berlin",
+   "address": "Schwartzsche Villa, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Steglitz-Zehlendorf"
+  },
+  "uk": {
+   "title": "24-й Штегліцький літературний фестиваль",
+   "organizer": "Літературна ініціатива Берлін",
+   "address": "Вілла Шварцше, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Штегліц-Целендорф"
+  },
+  "ru": {
+   "title": "24-й литературный фестиваль Штеглица",
+   "organizer": "Литературная инициатива Берлин",
+   "address": "Вилла Шварцше, Grunewaldstraße 55, 12165 Berlin",
+   "district": "Штеглиц-Целендорф"
   },
   "autoTranslated": [
    "en.title",
