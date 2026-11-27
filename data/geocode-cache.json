@@ -418,5 +418,10 @@
  "Am Treptower Park 14, 12435 Berlin": {
   "lat": 52.4913,
   "lng": 13.45748
+ },
+ "Wiltbergstraße 50, Haus 20,, 13125 Berlin": null,
+ "Ludwig – Hoffmann – Quartier,, Berlin": {
+  "lat": 52.64144,
+  "lng": 13.49058
  }
 }

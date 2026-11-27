@@ -1269,6 +1269,73 @@
   ]
  },
  {
+  "id": "berlin-296180",
+  "date": "2026-11-27",
+  "start": "16:00",
+  "end": "",
+  "title": "Robos im Winterland!",
+  "organizer": "Stadtbibliothek Reinickendorf",
+  "category": "other",
+  "format": "in-person",
+  "ages": [
+   6,
+   12
+  ],
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Stadtteilbibliothek Reinickendorf- West, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
+  "district": "Reinickendorf",
+  "lat": 52.57141,
+  "lng": 13.31555,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=296180"
+  },
+  "en": {
+   "title": "Robos in Winterland!",
+   "organizer": "Reinickendorf City Library",
+   "address": "Reinickendorf-West district library, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
+   "district": "Reinickendorf"
+  },
+  "de": {
+   "title": "Robos im Winterland!",
+   "organizer": "Stadtbibliothek Reinickendorf",
+   "address": "Stadtteilbibliothek Reinickendorf- West, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
+   "district": "Reinickendorf"
+  },
+  "uk": {
+   "title": "Робос у Зимовій країні!",
+   "organizer": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
+   "address": "Райнікендорф-Західна районна бібліотека (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
+   "district": "Райнікендорф"
+  },
+  "ru": {
+   "title": "Робо в Зимней стране!",
+   "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
+   "address": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
+   "district": "Райникендорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-295304",
   "date": "2026-11-27",
   "start": "16:00",
@@ -1449,73 +1516,6 @@
    "organizer": "Городская библиотека Берлин-Митте (Stadtbibliothek Berlin-Mitte)",
    "address": "Библиотека в Луизенбаде (Bibliothek am Luisenbad), Badstraße 39, 13357 Berlin",
    "district": "Нет"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-296180",
-  "date": "2026-11-27",
-  "start": "16:00",
-  "end": "",
-  "title": "Robos im Winterland!",
-  "organizer": "Stadtbibliothek Reinickendorf",
-  "category": "other",
-  "format": "in-person",
-  "ages": [
-   6,
-   12
-  ],
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Stadtteilbibliothek Reinickendorf- West, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
-  "district": "Reinickendorf",
-  "lat": 52.57141,
-  "lng": 13.31555,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=296180"
-  },
-  "en": {
-   "title": "Robos in Winterland!",
-   "organizer": "Reinickendorf City Library",
-   "address": "Reinickendorf-West district library, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
-   "district": "Reinickendorf"
-  },
-  "de": {
-   "title": "Robos im Winterland!",
-   "organizer": "Stadtbibliothek Reinickendorf",
-   "address": "Stadtteilbibliothek Reinickendorf- West, Auguste-Viktoria-Allee 29-31, 13403 Berlin",
-   "district": "Reinickendorf"
-  },
-  "uk": {
-   "title": "Робос у Зимовій країні!",
-   "organizer": "Райнікендорфська міська бібліотека (Stadtbibliothek Reinickendorf)",
-   "address": "Райнікендорф-Західна районна бібліотека (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
-   "district": "Райнікендорф"
-  },
-  "ru": {
-   "title": "Робо в Зимней стране!",
-   "organizer": "Городская библиотека Райникендорфа (Stadtbibliothek Reinickendorf)",
-   "address": "Районная библиотека Райникендорф-Вест (Stadtteilbibliothek Reinickendorf- West), Auguste-Viktoria-Allee 29-31, 13403 Berlin",
-   "district": "Райникендорф"
   },
   "autoTranslated": [
    "en.title",
@@ -2210,6 +2210,70 @@
   ]
  },
  {
+  "id": "berlin-290387",
+  "date": "2026-11-28",
+  "start": "10:00",
+  "end": "14:00",
+  "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
+  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "free"
+  },
+  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+  "district": "Marzahn-Hellersdorf",
+  "lat": 52.54207,
+  "lng": 13.54431,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=290387"
+  },
+  "en": {
+   "title": "Craft workshop with Asja Bonitz - Every year again: craft workshop “Tree decorations”",
+   "organizer": "Mark Twain District Central Library",
+   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "de": {
+   "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
+   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
+   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Marzahn-Hellersdorf"
+  },
+  "uk": {
+   "title": "Майстерня рукоділля з Ася Боніц - Щороку знову: майстерня рукоділля «Ялинкові прикраси»",
+   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Геллерсдорф"
+  },
+  "ru": {
+   "title": "Ремесленный мастер-класс с Асей Бониц - Каждый год снова: ремесленный мастер-класс «Елочные украшения»",
+   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
+   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
+   "district": "Марцан-Хеллерсдорф"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-290651",
   "date": "2026-11-28",
   "start": "10:00",
@@ -2258,70 +2322,6 @@
    "organizer": "Библиотека Антона Саефкова и WGLi Wohnungsgenossenschaft Lichtenberg eG (Anton-Saefkow-Bibliothek und WGLi Wohnungsgenossenschaft Lichtenberg eG)",
    "address": "Библиотека Антона Саефкова (Anton-Saefkow-Bibliothek), Anton-Saefkow-Platz 14, 10369 Berlin",
    "district": "Лихтенберг"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.organizer",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.organizer",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.organizer",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.organizer",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-290387",
-  "date": "2026-11-28",
-  "start": "10:00",
-  "end": "14:00",
-  "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
-  "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "free"
-  },
-  "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-  "district": "Marzahn-Hellersdorf",
-  "lat": 52.54207,
-  "lng": 13.54431,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=290387"
-  },
-  "en": {
-   "title": "Craft workshop with Asja Bonitz - Every year again: craft workshop “Tree decorations”",
-   "organizer": "Mark Twain District Central Library",
-   "address": "Mark Twain Library / District Central Library, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "de": {
-   "title": "Bastel-Workshop mit Asja Bonitz - Alle Jahre wieder: Bastel-Workshop „Baumschmuck“",
-   "organizer": "Bezirkszentralbibliothek \"Mark Twain\"",
-   "address": "Mark-Twain-Bibliothek / Bezirkszentralbibliothek, Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Marzahn-Hellersdorf"
-  },
-  "uk": {
-   "title": "Майстерня рукоділля з Ася Боніц - Щороку знову: майстерня рукоділля «Ялинкові прикраси»",
-   "organizer": "Центральна районна бібліотека імені Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Бібліотека Марка Твена / ЦБС району (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Геллерсдорф"
-  },
-  "ru": {
-   "title": "Ремесленный мастер-класс с Асей Бониц - Каждый год снова: ремесленный мастер-класс «Елочные украшения»",
-   "organizer": "Центральная районная библиотека Марка Твена (Bezirkszentralbibliothek \"Mark Twain\")",
-   "address": "Библиотека Марка Твена / Центральная районная библиотека (Mark-Twain-Bibliothek / Bezirkszentralbibliothek), Marzahner Promenade 52-54, 12679 Berlin",
-   "district": "Марцан-Хеллерсдорф"
   },
   "autoTranslated": [
    "en.title",
@@ -2725,6 +2725,62 @@
   ]
  },
  {
+  "id": "berlin-286582",
+  "date": "2026-11-28",
+  "start": "11:00",
+  "end": "",
+  "title": "Upcycling Workshop mit Amina",
+  "organizer": "",
+  "category": "arts",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+  "district": "Pankow",
+  "lat": 52.54774,
+  "lng": 13.45284,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=286582"
+  },
+  "en": {
+   "title": "Upcycling Workshop mit Amina",
+   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Upcycling Workshop mit Amina",
+   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Майстерня переробки з Аміною",
+   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Мастерская по апсайклингу с Аминой",
+   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
   "id": "berlin-279670",
   "date": "2026-11-28",
   "start": "11:00",
@@ -2766,62 +2822,6 @@
   "ru": {
    "title": "мастерская 3D-печати",
    "address": "Каровская районная библиотека (Stadtteilbibliothek Karow), Achillesstraße 77, 13125 Berlin",
-   "district": "Панков"
-  },
-  "autoTranslated": [
-   "en.title",
-   "en.address",
-   "en.district",
-   "de.title",
-   "de.address",
-   "de.district",
-   "uk.title",
-   "uk.address",
-   "uk.district",
-   "ru.title",
-   "ru.address",
-   "ru.district"
-  ]
- },
- {
-  "id": "berlin-286582",
-  "date": "2026-11-28",
-  "start": "11:00",
-  "end": "",
-  "title": "Upcycling Workshop mit Amina",
-  "organizer": "",
-  "category": "arts",
-  "format": "in-person",
-  "ages": null,
-  "price": {
-   "type": "unknown"
-  },
-  "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-  "district": "Pankow",
-  "lat": 52.54774,
-  "lng": 13.45284,
-  "source": {
-   "name": "berlin.de",
-   "url": "https://www.berlin.de/land/kalender/index.php?detail=286582"
-  },
-  "en": {
-   "title": "Upcycling Workshop mit Amina",
-   "address": "Wolfdietrich-Schnurre Library, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "de": {
-   "title": "Upcycling Workshop mit Amina",
-   "address": "Wolfdietrich-Schnurre-Bibliothek, Bizetstraße 41, 13088 Berlin",
-   "district": "Pankow"
-  },
-  "uk": {
-   "title": "Майстерня переробки з Аміною",
-   "address": "Бібліотека Вольфдітріха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
-   "district": "Панків"
-  },
-  "ru": {
-   "title": "Мастерская по апсайклингу с Аминой",
-   "address": "Библиотека Вольфдитриха-Шнурре (Wolfdietrich-Schnurre-Bibliothek), Bizetstraße 41, 13088 Berlin",
    "district": "Панков"
   },
   "autoTranslated": [
@@ -4646,6 +4646,70 @@
    "uk.address",
    "uk.district",
    "ru.title",
+   "ru.address",
+   "ru.district"
+  ]
+ },
+ {
+  "id": "berlin-299489",
+  "date": "2026-11-30",
+  "start": "16:00",
+  "end": "",
+  "title": "Brasilianische Musik",
+  "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
+  "category": "music",
+  "format": "in-person",
+  "ages": null,
+  "price": {
+   "type": "unknown"
+  },
+  "address": "Ludwig – Hoffmann – Quartier,, Wiltbergstraße 50, Haus 20,, 13125 Berlin",
+  "district": "Pankow",
+  "lat": 52.64144,
+  "lng": 13.49058,
+  "source": {
+   "name": "berlin.de",
+   "url": "https://www.berlin.de/land/kalender/index.php?detail=299489"
+  },
+  "en": {
+   "title": "Brazilian music",
+   "organizer": "Office for Continuing Education and Culture, Béla Bartók Music School",
+   "address": "Ludwig – Hoffmann – quarters, Wiltbergstraße 50, Haus 20, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "de": {
+   "title": "Brasilianische Musik",
+   "organizer": "Amt für Weiterbildung und Kultur, Musikschule Béla Bartók",
+   "address": "Ludwig – Hoffmann – Quartier, Wiltbergstraße 50, Haus 20, 13125 Berlin",
+   "district": "Pankow"
+  },
+  "uk": {
+   "title": "Бразильська музика",
+   "organizer": "Управління безперервної освіти та культури музичної школи Бели Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
+   "address": "Людвіг – Гофман – квартири (Ludwig – Hoffmann – Quartier), Wiltbergstraße 50, Haus 20, 13125 Berlin",
+   "district": "Панків"
+  },
+  "ru": {
+   "title": "Бразильская музыка",
+   "organizer": "Управление непрерывного образования и культуры Музыкальной школы Белы Бартока (Amt für Weiterbildung und Kultur, Musikschule Béla Bartók)",
+   "address": "Людвиг – Гофман – четверти (Ludwig – Hoffmann – Quartier), Wiltbergstraße 50, Haus 20, 13125 Berlin",
+   "district": "Панков"
+  },
+  "autoTranslated": [
+   "en.title",
+   "en.organizer",
+   "en.address",
+   "en.district",
+   "de.title",
+   "de.organizer",
+   "de.address",
+   "de.district",
+   "uk.title",
+   "uk.organizer",
+   "uk.address",
+   "uk.district",
+   "ru.title",
+   "ru.organizer",
    "ru.address",
    "ru.district"
   ]
